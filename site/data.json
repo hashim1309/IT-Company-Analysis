@@ -1,0 +1,6566 @@
+{
+ "oppdatert": "2026-11-01",
+ "siste_aar": 2025,
+ "kilde": "Brønnøysundregistrene (Enhetsregisteret og Regnskapsregisteret)",
+ "merknader": [
+  "Beløp er i tusen kroner.",
+  "Lønnskostnad inkluderer arbeidsgiveravgift og pensjon, og er derfor høyere enn utbetalt lønn.",
+  "Ansatttall er dagens tall fra Enhetsregisteret og brukes bare for siste regnskapsår.",
+  "Selskaper i samme konsern er slått sammen.",
+  "Noen selskaper har avvikende regnskapsår; året regnskapet slutter i brukes.",
+  "Rådgivningshus som Deloitte, PwC, KPMG og EY driver også med revisjon og skatt. De vises i tabellen, men er holdt utenfor bransjetallene og topplistene."
+ ],
+ "marked": {
+  "2023": {
+   "antall_selskaper": 116,
+   "inntekt": 44253921,
+   "lonn": 24521662,
+   "driftsresultat": 2615936,
+   "margin": 0.0591,
+   "med_overskudd": 92,
+   "vekst_like_mot_like": null
+  },
+  "2024": {
+   "antall_selskaper": 123,
+   "inntekt": 47797545,
+   "lonn": 27234058,
+   "driftsresultat": 2944095,
+   "margin": 0.0616,
+   "med_overskudd": 99,
+   "vekst_like_mot_like": 0.031
+  },
+  "2025": {
+   "antall_selskaper": 123,
+   "inntekt": 47370372,
+   "lonn": 27527067,
+   "driftsresultat": 2956674,
+   "margin": 0.0624,
+   "med_overskudd": 100,
+   "vekst_like_mot_like": 0.0031
+  }
+ },
+ "topplister": {
+  "inntekt": [
+   {
+    "navn": "Sopra Steria",
+    "verdi": 5982751
+   },
+   {
+    "navn": "Bouvet",
+    "verdi": 3837180
+   },
+   {
+    "navn": "Capgemini",
+    "verdi": 3243968
+   },
+   {
+    "navn": "Accenture",
+    "verdi": 3079206
+   },
+   {
+    "navn": "Omega 365",
+    "verdi": 2665998
+   },
+   {
+    "navn": "Knowit",
+    "verdi": 1924999
+   },
+   {
+    "navn": "mnemonic",
+    "verdi": 1120389
+   },
+   {
+    "navn": "Bekk",
+    "verdi": 1060884
+   },
+   {
+    "navn": "CGI",
+    "verdi": 933983
+   },
+   {
+    "navn": "Twoday",
+    "verdi": 928929
+   }
+  ],
+  "margin": [
+   {
+    "navn": "Kodemaker",
+    "verdi": 0.2005
+   },
+   {
+    "navn": "O3 Cyber",
+    "verdi": 0.1895
+   },
+   {
+    "navn": "Kommando",
+    "verdi": 0.1845
+   },
+   {
+    "navn": "Applica Consulting",
+    "verdi": 0.1694
+   },
+   {
+    "navn": "Novanet",
+    "verdi": 0.1486
+   },
+   {
+    "navn": "Scelto",
+    "verdi": 0.1454
+   },
+   {
+    "navn": "Gnist Consulting",
+    "verdi": 0.1435
+   },
+   {
+    "navn": "Bekk",
+    "verdi": 0.1396
+   },
+   {
+    "navn": "Emlogic",
+    "verdi": 0.1352
+   },
+   {
+    "navn": "Systek",
+    "verdi": 0.1342
+   }
+  ],
+  "vekst": [
+   {
+    "navn": "Consid",
+    "verdi": 0.5715
+   },
+   {
+    "navn": "Gritera",
+    "verdi": 0.3911
+   },
+   {
+    "navn": "Defendable",
+    "verdi": 0.3327
+   },
+   {
+    "navn": "Ivolv",
+    "verdi": 0.2717
+   },
+   {
+    "navn": "Munu",
+    "verdi": 0.2571
+   },
+   {
+    "navn": "Emlogic",
+    "verdi": 0.2525
+   },
+   {
+    "navn": "River Security",
+    "verdi": 0.2492
+   },
+   {
+    "navn": "Kommando",
+    "verdi": 0.246
+   },
+   {
+    "navn": "Precis Digital",
+    "verdi": 0.2308
+   },
+   {
+    "navn": "Sicra",
+    "verdi": 0.2296
+   }
+  ],
+  "lonnskost_per_ansatt": [
+   {
+    "navn": "Teleplan Consulting",
+    "verdi": 2125
+   },
+   {
+    "navn": "Konsulentselskapet Enso",
+    "verdi": 1985
+   },
+   {
+    "navn": "Kodemaker",
+    "verdi": 1941
+   },
+   {
+    "navn": "Scelto",
+    "verdi": 1910
+   },
+   {
+    "navn": "LTIMindtree",
+    "verdi": 1887
+   },
+   {
+    "navn": "Webstep",
+    "verdi": 1761
+   },
+   {
+    "navn": "Cepheo",
+    "verdi": 1735
+   },
+   {
+    "navn": "Yttr",
+    "verdi": 1701
+   },
+   {
+    "navn": "Systek",
+    "verdi": 1683
+   },
+   {
+    "navn": "Jprofessionals",
+    "verdi": 1650
+   }
+  ],
+  "inntekt_per_ansatt": [
+   {
+    "navn": "Teleplan Consulting",
+    "verdi": 4382
+   },
+   {
+    "navn": "Precis Digital",
+    "verdi": 4199
+   },
+   {
+    "navn": "Cepheo",
+    "verdi": 4090
+   },
+   {
+    "navn": "NTT Data Business Solutions",
+    "verdi": 3847
+   },
+   {
+    "navn": "Orange Cyberdefense",
+    "verdi": 3833
+   },
+   {
+    "navn": "Kommando",
+    "verdi": 3687
+   },
+   {
+    "navn": "Accenture",
+    "verdi": 3543
+   },
+   {
+    "navn": "HCL Technologies",
+    "verdi": 3321
+   },
+   {
+    "navn": "LTIMindtree",
+    "verdi": 3239
+   },
+   {
+    "navn": "Cognizant",
+    "verdi": 3228
+   }
+  ]
+ },
+ "selskaper": [
+  {
+   "navn": "Sopra Steria",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 3674,
+   "enheter": [
+    {
+     "orgnr": "910909088",
+     "navn": "SOPRA STERIA AS",
+     "kommune": "OSLO",
+     "ansatte": 3674
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 5372609,
+     "lonn": 3583110,
+     "driftsresultat": 503473,
+     "aarsresultat": 360084,
+     "margin": 0.0937,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 5907157,
+     "lonn": 3872136,
+     "driftsresultat": 592729,
+     "aarsresultat": 397509,
+     "margin": 0.1003,
+     "vekst": 0.0995
+    },
+    "2025": {
+     "inntekt": 5982751,
+     "lonn": 4106514,
+     "driftsresultat": 533366,
+     "aarsresultat": 342978,
+     "margin": 0.0892,
+     "vekst": 0.0128
+    }
+   },
+   "lonnskost_per_ansatt": 1118,
+   "inntekt_per_ansatt": 1628,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.1263
+  },
+  {
+   "navn": "PwC",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 1898,
+   "enheter": [
+    {
+     "orgnr": "987009713",
+     "navn": "PRICEWATERHOUSECOOPERS AS",
+     "kommune": "OSLO",
+     "ansatte": 1898
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 3996580,
+     "lonn": 2264087,
+     "driftsresultat": 900147,
+     "aarsresultat": 148120,
+     "margin": 0.2252,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 4259896,
+     "lonn": 2518800,
+     "driftsresultat": 900136,
+     "aarsresultat": 861568,
+     "margin": 0.2113,
+     "vekst": 0.0659
+    },
+    "2025": {
+     "inntekt": 4235661,
+     "lonn": 2596128,
+     "driftsresultat": 1028950,
+     "aarsresultat": 991532,
+     "margin": 0.2429,
+     "vekst": -0.0057
+    }
+   },
+   "lonnskost_per_ansatt": 1368,
+   "inntekt_per_ansatt": 2232,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "EY",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 1589,
+   "enheter": [
+    {
+     "orgnr": "976389387",
+     "navn": "ERNST & YOUNG AS",
+     "kommune": "OSLO",
+     "ansatte": 1589
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 3688843,
+     "lonn": 1840997,
+     "driftsresultat": 134682,
+     "aarsresultat": 109752,
+     "margin": 0.0365,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 4084958,
+     "lonn": 1962723,
+     "driftsresultat": 71718,
+     "aarsresultat": 99332,
+     "margin": 0.0176,
+     "vekst": 0.1074
+    },
+    "2025": {
+     "inntekt": 4139101,
+     "lonn": 1845788,
+     "driftsresultat": 94531,
+     "aarsresultat": 115890,
+     "margin": 0.0228,
+     "vekst": 0.0133
+    }
+   },
+   "lonnskost_per_ansatt": 1162,
+   "inntekt_per_ansatt": 2605,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Bouvet",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 2271,
+   "enheter": [
+    {
+     "orgnr": "996756246",
+     "navn": "BOUVET NORGE AS",
+     "kommune": "OSLO",
+     "ansatte": 2271
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 3371441,
+     "lonn": 2189758,
+     "driftsresultat": 415732,
+     "aarsresultat": 333454,
+     "margin": 0.1233,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 3787844,
+     "lonn": 2487787,
+     "driftsresultat": 506996,
+     "aarsresultat": 398107,
+     "margin": 0.1338,
+     "vekst": 0.1235
+    },
+    "2025": {
+     "inntekt": 3837180,
+     "lonn": 2584370,
+     "driftsresultat": 474227,
+     "aarsresultat": 371026,
+     "margin": 0.1236,
+     "vekst": 0.013
+    }
+   },
+   "lonnskost_per_ansatt": 1138,
+   "inntekt_per_ansatt": 1690,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.081
+  },
+  {
+   "navn": "Deloitte",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 1216,
+   "enheter": [
+    {
+     "orgnr": "980211282",
+     "navn": "DELOITTE AS",
+     "kommune": "OSLO",
+     "ansatte": 1216
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 2651355,
+     "lonn": 1673627,
+     "driftsresultat": 290672,
+     "aarsresultat": 125635,
+     "margin": 0.1096,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 3256967,
+     "lonn": 1852158,
+     "driftsresultat": 414091,
+     "aarsresultat": 122661,
+     "margin": 0.1271,
+     "vekst": 0.2284
+    },
+    "2025": {
+     "inntekt": 3373901,
+     "lonn": 2054138,
+     "driftsresultat": 215693,
+     "aarsresultat": 74348,
+     "margin": 0.0639,
+     "vekst": 0.0359
+    }
+   },
+   "lonnskost_per_ansatt": 1689,
+   "inntekt_per_ansatt": 2775,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Capgemini",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 1464,
+   "enheter": [
+    {
+     "orgnr": "943574537",
+     "navn": "CAPGEMINI NORGE AS",
+     "kommune": "OSLO",
+     "ansatte": 1464
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 2996295,
+     "lonn": 1833861,
+     "driftsresultat": 163696,
+     "aarsresultat": 144442,
+     "margin": 0.0546,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 3177049,
+     "lonn": 1899821,
+     "driftsresultat": 59607,
+     "aarsresultat": 79734,
+     "margin": 0.0188,
+     "vekst": 0.0603
+    },
+    "2025": {
+     "inntekt": 3243968,
+     "lonn": 1860675,
+     "driftsresultat": 51431,
+     "aarsresultat": 72825,
+     "margin": 0.0159,
+     "vekst": 0.0211
+    }
+   },
+   "lonnskost_per_ansatt": 1271,
+   "inntekt_per_ansatt": 2216,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0685
+  },
+  {
+   "navn": "KPMG",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 1453,
+   "enheter": [
+    {
+     "orgnr": "935174627",
+     "navn": "KPMG AS",
+     "kommune": "OSLO",
+     "ansatte": 1453
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 2714876,
+     "lonn": 1560193,
+     "driftsresultat": 301208,
+     "aarsresultat": 319732,
+     "margin": 0.1109,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 3141412,
+     "lonn": 1724634,
+     "driftsresultat": 421331,
+     "aarsresultat": 451260,
+     "margin": 0.1341,
+     "vekst": 0.1571
+    },
+    "2025": {
+     "inntekt": 3203748,
+     "lonn": 1729400,
+     "driftsresultat": 445017,
+     "aarsresultat": 476789,
+     "margin": 0.1389,
+     "vekst": 0.0198
+    }
+   },
+   "lonnskost_per_ansatt": 1190,
+   "inntekt_per_ansatt": 2205,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Accenture",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 869,
+   "enheter": [
+    {
+     "orgnr": "992037601",
+     "navn": "ACCENTURE AS",
+     "kommune": "OSLO",
+     "ansatte": 869
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 3234841,
+     "lonn": 1403431,
+     "driftsresultat": 128884,
+     "aarsresultat": 97401,
+     "margin": 0.0398,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 3294531,
+     "lonn": 1395342,
+     "driftsresultat": 315211,
+     "aarsresultat": 261531,
+     "margin": 0.0957,
+     "vekst": 0.0185
+    },
+    "2025": {
+     "inntekt": 3079206,
+     "lonn": 1325156,
+     "driftsresultat": 291262,
+     "aarsresultat": 255011,
+     "margin": 0.0946,
+     "vekst": -0.0654
+    }
+   },
+   "lonnskost_per_ansatt": 1525,
+   "inntekt_per_ansatt": 3543,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": 0.065
+  },
+  {
+   "navn": "Omega 365",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 884,
+   "enheter": [
+    {
+     "orgnr": "917915202",
+     "navn": "OMEGA 365 CONSULTING AS",
+     "kommune": "VINDAFJORD",
+     "ansatte": 569
+    },
+    {
+     "orgnr": "917518238",
+     "navn": "OMEGA 365 NORWAY AS",
+     "kommune": "VINDAFJORD",
+     "ansatte": 315
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 2226052,
+     "lonn": 1107190,
+     "driftsresultat": 82066,
+     "aarsresultat": 69994,
+     "margin": 0.0369,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 2588042,
+     "lonn": 1312151,
+     "driftsresultat": 125913,
+     "aarsresultat": 104925,
+     "margin": 0.0487,
+     "vekst": 0.1626
+    },
+    "2025": {
+     "inntekt": 2665998,
+     "lonn": 1424328,
+     "driftsresultat": 104729,
+     "aarsresultat": 86448,
+     "margin": 0.0393,
+     "vekst": 0.0301
+    }
+   },
+   "lonnskost_per_ansatt": 1611,
+   "inntekt_per_ansatt": 3016,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0563
+  },
+  {
+   "navn": "Tieto",
+   "kategori": "Global leveranse",
+   "verifisert": false,
+   "ansatte": 611,
+   "enheter": [
+    {
+     "orgnr": "933012867",
+     "navn": "TIETO NORWAY AS",
+     "kommune": "BÆRUM",
+     "ansatte": 611
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 3462766,
+     "lonn": 1187394,
+     "driftsresultat": 273181,
+     "aarsresultat": 182672,
+     "margin": 0.0789,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 2271432,
+     "lonn": 973439,
+     "driftsresultat": 225835,
+     "aarsresultat": 161393,
+     "margin": 0.0994,
+     "vekst": -0.344
+    },
+    "2025": {
+     "inntekt": 2157086,
+     "lonn": 876814,
+     "driftsresultat": 178639,
+     "aarsresultat": 292135,
+     "margin": 0.0828,
+     "vekst": -0.0503
+    }
+   },
+   "lonnskost_per_ansatt": 1435,
+   "inntekt_per_ansatt": 3530,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0455
+  },
+  {
+   "navn": "Knowit",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 828,
+   "enheter": [
+    {
+     "orgnr": "914727170",
+     "navn": "KNOWIT EXPERIENCE BERGEN AS",
+     "kommune": "BERGEN",
+     "ansatte": 118
+    },
+    {
+     "orgnr": "914727340",
+     "navn": "KNOWIT EXPERIENCE OSLO AS",
+     "kommune": "OSLO",
+     "ansatte": 124
+    },
+    {
+     "orgnr": "911954656",
+     "navn": "KNOWIT FINANCIAL SOLUTIONS AS",
+     "kommune": "BERGEN",
+     "ansatte": 45
+    },
+    {
+     "orgnr": "929034902",
+     "navn": "KNOWIT INSIGHT BUSINESS SOLUTION AS",
+     "kommune": "OSLO",
+     "ansatte": 69
+    },
+    {
+     "orgnr": "945865318",
+     "navn": "KNOWIT SOLUTIONS CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 139
+    },
+    {
+     "orgnr": "980713520",
+     "navn": "KNOWIT SOLUTIONS DATA & TECH AS",
+     "kommune": "OSLO",
+     "ansatte": 224
+    },
+    {
+     "orgnr": "925033448",
+     "navn": "KNOWIT IMPACT AS",
+     "kommune": "OSLO",
+     "ansatte": 34
+    },
+    {
+     "orgnr": "996865770",
+     "navn": "KNOWIT CONSULTING BERGEN AS",
+     "kommune": "BERGEN",
+     "ansatte": 20
+    },
+    {
+     "orgnr": "919074469",
+     "navn": "KNOWIT INSIGHT AS",
+     "kommune": "OSLO",
+     "ansatte": 40
+    },
+    {
+     "orgnr": "913513657",
+     "navn": "KNOWIT CYBERSECURITY & LAW AS",
+     "kommune": "OSLO",
+     "ansatte": 15
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 1883282,
+     "lonn": 969435,
+     "driftsresultat": 152682,
+     "aarsresultat": 126280,
+     "margin": 0.0811,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 1723985,
+     "lonn": 974567,
+     "driftsresultat": 148138,
+     "aarsresultat": 125375,
+     "margin": 0.0859,
+     "vekst": -0.0846
+    },
+    "2025": {
+     "inntekt": 1924999,
+     "lonn": 1121440,
+     "driftsresultat": 156280,
+     "aarsresultat": 134698,
+     "margin": 0.0812,
+     "vekst": 0.1166
+    }
+   },
+   "lonnskost_per_ansatt": 1354,
+   "inntekt_per_ansatt": 2325,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0406
+  },
+  {
+   "navn": "Cegal",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 544,
+   "enheter": [
+    {
+     "orgnr": "996221423",
+     "navn": "CEGAL AS",
+     "kommune": "SANDNES",
+     "ansatte": 544
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 1518086,
+     "lonn": 588444,
+     "driftsresultat": 115256,
+     "aarsresultat": 95824,
+     "margin": 0.0759,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 1377262,
+     "lonn": 608715,
+     "driftsresultat": 101209,
+     "aarsresultat": 73361,
+     "margin": 0.0735,
+     "vekst": -0.0928
+    },
+    "2025": {
+     "inntekt": 1422169,
+     "lonn": 633861,
+     "driftsresultat": 132171,
+     "aarsresultat": 104147,
+     "margin": 0.0929,
+     "vekst": 0.0326
+    }
+   },
+   "lonnskost_per_ansatt": 1165,
+   "inntekt_per_ansatt": 2614,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.03
+  },
+  {
+   "navn": "Experis",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 535,
+   "enheter": [
+    {
+     "orgnr": "982683955",
+     "navn": "EXPERIS AS",
+     "kommune": "OSLO",
+     "ansatte": 397
+    },
+    {
+     "orgnr": "925922374",
+     "navn": "EXPERIS SERVICES AS",
+     "kommune": "OSLO",
+     "ansatte": 138
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 1932424,
+     "lonn": 837462,
+     "driftsresultat": -28142,
+     "aarsresultat": -9960,
+     "margin": -0.0146,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 1624360,
+     "lonn": 813847,
+     "driftsresultat": -69539,
+     "aarsresultat": -42128,
+     "margin": -0.0428,
+     "vekst": -0.1594
+    },
+    "2025": {
+     "inntekt": 1391227,
+     "lonn": 726378,
+     "driftsresultat": -95990,
+     "aarsresultat": -67628,
+     "margin": -0.069,
+     "vekst": -0.1435
+    }
+   },
+   "lonnskost_per_ansatt": 1358,
+   "inntekt_per_ansatt": 2600,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0294
+  },
+  {
+   "navn": "mnemonic",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 394,
+   "enheter": [
+    {
+     "orgnr": "982089549",
+     "navn": "MNEMONIC AS",
+     "kommune": "OSLO",
+     "ansatte": 394
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 959924,
+     "lonn": 397922,
+     "driftsresultat": 38372,
+     "aarsresultat": 41216,
+     "margin": 0.04,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 1107922,
+     "lonn": 444725,
+     "driftsresultat": 47140,
+     "aarsresultat": 45868,
+     "margin": 0.0425,
+     "vekst": 0.1542
+    },
+    "2025": {
+     "inntekt": 1120389,
+     "lonn": 484909,
+     "driftsresultat": 12235,
+     "aarsresultat": 26006,
+     "margin": 0.0109,
+     "vekst": 0.0113
+    }
+   },
+   "lonnskost_per_ansatt": 1231,
+   "inntekt_per_ansatt": 2844,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0237
+  },
+  {
+   "navn": "Bekk",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 624,
+   "enheter": [
+    {
+     "orgnr": "981566378",
+     "navn": "BEKK CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 624
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 986737,
+     "lonn": 707522,
+     "driftsresultat": 144776,
+     "aarsresultat": 119400,
+     "margin": 0.1467,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 1053655,
+     "lonn": 753833,
+     "driftsresultat": 171134,
+     "aarsresultat": 141943,
+     "margin": 0.1624,
+     "vekst": 0.0678
+    },
+    "2025": {
+     "inntekt": 1060884,
+     "lonn": 793748,
+     "driftsresultat": 148098,
+     "aarsresultat": 122567,
+     "margin": 0.1396,
+     "vekst": 0.0069
+    }
+   },
+   "lonnskost_per_ansatt": 1272,
+   "inntekt_per_ansatt": 1700,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0224
+  },
+  {
+   "navn": "CGI",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 345,
+   "enheter": [
+    {
+     "orgnr": "919562390",
+     "navn": "CGI NORGE AS",
+     "kommune": "OSLO",
+     "ansatte": 345
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 1084239,
+     "lonn": 553855,
+     "driftsresultat": -85073,
+     "aarsresultat": -81569,
+     "margin": -0.0785,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 970294,
+     "lonn": 517200,
+     "driftsresultat": -80401,
+     "aarsresultat": -73174,
+     "margin": -0.0829,
+     "vekst": -0.1051
+    },
+    "2025": {
+     "inntekt": 933983,
+     "lonn": 471476,
+     "driftsresultat": 39879,
+     "aarsresultat": 39788,
+     "margin": 0.0427,
+     "vekst": -0.0374
+    }
+   },
+   "lonnskost_per_ansatt": 1367,
+   "inntekt_per_ansatt": 2707,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": 0.0197
+  },
+  {
+   "navn": "Twoday",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 412,
+   "enheter": [
+    {
+     "orgnr": "990432368",
+     "navn": "TWODAY AS",
+     "kommune": "OSLO",
+     "ansatte": 412
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 479874,
+     "lonn": 233552,
+     "driftsresultat": 34499,
+     "aarsresultat": 28716,
+     "margin": 0.0719,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 945888,
+     "lonn": 501394,
+     "driftsresultat": 87806,
+     "aarsresultat": 73629,
+     "margin": 0.0928,
+     "vekst": 0.9711
+    },
+    "2025": {
+     "inntekt": 928929,
+     "lonn": 503742,
+     "driftsresultat": 107624,
+     "aarsresultat": 93060,
+     "margin": 0.1159,
+     "vekst": -0.0179
+    }
+   },
+   "lonnskost_per_ansatt": 1223,
+   "inntekt_per_ansatt": 2255,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0196
+  },
+  {
+   "navn": "Webstep",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 360,
+   "enheter": [
+    {
+     "orgnr": "941612474",
+     "navn": "WEBSTEP AS",
+     "kommune": "OSLO",
+     "ansatte": 360
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 861461,
+     "lonn": 670776,
+     "driftsresultat": 61646,
+     "aarsresultat": 53696,
+     "margin": 0.0716,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 874131,
+     "lonn": 669730,
+     "driftsresultat": 84192,
+     "aarsresultat": 74511,
+     "margin": 0.0963,
+     "vekst": 0.0147
+    },
+    "2025": {
+     "inntekt": 835197,
+     "lonn": 634031,
+     "driftsresultat": 77436,
+     "aarsresultat": 68860,
+     "margin": 0.0927,
+     "vekst": -0.0445
+    }
+   },
+   "lonnskost_per_ansatt": 1761,
+   "inntekt_per_ansatt": 2320,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0176
+  },
+  {
+   "navn": "Evidi",
+   "kategori": "Data og analyse",
+   "verifisert": true,
+   "ansatte": 306,
+   "enheter": [
+    {
+     "orgnr": "927119781",
+     "navn": "EVIDI AS",
+     "kommune": "OSLO",
+     "ansatte": 306
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 572989,
+     "lonn": 358712,
+     "driftsresultat": -41891,
+     "aarsresultat": -47830,
+     "margin": -0.0731,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 635025,
+     "lonn": 368582,
+     "driftsresultat": -20454,
+     "aarsresultat": -31222,
+     "margin": -0.0322,
+     "vekst": 0.1083
+    },
+    "2025": {
+     "inntekt": 768134,
+     "lonn": 399051,
+     "driftsresultat": 45773,
+     "aarsresultat": 12002,
+     "margin": 0.0596,
+     "vekst": 0.2096
+    }
+   },
+   "lonnskost_per_ansatt": 1304,
+   "inntekt_per_ansatt": 2510,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0162
+  },
+  {
+   "navn": "Computas",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 295,
+   "enheter": [
+    {
+     "orgnr": "986352325",
+     "navn": "COMPUTAS AS",
+     "kommune": "OSLO",
+     "ansatte": 295
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 790782,
+     "lonn": 397664,
+     "driftsresultat": 23838,
+     "aarsresultat": 22933,
+     "margin": 0.0301,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 862212,
+     "lonn": 414846,
+     "driftsresultat": 25707,
+     "aarsresultat": 24676,
+     "margin": 0.0298,
+     "vekst": 0.0903
+    },
+    "2025": {
+     "inntekt": 691388,
+     "lonn": 410949,
+     "driftsresultat": 4823,
+     "aarsresultat": 3313,
+     "margin": 0.007,
+     "vekst": -0.1981
+    }
+   },
+   "lonnskost_per_ansatt": 1393,
+   "inntekt_per_ansatt": 2344,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0146
+  },
+  {
+   "navn": "DXC Technology",
+   "kategori": "Global leveranse",
+   "verifisert": false,
+   "ansatte": 129,
+   "enheter": [
+    {
+     "orgnr": "958958455",
+     "navn": "DXC TECHNOLOGY NORGE AS",
+     "kommune": "BERGEN",
+     "ansatte": 129
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 683836,
+     "lonn": 227701,
+     "driftsresultat": -51966,
+     "aarsresultat": -52609,
+     "margin": -0.076,
+     "vekst": null
+    },
+    "2025": {
+     "inntekt": 647615,
+     "lonn": 225801,
+     "driftsresultat": -15665,
+     "aarsresultat": -19404,
+     "margin": -0.0242,
+     "vekst": -0.053
+    },
+    "2026": {
+     "inntekt": 591906,
+     "lonn": 176420,
+     "driftsresultat": 58766,
+     "aarsresultat": 62659,
+     "margin": 0.0993,
+     "vekst": -0.086
+    }
+   },
+   "lonnskost_per_ansatt": 1750,
+   "inntekt_per_ansatt": 5020,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": 0.0137
+  },
+  {
+   "navn": "Itera",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 225,
+   "enheter": [
+    {
+     "orgnr": "967948748",
+     "navn": "ITERA NORGE AS",
+     "kommune": "OSLO",
+     "ansatte": 225
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 671745,
+     "lonn": 294074,
+     "driftsresultat": 41748,
+     "aarsresultat": 34620,
+     "margin": 0.0621,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 625159,
+     "lonn": 289665,
+     "driftsresultat": 19309,
+     "aarsresultat": 17572,
+     "margin": 0.0309,
+     "vekst": -0.0694
+    },
+    "2025": {
+     "inntekt": 615727,
+     "lonn": 293350,
+     "driftsresultat": 27202,
+     "aarsresultat": 21488,
+     "margin": 0.0442,
+     "vekst": -0.0151
+    }
+   },
+   "lonnskost_per_ansatt": 1304,
+   "inntekt_per_ansatt": 2737,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.013
+  },
+  {
+   "navn": "Cognizant",
+   "kategori": "Global leveranse",
+   "verifisert": true,
+   "ansatte": 180,
+   "enheter": [
+    {
+     "orgnr": "988707031",
+     "navn": "COGNIZANT TECHNOLOGY SOLUTIONS NORWAY AS",
+     "kommune": "BÆRUM",
+     "ansatte": 125
+    },
+    {
+     "orgnr": "984755384",
+     "navn": "COGNIZANT OIL AND GAS CONSULTING SERVICES NORWAY AS",
+     "kommune": "BÆRUM",
+     "ansatte": 55
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 697516,
+     "lonn": 371638,
+     "driftsresultat": 66217,
+     "aarsresultat": 93427,
+     "margin": 0.0949,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 616247,
+     "lonn": 335305,
+     "driftsresultat": 58910,
+     "aarsresultat": 84004,
+     "margin": 0.0956,
+     "vekst": -0.1165
+    },
+    "2025": {
+     "inntekt": 581042,
+     "lonn": 264598,
+     "driftsresultat": 54987,
+     "aarsresultat": 53678,
+     "margin": 0.0946,
+     "vekst": -0.0571
+    }
+   },
+   "lonnskost_per_ansatt": 1470,
+   "inntekt_per_ansatt": 3228,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0123
+  },
+  {
+   "navn": "Netcompany",
+   "kategori": "Fullservice",
+   "verifisert": true,
+   "ansatte": 381,
+   "enheter": [
+    {
+     "orgnr": "881886472",
+     "navn": "NETCOMPANY NORWAY AS",
+     "kommune": "OSLO",
+     "ansatte": 381
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 509707,
+     "lonn": 337226,
+     "driftsresultat": -62786,
+     "aarsresultat": -53731,
+     "margin": -0.1232,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 531431,
+     "lonn": 351786,
+     "driftsresultat": -59015,
+     "aarsresultat": -48514,
+     "margin": -0.1111,
+     "vekst": 0.0426
+    },
+    "2025": {
+     "inntekt": 569753,
+     "lonn": 392785,
+     "driftsresultat": -31038,
+     "aarsresultat": -27915,
+     "margin": -0.0545,
+     "vekst": 0.0721
+    }
+   },
+   "lonnskost_per_ansatt": 1031,
+   "inntekt_per_ansatt": 1495,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.012
+  },
+  {
+   "navn": "HCL Technologies",
+   "kategori": "Global leveranse",
+   "verifisert": true,
+   "ansatte": 160,
+   "enheter": [
+    {
+     "orgnr": "995672766",
+     "navn": "HCL TECHNOLOGIES NORWAY AS",
+     "kommune": "OSLO",
+     "ansatte": 160
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 613091,
+     "lonn": 176837,
+     "driftsresultat": 38937,
+     "aarsresultat": 57387,
+     "margin": 0.0635,
+     "vekst": null
+    },
+    "2025": {
+     "inntekt": 531300,
+     "lonn": 176044,
+     "driftsresultat": 35030,
+     "aarsresultat": 29324,
+     "margin": 0.0659,
+     "vekst": -0.1334
+    }
+   },
+   "lonnskost_per_ansatt": 1100,
+   "inntekt_per_ansatt": 3321,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0112
+  },
+  {
+   "navn": "Miles",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 248,
+   "enheter": [
+    {
+     "orgnr": "988340316",
+     "navn": "MILES AS",
+     "kommune": "OSLO",
+     "ansatte": 248
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 20360,
+     "lonn": 15887,
+     "driftsresultat": -2374,
+     "aarsresultat": -4,
+     "margin": -0.1166,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 388250,
+     "lonn": 323225,
+     "driftsresultat": 11838,
+     "aarsresultat": 11157,
+     "margin": 0.0305,
+     "vekst": 18.069
+    },
+    "2025": {
+     "inntekt": 423667,
+     "lonn": 348581,
+     "driftsresultat": 13654,
+     "aarsresultat": 12892,
+     "margin": 0.0322,
+     "vekst": 0.0912
+    }
+   },
+   "lonnskost_per_ansatt": 1406,
+   "inntekt_per_ansatt": 1708,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0089
+  },
+  {
+   "navn": "Arribatec",
+   "kategori": "Microsoft og ERP",
+   "verifisert": false,
+   "ansatte": 163,
+   "enheter": [
+    {
+     "orgnr": "918487328",
+     "navn": "ARRIBATEC NORGE AS",
+     "kommune": "OSLO",
+     "ansatte": 77
+    },
+    {
+     "orgnr": "983398308",
+     "navn": "ARRIBATEC CLOUD AS",
+     "kommune": "HAMAR",
+     "ansatte": 45
+    },
+    {
+     "orgnr": "968455265",
+     "navn": "ARRIBATEC EA & BPM AS",
+     "kommune": "SANDNES",
+     "ansatte": 41
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 374444,
+     "lonn": 188644,
+     "driftsresultat": 13002,
+     "aarsresultat": 10405,
+     "margin": 0.0347,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 395873,
+     "lonn": 196737,
+     "driftsresultat": 2296,
+     "aarsresultat": 1445,
+     "margin": 0.0058,
+     "vekst": 0.0572
+    },
+    "2025": {
+     "inntekt": 415611,
+     "lonn": 187312,
+     "driftsresultat": 36108,
+     "aarsresultat": 30680,
+     "margin": 0.0869,
+     "vekst": 0.0499
+    }
+   },
+   "lonnskost_per_ansatt": 1149,
+   "inntekt_per_ansatt": 2550,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0088
+  },
+  {
+   "navn": "Columbus",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 162,
+   "enheter": [
+    {
+     "orgnr": "883561872",
+     "navn": "COLUMBUS NORWAY AS",
+     "kommune": "OSLO",
+     "ansatte": 162
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 416613,
+     "lonn": 229794,
+     "driftsresultat": -22647,
+     "aarsresultat": -29129,
+     "margin": -0.0544,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 422452,
+     "lonn": 234480,
+     "driftsresultat": -20117,
+     "aarsresultat": -45311,
+     "margin": -0.0476,
+     "vekst": 0.014
+    },
+    "2025": {
+     "inntekt": 376424,
+     "lonn": 220070,
+     "driftsresultat": -40987,
+     "aarsresultat": -44494,
+     "margin": -0.1089,
+     "vekst": -0.109
+    }
+   },
+   "lonnskost_per_ansatt": 1358,
+   "inntekt_per_ansatt": 2324,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0079
+  },
+  {
+   "navn": "Systek",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 130,
+   "enheter": [
+    {
+     "orgnr": "927415305",
+     "navn": "SYSTEK AS",
+     "kommune": "OSLO",
+     "ansatte": 130
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 247674,
+     "lonn": 167410,
+     "driftsresultat": 29508,
+     "aarsresultat": 24530,
+     "margin": 0.1191,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 295577,
+     "lonn": 195947,
+     "driftsresultat": 38743,
+     "aarsresultat": 32232,
+     "margin": 0.1311,
+     "vekst": 0.1934
+    },
+    "2025": {
+     "inntekt": 317810,
+     "lonn": 218755,
+     "driftsresultat": 42641,
+     "aarsresultat": 34927,
+     "margin": 0.1342,
+     "vekst": 0.0752
+    }
+   },
+   "lonnskost_per_ansatt": 1683,
+   "inntekt_per_ansatt": 2445,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0067
+  },
+  {
+   "navn": "Cepheo",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 75,
+   "enheter": [
+    {
+     "orgnr": "930970719",
+     "navn": "CEPHEO NORGE AS",
+     "kommune": "OSLO",
+     "ansatte": 75
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 138197,
+     "lonn": 68149,
+     "driftsresultat": -5198,
+     "aarsresultat": -4824,
+     "margin": -0.0376,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 277934,
+     "lonn": 146950,
+     "driftsresultat": -22549,
+     "aarsresultat": -20416,
+     "margin": -0.0811,
+     "vekst": 1.0111
+    },
+    "2025": {
+     "inntekt": 306733,
+     "lonn": 130159,
+     "driftsresultat": -11787,
+     "aarsresultat": -9935,
+     "margin": -0.0384,
+     "vekst": 0.1036
+    }
+   },
+   "lonnskost_per_ansatt": 1735,
+   "inntekt_per_ansatt": 4090,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0065
+  },
+  {
+   "navn": "EY Skye",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 128,
+   "enheter": [
+    {
+     "orgnr": "995655144",
+     "navn": "EY SKYE CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 128
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 293680,
+     "lonn": 162154,
+     "driftsresultat": 17724,
+     "aarsresultat": 14145,
+     "margin": 0.0604,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 302939,
+     "lonn": 160146,
+     "driftsresultat": 20021,
+     "aarsresultat": 16951,
+     "margin": 0.0661,
+     "vekst": 0.0315
+    },
+    "2025": {
+     "inntekt": 303793,
+     "lonn": 163260,
+     "driftsresultat": 33541,
+     "aarsresultat": 27631,
+     "margin": 0.1104,
+     "vekst": 0.0028
+    }
+   },
+   "lonnskost_per_ansatt": 1275,
+   "inntekt_per_ansatt": 2373,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": 0.0064
+  },
+  {
+   "navn": "Exsitec",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 155,
+   "enheter": [
+    {
+     "orgnr": "984489234",
+     "navn": "EXSITEC AS",
+     "kommune": "OSLO",
+     "ansatte": 84
+    },
+    {
+     "orgnr": "980607259",
+     "navn": "EXSITEC SOLUTIONS AS",
+     "kommune": "OSLO",
+     "ansatte": 71
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 341200,
+     "lonn": 242639,
+     "driftsresultat": 13924,
+     "aarsresultat": 12093,
+     "margin": 0.0408,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 346067,
+     "lonn": 240111,
+     "driftsresultat": 17050,
+     "aarsresultat": 16933,
+     "margin": 0.0493,
+     "vekst": 0.0143
+    },
+    "2025": {
+     "inntekt": 290103,
+     "lonn": 184259,
+     "driftsresultat": 27024,
+     "aarsresultat": 20731,
+     "margin": 0.0932,
+     "vekst": -0.1617
+    }
+   },
+   "lonnskost_per_ansatt": 1189,
+   "inntekt_per_ansatt": 1872,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0061
+  },
+  {
+   "navn": "Inspirit365",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 123,
+   "enheter": [
+    {
+     "orgnr": "926112708",
+     "navn": "INSPIRIT365 AS",
+     "kommune": "OSLO",
+     "ansatte": 123
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 223232,
+     "lonn": 113272,
+     "driftsresultat": 41756,
+     "aarsresultat": 32914,
+     "margin": 0.1871,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 298399,
+     "lonn": 147342,
+     "driftsresultat": 43840,
+     "aarsresultat": 34581,
+     "margin": 0.1469,
+     "vekst": 0.3367
+    },
+    "2025": {
+     "inntekt": 286524,
+     "lonn": 159369,
+     "driftsresultat": 38067,
+     "aarsresultat": 30172,
+     "margin": 0.1329,
+     "vekst": -0.0398
+    }
+   },
+   "lonnskost_per_ansatt": 1296,
+   "inntekt_per_ansatt": 2329,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.006
+  },
+  {
+   "navn": "Kantega",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 193,
+   "enheter": [
+    {
+     "orgnr": "985815534",
+     "navn": "KANTEGA AS",
+     "kommune": "OSLO",
+     "ansatte": 193
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 295132,
+     "lonn": 217431,
+     "driftsresultat": 12554,
+     "aarsresultat": 21383,
+     "margin": 0.0425,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 270699,
+     "lonn": 212445,
+     "driftsresultat": 2404,
+     "aarsresultat": 25763,
+     "margin": 0.0089,
+     "vekst": -0.0828
+    },
+    "2025": {
+     "inntekt": 279397,
+     "lonn": 210187,
+     "driftsresultat": 5576,
+     "aarsresultat": 27934,
+     "margin": 0.02,
+     "vekst": 0.0321
+    }
+   },
+   "lonnskost_per_ansatt": 1089,
+   "inntekt_per_ansatt": 1448,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0059
+  },
+  {
+   "navn": "NTT Data Business Solutions",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 70,
+   "enheter": [
+    {
+     "orgnr": "992036079",
+     "navn": "NTT DATA BUSINESS SOLUTIONS AS",
+     "kommune": "OSLO",
+     "ansatte": 70
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 229923,
+     "lonn": 102131,
+     "driftsresultat": 27990,
+     "aarsresultat": 23779,
+     "margin": 0.1217,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 244259,
+     "lonn": 109211,
+     "driftsresultat": 12058,
+     "aarsresultat": 12265,
+     "margin": 0.0494,
+     "vekst": 0.0624
+    },
+    "2025": {
+     "inntekt": 269298,
+     "lonn": 112437,
+     "driftsresultat": 18398,
+     "aarsresultat": 16345,
+     "margin": 0.0683,
+     "vekst": 0.1025
+    }
+   },
+   "lonnskost_per_ansatt": 1606,
+   "inntekt_per_ansatt": 3847,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": 0.0057
+  },
+  {
+   "navn": "Gritera",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 131,
+   "enheter": [
+    {
+     "orgnr": "925024430",
+     "navn": "GRITERA ADVISORY AS",
+     "kommune": "OSLO",
+     "ansatte": 69
+    },
+    {
+     "orgnr": "832332402",
+     "navn": "GRITERA SECURITY AS",
+     "kommune": "OSLO",
+     "ansatte": 31
+    },
+    {
+     "orgnr": "929502213",
+     "navn": "GRITERA ANALYTICS AS",
+     "kommune": "OSLO",
+     "ansatte": 31
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 133081,
+     "lonn": 86658,
+     "driftsresultat": 10299,
+     "aarsresultat": 8071,
+     "margin": 0.0774,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 186354,
+     "lonn": 121599,
+     "driftsresultat": 8041,
+     "aarsresultat": 6508,
+     "margin": 0.0431,
+     "vekst": 0.4003
+    },
+    "2025": {
+     "inntekt": 259234,
+     "lonn": 178930,
+     "driftsresultat": 9183,
+     "aarsresultat": 7218,
+     "margin": 0.0354,
+     "vekst": 0.3911
+    }
+   },
+   "lonnskost_per_ansatt": 1366,
+   "inntekt_per_ansatt": 1979,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0055
+  },
+  {
+   "navn": "Forte Digital",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 81,
+   "enheter": [
+    {
+     "orgnr": "919321369",
+     "navn": "FORTE DIGITAL AS",
+     "kommune": "OSLO",
+     "ansatte": 81
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 311851,
+     "lonn": 25582,
+     "driftsresultat": 16921,
+     "aarsresultat": 18135,
+     "margin": 0.0543,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 250042,
+     "lonn": 24756,
+     "driftsresultat": 4118,
+     "aarsresultat": 4411,
+     "margin": 0.0165,
+     "vekst": -0.1982
+    },
+    "2025": {
+     "inntekt": 255216,
+     "lonn": 119924,
+     "driftsresultat": 7707,
+     "aarsresultat": 6459,
+     "margin": 0.0302,
+     "vekst": 0.0207
+    }
+   },
+   "lonnskost_per_ansatt": 1481,
+   "inntekt_per_ansatt": 3151,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0054
+  },
+  {
+   "navn": "Noa Ignite",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 116,
+   "enheter": [
+    {
+     "orgnr": "995743566",
+     "navn": "NOA IGNITE AS",
+     "kommune": "OSLO",
+     "ansatte": 116
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 313449,
+     "lonn": 180487,
+     "driftsresultat": 9591,
+     "aarsresultat": 17241,
+     "margin": 0.0306,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 268759,
+     "lonn": 167695,
+     "driftsresultat": 2397,
+     "aarsresultat": 14133,
+     "margin": 0.0089,
+     "vekst": -0.1426
+    },
+    "2025": {
+     "inntekt": 251828,
+     "lonn": 139295,
+     "driftsresultat": 8949,
+     "aarsresultat": 11053,
+     "margin": 0.0355,
+     "vekst": -0.063
+    }
+   },
+   "lonnskost_per_ansatt": 1201,
+   "inntekt_per_ansatt": 2171,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0053
+  },
+  {
+   "navn": "Epinova",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 92,
+   "enheter": [
+    {
+     "orgnr": "995215748",
+     "navn": "EPINOVA AS",
+     "kommune": "OSLO",
+     "ansatte": 92
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 171220,
+     "lonn": 105855,
+     "driftsresultat": 16892,
+     "aarsresultat": 13804,
+     "margin": 0.0987,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 198909,
+     "lonn": 112967,
+     "driftsresultat": 18912,
+     "aarsresultat": 15587,
+     "margin": 0.0951,
+     "vekst": 0.1617
+    },
+    "2025": {
+     "inntekt": 239607,
+     "lonn": 125017,
+     "driftsresultat": 30141,
+     "aarsresultat": 24405,
+     "margin": 0.1258,
+     "vekst": 0.2046
+    }
+   },
+   "lonnskost_per_ansatt": 1359,
+   "inntekt_per_ansatt": 2604,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0051
+  },
+  {
+   "navn": "Scienta",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 55,
+   "enheter": [
+    {
+     "orgnr": "997230078",
+     "navn": "SCIENTA AS",
+     "kommune": "OSLO",
+     "ansatte": 55
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 174990,
+     "lonn": 63231,
+     "driftsresultat": 24692,
+     "aarsresultat": 19260,
+     "margin": 0.1411,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 197338,
+     "lonn": 89251,
+     "driftsresultat": 21407,
+     "aarsresultat": 16706,
+     "margin": 0.1085,
+     "vekst": 0.1277
+    },
+    "2025": {
+     "inntekt": 227483,
+     "lonn": 92331,
+     "driftsresultat": 36442,
+     "aarsresultat": 28418,
+     "margin": 0.1602,
+     "vekst": 0.1528
+    }
+   },
+   "lonnskost_per_ansatt": 1679,
+   "inntekt_per_ansatt": 4136,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0048
+  },
+  {
+   "navn": "Avo Consulting",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 109,
+   "enheter": [
+    {
+     "orgnr": "918664696",
+     "navn": "AVO CONSULTING AS",
+     "kommune": "BERGEN",
+     "ansatte": 109
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 217420,
+     "lonn": 149270,
+     "driftsresultat": 8339,
+     "aarsresultat": 6126,
+     "margin": 0.0384,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 238974,
+     "lonn": 173726,
+     "driftsresultat": 3410,
+     "aarsresultat": 2704,
+     "margin": 0.0143,
+     "vekst": 0.0991
+    },
+    "2025": {
+     "inntekt": 223817,
+     "lonn": 152463,
+     "driftsresultat": 13537,
+     "aarsresultat": 10565,
+     "margin": 0.0605,
+     "vekst": -0.0634
+    }
+   },
+   "lonnskost_per_ansatt": 1399,
+   "inntekt_per_ansatt": 2053,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Inventura",
+   "kategori": "Rådgivningshus",
+   "verifisert": false,
+   "ansatte": 129,
+   "enheter": [
+    {
+     "orgnr": "983351417",
+     "navn": "INVENTURA AS",
+     "kommune": "BERGEN",
+     "ansatte": 129
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 169737,
+     "lonn": 102749,
+     "driftsresultat": 23415,
+     "aarsresultat": 18156,
+     "margin": 0.1379,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 189365,
+     "lonn": 122036,
+     "driftsresultat": 28258,
+     "aarsresultat": 22015,
+     "margin": 0.1492,
+     "vekst": 0.1156
+    },
+    "2025": {
+     "inntekt": 205223,
+     "lonn": 134495,
+     "driftsresultat": 26099,
+     "aarsresultat": 17750,
+     "margin": 0.1272,
+     "vekst": 0.0837
+    }
+   },
+   "lonnskost_per_ansatt": 1043,
+   "inntekt_per_ansatt": 1591,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Noria",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 88,
+   "enheter": [
+    {
+     "orgnr": "968354701",
+     "navn": "NORIA AS",
+     "kommune": "OSLO",
+     "ansatte": 58
+    },
+    {
+     "orgnr": "926112538",
+     "navn": "NORIA VEST AS",
+     "kommune": "BERGEN",
+     "ansatte": 30
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 149774,
+     "lonn": 81306,
+     "driftsresultat": 10532,
+     "aarsresultat": 9498,
+     "margin": 0.0703,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 199877,
+     "lonn": 91109,
+     "driftsresultat": 23202,
+     "aarsresultat": 20598,
+     "margin": 0.1161,
+     "vekst": 0.3345
+    },
+    "2025": {
+     "inntekt": 199066,
+     "lonn": 99864,
+     "driftsresultat": 23996,
+     "aarsresultat": 21009,
+     "margin": 0.1205,
+     "vekst": -0.0041
+    }
+   },
+   "lonnskost_per_ansatt": 1135,
+   "inntekt_per_ansatt": 2262,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0042
+  },
+  {
+   "navn": "Capra",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 92,
+   "enheter": [
+    {
+     "orgnr": "988097039",
+     "navn": "CAPRA CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 92
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 181781,
+     "lonn": 126936,
+     "driftsresultat": 9901,
+     "aarsresultat": 7577,
+     "margin": 0.0545,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 193075,
+     "lonn": 132907,
+     "driftsresultat": 5120,
+     "aarsresultat": 3779,
+     "margin": 0.0265,
+     "vekst": 0.0621
+    },
+    "2025": {
+     "inntekt": 197565,
+     "lonn": 129597,
+     "driftsresultat": 6828,
+     "aarsresultat": 4999,
+     "margin": 0.0346,
+     "vekst": 0.0233
+    }
+   },
+   "lonnskost_per_ansatt": 1409,
+   "inntekt_per_ansatt": 2147,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0042
+  },
+  {
+   "navn": "Devoteam",
+   "kategori": "Microsoft og ERP",
+   "verifisert": false,
+   "ansatte": 73,
+   "enheter": [
+    {
+     "orgnr": "980172015",
+     "navn": "DEVOTEAM AS",
+     "kommune": "OSLO",
+     "ansatte": 73
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 233365,
+     "lonn": 156645,
+     "driftsresultat": -27467,
+     "aarsresultat": -23379,
+     "margin": -0.1177,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 193208,
+     "lonn": 118439,
+     "driftsresultat": 9770,
+     "aarsresultat": 2214,
+     "margin": 0.0506,
+     "vekst": -0.1721
+    },
+    "2025": {
+     "inntekt": 192219,
+     "lonn": 116997,
+     "driftsresultat": 5803,
+     "aarsresultat": -29760,
+     "margin": 0.0302,
+     "vekst": -0.0051
+    }
+   },
+   "lonnskost_per_ansatt": 1603,
+   "inntekt_per_ansatt": 2633,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0041
+  },
+  {
+   "navn": "AboveIT",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 130,
+   "enheter": [
+    {
+     "orgnr": "922105243",
+     "navn": "ABOVEIT AS",
+     "kommune": "OSLO",
+     "ansatte": 130
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 156142,
+     "lonn": 133007,
+     "driftsresultat": 7240,
+     "aarsresultat": 14932,
+     "margin": 0.0464,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 167806,
+     "lonn": 148077,
+     "driftsresultat": 847,
+     "aarsresultat": 1445,
+     "margin": 0.005,
+     "vekst": 0.0747
+    },
+    "2025": {
+     "inntekt": 177612,
+     "lonn": 144574,
+     "driftsresultat": 3243,
+     "aarsresultat": 2521,
+     "margin": 0.0183,
+     "vekst": 0.0584
+    }
+   },
+   "lonnskost_per_ansatt": 1112,
+   "inntekt_per_ansatt": 1366,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0037
+  },
+  {
+   "navn": "Orange Cyberdefense",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 44,
+   "enheter": [
+    {
+     "orgnr": "981548280",
+     "navn": "ORANGE CYBERDEFENSE NORWAY AS",
+     "kommune": "BÆRUM",
+     "ansatte": 44
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 181595,
+     "lonn": 94362,
+     "driftsresultat": -34419,
+     "aarsresultat": -27407,
+     "margin": -0.1895,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 181230,
+     "lonn": 66502,
+     "driftsresultat": -9065,
+     "aarsresultat": -9723,
+     "margin": -0.05,
+     "vekst": -0.002
+    },
+    "2025": {
+     "inntekt": 168657,
+     "lonn": 63852,
+     "driftsresultat": -17887,
+     "aarsresultat": -17919,
+     "margin": -0.1061,
+     "vekst": -0.0694
+    }
+   },
+   "lonnskost_per_ansatt": 1451,
+   "inntekt_per_ansatt": 3833,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0036
+  },
+  {
+   "navn": "Sonat",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 86,
+   "enheter": [
+    {
+     "orgnr": "819664102",
+     "navn": "SONAT CONSULTING BERGEN AS",
+     "kommune": "BERGEN",
+     "ansatte": 60
+    },
+    {
+     "orgnr": "919664088",
+     "navn": "SONAT CONSULTING OSLO AS",
+     "kommune": "OSLO",
+     "ansatte": 26
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 166114,
+     "lonn": 117426,
+     "driftsresultat": 18223,
+     "aarsresultat": 14526,
+     "margin": 0.1097,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 163372,
+     "lonn": 108941,
+     "driftsresultat": 13715,
+     "aarsresultat": 10724,
+     "margin": 0.0839,
+     "vekst": -0.0165
+    },
+    "2025": {
+     "inntekt": 168519,
+     "lonn": 111553,
+     "driftsresultat": 10255,
+     "aarsresultat": 8300,
+     "margin": 0.0609,
+     "vekst": 0.0315
+    }
+   },
+   "lonnskost_per_ansatt": 1297,
+   "inntekt_per_ansatt": 1960,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0036
+  },
+  {
+   "navn": "Oseberg Solutions",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 77,
+   "enheter": [
+    {
+     "orgnr": "981586581",
+     "navn": "OSEBERG SOLUTIONS AS",
+     "kommune": "TØNSBERG",
+     "ansatte": 77
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 144886,
+     "lonn": 69114,
+     "driftsresultat": 9055,
+     "aarsresultat": 6843,
+     "margin": 0.0625,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 163069,
+     "lonn": 83027,
+     "driftsresultat": 13934,
+     "aarsresultat": 10778,
+     "margin": 0.0854,
+     "vekst": 0.1255
+    },
+    "2025": {
+     "inntekt": 165679,
+     "lonn": 90076,
+     "driftsresultat": 6777,
+     "aarsresultat": 6312,
+     "margin": 0.0409,
+     "vekst": 0.016
+    }
+   },
+   "lonnskost_per_ansatt": 1170,
+   "inntekt_per_ansatt": 2152,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0035
+  },
+  {
+   "navn": "Logiq",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 67,
+   "enheter": [
+    {
+     "orgnr": "981012224",
+     "navn": "LOGIQ AS",
+     "kommune": "HALDEN",
+     "ansatte": 67
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 135453,
+     "lonn": 64434,
+     "driftsresultat": 35996,
+     "aarsresultat": 28570,
+     "margin": 0.2657,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 152056,
+     "lonn": 67709,
+     "driftsresultat": 46828,
+     "aarsresultat": 37140,
+     "margin": 0.308,
+     "vekst": 0.1226
+    },
+    "2025": {
+     "inntekt": 165423,
+     "lonn": 70096,
+     "driftsresultat": 57641,
+     "aarsresultat": 45181,
+     "margin": 0.3484,
+     "vekst": 0.0879
+    }
+   },
+   "lonnskost_per_ansatt": 1046,
+   "inntekt_per_ansatt": 2469,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0035
+  },
+  {
+   "navn": "Netlight",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 121,
+   "enheter": [
+    {
+     "orgnr": "991952802",
+     "navn": "NETLIGHT AS",
+     "kommune": "OSLO",
+     "ansatte": 121
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 195550,
+     "lonn": 136710,
+     "driftsresultat": 28472,
+     "aarsresultat": 22814,
+     "margin": 0.1456,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 175463,
+     "lonn": 141471,
+     "driftsresultat": 5498,
+     "aarsresultat": 5241,
+     "margin": 0.0313,
+     "vekst": -0.1027
+    },
+    "2025": {
+     "inntekt": 162509,
+     "lonn": 123310,
+     "driftsresultat": 10404,
+     "aarsresultat": 8535,
+     "margin": 0.064,
+     "vekst": -0.0738
+    }
+   },
+   "lonnskost_per_ansatt": 1019,
+   "inntekt_per_ansatt": 1343,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0034
+  },
+  {
+   "navn": "Redpill Linpro",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 93,
+   "enheter": [
+    {
+     "orgnr": "920208657",
+     "navn": "REDPILL LINPRO DEVOPS AS",
+     "kommune": "OSLO",
+     "ansatte": 40
+    },
+    {
+     "orgnr": "920188834",
+     "navn": "REDPILL LINPRO CLOUDOPS AS",
+     "kommune": "OSLO",
+     "ansatte": 33
+    },
+    {
+     "orgnr": "992184531",
+     "navn": "REDPILL LINPRO DEVELOPMENT SERVICES AS",
+     "kommune": "OSLO",
+     "ansatte": 20
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 159363,
+     "lonn": 104288,
+     "driftsresultat": 29782,
+     "aarsresultat": 23044,
+     "margin": 0.1869,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 155798,
+     "lonn": 106416,
+     "driftsresultat": 23915,
+     "aarsresultat": 18850,
+     "margin": 0.1535,
+     "vekst": -0.0224
+    },
+    "2025": {
+     "inntekt": 160461,
+     "lonn": 105741,
+     "driftsresultat": 27866,
+     "aarsresultat": 21150,
+     "margin": 0.1737,
+     "vekst": 0.0299
+    }
+   },
+   "lonnskost_per_ansatt": 1137,
+   "inntekt_per_ansatt": 1725,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0034
+  },
+  {
+   "navn": "Jprofessionals",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 65,
+   "enheter": [
+    {
+     "orgnr": "927889927",
+     "navn": "JPROFESSIONALS AS",
+     "kommune": "OSLO",
+     "ansatte": 65
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 144314,
+     "lonn": 102254,
+     "driftsresultat": 11614,
+     "aarsresultat": 9075,
+     "margin": 0.0805,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 143079,
+     "lonn": 95038,
+     "driftsresultat": 15282,
+     "aarsresultat": 12197,
+     "margin": 0.1068,
+     "vekst": -0.0086
+    },
+    "2025": {
+     "inntekt": 159378,
+     "lonn": 107238,
+     "driftsresultat": 15102,
+     "aarsresultat": 12098,
+     "margin": 0.0948,
+     "vekst": 0.1139
+    }
+   },
+   "lonnskost_per_ansatt": 1650,
+   "inntekt_per_ansatt": 2452,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0034
+  },
+  {
+   "navn": "Itverket",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 38,
+   "enheter": [
+    {
+     "orgnr": "981874714",
+     "navn": "ITVERKET AS",
+     "kommune": "OSLO",
+     "ansatte": 38
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 316460,
+     "lonn": 151802,
+     "driftsresultat": 163,
+     "aarsresultat": -43,
+     "margin": 0.0005,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 303447,
+     "lonn": 147124,
+     "driftsresultat": 2508,
+     "aarsresultat": 1495,
+     "margin": 0.0083,
+     "vekst": -0.0411
+    },
+    "2025": {
+     "inntekt": 158949,
+     "lonn": 115144,
+     "driftsresultat": -25001,
+     "aarsresultat": -20360,
+     "margin": -0.1573,
+     "vekst": -0.4762
+    }
+   },
+   "lonnskost_per_ansatt": null,
+   "inntekt_per_ansatt": null,
+   "ansatttall_usikkert": true,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0034
+  },
+  {
+   "navn": "Variant",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 86,
+   "enheter": [
+    {
+     "orgnr": "927035979",
+     "navn": "VARIANT OSLO AS",
+     "kommune": "OSLO",
+     "ansatte": 39
+    },
+    {
+     "orgnr": "920933408",
+     "navn": "VARIANT TRONDHEIM AS",
+     "kommune": "TRONDHEIM",
+     "ansatte": 28
+    },
+    {
+     "orgnr": "928534006",
+     "navn": "VARIANT BERGEN AS",
+     "kommune": "BERGEN",
+     "ansatte": 19
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 150748,
+     "lonn": 104691,
+     "driftsresultat": 3873,
+     "aarsresultat": 3072,
+     "margin": 0.0257,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 152541,
+     "lonn": 111072,
+     "driftsresultat": 6119,
+     "aarsresultat": 4831,
+     "margin": 0.0401,
+     "vekst": 0.0119
+    },
+    "2025": {
+     "inntekt": 156546,
+     "lonn": 120057,
+     "driftsresultat": -2038,
+     "aarsresultat": -1624,
+     "margin": -0.013,
+     "vekst": 0.0263
+    }
+   },
+   "lonnskost_per_ansatt": 1396,
+   "inntekt_per_ansatt": 1820,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0033
+  },
+  {
+   "navn": "Sprint Consulting",
+   "kategori": "Rådgivningshus",
+   "verifisert": false,
+   "ansatte": 91,
+   "enheter": [
+    {
+     "orgnr": "988497711",
+     "navn": "SPRINT CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 91
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 119417,
+     "lonn": 90478,
+     "driftsresultat": 16151,
+     "aarsresultat": 12737,
+     "margin": 0.1353,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 143304,
+     "lonn": 102275,
+     "driftsresultat": 20340,
+     "aarsresultat": 15910,
+     "margin": 0.1419,
+     "vekst": 0.2
+    },
+    "2025": {
+     "inntekt": 147855,
+     "lonn": 110275,
+     "driftsresultat": 16210,
+     "aarsresultat": 12529,
+     "margin": 0.1096,
+     "vekst": 0.0318
+    }
+   },
+   "lonnskost_per_ansatt": 1212,
+   "inntekt_per_ansatt": 1625,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Point Taken",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 80,
+   "enheter": [
+    {
+     "orgnr": "912721825",
+     "navn": "POINT TAKEN AS",
+     "kommune": "OSLO",
+     "ansatte": 80
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 116401,
+     "lonn": 71863,
+     "driftsresultat": 10709,
+     "aarsresultat": 8640,
+     "margin": 0.092,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 130691,
+     "lonn": 80707,
+     "driftsresultat": 11405,
+     "aarsresultat": 9285,
+     "margin": 0.0873,
+     "vekst": 0.1228
+    },
+    "2025": {
+     "inntekt": 146500,
+     "lonn": 91952,
+     "driftsresultat": 13957,
+     "aarsresultat": 11259,
+     "margin": 0.0953,
+     "vekst": 0.121
+    }
+   },
+   "lonnskost_per_ansatt": 1149,
+   "inntekt_per_ansatt": 1831,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0031
+  },
+  {
+   "navn": "Munu",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 93,
+   "enheter": [
+    {
+     "orgnr": "925095435",
+     "navn": "MUNU AS",
+     "kommune": "STAVANGER",
+     "ansatte": 93
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 96409,
+     "lonn": 50936,
+     "driftsresultat": 3500,
+     "aarsresultat": 2296,
+     "margin": 0.0363,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 108973,
+     "lonn": 60162,
+     "driftsresultat": -4377,
+     "aarsresultat": -1096,
+     "margin": -0.0402,
+     "vekst": 0.1303
+    },
+    "2025": {
+     "inntekt": 136987,
+     "lonn": 79028,
+     "driftsresultat": -9790,
+     "aarsresultat": -7724,
+     "margin": -0.0715,
+     "vekst": 0.2571
+    }
+   },
+   "lonnskost_per_ansatt": 850,
+   "inntekt_per_ansatt": 1473,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0029
+  },
+  {
+   "navn": "Prosesspilotene",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 70,
+   "enheter": [
+    {
+     "orgnr": "897658372",
+     "navn": "PROSESSPILOTENE AS",
+     "kommune": "ASKER",
+     "ansatte": 70
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 152456,
+     "lonn": 107705,
+     "driftsresultat": 8965,
+     "aarsresultat": 7441,
+     "margin": 0.0588,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 144177,
+     "lonn": 111580,
+     "driftsresultat": -6357,
+     "aarsresultat": -4330,
+     "margin": -0.0441,
+     "vekst": -0.0543
+    },
+    "2025": {
+     "inntekt": 136388,
+     "lonn": 100671,
+     "driftsresultat": -4485,
+     "aarsresultat": -3185,
+     "margin": -0.0329,
+     "vekst": -0.054
+    }
+   },
+   "lonnskost_per_ansatt": 1438,
+   "inntekt_per_ansatt": 1948,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0029
+  },
+  {
+   "navn": "Kraftlauget",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 71,
+   "enheter": [
+    {
+     "orgnr": "922835071",
+     "navn": "KRAFTLAUGET AS",
+     "kommune": "BERGEN",
+     "ansatte": 71
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 69829,
+     "lonn": 54651,
+     "driftsresultat": 10056,
+     "aarsresultat": 7859,
+     "margin": 0.144,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 83658,
+     "lonn": 58502,
+     "driftsresultat": 15038,
+     "aarsresultat": 11449,
+     "margin": 0.1798,
+     "vekst": 0.198
+    },
+    "2025": {
+     "inntekt": 134556,
+     "lonn": 102122,
+     "driftsresultat": 7122,
+     "aarsresultat": 5688,
+     "margin": 0.0529,
+     "vekst": 0.6084
+    }
+   },
+   "lonnskost_per_ansatt": 1438,
+   "inntekt_per_ansatt": 1895,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0028
+  },
+  {
+   "navn": "Precis Digital",
+   "kategori": "Data og analyse",
+   "verifisert": true,
+   "ansatte": 31,
+   "enheter": [
+    {
+     "orgnr": "914744504",
+     "navn": "PRECIS DIGITAL AS",
+     "kommune": "OSLO",
+     "ansatte": 31
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 131740,
+     "lonn": 43629,
+     "driftsresultat": 4086,
+     "aarsresultat": 3807,
+     "margin": 0.031,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 105744,
+     "lonn": 38378,
+     "driftsresultat": -2527,
+     "aarsresultat": -1454,
+     "margin": -0.0239,
+     "vekst": -0.1973
+    },
+    "2025": {
+     "inntekt": 130155,
+     "lonn": 33174,
+     "driftsresultat": 11655,
+     "aarsresultat": 10095,
+     "margin": 0.0896,
+     "vekst": 0.2308
+    }
+   },
+   "lonnskost_per_ansatt": 1070,
+   "inntekt_per_ansatt": 4199,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0027
+  },
+  {
+   "navn": "Egde",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 78,
+   "enheter": [
+    {
+     "orgnr": "917081859",
+     "navn": "EGDE CONSULTING AS",
+     "kommune": "GRIMSTAD",
+     "ansatte": 78
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 149568,
+     "lonn": 103085,
+     "driftsresultat": 7101,
+     "aarsresultat": 5134,
+     "margin": 0.0475,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 150062,
+     "lonn": 110478,
+     "driftsresultat": -10844,
+     "aarsresultat": -8585,
+     "margin": -0.0723,
+     "vekst": 0.0033
+    },
+    "2025": {
+     "inntekt": 129681,
+     "lonn": 92443,
+     "driftsresultat": 8632,
+     "aarsresultat": 6884,
+     "margin": 0.0666,
+     "vekst": -0.1358
+    }
+   },
+   "lonnskost_per_ansatt": 1185,
+   "inntekt_per_ansatt": 1663,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0027
+  },
+  {
+   "navn": "Akkodis",
+   "kategori": "Global leveranse",
+   "verifisert": false,
+   "ansatte": 77,
+   "enheter": [
+    {
+     "orgnr": "980665895",
+     "navn": "AKKODIS NORWAY R&D SERVICES AS",
+     "kommune": "BÆRUM",
+     "ansatte": 77
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 158449,
+     "lonn": 111661,
+     "driftsresultat": 14121,
+     "aarsresultat": 11189,
+     "margin": 0.0891,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 135765,
+     "lonn": 99257,
+     "driftsresultat": 7642,
+     "aarsresultat": 6074,
+     "margin": 0.0563,
+     "vekst": -0.1432
+    },
+    "2025": {
+     "inntekt": 126878,
+     "lonn": 89364,
+     "driftsresultat": 5503,
+     "aarsresultat": 4973,
+     "margin": 0.0434,
+     "vekst": -0.0655
+    }
+   },
+   "lonnskost_per_ansatt": 1161,
+   "inntekt_per_ansatt": 1648,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0027
+  },
+  {
+   "navn": "Coretrek",
+   "kategori": "Digital og design",
+   "verifisert": false,
+   "ansatte": 73,
+   "enheter": [
+    {
+     "orgnr": "984587406",
+     "navn": "CORETREK AS",
+     "kommune": "SANDEFJORD",
+     "ansatte": 73
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 120402,
+     "lonn": 72330,
+     "driftsresultat": 17470,
+     "aarsresultat": 14629,
+     "margin": 0.1451,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 116051,
+     "lonn": 76904,
+     "driftsresultat": 12351,
+     "aarsresultat": 10397,
+     "margin": 0.1064,
+     "vekst": -0.0361
+    },
+    "2025": {
+     "inntekt": 120198,
+     "lonn": 78175,
+     "driftsresultat": 6693,
+     "aarsresultat": 6059,
+     "margin": 0.0557,
+     "vekst": 0.0357
+    }
+   },
+   "lonnskost_per_ansatt": 1071,
+   "inntekt_per_ansatt": 1647,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0025
+  },
+  {
+   "navn": "ECIT Capstone",
+   "kategori": "Microsoft og ERP",
+   "verifisert": false,
+   "ansatte": 61,
+   "enheter": [
+    {
+     "orgnr": "957345808",
+     "navn": "ECIT CAPSTONE AS",
+     "kommune": "BÆRUM",
+     "ansatte": 61
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 96778,
+     "lonn": 44781,
+     "driftsresultat": 17612,
+     "aarsresultat": 23246,
+     "margin": 0.182,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 102335,
+     "lonn": 44977,
+     "driftsresultat": 20979,
+     "aarsresultat": 17293,
+     "margin": 0.205,
+     "vekst": 0.0574
+    },
+    "2025": {
+     "inntekt": 115834,
+     "lonn": 56961,
+     "driftsresultat": 17899,
+     "aarsresultat": 13707,
+     "margin": 0.1545,
+     "vekst": 0.1319
+    }
+   },
+   "lonnskost_per_ansatt": 934,
+   "inntekt_per_ansatt": 1899,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0024
+  },
+  {
+   "navn": "Blank",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 58,
+   "enheter": [
+    {
+     "orgnr": "915433073",
+     "navn": "BLANK AS",
+     "kommune": "OSLO",
+     "ansatte": 58
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 101492,
+     "lonn": 64545,
+     "driftsresultat": -2377,
+     "aarsresultat": -1543,
+     "margin": -0.0234,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 104758,
+     "lonn": 65189,
+     "driftsresultat": -2534,
+     "aarsresultat": -1840,
+     "margin": -0.0242,
+     "vekst": 0.0322
+    },
+    "2025": {
+     "inntekt": 112221,
+     "lonn": 66466,
+     "driftsresultat": 484,
+     "aarsresultat": 336,
+     "margin": 0.0043,
+     "vekst": 0.0712
+    }
+   },
+   "lonnskost_per_ansatt": 1146,
+   "inntekt_per_ansatt": 1935,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0024
+  },
+  {
+   "navn": "Finexa IT Solutions",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 34,
+   "enheter": [
+    {
+     "orgnr": "929574265",
+     "navn": "FINEXA IT SOLUTIONS AS",
+     "kommune": "ØVRE EIKER",
+     "ansatte": 34
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 78824,
+     "lonn": 17959,
+     "driftsresultat": 33683,
+     "aarsresultat": 26531,
+     "margin": 0.4273,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 100582,
+     "lonn": 21274,
+     "driftsresultat": 37403,
+     "aarsresultat": 30137,
+     "margin": 0.3719,
+     "vekst": 0.276
+    },
+    "2025": {
+     "inntekt": 109462,
+     "lonn": 24037,
+     "driftsresultat": 38167,
+     "aarsresultat": 30511,
+     "margin": 0.3487,
+     "vekst": 0.0883
+    }
+   },
+   "lonnskost_per_ansatt": 707,
+   "inntekt_per_ansatt": 3219,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0023
+  },
+  {
+   "navn": "Defendable",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 96,
+   "enheter": [
+    {
+     "orgnr": "925880140",
+     "navn": "DEFENDABLE AS",
+     "kommune": "OSLO",
+     "ansatte": 96
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 63523,
+     "lonn": 81825,
+     "driftsresultat": -51819,
+     "aarsresultat": -50980,
+     "margin": -0.8157,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 81540,
+     "lonn": 85147,
+     "driftsresultat": -42785,
+     "aarsresultat": -42330,
+     "margin": -0.5247,
+     "vekst": 0.2836
+    },
+    "2025": {
+     "inntekt": 108672,
+     "lonn": 87731,
+     "driftsresultat": -26486,
+     "aarsresultat": -10317,
+     "margin": -0.2437,
+     "vekst": 0.3327
+    }
+   },
+   "lonnskost_per_ansatt": 914,
+   "inntekt_per_ansatt": 1132,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0023
+  },
+  {
+   "navn": "Olavstoppen",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 81,
+   "enheter": [
+    {
+     "orgnr": "995359448",
+     "navn": "OLAVSTOPPEN AS",
+     "kommune": "STAVANGER",
+     "ansatte": 81
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 93538,
+     "lonn": 70972,
+     "driftsresultat": 13011,
+     "aarsresultat": 10453,
+     "margin": 0.1391,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 109645,
+     "lonn": 80563,
+     "driftsresultat": 14709,
+     "aarsresultat": 12212,
+     "margin": 0.1341,
+     "vekst": 0.1722
+    },
+    "2025": {
+     "inntekt": 108336,
+     "lonn": 81106,
+     "driftsresultat": 13852,
+     "aarsresultat": 11566,
+     "margin": 0.1279,
+     "vekst": -0.0119
+    }
+   },
+   "lonnskost_per_ansatt": 1001,
+   "inntekt_per_ansatt": 1337,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0023
+  },
+  {
+   "navn": "Forse",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 43,
+   "enheter": [
+    {
+     "orgnr": "914951852",
+     "navn": "FORSE AS",
+     "kommune": "OSLO",
+     "ansatte": 43
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 71559,
+     "lonn": 49886,
+     "driftsresultat": 10196,
+     "aarsresultat": 8037,
+     "margin": 0.1425,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 94976,
+     "lonn": 66094,
+     "driftsresultat": 16362,
+     "aarsresultat": 12834,
+     "margin": 0.1723,
+     "vekst": 0.3272
+    },
+    "2025": {
+     "inntekt": 108189,
+     "lonn": 72248,
+     "driftsresultat": 20246,
+     "aarsresultat": 16387,
+     "margin": 0.1871,
+     "vekst": 0.1391
+    }
+   },
+   "lonnskost_per_ansatt": 1680,
+   "inntekt_per_ansatt": 2516,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0023
+  },
+  {
+   "navn": "Antire",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 71,
+   "enheter": [
+    {
+     "orgnr": "932436787",
+     "navn": "ANTIRE AS",
+     "kommune": "OSLO",
+     "ansatte": 71
+    }
+   ],
+   "aar": {
+    "2025": {
+     "inntekt": 106496,
+     "lonn": 95425,
+     "driftsresultat": -27914,
+     "aarsresultat": -29576,
+     "margin": -0.2621,
+     "vekst": null
+    }
+   },
+   "lonnskost_per_ansatt": 1344,
+   "inntekt_per_ansatt": 1500,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0022
+  },
+  {
+   "navn": "Gapit Nordics",
+   "kategori": "Microsoft og ERP",
+   "verifisert": false,
+   "ansatte": 61,
+   "enheter": [
+    {
+     "orgnr": "917567204",
+     "navn": "GAPIT NORDICS AS",
+     "kommune": "DRAMMEN",
+     "ansatte": 61
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 75293,
+     "lonn": 32584,
+     "driftsresultat": 7677,
+     "aarsresultat": 6846,
+     "margin": 0.102,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 123477,
+     "lonn": 53866,
+     "driftsresultat": 9519,
+     "aarsresultat": 7693,
+     "margin": 0.0771,
+     "vekst": 0.64
+    },
+    "2025": {
+     "inntekt": 102789,
+     "lonn": 62267,
+     "driftsresultat": 1881,
+     "aarsresultat": 1641,
+     "margin": 0.0183,
+     "vekst": -0.1675
+    }
+   },
+   "lonnskost_per_ansatt": 1021,
+   "inntekt_per_ansatt": 1685,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0022
+  },
+  {
+   "navn": "Trifid",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 53,
+   "enheter": [
+    {
+     "orgnr": "920902928",
+     "navn": "TRIFID NORGE AS",
+     "kommune": "OSLO",
+     "ansatte": 53
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 93260,
+     "lonn": 76321,
+     "driftsresultat": 1245,
+     "aarsresultat": 1006,
+     "margin": 0.0134,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 91238,
+     "lonn": 77796,
+     "driftsresultat": 382,
+     "aarsresultat": 228,
+     "margin": 0.0042,
+     "vekst": -0.0217
+    },
+    "2025": {
+     "inntekt": 100597,
+     "lonn": 77447,
+     "driftsresultat": 5534,
+     "aarsresultat": 4520,
+     "margin": 0.055,
+     "vekst": 0.1026
+    }
+   },
+   "lonnskost_per_ansatt": 1461,
+   "inntekt_per_ansatt": 1898,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0021
+  },
+  {
+   "navn": "Scelto",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 40,
+   "enheter": [
+    {
+     "orgnr": "914757274",
+     "navn": "SCELTO AS",
+     "kommune": "OSLO",
+     "ansatte": 40
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 78022,
+     "lonn": 61136,
+     "driftsresultat": 10984,
+     "aarsresultat": 8490,
+     "margin": 0.1408,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 92179,
+     "lonn": 71275,
+     "driftsresultat": 15171,
+     "aarsresultat": 11937,
+     "margin": 0.1646,
+     "vekst": 0.1815
+    },
+    "2025": {
+     "inntekt": 100465,
+     "lonn": 76394,
+     "driftsresultat": 14612,
+     "aarsresultat": 11407,
+     "margin": 0.1454,
+     "vekst": 0.0899
+    }
+   },
+   "lonnskost_per_ansatt": 1910,
+   "inntekt_per_ansatt": 2512,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0021
+  },
+  {
+   "navn": "Kommando",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 27,
+   "enheter": [
+    {
+     "orgnr": "919637226",
+     "navn": "KOMMANDO AS",
+     "kommune": "OSLO",
+     "ansatte": 27
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 55991,
+     "lonn": 26107,
+     "driftsresultat": 5725,
+     "aarsresultat": 4460,
+     "margin": 0.1023,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 79902,
+     "lonn": 33399,
+     "driftsresultat": 10459,
+     "aarsresultat": 7824,
+     "margin": 0.1309,
+     "vekst": 0.427
+    },
+    "2025": {
+     "inntekt": 99557,
+     "lonn": 35614,
+     "driftsresultat": 18367,
+     "aarsresultat": 13858,
+     "margin": 0.1845,
+     "vekst": 0.246
+    }
+   },
+   "lonnskost_per_ansatt": 1319,
+   "inntekt_per_ansatt": 3687,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0021
+  },
+  {
+   "navn": "Solea",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 64,
+   "enheter": [
+    {
+     "orgnr": "934110943",
+     "navn": "SOLEA AS",
+     "kommune": "BERGEN",
+     "ansatte": 64
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 110690,
+     "lonn": 84117,
+     "driftsresultat": 508,
+     "aarsresultat": 471,
+     "margin": 0.0046,
+     "vekst": null
+    },
+    "2025": {
+     "inntekt": 96925,
+     "lonn": 75240,
+     "driftsresultat": 550,
+     "aarsresultat": 436,
+     "margin": 0.0057,
+     "vekst": -0.1243
+    }
+   },
+   "lonnskost_per_ansatt": 1176,
+   "inntekt_per_ansatt": 1514,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.002
+  },
+  {
+   "navn": "Netlife Design",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 57,
+   "enheter": [
+    {
+     "orgnr": "916898908",
+     "navn": "NETLIFE DESIGN AS",
+     "kommune": "OSLO",
+     "ansatte": 57
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 103436,
+     "lonn": 61101,
+     "driftsresultat": -1930,
+     "aarsresultat": -994,
+     "margin": -0.0187,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 92815,
+     "lonn": 54709,
+     "driftsresultat": -711,
+     "aarsresultat": -274,
+     "margin": -0.0077,
+     "vekst": -0.1027
+    },
+    "2025": {
+     "inntekt": 93175,
+     "lonn": 55290,
+     "driftsresultat": -1735,
+     "aarsresultat": -104,
+     "margin": -0.0186,
+     "vekst": 0.0039
+    }
+   },
+   "lonnskost_per_ansatt": 970,
+   "inntekt_per_ansatt": 1635,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.002
+  },
+  {
+   "navn": "Boitano",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 53,
+   "enheter": [
+    {
+     "orgnr": "931549383",
+     "navn": "BOITANO OSLO AS",
+     "kommune": "OSLO",
+     "ansatte": 53
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 111166,
+     "lonn": 94284,
+     "driftsresultat": 7828,
+     "aarsresultat": -828,
+     "margin": 0.0704,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 113830,
+     "lonn": 96141,
+     "driftsresultat": 5963,
+     "aarsresultat": 3813,
+     "margin": 0.0524,
+     "vekst": 0.024
+    },
+    "2025": {
+     "inntekt": 92990,
+     "lonn": 80012,
+     "driftsresultat": 2641,
+     "aarsresultat": 1105,
+     "margin": 0.0284,
+     "vekst": -0.1831
+    }
+   },
+   "lonnskost_per_ansatt": 1510,
+   "inntekt_per_ansatt": 1755,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.002
+  },
+  {
+   "navn": "Teleplan Consulting",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 21,
+   "enheter": [
+    {
+     "orgnr": "980396711",
+     "navn": "TELEPLAN CONSULTING AS",
+     "kommune": "BÆRUM",
+     "ansatte": 21
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 73196,
+     "lonn": 37094,
+     "driftsresultat": 2754,
+     "aarsresultat": 2671,
+     "margin": 0.0376,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 74936,
+     "lonn": 43833,
+     "driftsresultat": -12467,
+     "aarsresultat": -9350,
+     "margin": -0.1664,
+     "vekst": 0.0238
+    },
+    "2025": {
+     "inntekt": 92022,
+     "lonn": 44631,
+     "driftsresultat": -5515,
+     "aarsresultat": -4417,
+     "margin": -0.0599,
+     "vekst": 0.228
+    }
+   },
+   "lonnskost_per_ansatt": 2125,
+   "inntekt_per_ansatt": 4382,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0019
+  },
+  {
+   "navn": "Novanet",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 39,
+   "enheter": [
+    {
+     "orgnr": "995272776",
+     "navn": "NOVANET AS",
+     "kommune": "OSLO",
+     "ansatte": 39
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 81534,
+     "lonn": 50392,
+     "driftsresultat": 13889,
+     "aarsresultat": 11166,
+     "margin": 0.1703,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 97542,
+     "lonn": 56079,
+     "driftsresultat": 15298,
+     "aarsresultat": 12503,
+     "margin": 0.1568,
+     "vekst": 0.1963
+    },
+    "2025": {
+     "inntekt": 89662,
+     "lonn": 57707,
+     "driftsresultat": 13327,
+     "aarsresultat": 10858,
+     "margin": 0.1486,
+     "vekst": -0.0808
+    }
+   },
+   "lonnskost_per_ansatt": 1480,
+   "inntekt_per_ansatt": 2299,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0019
+  },
+  {
+   "navn": "Halogen",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 45,
+   "enheter": [
+    {
+     "orgnr": "985041954",
+     "navn": "HALOGEN AS",
+     "kommune": "OSLO",
+     "ansatte": 45
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 100234,
+     "lonn": 76071,
+     "driftsresultat": 5424,
+     "aarsresultat": 4608,
+     "margin": 0.0541,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 90597,
+     "lonn": 71634,
+     "driftsresultat": 4843,
+     "aarsresultat": 4412,
+     "margin": 0.0535,
+     "vekst": -0.0961
+    },
+    "2025": {
+     "inntekt": 88126,
+     "lonn": 72476,
+     "driftsresultat": -2646,
+     "aarsresultat": -1809,
+     "margin": -0.03,
+     "vekst": -0.0273
+    }
+   },
+   "lonnskost_per_ansatt": 1611,
+   "inntekt_per_ansatt": 1958,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0019
+  },
+  {
+   "navn": "Intuvio",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 43,
+   "enheter": [
+    {
+     "orgnr": "979153953",
+     "navn": "INTUVIO AS",
+     "kommune": "SARPSBORG",
+     "ansatte": 43
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 80633,
+     "lonn": 38961,
+     "driftsresultat": 10424,
+     "aarsresultat": 6501,
+     "margin": 0.1293,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 91015,
+     "lonn": 43209,
+     "driftsresultat": 13612,
+     "aarsresultat": 11176,
+     "margin": 0.1496,
+     "vekst": 0.1288
+    },
+    "2025": {
+     "inntekt": 87924,
+     "lonn": 47786,
+     "driftsresultat": 8155,
+     "aarsresultat": 6902,
+     "margin": 0.0928,
+     "vekst": -0.034
+    }
+   },
+   "lonnskost_per_ansatt": 1111,
+   "inntekt_per_ansatt": 2045,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0019
+  },
+  {
+   "navn": "Agens",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 49,
+   "enheter": [
+    {
+     "orgnr": "988669695",
+     "navn": "AGENS AS",
+     "kommune": "OSLO",
+     "ansatte": 49
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 84463,
+     "lonn": 59414,
+     "driftsresultat": 8569,
+     "aarsresultat": 6094,
+     "margin": 0.1014,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 88667,
+     "lonn": 61542,
+     "driftsresultat": 10023,
+     "aarsresultat": 11201,
+     "margin": 0.113,
+     "vekst": 0.0498
+    },
+    "2025": {
+     "inntekt": 87909,
+     "lonn": 61784,
+     "driftsresultat": 9867,
+     "aarsresultat": 6996,
+     "margin": 0.1122,
+     "vekst": -0.0086
+    }
+   },
+   "lonnskost_per_ansatt": 1261,
+   "inntekt_per_ansatt": 1794,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0019
+  },
+  {
+   "navn": "Techfolk",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 49,
+   "enheter": [
+    {
+     "orgnr": "923842527",
+     "navn": "TECHFOLK AS",
+     "kommune": "OSLO",
+     "ansatte": 49
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 69427,
+     "lonn": 52742,
+     "driftsresultat": 12757,
+     "aarsresultat": 10121,
+     "margin": 0.1837,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 78714,
+     "lonn": 61302,
+     "driftsresultat": 12608,
+     "aarsresultat": 10260,
+     "margin": 0.1602,
+     "vekst": 0.1338
+    },
+    "2025": {
+     "inntekt": 87245,
+     "lonn": 65462,
+     "driftsresultat": 10918,
+     "aarsresultat": 8940,
+     "margin": 0.1251,
+     "vekst": 0.1084
+    }
+   },
+   "lonnskost_per_ansatt": 1336,
+   "inntekt_per_ansatt": 1781,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0018
+  },
+  {
+   "navn": "Implement Consulting Group",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 44,
+   "enheter": [
+    {
+     "orgnr": "997336402",
+     "navn": "IMPLEMENT CONSULTING GROUP AS",
+     "kommune": "OSLO",
+     "ansatte": 44
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 45023,
+     "lonn": 31471,
+     "driftsresultat": 972,
+     "aarsresultat": 476,
+     "margin": 0.0216,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 78600,
+     "lonn": 51583,
+     "driftsresultat": 8362,
+     "aarsresultat": 6170,
+     "margin": 0.1064,
+     "vekst": 0.7458
+    },
+    "2025": {
+     "inntekt": 87127,
+     "lonn": 61467,
+     "driftsresultat": 657,
+     "aarsresultat": 1511,
+     "margin": 0.0075,
+     "vekst": 0.1085
+    }
+   },
+   "lonnskost_per_ansatt": 1397,
+   "inntekt_per_ansatt": 1980,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Sicra",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 54,
+   "enheter": [
+    {
+     "orgnr": "932538067",
+     "navn": "SICRA AS",
+     "kommune": "OSLO",
+     "ansatte": 54
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 68718,
+     "lonn": 47404,
+     "driftsresultat": 1447,
+     "aarsresultat": 901,
+     "margin": 0.0211,
+     "vekst": null
+    },
+    "2025": {
+     "inntekt": 84494,
+     "lonn": 58255,
+     "driftsresultat": -18098,
+     "aarsresultat": -19041,
+     "margin": -0.2142,
+     "vekst": 0.2296
+    }
+   },
+   "lonnskost_per_ansatt": 1079,
+   "inntekt_per_ansatt": 1565,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0018
+  },
+  {
+   "navn": "LTIMindtree",
+   "kategori": "Global leveranse",
+   "verifisert": true,
+   "ansatte": 26,
+   "enheter": [
+    {
+     "orgnr": "921974248",
+     "navn": "LTIMINDTREE NORGE AS",
+     "kommune": "BÆRUM",
+     "ansatte": 26
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 129952,
+     "lonn": 47706,
+     "driftsresultat": 3131,
+     "aarsresultat": 4299,
+     "margin": 0.0241,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 100285,
+     "lonn": 50321,
+     "driftsresultat": 3271,
+     "aarsresultat": 3276,
+     "margin": 0.0326,
+     "vekst": -0.2283
+    },
+    "2025": {
+     "inntekt": 84202,
+     "lonn": 49073,
+     "driftsresultat": 3958,
+     "aarsresultat": 2911,
+     "margin": 0.047,
+     "vekst": -0.1604
+    }
+   },
+   "lonnskost_per_ansatt": 1887,
+   "inntekt_per_ansatt": 3239,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": 0.0018
+  },
+  {
+   "navn": "Veni",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 45,
+   "enheter": [
+    {
+     "orgnr": "999615678",
+     "navn": "VENI AS",
+     "kommune": "STAVANGER",
+     "ansatte": 45
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 141080,
+     "lonn": 75244,
+     "driftsresultat": -18226,
+     "aarsresultat": -30593,
+     "margin": -0.1292,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 102909,
+     "lonn": 65842,
+     "driftsresultat": -14585,
+     "aarsresultat": -15955,
+     "margin": -0.1417,
+     "vekst": -0.2706
+    },
+    "2025": {
+     "inntekt": 84161,
+     "lonn": 49663,
+     "driftsresultat": -9955,
+     "aarsresultat": -2766,
+     "margin": -0.1183,
+     "vekst": -0.1822
+    }
+   },
+   "lonnskost_per_ansatt": 1104,
+   "inntekt_per_ansatt": 1870,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0018
+  },
+  {
+   "navn": "PA Consulting",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 44,
+   "enheter": [
+    {
+     "orgnr": "920413382",
+     "navn": "PA Consulting Group AS",
+     "kommune": "OSLO",
+     "ansatte": 44
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 105515,
+     "lonn": 79573,
+     "driftsresultat": -14164,
+     "aarsresultat": -13962,
+     "margin": -0.1342,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 87012,
+     "lonn": 54923,
+     "driftsresultat": 2003,
+     "aarsresultat": 1458,
+     "margin": 0.023,
+     "vekst": -0.1754
+    },
+    "2025": {
+     "inntekt": 83625,
+     "lonn": 59172,
+     "driftsresultat": -4379,
+     "aarsresultat": -3144,
+     "margin": -0.0524,
+     "vekst": -0.0389
+    }
+   },
+   "lonnskost_per_ansatt": 1345,
+   "inntekt_per_ansatt": 1901,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Emlogic",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 57,
+   "enheter": [
+    {
+     "orgnr": "926408739",
+     "navn": "EMLOGIC AS",
+     "kommune": "ASKER",
+     "ansatte": 57
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 55769,
+     "lonn": 42151,
+     "driftsresultat": 7928,
+     "aarsresultat": 6257,
+     "margin": 0.1422,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 66731,
+     "lonn": 52381,
+     "driftsresultat": 6808,
+     "aarsresultat": 5506,
+     "margin": 0.102,
+     "vekst": 0.1966
+    },
+    "2025": {
+     "inntekt": 83581,
+     "lonn": 63688,
+     "driftsresultat": 11298,
+     "aarsresultat": 9136,
+     "margin": 0.1352,
+     "vekst": 0.2525
+    }
+   },
+   "lonnskost_per_ansatt": 1117,
+   "inntekt_per_ansatt": 1466,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0018
+  },
+  {
+   "navn": "Fraktal",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 55,
+   "enheter": [
+    {
+     "orgnr": "914221110",
+     "navn": "FRAKTAL NORGE AS",
+     "kommune": "SANDNES",
+     "ansatte": 55
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 64698,
+     "lonn": 48673,
+     "driftsresultat": 8725,
+     "aarsresultat": 6879,
+     "margin": 0.1349,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 76157,
+     "lonn": 59445,
+     "driftsresultat": 7874,
+     "aarsresultat": 6236,
+     "margin": 0.1034,
+     "vekst": 0.1771
+    },
+    "2025": {
+     "inntekt": 83036,
+     "lonn": 63769,
+     "driftsresultat": 11023,
+     "aarsresultat": 8624,
+     "margin": 0.1327,
+     "vekst": 0.0903
+    }
+   },
+   "lonnskost_per_ansatt": 1159,
+   "inntekt_per_ansatt": 1510,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0018
+  },
+  {
+   "navn": "Clave Consulting",
+   "kategori": "Rådgivningshus",
+   "verifisert": false,
+   "ansatte": 42,
+   "enheter": [
+    {
+     "orgnr": "933567389",
+     "navn": "CLAVE CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 42
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 82601,
+     "lonn": 65278,
+     "driftsresultat": 12164,
+     "aarsresultat": 15943,
+     "margin": 0.1473,
+     "vekst": null
+    },
+    "2025": {
+     "inntekt": 81634,
+     "lonn": 64614,
+     "driftsresultat": 8387,
+     "aarsresultat": 8397,
+     "margin": 0.1027,
+     "vekst": -0.0117
+    }
+   },
+   "lonnskost_per_ansatt": 1538,
+   "inntekt_per_ansatt": 1944,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Fink",
+   "kategori": "Digital og design",
+   "verifisert": false,
+   "ansatte": 51,
+   "enheter": [
+    {
+     "orgnr": "917279934",
+     "navn": "FINK AS",
+     "kommune": "OSLO",
+     "ansatte": 51
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 75773,
+     "lonn": 64852,
+     "driftsresultat": -403,
+     "aarsresultat": 13,
+     "margin": -0.0053,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 73186,
+     "lonn": 60704,
+     "driftsresultat": 1608,
+     "aarsresultat": 1579,
+     "margin": 0.022,
+     "vekst": -0.0341
+    },
+    "2025": {
+     "inntekt": 80633,
+     "lonn": 66366,
+     "driftsresultat": 1998,
+     "aarsresultat": 1897,
+     "margin": 0.0248,
+     "vekst": 0.1018
+    }
+   },
+   "lonnskost_per_ansatt": 1301,
+   "inntekt_per_ansatt": 1581,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0017
+  },
+  {
+   "navn": "S5 Consulting",
+   "kategori": "Microsoft og ERP",
+   "verifisert": false,
+   "ansatte": 22,
+   "enheter": [
+    {
+     "orgnr": "991774866",
+     "navn": "S5 CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 22
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 71684,
+     "lonn": 34900,
+     "driftsresultat": 8315,
+     "aarsresultat": 5357,
+     "margin": 0.116,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 74934,
+     "lonn": 37019,
+     "driftsresultat": 8456,
+     "aarsresultat": 9831,
+     "margin": 0.1128,
+     "vekst": 0.0453
+    },
+    "2025": {
+     "inntekt": 79653,
+     "lonn": 44271,
+     "driftsresultat": 8413,
+     "aarsresultat": 8653,
+     "margin": 0.1056,
+     "vekst": 0.063
+    }
+   },
+   "lonnskost_per_ansatt": 2012,
+   "inntekt_per_ansatt": 3621,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0017
+  },
+  {
+   "navn": "Consid",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 47,
+   "enheter": [
+    {
+     "orgnr": "927302942",
+     "navn": "CONSID AS",
+     "kommune": "OSLO",
+     "ansatte": 47
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 42842,
+     "lonn": 27130,
+     "driftsresultat": 253,
+     "aarsresultat": 51,
+     "margin": 0.0059,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 50678,
+     "lonn": 25825,
+     "driftsresultat": 297,
+     "aarsresultat": 25,
+     "margin": 0.0059,
+     "vekst": 0.1829
+    },
+    "2025": {
+     "inntekt": 79639,
+     "lonn": 37369,
+     "driftsresultat": 3900,
+     "aarsresultat": 2839,
+     "margin": 0.049,
+     "vekst": 0.5715
+    }
+   },
+   "lonnskost_per_ansatt": 795,
+   "inntekt_per_ansatt": 1694,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0017
+  },
+  {
+   "navn": "Nimtech Consult",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 50,
+   "enheter": [
+    {
+     "orgnr": "928938832",
+     "navn": "NIMTECH CONSULT AS",
+     "kommune": "OSLO",
+     "ansatte": 50
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 39051,
+     "lonn": 23850,
+     "driftsresultat": 6265,
+     "aarsresultat": 4872,
+     "margin": 0.1604,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 66088,
+     "lonn": 39655,
+     "driftsresultat": 6293,
+     "aarsresultat": 4702,
+     "margin": 0.0952,
+     "vekst": 0.6923
+    },
+    "2025": {
+     "inntekt": 77426,
+     "lonn": 44209,
+     "driftsresultat": 10459,
+     "aarsresultat": 7167,
+     "margin": 0.1351,
+     "vekst": 0.1716
+    }
+   },
+   "lonnskost_per_ansatt": 884,
+   "inntekt_per_ansatt": 1549,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0016
+  },
+  {
+   "navn": "Ulriken Consulting",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 49,
+   "enheter": [
+    {
+     "orgnr": "924816937",
+     "navn": "ULRIKEN CONSULTING AS",
+     "kommune": "BERGEN",
+     "ansatte": 49
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 73788,
+     "lonn": 59701,
+     "driftsresultat": 7372,
+     "aarsresultat": 5096,
+     "margin": 0.0999,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 78528,
+     "lonn": 62163,
+     "driftsresultat": 9760,
+     "aarsresultat": 7037,
+     "margin": 0.1243,
+     "vekst": 0.0642
+    },
+    "2025": {
+     "inntekt": 72514,
+     "lonn": 60388,
+     "driftsresultat": 5061,
+     "aarsresultat": 3351,
+     "margin": 0.0698,
+     "vekst": -0.0766
+    }
+   },
+   "lonnskost_per_ansatt": 1232,
+   "inntekt_per_ansatt": 1480,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0015
+  },
+  {
+   "navn": "Kodemaker",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 27,
+   "enheter": [
+    {
+     "orgnr": "982099595",
+     "navn": "KODEMAKER SYSTEMUTVIKLING AS",
+     "kommune": "OSLO",
+     "ansatte": 27
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 70563,
+     "lonn": 48020,
+     "driftsresultat": 16346,
+     "aarsresultat": 13112,
+     "margin": 0.2317,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 70394,
+     "lonn": 49967,
+     "driftsresultat": 15299,
+     "aarsresultat": 12285,
+     "margin": 0.2173,
+     "vekst": -0.0024
+    },
+    "2025": {
+     "inntekt": 71341,
+     "lonn": 52413,
+     "driftsresultat": 14303,
+     "aarsresultat": 11486,
+     "margin": 0.2005,
+     "vekst": 0.0134
+    }
+   },
+   "lonnskost_per_ansatt": 1941,
+   "inntekt_per_ansatt": 2642,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0015
+  },
+  {
+   "navn": "Brilliant",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 53,
+   "enheter": [
+    {
+     "orgnr": "912272389",
+     "navn": "BRILLIANT AS",
+     "kommune": "TRONDHEIM",
+     "ansatte": 53
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 56861,
+     "lonn": 43881,
+     "driftsresultat": 3830,
+     "aarsresultat": 2915,
+     "margin": 0.0674,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 73211,
+     "lonn": 55025,
+     "driftsresultat": 6906,
+     "aarsresultat": 5303,
+     "margin": 0.0943,
+     "vekst": 0.2875
+    },
+    "2025": {
+     "inntekt": 71201,
+     "lonn": 57648,
+     "driftsresultat": 1138,
+     "aarsresultat": 577,
+     "margin": 0.016,
+     "vekst": -0.0275
+    }
+   },
+   "lonnskost_per_ansatt": 1088,
+   "inntekt_per_ansatt": 1343,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0015
+  },
+  {
+   "navn": "Northern Beat",
+   "kategori": "Data og analyse",
+   "verifisert": false,
+   "ansatte": 37,
+   "enheter": [
+    {
+     "orgnr": "998549833",
+     "navn": "NORTHERN BEAT AS",
+     "kommune": "OSLO",
+     "ansatte": 37
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 71939,
+     "lonn": 46817,
+     "driftsresultat": 10229,
+     "aarsresultat": 8300,
+     "margin": 0.1422,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 71768,
+     "lonn": 45397,
+     "driftsresultat": 9059,
+     "aarsresultat": 7428,
+     "margin": 0.1262,
+     "vekst": -0.0024
+    },
+    "2025": {
+     "inntekt": 68614,
+     "lonn": 44789,
+     "driftsresultat": 9089,
+     "aarsresultat": 7440,
+     "margin": 0.1325,
+     "vekst": -0.044
+    }
+   },
+   "lonnskost_per_ansatt": 1211,
+   "inntekt_per_ansatt": 1854,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0014
+  },
+  {
+   "navn": "Align Consulting",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 27,
+   "enheter": [
+    {
+     "orgnr": "998790956",
+     "navn": "ALIGN CONSULTING AS",
+     "kommune": "ASKER",
+     "ansatte": 27
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 50034,
+     "lonn": 20196,
+     "driftsresultat": 8990,
+     "aarsresultat": 7777,
+     "margin": 0.1797,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 57252,
+     "lonn": 26229,
+     "driftsresultat": 10285,
+     "aarsresultat": 13187,
+     "margin": 0.1796,
+     "vekst": 0.1442
+    },
+    "2025": {
+     "inntekt": 67122,
+     "lonn": 31954,
+     "driftsresultat": 15785,
+     "aarsresultat": 12704,
+     "margin": 0.2352,
+     "vekst": 0.1724
+    }
+   },
+   "lonnskost_per_ansatt": 1183,
+   "inntekt_per_ansatt": 2486,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0014
+  },
+  {
+   "navn": "Telenor Cyberdefence",
+   "kategori": "Sikkerhet",
+   "verifisert": false,
+   "ansatte": 91,
+   "enheter": [
+    {
+     "orgnr": "932975424",
+     "navn": "TELENOR CYBERDEFENCE AS",
+     "kommune": "BÆRUM",
+     "ansatte": 91
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 12051,
+     "lonn": 4573,
+     "driftsresultat": -3105,
+     "aarsresultat": -6490,
+     "margin": -0.2577,
+     "vekst": null
+    },
+    "2025": {
+     "inntekt": 66603,
+     "lonn": 96782,
+     "driftsresultat": -62385,
+     "aarsresultat": -46563,
+     "margin": -0.9367,
+     "vekst": 4.5267
+    }
+   },
+   "lonnskost_per_ansatt": 1064,
+   "inntekt_per_ansatt": 732,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0014
+  },
+  {
+   "navn": "Expert Analytics",
+   "kategori": "Data og analyse",
+   "verifisert": true,
+   "ansatte": 40,
+   "enheter": [
+    {
+     "orgnr": "924651946",
+     "navn": "EXPERT ANALYTICS AS",
+     "kommune": "OSLO",
+     "ansatte": 40
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 64753,
+     "lonn": 54624,
+     "driftsresultat": 1037,
+     "aarsresultat": 1029,
+     "margin": 0.016,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 69429,
+     "lonn": 57200,
+     "driftsresultat": 3640,
+     "aarsresultat": 2770,
+     "margin": 0.0524,
+     "vekst": 0.0722
+    },
+    "2025": {
+     "inntekt": 65921,
+     "lonn": 50334,
+     "driftsresultat": 5063,
+     "aarsresultat": 3981,
+     "margin": 0.0768,
+     "vekst": -0.0505
+    }
+   },
+   "lonnskost_per_ansatt": 1258,
+   "inntekt_per_ansatt": 1648,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0014
+  },
+  {
+   "navn": "Decisive",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 29,
+   "enheter": [
+    {
+     "orgnr": "928720691",
+     "navn": "DECISIVE AS",
+     "kommune": "OSLO",
+     "ansatte": 29
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 63208,
+     "lonn": 36488,
+     "driftsresultat": 10318,
+     "aarsresultat": 8056,
+     "margin": 0.1632,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 65664,
+     "lonn": 38420,
+     "driftsresultat": 9868,
+     "aarsresultat": 7714,
+     "margin": 0.1503,
+     "vekst": 0.0389
+    },
+    "2025": {
+     "inntekt": 64559,
+     "lonn": 41892,
+     "driftsresultat": 6859,
+     "aarsresultat": 5381,
+     "margin": 0.1062,
+     "vekst": -0.0168
+    }
+   },
+   "lonnskost_per_ansatt": 1445,
+   "inntekt_per_ansatt": 2226,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0014
+  },
+  {
+   "navn": "Lighthouse Consulting",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 26,
+   "enheter": [
+    {
+     "orgnr": "925732656",
+     "navn": "LIGHTHOUSE CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 26
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 20112,
+     "lonn": 14928,
+     "driftsresultat": 2804,
+     "aarsresultat": 2181,
+     "margin": 0.1394,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 37582,
+     "lonn": 21357,
+     "driftsresultat": 8582,
+     "aarsresultat": 6780,
+     "margin": 0.2284,
+     "vekst": 0.8686
+    },
+    "2025": {
+     "inntekt": 63749,
+     "lonn": 34372,
+     "driftsresultat": 13928,
+     "aarsresultat": 10949,
+     "margin": 0.2185,
+     "vekst": 0.6963
+    }
+   },
+   "lonnskost_per_ansatt": 1322,
+   "inntekt_per_ansatt": 2452,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0013
+  },
+  {
+   "navn": "Sariba Consulting",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 39,
+   "enheter": [
+    {
+     "orgnr": "987428511",
+     "navn": "SARIBA CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 39
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 56420,
+     "lonn": 48336,
+     "driftsresultat": 3778,
+     "aarsresultat": 2949,
+     "margin": 0.067,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 60968,
+     "lonn": 58330,
+     "driftsresultat": -2072,
+     "aarsresultat": -1630,
+     "margin": -0.034,
+     "vekst": 0.0806
+    },
+    "2025": {
+     "inntekt": 63487,
+     "lonn": 58337,
+     "driftsresultat": -206,
+     "aarsresultat": -145,
+     "margin": -0.0033,
+     "vekst": 0.0413
+    }
+   },
+   "lonnskost_per_ansatt": 1496,
+   "inntekt_per_ansatt": 1628,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0013
+  },
+  {
+   "navn": "Konsulentselskapet Enso",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 26,
+   "enheter": [
+    {
+     "orgnr": "915718515",
+     "navn": "KONSULENTSELSKAPET ENSO AS",
+     "kommune": "OSLO",
+     "ansatte": 26
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 59853,
+     "lonn": 45174,
+     "driftsresultat": 1892,
+     "aarsresultat": 1444,
+     "margin": 0.0316,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 62154,
+     "lonn": 47232,
+     "driftsresultat": 3553,
+     "aarsresultat": 2721,
+     "margin": 0.0572,
+     "vekst": 0.0384
+    },
+    "2025": {
+     "inntekt": 60753,
+     "lonn": 51613,
+     "driftsresultat": 1876,
+     "aarsresultat": 1457,
+     "margin": 0.0309,
+     "vekst": -0.0225
+    }
+   },
+   "lonnskost_per_ansatt": 1985,
+   "inntekt_per_ansatt": 2337,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0013
+  },
+  {
+   "navn": "Gnist Consulting",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 30,
+   "enheter": [
+    {
+     "orgnr": "922669570",
+     "navn": "GNIST CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 30
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 51432,
+     "lonn": 39671,
+     "driftsresultat": 6167,
+     "aarsresultat": 4753,
+     "margin": 0.1199,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 56153,
+     "lonn": 44956,
+     "driftsresultat": 6461,
+     "aarsresultat": 4976,
+     "margin": 0.1151,
+     "vekst": 0.0918
+    },
+    "2025": {
+     "inntekt": 60531,
+     "lonn": 46469,
+     "driftsresultat": 8686,
+     "aarsresultat": 6962,
+     "margin": 0.1435,
+     "vekst": 0.078
+    }
+   },
+   "lonnskost_per_ansatt": 1549,
+   "inntekt_per_ansatt": 2018,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0013
+  },
+  {
+   "navn": "Bspoke",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 26,
+   "enheter": [
+    {
+     "orgnr": "912817938",
+     "navn": "BSPOKE AS",
+     "kommune": "OSLO",
+     "ansatte": 26
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 66837,
+     "lonn": 55336,
+     "driftsresultat": 45,
+     "aarsresultat": 18,
+     "margin": 0.0007,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 55826,
+     "lonn": 46022,
+     "driftsresultat": -6562,
+     "aarsresultat": -6613,
+     "margin": -0.1175,
+     "vekst": -0.1647
+    },
+    "2025": {
+     "inntekt": 59056,
+     "lonn": 38349,
+     "driftsresultat": -155,
+     "aarsresultat": 1315,
+     "margin": -0.0026,
+     "vekst": 0.0579
+    }
+   },
+   "lonnskost_per_ansatt": 1475,
+   "inntekt_per_ansatt": 2271,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0012
+  },
+  {
+   "navn": "Dekode",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 29,
+   "enheter": [
+    {
+     "orgnr": "894928662",
+     "navn": "DEKODE INTERAKTIV AS",
+     "kommune": "OSLO",
+     "ansatte": 29
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 62703,
+     "lonn": 40839,
+     "driftsresultat": 972,
+     "aarsresultat": 634,
+     "margin": 0.0155,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 59092,
+     "lonn": 34378,
+     "driftsresultat": 2220,
+     "aarsresultat": 1746,
+     "margin": 0.0376,
+     "vekst": -0.0576
+    },
+    "2025": {
+     "inntekt": 57862,
+     "lonn": 33352,
+     "driftsresultat": 2925,
+     "aarsresultat": 2836,
+     "margin": 0.0506,
+     "vekst": -0.0208
+    }
+   },
+   "lonnskost_per_ansatt": 1150,
+   "inntekt_per_ansatt": 1995,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0012
+  },
+  {
+   "navn": "Yttr",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 22,
+   "enheter": [
+    {
+     "orgnr": "991118225",
+     "navn": "YTTR AS",
+     "kommune": "OSLO",
+     "ansatte": 22
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 115392,
+     "lonn": 75538,
+     "driftsresultat": 4033,
+     "aarsresultat": 3167,
+     "margin": 0.035,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 74884,
+     "lonn": 56203,
+     "driftsresultat": -10094,
+     "aarsresultat": -23927,
+     "margin": -0.1348,
+     "vekst": -0.351
+    },
+    "2025": {
+     "inntekt": 55964,
+     "lonn": 37414,
+     "driftsresultat": 1238,
+     "aarsresultat": -555,
+     "margin": 0.0221,
+     "vekst": -0.2527
+    }
+   },
+   "lonnskost_per_ansatt": 1701,
+   "inntekt_per_ansatt": 2544,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0012
+  },
+  {
+   "navn": "Applica Consulting",
+   "kategori": "Microsoft og ERP",
+   "verifisert": true,
+   "ansatte": 32,
+   "enheter": [
+    {
+     "orgnr": "934167112",
+     "navn": "APPLICA CONSULTING AS",
+     "kommune": "LINDESNES",
+     "ansatte": 32
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 42697,
+     "lonn": 26973,
+     "driftsresultat": 7054,
+     "aarsresultat": 5494,
+     "margin": 0.1652,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 47432,
+     "lonn": 31457,
+     "driftsresultat": 6481,
+     "aarsresultat": 5039,
+     "margin": 0.1366,
+     "vekst": 0.1109
+    },
+    "2025": {
+     "inntekt": 54106,
+     "lonn": 35310,
+     "driftsresultat": 9166,
+     "aarsresultat": 7159,
+     "margin": 0.1694,
+     "vekst": 0.1407
+    }
+   },
+   "lonnskost_per_ansatt": 1103,
+   "inntekt_per_ansatt": 1691,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0011
+  },
+  {
+   "navn": "Frend Digital",
+   "kategori": "Digital og design",
+   "verifisert": false,
+   "ansatte": 50,
+   "enheter": [
+    {
+     "orgnr": "927611902",
+     "navn": "FREND DIGITAL AS",
+     "kommune": "OSLO",
+     "ansatte": 50
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 30203,
+     "lonn": 20355,
+     "driftsresultat": -7642,
+     "aarsresultat": -7669,
+     "margin": -0.253,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 50852,
+     "lonn": 27709,
+     "driftsresultat": 619,
+     "aarsresultat": 590,
+     "margin": 0.0122,
+     "vekst": 0.6837
+    },
+    "2025": {
+     "inntekt": 53472,
+     "lonn": 28021,
+     "driftsresultat": 2653,
+     "aarsresultat": 2651,
+     "margin": 0.0496,
+     "vekst": 0.0515
+    }
+   },
+   "lonnskost_per_ansatt": 560,
+   "inntekt_per_ansatt": 1069,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0011
+  },
+  {
+   "navn": "Vaare",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 41,
+   "enheter": [
+    {
+     "orgnr": "933480968",
+     "navn": "VAARE AS",
+     "kommune": "NORDRE FOLLO",
+     "ansatte": 41
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 3334,
+     "lonn": 4967,
+     "driftsresultat": -2400,
+     "aarsresultat": -1864,
+     "margin": -0.7198,
+     "vekst": null
+    },
+    "2025": {
+     "inntekt": 51597,
+     "lonn": 38998,
+     "driftsresultat": 8383,
+     "aarsresultat": 6638,
+     "margin": 0.1625,
+     "vekst": 14.4739
+    }
+   },
+   "lonnskost_per_ansatt": 951,
+   "inntekt_per_ansatt": 1258,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0011
+  },
+  {
+   "navn": "Alv",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 31,
+   "enheter": [
+    {
+     "orgnr": "822704042",
+     "navn": "ALV AS",
+     "kommune": "OSLO",
+     "ansatte": 31
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 53046,
+     "lonn": 44801,
+     "driftsresultat": 301,
+     "aarsresultat": 727,
+     "margin": 0.0057,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 53754,
+     "lonn": 43925,
+     "driftsresultat": 1898,
+     "aarsresultat": 1894,
+     "margin": 0.0353,
+     "vekst": 0.0134
+    },
+    "2025": {
+     "inntekt": 51494,
+     "lonn": 42024,
+     "driftsresultat": 846,
+     "aarsresultat": 1207,
+     "margin": 0.0164,
+     "vekst": -0.0421
+    }
+   },
+   "lonnskost_per_ansatt": 1356,
+   "inntekt_per_ansatt": 1661,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0011
+  },
+  {
+   "navn": "Liflig",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 24,
+   "enheter": [
+    {
+     "orgnr": "925906093",
+     "navn": "LIFLIG AS",
+     "kommune": "OSLO",
+     "ansatte": 24
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 38946,
+     "lonn": 33562,
+     "driftsresultat": -1716,
+     "aarsresultat": -1351,
+     "margin": -0.0441,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 43328,
+     "lonn": 34398,
+     "driftsresultat": 890,
+     "aarsresultat": 648,
+     "margin": 0.0205,
+     "vekst": 0.1125
+    },
+    "2025": {
+     "inntekt": 50570,
+     "lonn": 38940,
+     "driftsresultat": 1762,
+     "aarsresultat": 1317,
+     "margin": 0.0348,
+     "vekst": 0.1672
+    }
+   },
+   "lonnskost_per_ansatt": 1623,
+   "inntekt_per_ansatt": 2107,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0011
+  },
+  {
+   "navn": "Vokser",
+   "kategori": "Digital og design",
+   "verifisert": false,
+   "ansatte": 34,
+   "enheter": [
+    {
+     "orgnr": "919653477",
+     "navn": "VOKSER AS",
+     "kommune": "KONGSBERG",
+     "ansatte": 34
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 40918,
+     "lonn": 36421,
+     "driftsresultat": -1185,
+     "aarsresultat": -863,
+     "margin": -0.029,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 49326,
+     "lonn": 40151,
+     "driftsresultat": 2362,
+     "aarsresultat": 1908,
+     "margin": 0.0479,
+     "vekst": 0.2055
+    },
+    "2025": {
+     "inntekt": 50440,
+     "lonn": 40066,
+     "driftsresultat": 1614,
+     "aarsresultat": 1334,
+     "margin": 0.032,
+     "vekst": 0.0226
+    }
+   },
+   "lonnskost_per_ansatt": 1178,
+   "inntekt_per_ansatt": 1484,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0011
+  },
+  {
+   "navn": "Infosys",
+   "kategori": "Global leveranse",
+   "verifisert": true,
+   "ansatte": 37,
+   "enheter": [
+    {
+     "orgnr": "930520101",
+     "navn": "INFOSYS NORWAY AS",
+     "kommune": "BÆRUM",
+     "ansatte": 37
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 5645,
+     "lonn": 5230,
+     "driftsresultat": -1653,
+     "aarsresultat": -931,
+     "margin": -0.2928,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 49368,
+     "lonn": 43228,
+     "driftsresultat": 3657,
+     "aarsresultat": 1521,
+     "margin": 0.0741,
+     "vekst": 7.7446
+    },
+    "2025": {
+     "inntekt": 49363,
+     "lonn": 47610,
+     "driftsresultat": -1560,
+     "aarsresultat": -666,
+     "margin": -0.0316,
+     "vekst": -0.0001
+    }
+   },
+   "lonnskost_per_ansatt": 1287,
+   "inntekt_per_ansatt": 1334,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.001
+  },
+  {
+   "navn": "99X Increo",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 29,
+   "enheter": [
+    {
+     "orgnr": "982057892",
+     "navn": "99X INCREO AS",
+     "kommune": "TRONDHEIM",
+     "ansatte": 29
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 42535,
+     "lonn": 31385,
+     "driftsresultat": -681,
+     "aarsresultat": -995,
+     "margin": -0.016,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 44268,
+     "lonn": 30815,
+     "driftsresultat": 1771,
+     "aarsresultat": 537,
+     "margin": 0.04,
+     "vekst": 0.0407
+    },
+    "2025": {
+     "inntekt": 47944,
+     "lonn": 33687,
+     "driftsresultat": 2595,
+     "aarsresultat": 1626,
+     "margin": 0.0541,
+     "vekst": 0.083
+    }
+   },
+   "lonnskost_per_ansatt": 1162,
+   "inntekt_per_ansatt": 1653,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.001
+  },
+  {
+   "navn": "Bredvid",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 28,
+   "enheter": [
+    {
+     "orgnr": "917573360",
+     "navn": "BREDVID AS",
+     "kommune": "OSLO",
+     "ansatte": 28
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 44120,
+     "lonn": 40533,
+     "driftsresultat": -2032,
+     "aarsresultat": -1528,
+     "margin": -0.046,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 48615,
+     "lonn": 45188,
+     "driftsresultat": -1368,
+     "aarsresultat": -811,
+     "margin": -0.0281,
+     "vekst": 0.1019
+    },
+    "2025": {
+     "inntekt": 43863,
+     "lonn": 40723,
+     "driftsresultat": -1856,
+     "aarsresultat": -1611,
+     "margin": -0.0423,
+     "vekst": -0.0978
+    }
+   },
+   "lonnskost_per_ansatt": 1454,
+   "inntekt_per_ansatt": 1567,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0009
+  },
+  {
+   "navn": "Gren Utvikling",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 27,
+   "enheter": [
+    {
+     "orgnr": "927211769",
+     "navn": "GREN UTVIKLING AS",
+     "kommune": "OSLO",
+     "ansatte": 27
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 30252,
+     "lonn": 24224,
+     "driftsresultat": 2179,
+     "aarsresultat": 2074,
+     "margin": 0.072,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 38231,
+     "lonn": 31475,
+     "driftsresultat": 2630,
+     "aarsresultat": 2473,
+     "margin": 0.0688,
+     "vekst": 0.2637
+    },
+    "2025": {
+     "inntekt": 43770,
+     "lonn": 37982,
+     "driftsresultat": 2598,
+     "aarsresultat": 2459,
+     "margin": 0.0593,
+     "vekst": 0.1449
+    }
+   },
+   "lonnskost_per_ansatt": 1407,
+   "inntekt_per_ansatt": 1621,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": 0.0009
+  },
+  {
+   "navn": "Item Consulting",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 25,
+   "enheter": [
+    {
+     "orgnr": "980712567",
+     "navn": "ITEM CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 25
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 54183,
+     "lonn": 41963,
+     "driftsresultat": 700,
+     "aarsresultat": 783,
+     "margin": 0.0129,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 52455,
+     "lonn": 41058,
+     "driftsresultat": 700,
+     "aarsresultat": 816,
+     "margin": 0.0133,
+     "vekst": -0.0319
+    },
+    "2025": {
+     "inntekt": 42563,
+     "lonn": 35079,
+     "driftsresultat": -2685,
+     "aarsresultat": -1766,
+     "margin": -0.0631,
+     "vekst": -0.1886
+    }
+   },
+   "lonnskost_per_ansatt": 1403,
+   "inntekt_per_ansatt": 1703,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0009
+  },
+  {
+   "navn": "These Ways",
+   "kategori": "Digital og design",
+   "verifisert": false,
+   "ansatte": 29,
+   "enheter": [
+    {
+     "orgnr": "922656657",
+     "navn": "THESE WAYS AS",
+     "kommune": "BERGEN",
+     "ansatte": 29
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 30835,
+     "lonn": 24381,
+     "driftsresultat": 1749,
+     "aarsresultat": 1359,
+     "margin": 0.0567,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 32846,
+     "lonn": 28135,
+     "driftsresultat": 685,
+     "aarsresultat": 545,
+     "margin": 0.0209,
+     "vekst": 0.0652
+    },
+    "2025": {
+     "inntekt": 40017,
+     "lonn": 34802,
+     "driftsresultat": 395,
+     "aarsresultat": 301,
+     "margin": 0.0099,
+     "vekst": 0.2183
+    }
+   },
+   "lonnskost_per_ansatt": 1200,
+   "inntekt_per_ansatt": 1380,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0008
+  },
+  {
+   "navn": "Darize Consulting",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 21,
+   "enheter": [
+    {
+     "orgnr": "920285716",
+     "navn": "DARIZE CONSULTING AS",
+     "kommune": "OSLO",
+     "ansatte": 21
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 41307,
+     "lonn": 29810,
+     "driftsresultat": -1079,
+     "aarsresultat": -608,
+     "margin": -0.0261,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 35771,
+     "lonn": 26378,
+     "driftsresultat": -1780,
+     "aarsresultat": -2303,
+     "margin": -0.0498,
+     "vekst": -0.134
+    },
+    "2025": {
+     "inntekt": 39555,
+     "lonn": 28466,
+     "driftsresultat": 1053,
+     "aarsresultat": 721,
+     "margin": 0.0266,
+     "vekst": 0.1058
+    }
+   },
+   "lonnskost_per_ansatt": 1356,
+   "inntekt_per_ansatt": 1884,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0008
+  },
+  {
+   "navn": "Ivolv",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 24,
+   "enheter": [
+    {
+     "orgnr": "927371022",
+     "navn": "IVOLV AS",
+     "kommune": "STAVANGER",
+     "ansatte": 24
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 17896,
+     "lonn": 10861,
+     "driftsresultat": 3837,
+     "aarsresultat": 3126,
+     "margin": 0.2144,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 29849,
+     "lonn": 19981,
+     "driftsresultat": 1213,
+     "aarsresultat": 1329,
+     "margin": 0.0406,
+     "vekst": 0.6679
+    },
+    "2025": {
+     "inntekt": 37959,
+     "lonn": 27065,
+     "driftsresultat": 284,
+     "aarsresultat": 459,
+     "margin": 0.0075,
+     "vekst": 0.2717
+    }
+   },
+   "lonnskost_per_ansatt": 1128,
+   "inntekt_per_ansatt": 1582,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0008
+  },
+  {
+   "navn": "O3 Cyber",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 12,
+   "enheter": [
+    {
+     "orgnr": "929553160",
+     "navn": "O3 CYBER AS",
+     "kommune": "OSLO",
+     "ansatte": 12
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 11423,
+     "lonn": 6616,
+     "driftsresultat": 3107,
+     "aarsresultat": 2437,
+     "margin": 0.272,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 19709,
+     "lonn": 9962,
+     "driftsresultat": 1971,
+     "aarsresultat": 1537,
+     "margin": 0.1,
+     "vekst": 0.7254
+    },
+    "2025": {
+     "inntekt": 36159,
+     "lonn": 12007,
+     "driftsresultat": 6851,
+     "aarsresultat": 5435,
+     "margin": 0.1895,
+     "vekst": 0.8346
+    }
+   },
+   "lonnskost_per_ansatt": 1001,
+   "inntekt_per_ansatt": 3013,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0008
+  },
+  {
+   "navn": "ERPkonsult",
+   "kategori": "Microsoft og ERP",
+   "verifisert": false,
+   "ansatte": 20,
+   "enheter": [
+    {
+     "orgnr": "823130562",
+     "navn": "ERPKONSULT AS",
+     "kommune": "OSLO",
+     "ansatte": 20
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 16517,
+     "lonn": 15392,
+     "driftsresultat": -1041,
+     "aarsresultat": -1029,
+     "margin": -0.063,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 23973,
+     "lonn": 17052,
+     "driftsresultat": 3894,
+     "aarsresultat": 3267,
+     "margin": 0.1624,
+     "vekst": 0.4514
+    },
+    "2025": {
+     "inntekt": 33611,
+     "lonn": 20116,
+     "driftsresultat": 8161,
+     "aarsresultat": 6333,
+     "margin": 0.2428,
+     "vekst": 0.402
+    }
+   },
+   "lonnskost_per_ansatt": 1006,
+   "inntekt_per_ansatt": 1681,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0007
+  },
+  {
+   "navn": "Netpower Business Solutions",
+   "kategori": "Microsoft og ERP",
+   "verifisert": false,
+   "ansatte": 24,
+   "enheter": [
+    {
+     "orgnr": "990648085",
+     "navn": "NETPOWER BUSINESS SOLUTIONS AS",
+     "kommune": "SANDNES",
+     "ansatte": 24
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 19017,
+     "lonn": 0,
+     "driftsresultat": 58,
+     "aarsresultat": 48,
+     "margin": 0.0031,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 26871,
+     "lonn": 616,
+     "driftsresultat": 50,
+     "aarsresultat": 25,
+     "margin": 0.0019,
+     "vekst": 0.413
+    },
+    "2025": {
+     "inntekt": 31634,
+     "lonn": 17400,
+     "driftsresultat": 719,
+     "aarsresultat": 571,
+     "margin": 0.0227,
+     "vekst": 0.1773
+    }
+   },
+   "lonnskost_per_ansatt": 725,
+   "inntekt_per_ansatt": 1318,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0007
+  },
+  {
+   "navn": "Skråstrek",
+   "kategori": "Digital og design",
+   "verifisert": false,
+   "ansatte": 20,
+   "enheter": [
+    {
+     "orgnr": "923161996",
+     "navn": "SKRÅSTREK AS",
+     "kommune": "OSLO",
+     "ansatte": 20
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 28208,
+     "lonn": 25611,
+     "driftsresultat": 97,
+     "aarsresultat": 59,
+     "margin": 0.0034,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 28807,
+     "lonn": 24360,
+     "driftsresultat": 1541,
+     "aarsresultat": 1105,
+     "margin": 0.0535,
+     "vekst": 0.0212
+    },
+    "2025": {
+     "inntekt": 30658,
+     "lonn": 25240,
+     "driftsresultat": 2296,
+     "aarsresultat": 1874,
+     "margin": 0.0749,
+     "vekst": 0.0643
+    }
+   },
+   "lonnskost_per_ansatt": 1262,
+   "inntekt_per_ansatt": 1533,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0006
+  },
+  {
+   "navn": "Unicus",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "ansatte": 36,
+   "enheter": [
+    {
+     "orgnr": "921184476",
+     "navn": "UNICUS AS",
+     "kommune": "BÆRUM",
+     "ansatte": 36
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 28172,
+     "lonn": 20180,
+     "driftsresultat": 4023,
+     "aarsresultat": 3184,
+     "margin": 0.1428,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 32652,
+     "lonn": 22985,
+     "driftsresultat": 2915,
+     "aarsresultat": 2294,
+     "margin": 0.0893,
+     "vekst": 0.159
+    },
+    "2025": {
+     "inntekt": 28963,
+     "lonn": 22779,
+     "driftsresultat": 678,
+     "aarsresultat": 494,
+     "margin": 0.0234,
+     "vekst": -0.113
+    }
+   },
+   "lonnskost_per_ansatt": 633,
+   "inntekt_per_ansatt": 805,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0006
+  },
+  {
+   "navn": "Inevo",
+   "kategori": "Digital og design",
+   "verifisert": false,
+   "ansatte": 20,
+   "enheter": [
+    {
+     "orgnr": "912345793",
+     "navn": "INEVO AS",
+     "kommune": "OSLO",
+     "ansatte": 20
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 21963,
+     "lonn": 16739,
+     "driftsresultat": -504,
+     "aarsresultat": -385,
+     "margin": -0.0229,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 29137,
+     "lonn": 15559,
+     "driftsresultat": 3047,
+     "aarsresultat": 2421,
+     "margin": 0.1046,
+     "vekst": 0.3266
+    },
+    "2025": {
+     "inntekt": 27810,
+     "lonn": 16826,
+     "driftsresultat": 1832,
+     "aarsresultat": 1476,
+     "margin": 0.0659,
+     "vekst": -0.0455
+    }
+   },
+   "lonnskost_per_ansatt": 841,
+   "inntekt_per_ansatt": 1390,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0006
+  },
+  {
+   "navn": "River Security",
+   "kategori": "Sikkerhet",
+   "verifisert": true,
+   "ansatte": 17,
+   "enheter": [
+    {
+     "orgnr": "925178810",
+     "navn": "RIVER SECURITY AS",
+     "kommune": "OSLO",
+     "ansatte": 17
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 12234,
+     "lonn": 9821,
+     "driftsresultat": 221,
+     "aarsresultat": 232,
+     "margin": 0.018,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 20225,
+     "lonn": 13543,
+     "driftsresultat": 2482,
+     "aarsresultat": 2454,
+     "margin": 0.1227,
+     "vekst": 0.6532
+    },
+    "2025": {
+     "inntekt": 25265,
+     "lonn": 16014,
+     "driftsresultat": 2389,
+     "aarsresultat": 2151,
+     "margin": 0.0946,
+     "vekst": 0.2492
+    }
+   },
+   "lonnskost_per_ansatt": 942,
+   "inntekt_per_ansatt": 1486,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0005
+  },
+  {
+   "navn": "Aplia",
+   "kategori": "Digital og design",
+   "verifisert": true,
+   "ansatte": 23,
+   "enheter": [
+    {
+     "orgnr": "998850371",
+     "navn": "APLIA AS",
+     "kommune": "SKIEN",
+     "ansatte": 23
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 18076,
+     "lonn": 15387,
+     "driftsresultat": -1100,
+     "aarsresultat": -395,
+     "margin": -0.0609,
+     "vekst": null
+    },
+    "2024": {
+     "inntekt": 19828,
+     "lonn": 15078,
+     "driftsresultat": 458,
+     "aarsresultat": 313,
+     "margin": 0.0231,
+     "vekst": 0.0969
+    },
+    "2025": {
+     "inntekt": 19282,
+     "lonn": 14126,
+     "driftsresultat": 658,
+     "aarsresultat": 473,
+     "margin": 0.0341,
+     "vekst": -0.0276
+    }
+   },
+   "lonnskost_per_ansatt": 614,
+   "inntekt_per_ansatt": 838,
+   "ansatttall_usikkert": false,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": 0.0004
+  },
+  {
+   "navn": "Tata Consultancy Services",
+   "kategori": "Global leveranse",
+   "verifisert": true,
+   "ansatte": 64,
+   "enheter": [
+    {
+     "orgnr": "990130124",
+     "navn": "TATA CONSULTANCY SERVICES LIMITED",
+     "kommune": "OSLO",
+     "ansatte": 64
+    }
+   ],
+   "aar": {
+    "2024": {
+     "inntekt": 679285,
+     "lonn": 481776,
+     "driftsresultat": 27909,
+     "aarsresultat": 21469,
+     "margin": 0.0411,
+     "vekst": null
+    }
+   },
+   "lonnskost_per_ansatt": null,
+   "inntekt_per_ansatt": null,
+   "ansatttall_usikkert": true,
+   "avvikende_regnskapsaar": true,
+   "i_bransjetall": true,
+   "markedsandel": null
+  },
+  {
+   "navn": "Commit",
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": false,
+   "ansatte": 27,
+   "enheter": [
+    {
+     "orgnr": "934427688",
+     "navn": "COMMIT AS",
+     "kommune": "OSLO",
+     "ansatte": 27
+    }
+   ],
+   "aar": {},
+   "lonnskost_per_ansatt": null,
+   "inntekt_per_ansatt": null,
+   "ansatttall_usikkert": true,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": null
+  },
+  {
+   "navn": "BearingPoint",
+   "kategori": "Rådgivningshus",
+   "verifisert": true,
+   "ansatte": 143,
+   "enheter": [
+    {
+     "orgnr": "984145047",
+     "navn": "BEARINGPOINT NORWAY AS",
+     "kommune": "OSLO",
+     "ansatte": 143
+    }
+   ],
+   "aar": {
+    "2022": {
+     "inntekt": 263271,
+     "lonn": 168611,
+     "driftsresultat": 26658,
+     "aarsresultat": 20615,
+     "margin": 0.1013,
+     "vekst": null
+    },
+    "2023": {
+     "inntekt": 271410,
+     "lonn": 180845,
+     "driftsresultat": 24529,
+     "aarsresultat": 18930,
+     "margin": 0.0904,
+     "vekst": 0.0309
+    },
+    "2024": {
+     "inntekt": 245343,
+     "lonn": 161850,
+     "driftsresultat": 7495,
+     "aarsresultat": 5017,
+     "margin": 0.0306,
+     "vekst": -0.096
+    }
+   },
+   "lonnskost_per_ansatt": null,
+   "inntekt_per_ansatt": null,
+   "ansatttall_usikkert": true,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": false,
+   "markedsandel": null
+  },
+  {
+   "navn": "Diginext IT Solutions",
+   "kategori": "Global leveranse",
+   "verifisert": false,
+   "ansatte": 34,
+   "enheter": [
+    {
+     "orgnr": "933498336",
+     "navn": "DIGINEXT IT SOLUTIONS NORWAY NUF",
+     "kommune": null,
+     "ansatte": 34
+    }
+   ],
+   "aar": {},
+   "lonnskost_per_ansatt": null,
+   "inntekt_per_ansatt": null,
+   "ansatttall_usikkert": true,
+   "avvikende_regnskapsaar": false,
+   "i_bransjetall": true,
+   "markedsandel": null
+  }
+ ]
+}

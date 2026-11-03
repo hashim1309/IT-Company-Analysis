@@ -1,0 +1,437 @@
+<meta charset="utf-8">
+<title>IT-konsulentene i tall</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Regnskapstall for norske IT-konsulentselskaper fra Brønnøysundregistrene.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: én spalte, venstrejustert, seksjoner skilt av luft og hårfine linjer – som et årsregnskap, ikke et kortdashbord. */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #111827;
+  --ink-2: #4b5363;
+  --ink-3: #6b7280;
+  --rule: #dfe3ea;
+  --accent: #1f5fd1;
+  --accent-soft: #dce7fb;
+  --dot: #2a78d6;
+  --dot-muted: #b9c6d8;
+  --pos: #137a3a;
+  --neg: #c03434;
+  --chip: #eef1f5;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f131a; --surface: #161b24; --ink: #eef1f6; --ink-2: #b6bfcc; --ink-3: #8b95a5;
+    --rule: #2a3240; --accent: #7aa7f5; --accent-soft: #1d2b44; --dot: #3987e5; --dot-muted: #3a475b;
+    --pos: #4cc27a; --neg: #f07a7a; --chip: #212836; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f131a; --surface: #161b24; --ink: #eef1f6; --ink-2: #b6bfcc; --ink-3: #8b95a5;
+  --rule: #2a3240; --accent: #7aa7f5; --accent-soft: #1d2b44; --dot: #3987e5; --dot-muted: #3a475b;
+  --pos: #4cc27a; --neg: #f07a7a; --chip: #212836; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1040px; margin: 0 auto; padding-block: 40px 64px; display: grid; gap: 64px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.2rem, 5.5vw, 3.6rem); line-height: 1.05; font-weight: 700; max-width: 18ch; }
+h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.15; font-weight: 700; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+.lede { font-size: 1.12rem; color: var(--ink-2); }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.pos { color: var(--pos); } .neg { color: var(--neg); }
+section { display: grid; gap: 20px; min-width: 0; }
+.head { display: grid; gap: 8px; }
+.muted { color: var(--ink-3); font-size: 0.9rem; }
+
+/* Hero */
+header.hero { display: grid; gap: 20px; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.stat { padding: 18px 16px 18px 0; display: grid; gap: 4px; align-content: start; }
+.stat + .stat { border-left: 1px solid var(--rule); padding-left: 16px; }
+.stat .v { font-family: var(--font-display); font-size: clamp(1.6rem, 3.4vw, 2.3rem); font-weight: 700; line-height: 1.1; }
+.stat .l { font-size: 0.88rem; color: var(--ink-2); }
+@media (max-width: 720px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); }
+  .stat:nth-child(4) { border-top: 1px solid var(--rule); }
+}
+
+/* Panels */
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 20px; min-width: 0; }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+@media (max-width: 820px) { .two { grid-template-columns: minmax(0, 1fr); } }
+svg { display: block; width: 100%; height: auto; overflow: visible; }
+svg text { fill: var(--ink-3); font-family: var(--font-mono); font-size: 11px; }
+svg .lbl { fill: var(--ink); font-family: var(--font-body); font-size: 12px; }
+svg .grid { stroke: var(--rule); stroke-width: 1; }
+svg .zero { stroke: var(--ink-3); stroke-width: 1; }
+
+/* Controls */
+.tabs, .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+button.tab, button.chip {
+  font: 500 0.88rem var(--font-body); color: var(--ink-2); background: var(--chip);
+  border: 1px solid transparent; border-radius: 999px; padding: 6px 12px; cursor: pointer;
+}
+button.tab[aria-selected="true"], button.chip[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+input[type="search"] {
+  font: 400 0.95rem var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 8px; padding: 7px 10px; min-width: 0; width: 220px; max-width: 100%;
+}
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+
+/* Ranking bars */
+.rank { display: grid; gap: 6px; }
+.rrow { display: grid; grid-template-columns: 1.5rem minmax(0, 11rem) minmax(0, 1fr) 6.5rem; gap: 10px; align-items: center; font-size: 0.93rem; }
+.rrow .pos-n { font-family: var(--font-mono); color: var(--ink-3); font-size: 0.8rem; }
+.rrow .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rrow .bar { height: 12px; background: var(--dot); border-radius: 0 4px 4px 0; min-width: 2px; }
+.rrow .val { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 0.88rem; }
+@media (max-width: 520px) { .rrow { grid-template-columns: 1.2rem minmax(0, 1fr) 5.5rem; } .rrow .barcell { display: none; } }
+
+/* Table */
+.tablebox { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 0.92rem; }
+th, td { padding: 9px 10px; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+td:first-child { white-space: normal; min-width: 14rem; }
+th { font: 600 0.78rem var(--font-body); letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-3); background: var(--surface); position: sticky; top: 0; }
+th button { all: unset; cursor: pointer; }
+th button:focus-visible { outline: 2px solid var(--accent); }
+th[aria-sort] button::after { content: " ↓"; }
+th[aria-sort="ascending"] button::after { content: " ↑"; }
+td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+tbody tr:hover { background: var(--accent-soft); }
+tbody tr:last-child td { border-bottom: 0; }
+.flag { display: inline-block; font: 500 0.7rem var(--font-body); color: var(--ink-3); background: var(--chip); border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: 1px; }
+.org { white-space: normal; max-width: 22rem; color: var(--ink-3); font-size: 0.78rem; font-family: var(--font-mono); }
+
+/* Tooltip */
+#tip { position: fixed; pointer-events: none; z-index: 20; background: var(--ink); color: var(--bg); font-size: 0.82rem; line-height: 1.4; padding: 8px 10px; border-radius: 6px; max-width: 240px; }
+#tip b { font-weight: 600; }
+
+footer { border-top: 1px solid var(--rule); padding-top: 20px; display: grid; gap: 10px; color: var(--ink-2); font-size: 0.9rem; }
+footer ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 4px; max-width: 70ch; }
+.error { color: var(--neg); }
+@media (prefers-reduced-motion: no-preference) { .rrow .bar { transition: width 0.35s ease; } }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <span class="eyebrow">Norske IT-konsulentselskaper · regnskapsåret <span id="yr">2025</span></span>
+    <h1 id="headline">IT-konsulentene i tall</h1>
+    <p class="lede" id="lede">Inntekt, lønnsomhet og vekst for norske IT-konsulentselskaper, hentet fra årsregnskapene i Brønnøysundregistrene.</p>
+    <div class="stats" id="stats" aria-live="polite"></div>
+  </header>
+
+  <section aria-labelledby="h-marked">
+    <div class="head">
+      <h2 id="h-marked">Veksten stoppet opp</h2>
+      <p class="muted">Samlet driftsinntekt for selskapene i utvalget. Veksten er regnet like mot like, altså bare for selskaper med regnskap begge år.</p>
+    </div>
+    <div class="two">
+      <div class="panel"><div class="eyebrow">Samlet driftsinntekt, mrd. kr</div><svg id="c-market" role="img" aria-label="Samlet driftsinntekt per år"></svg></div>
+      <div class="panel"><div class="eyebrow">Samlet driftsmargin</div><svg id="c-margin" role="img" aria-label="Samlet driftsmargin per år"></svg></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-scatter">
+    <div class="head">
+      <h2 id="h-scatter">Størst er ikke mest lønnsomt</h2>
+      <p class="muted">Hvert punkt er ett selskap. Liggende akse er driftsinntekt (logaritmisk), stående er driftsmargin. Hule punkter ligger utenfor aksen. Hold over et punkt for detaljer.</p>
+    </div>
+    <div class="panel" style="display:grid;gap:14px">
+      <div class="chips" id="cat-chips" role="group" aria-label="Fremhev kategori"></div>
+      <svg id="c-scatter" role="img" aria-label="Driftsinntekt mot driftsmargin per selskap"></svg>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-top">
+    <div class="head">
+      <h2 id="h-top">Topplister</h2>
+      <p class="muted" id="top-note"></p>
+    </div>
+    <div class="panel" style="display:grid;gap:16px">
+      <div class="tabs" role="tablist" id="top-tabs" aria-label="Velg toppliste"></div>
+      <div class="rank" id="top-list"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-all">
+    <div class="head">
+      <h2 id="h-all">Alle selskaper</h2>
+      <p class="muted">Klikk på en kolonne for å sortere. Beløp i millioner kroner.</p>
+    </div>
+    <div class="toolbar">
+      <div class="chips" id="tbl-chips" role="group" aria-label="Filtrer på kategori"></div>
+      <label><span class="eyebrow" style="display:block;margin-bottom:4px">Søk</span><input type="search" id="q" placeholder="Selskapsnavn"></label>
+    </div>
+    <div class="tablebox">
+      <table>
+        <thead><tr id="thead"></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Om tallene</strong>
+    <ul id="notes"></ul>
+    <p id="source"></p>
+  </footer>
+</div>
+<div id="tip" hidden></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const nf = new Intl.NumberFormat('nb-NO');
+const nf1 = new Intl.NumberFormat('nb-NO', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const nf2 = new Intl.NumberFormat('nb-NO', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const mrd = k => nf1.format(k / 1e6);                 // tusen kr -> mrd
+const mill = k => nf.format(Math.round(k / 1000));    // tusen kr -> mill
+const pct = (x, sign) => x == null ? '–' : (sign && x > 0 ? '+' : '') + nf1.format(x * 100).replace('-', '−') + ' %';
+const kr = k => k == null ? '–' : nf.format(Math.round(k)) + ' 000 kr';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, parent, text) {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (text != null) e.textContent = text;
+  if (parent) parent.appendChild(e);
+  return e;
+}
+const tip = $('#tip');
+function showTip(html, ev) {
+  tip.innerHTML = html; tip.hidden = false;
+  const r = tip.getBoundingClientRect();
+  let x = ev.clientX + 14, y = ev.clientY + 14;
+  if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - 14;
+  if (y + r.height > innerHeight - 8) y = ev.clientY - r.height - 14;
+  tip.style.left = x + 'px'; tip.style.top = y + 'px';
+}
+const hideTip = () => { tip.hidden = true; };
+
+let D, Y;
+
+function hero() {
+  const m = D.marked[Y], p = D.marked[String(Y - 1)];
+  const n = m.antall_selskaper;
+  $('#yr').textContent = Y;
+  const flat = m.vekst_like_mot_like != null && m.vekst_like_mot_like < 0.03;
+  $('#headline').textContent = flat ? `IT-konsulentene stod stille i ${Y}` : `IT-konsulentene i ${Y}`;
+  $('#lede').textContent = `${n} norske IT-konsulentselskaper omsatte for ${mrd(m.inntekt)} milliarder kroner i ${Y}. ` +
+    (p && p.vekst_like_mot_like != null
+      ? `Veksten falt fra ${pct(p.vekst_like_mot_like)} året før til ${pct(m.vekst_like_mot_like)}, mens de fleste fortsatt tjente penger.`
+      : '');
+  const stats = [
+    [mrd(m.inntekt) + ' mrd', `samlet driftsinntekt ${Y}`],
+    [pct(m.vekst_like_mot_like, true), 'vekst like mot like' + (p ? ` (${pct(p.vekst_like_mot_like, true)} i ${Y - 1})` : '')],
+    [pct(m.margin), 'samlet driftsmargin'],
+    [`${m.med_overskudd} av ${m.antall_selskaper}`, 'gikk med driftsoverskudd'],
+  ];
+  $('#stats').innerHTML = stats.map(([v, l]) => `<div class="stat"><span class="v num">${esc(v)}</span><span class="l">${esc(l)}</span></div>`).join('');
+}
+
+function barChart(svg, rows, fmt, label) {
+  const W = 440, H = 220, L = 8, R = 8, T = 26, B = 28;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = '';
+  const max = Math.max(...rows.map(r => r.v)) * 1.12;
+  const bw = (W - L - R) / rows.length;
+  const y = v => T + (H - T - B) * (1 - v / max);
+  el('line', { x1: L, x2: W - R, y1: y(0), y2: y(0), class: 'zero' }, svg);
+  rows.forEach((r, i) => {
+    const x = L + i * bw + bw * 0.22, w = bw * 0.56, top = y(r.v), h = y(0) - top;
+    const last = i === rows.length - 1;
+    const g = el('g', {}, svg);
+    el('path', { d: `M${x},${y(0)} V${top + 4} q0,-4 4,-4 H${x + w - 4} q4,0 4,4 V${y(0)} Z`, fill: last ? 'var(--dot)' : 'var(--dot-muted)' }, g);
+    el('text', { x: x + w / 2, y: top - 8, 'text-anchor': 'middle', class: 'lbl' }, g, fmt(r.v));
+    el('text', { x: x + w / 2, y: H - 8, 'text-anchor': 'middle' }, g, r.k);
+    el('rect', { x: L + i * bw, y: T - 20, width: bw, height: H - T - B + 20, fill: 'transparent' }, g)
+      .addEventListener('mousemove', ev => showTip(`<b>${r.k}</b><br>${label}: ${fmt(r.v)}${r.extra ? '<br>' + r.extra : ''}`, ev));
+    g.addEventListener('mouseleave', hideTip);
+  });
+}
+
+function market() {
+  const yrs = Object.keys(D.marked).sort();
+  barChart($('#c-market'), yrs.map(k => ({ k, v: D.marked[k].inntekt,
+    extra: `${D.marked[k].antall_selskaper} selskaper` + (D.marked[k].vekst_like_mot_like != null ? `<br>Vekst like mot like: ${pct(D.marked[k].vekst_like_mot_like, true)}` : '') })),
+    v => mrd(v), 'Driftsinntekt (mrd. kr)');
+  barChart($('#c-margin'), yrs.map(k => ({ k, v: D.marked[k].margin,
+    extra: `Driftsresultat: ${mrd(D.marked[k].driftsresultat)} mrd. kr` })), v => pct(v), 'Driftsmargin');
+}
+
+let hiCat = null;
+function scatter() {
+  const svg = $('#c-scatter');
+  const W = 960, H = 420, L = 52, R = 16, T = 16, B = 40;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = '';
+  const pts = D.selskaper.filter(s => s.i_bransjetall !== false && s.aar[Y] && s.aar[Y].inntekt > 0 && s.aar[Y].margin != null)
+    .map(s => ({ s, x: s.aar[Y].inntekt, y: s.aar[Y].margin }));
+  const lx0 = Math.log10(20000), lx1 = Math.log10(Math.max(...pts.map(p => p.x)) * 1.4);
+  // Aksen kuttes ved −30 % og +40 %; selskaper utenfor tegnes som hule punkter på kanten.
+  const ymin = Math.max(-0.3, Math.floor(Math.min(...pts.map(p => p.y)) * 10) / 10), ymax = Math.min(0.4, Math.ceil(Math.max(...pts.map(p => p.y)) * 10) / 10);
+  const clampY = v => Math.min(ymax, Math.max(ymin, v));
+  const X = v => L + (W - L - R) * (Math.log10(v) - lx0) / (lx1 - lx0);
+  const Yp = v => T + (H - T - B) * (ymax - clampY(v)) / (ymax - ymin);
+  for (let t = ymin; t <= ymax + 1e-9; t += 0.1) {
+    const v = Math.round(t * 100) / 100;
+    el('line', { x1: L, x2: W - R, y1: Yp(v), y2: Yp(v), class: v === 0 ? 'zero' : 'grid' }, svg);
+    el('text', { x: L - 8, y: Yp(v) + 4, 'text-anchor': 'end' }, svg, pct(v).replace(',0', ''));
+  }
+  [[25000, '25 mill.'], [50000, '50 mill.'], [100000, '100 mill.'], [250000, '250 mill.'], [500000, '500 mill.'], [1000000, '1 mrd.'], [2500000, '2,5 mrd.'], [5000000, '5 mrd.']]
+    .filter(([v]) => Math.log10(v) <= lx1)
+    .forEach(([v, t]) => {
+      el('line', { x1: X(v), x2: X(v), y1: T, y2: H - B, class: 'grid' }, svg);
+      el('text', { x: X(v), y: H - B + 18, 'text-anchor': 'middle' }, svg, t);
+    });
+  el('text', { x: W - R, y: H - 4, 'text-anchor': 'end' }, svg, 'Driftsinntekt →');
+  // label: largest five + top three margin
+  const byInc = [...pts].sort((a, b) => b.x - a.x).slice(0, 4);
+  const byMar = pts.filter(p => p.s.verifisert).sort((a, b) => b.y - a.y).slice(0, 3);
+  const labelled = new Set([...byInc, ...byMar].map(p => p.s.navn));
+  const placed = [];
+  const order = [...pts].sort((a, b) => (a.s.kategori === hiCat) - (b.s.kategori === hiCat));
+  order.forEach(p => {
+    const on = !hiCat || p.s.kategori === hiCat;
+    const g = el('g', { tabindex: 0, role: 'img', 'aria-label': `${p.s.navn}: ${mrd(p.x)} mrd. kr, margin ${pct(p.y)}` }, svg);
+    const out = p.y !== clampY(p.y);
+    el('circle', { cx: X(p.x), cy: Yp(p.y), r: on ? 6 : 4.5, fill: out ? 'var(--surface)' : on ? 'var(--dot)' : 'var(--dot-muted)', stroke: out ? (on ? 'var(--dot)' : 'var(--dot-muted)') : 'var(--surface)', 'stroke-width': 2 }, g);
+    el('circle', { cx: X(p.x), cy: Yp(p.y), r: 14, fill: 'transparent' }, g);
+    if (labelled.has(p.s.navn) && on && !placed.some(q => Math.abs(q.y - Yp(p.y)) < 15 && Math.abs(q.x - X(p.x)) < 150)) {
+      placed.push({ x: X(p.x), y: Yp(p.y) });
+      const right = X(p.x) < W - 140;
+      el('text', { x: X(p.x) + (right ? 10 : -10), y: Yp(p.y) + 4, 'text-anchor': right ? 'start' : 'end', class: 'lbl' }, g, p.s.navn);
+    }
+    const html = `<b>${esc(p.s.navn)}</b><br>${esc(p.s.kategori)}<br>Driftsinntekt: ${mill(p.x)} mill. kr<br>Driftsmargin: ${pct(p.y)}<br>Ansatte: ${nf.format(p.s.ansatte)}`;
+    g.addEventListener('mousemove', ev => showTip(html, ev));
+    g.addEventListener('mouseleave', hideTip);
+    g.addEventListener('focus', () => { const r = g.getBoundingClientRect(); showTip(html, { clientX: r.right, clientY: r.top }); });
+    g.addEventListener('blur', hideTip);
+  });
+}
+
+function catChips(container, getter, setter, allLabel, onlyBransje) {
+  const cats = [...new Set(D.selskaper.filter(s => !onlyBransje || s.i_bransjetall !== false).map(s => s.kategori))];
+  container.innerHTML = '';
+  [null, ...cats].forEach(c => {
+    const b = document.createElement('button');
+    b.className = 'chip'; b.type = 'button'; b.textContent = c ?? allLabel;
+    b.setAttribute('aria-pressed', String(getter() === c));
+    b.addEventListener('click', () => { setter(c); catChips(container, getter, setter, allLabel, onlyBransje); });
+    container.appendChild(b);
+  });
+}
+
+const TOPS = [
+  { k: 'margin', t: 'Driftsmargin', get: s => s.aar[Y]?.margin, fmt: v => pct(v), note: 'Driftsresultat delt på driftsinntekt.' },
+  { k: 'vekst', t: 'Vekst', get: s => s.aar[Y]?.vekst, fmt: v => pct(v, true), note: 'Endring i driftsinntekt fra året før, for selskaper med minst 20 mill. kr i inntekt året før. Kan påvirkes av oppkjøp og omorganiseringer.' },
+  { k: 'lonn', t: 'Lønnskostnad per ansatt', get: s => s.lonnskost_per_ansatt, fmt: v => nf2.format(v / 1000) + ' mill.', note: 'Inkluderer arbeidsgiveravgift og pensjon, så faktisk lønn er lavere. Selskaper med usikkert ansatttall er utelatt.' },
+  { k: 'ipa', t: 'Inntekt per ansatt', get: s => s.inntekt_per_ansatt, fmt: v => nf1.format(v / 1000) + ' mill.', note: 'Driftsinntekt delt på antall ansatte. Selskaper med usikkert ansatttall er utelatt.' },
+  { k: 'inntekt', t: 'Størst', get: s => s.aar[Y]?.inntekt, fmt: v => mrd(v) + ' mrd.', note: 'Driftsinntekt, med selskaper i samme konsern slått sammen.' },
+];
+let topK = 'margin';
+function tops() {
+  const tabs = $('#top-tabs'); tabs.innerHTML = '';
+  TOPS.forEach(o => {
+    const b = document.createElement('button');
+    b.className = 'tab'; b.type = 'button'; b.setAttribute('role', 'tab'); b.textContent = o.t;
+    b.setAttribute('aria-selected', String(o.k === topK));
+    b.addEventListener('click', () => { topK = o.k; tops(); });
+    tabs.appendChild(b);
+  });
+  const o = TOPS.find(x => x.k === topK);
+  $('#top-note').textContent = o.note + ' Bare bekreftede konsulentselskaper er med.';
+  const prev = String(Y - 1);
+  const rows = D.selskaper
+    .filter(s => s.i_bransjetall !== false && s.verifisert)
+    .filter(s => o.k !== 'vekst' || (s.aar[prev]?.inntekt || 0) >= 20000)
+    .map(s => ({ s, v: o.get(s) })).filter(r => r.v != null).sort((a, b) => b.v - a.v).slice(0, 10);
+  const max = Math.max(...rows.map(r => r.v));
+  $('#top-list').innerHTML = rows.map((r, i) => `
+    <div class="rrow">
+      <span class="pos-n">${i + 1}</span>
+      <span class="name" title="${esc(r.s.navn)}">${esc(r.s.navn)}</span>
+      <span class="barcell"><div class="bar" style="width:${Math.max(0, r.v / max * 100)}%"></div></span>
+      <span class="val">${esc(o.fmt(r.v))}</span>
+    </div>`).join('');
+}
+
+const COLS = [
+  { k: 'navn', t: 'Selskap', get: s => s.navn },
+  { k: 'kategori', t: 'Kategori', get: s => s.kategori },
+  { k: 'ansatte', t: 'Ansatte', get: s => s.ansatte, fmt: v => nf.format(v) },
+  { k: 'inntekt', t: 'Inntekt', get: s => s.aar[Y]?.inntekt, fmt: v => mill(v) },
+  { k: 'vekst', t: 'Vekst', get: s => s.aar[Y]?.vekst, fmt: v => pct(v, true), cls: v => v > 0 ? 'pos' : v < 0 ? 'neg' : '' },
+  { k: 'drift', t: 'Driftsres.', get: s => s.aar[Y]?.driftsresultat, fmt: v => mill(v), cls: v => v < 0 ? 'neg' : '' },
+  { k: 'margin', t: 'Margin', get: s => s.aar[Y]?.margin, fmt: v => pct(v), cls: v => v < 0 ? 'neg' : '' },
+  { k: 'lpa', t: 'Lønnskost/ansatt', get: s => s.lonnskost_per_ansatt, fmt: v => nf.format(v) + ' k' },
+];
+let sortK = 'inntekt', sortAsc = false, tblCat = null;
+function table() {
+  $('#thead').innerHTML = COLS.map(c => `<th scope="col"${c.k === sortK ? ` aria-sort="${sortAsc ? 'ascending' : 'descending'}"` : ''}><button type="button" data-k="${c.k}">${c.t}</button></th>`).join('');
+  $('#thead').querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.k; if (sortK === k) sortAsc = !sortAsc; else { sortK = k; sortAsc = k === 'navn' || k === 'kategori'; }
+    table();
+  }));
+  const q = $('#q').value.trim().toLowerCase();
+  const col = COLS.find(c => c.k === sortK);
+  const rows = D.selskaper.filter(s => (!tblCat || s.kategori === tblCat) && (!q || s.navn.toLowerCase().includes(q) || s.enheter.some(e => (e.navn || '').toLowerCase().includes(q))))
+    .sort((a, b) => {
+      const va = col.get(a), vb = col.get(b);
+      if (va == null) return 1; if (vb == null) return -1;
+      const r = typeof va === 'string' ? va.localeCompare(vb, 'nb') : va - vb;
+      return sortAsc ? r : -r;
+    });
+  $('#tbody').innerHTML = rows.length ? rows.map(s => {
+    const flags = [];
+    if (s.ansatttall_usikkert) flags.push('<span class="flag" title="Ansatttallet i Brreg ser feil ut">usikkert ansatttall</span>');
+    if (s.avvikende_regnskapsaar) flags.push('<span class="flag" title="Regnskapsåret følger ikke kalenderåret">avvikende år</span>');
+    if (!s.aar[Y]) flags.push(`<span class="flag" title="Brreg har ikke et helt regnskapsår for ${Y}">mangler ${Y}</span>`);
+    if (s.i_bransjetall === false) flags.push('<span class="flag" title="Driver også med annet enn IT, og er holdt utenfor bransjetallene">utenfor bransjetall</span>');
+    if (!s.verifisert) flags.push('<span class="flag" title="Ikke bekreftet som rent konsulentselskap">uverifisert</span>');
+    const orgs = s.enheter.map(e => e.orgnr).join(', ');
+    return `<tr>${COLS.map((c, i) => {
+      const v = c.get(s);
+      if (i === 0) return `<td><span>${esc(v)}</span>${flags.join('')}<div class="org">org.nr. ${esc(orgs)}</div></td>`;
+      if (!c.fmt) return `<td>${esc(v)}</td>`;
+      return `<td class="n ${v != null && c.cls ? c.cls(v) : ''}">${v == null ? '–' : esc(c.fmt(v))}</td>`;
+    }).join('')}</tr>`;
+  }).join('') : `<tr><td colspan="${COLS.length}" style="text-align:left">Ingen selskaper passer søket.</td></tr>`;
+}
+
+function footer() {
+  $('#notes').innerHTML = D.merknader.map(n => `<li>${esc(n)}</li>`).join('') +
+    '<li>Utvalget er håndplukket: selskaper som hovedsakelig selger IT-konsulenttimer, også innen data, sikkerhet og global leveranse. Rene programvare-, drifts- og lisensselskaper er ikke med.</li><li>Selskaper merket «uverifisert» er ikke bekreftet som rene konsulentselskaper. De telles med i bransjetallene, men ikke i topplistene.</li>';
+  const d = new Date(D.oppdatert).toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' });
+  $('#source').innerHTML = `Kilde: ${esc(D.kilde)}. Sist oppdatert ${esc(d)}.`;
+}
+
+fetch('data.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+  D = d; Y = String(d.siste_aar);
+  hero(); market();
+  catChips($('#cat-chips'), () => hiCat, c => { hiCat = c; scatter(); }, 'Alle', true);
+  scatter(); tops();
+  catChips($('#tbl-chips'), () => tblCat, c => { tblCat = c; table(); }, 'Alle kategorier');
+  $('#q').addEventListener('input', table);
+  table(); footer();
+}).catch(err => {
+  $('#lede').innerHTML = `<span class="error">Klarte ikke å laste data.json (${esc(err.message)}). Sjekk at filen ligger ved siden av index.html.</span>`;
+});
+</script>

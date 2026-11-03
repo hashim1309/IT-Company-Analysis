@@ -1,0 +1,54 @@
+name: Oppdater data og publiser siden
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 5 * * 1"   # hver mandag kl. 05:17 UTC
+  workflow_dispatch: {}    # kan startes manuelt under Actions
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  oppdater:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Hent data fra Brreg
+        run: python scripts/hent_data.py
+      - name: Lagre endringer
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add site/data.json data/
+          git diff --cached --quiet || git commit -m "Oppdater data fra Brreg"
+          git push
+
+  publiser:
+    needs: oppdater
+    if: always() && (needs.oppdater.result == 'success' || needs.oppdater.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

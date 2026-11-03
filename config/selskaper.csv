@@ -1,0 +1,161 @@
+gruppe,orgnr,kategori,sikker,merknad
+Sopra Steria,910909088,Fullservice,ja,
+Bouvet,996756246,Fullservice,ja,
+Capgemini,943574537,Fullservice,ja,
+Accenture,992037601,Fullservice,ja,
+CGI,919562390,Fullservice,ja,
+Netcompany,881886472,Fullservice,ja,
+Twoday,990432368,Fullservice,ja,
+Knowit,914727170,Fullservice,ja,Knowit Experience Bergen
+Knowit,914727340,Fullservice,ja,Knowit Experience Oslo
+Knowit,911954656,Fullservice,ja,Knowit Financial Solutions
+Knowit,929034902,Fullservice,ja,Knowit Insight Business Solution
+Knowit,945865318,Fullservice,ja,Knowit Solutions Consulting
+Knowit,980713520,Fullservice,ja,Knowit Solutions Data & Tech
+Knowit,925033448,Fullservice,ja,Knowit Impact
+Knowit,996865770,Fullservice,ja,Knowit Consulting Bergen
+Itera,967948748,Fullservice,ja,Itera Norge (ikke holdingselskapet Itera ASA)
+Bekk,981566378,Utvikling og rådgivning,ja,
+Webstep,941612474,Utvikling og rådgivning,ja,
+Computas,986352325,Utvikling og rådgivning,ja,
+Miles,988340316,Utvikling og rådgivning,ja,
+Kantega,985815534,Utvikling og rådgivning,ja,
+Netlight,991952802,Utvikling og rådgivning,ja,
+Capra,988097039,Utvikling og rådgivning,ja,
+Egde,917081859,Utvikling og rådgivning,ja,
+Systek,927415305,Utvikling og rådgivning,ja,
+Variant,927035979,Utvikling og rådgivning,ja,Variant Oslo
+Variant,920933408,Utvikling og rådgivning,ja,Variant Trondheim
+Novanet,995272776,Utvikling og rådgivning,ja,
+Itverket,981874714,Utvikling og rådgivning,ja,Ansatttallet i Brreg ser for lavt ut
+Kodemaker,982099595,Utvikling og rådgivning,ja,
+Scelto,914757274,Utvikling og rådgivning,ja,
+Jprofessionals,927889927,Utvikling og rådgivning,ja,
+Olavstoppen,995359448,Utvikling og rådgivning,ja,
+Ulriken Consulting,924816937,Utvikling og rådgivning,ja,
+Sonat,819664102,Utvikling og rådgivning,ja,Sonat Consulting Bergen
+Sonat,919664088,Utvikling og rådgivning,ja,Sonat Consulting Oslo
+Techfolk,923842527,Utvikling og rådgivning,ja,
+Fraktal,914221110,Utvikling og rådgivning,ja,
+Point Taken,912721825,Utvikling og rådgivning,ja,
+Agens,988669695,Utvikling og rådgivning,ja,
+Emlogic,926408739,Utvikling og rådgivning,ja,
+Boitano,931549383,Utvikling og rådgivning,ja,
+Brilliant,912272389,Utvikling og rådgivning,ja,
+Munu,925095435,Utvikling og rådgivning,ja,
+Gritera,925024430,Utvikling og rådgivning,ja,Gritera Advisory
+Gritera,832332402,Utvikling og rådgivning,ja,Gritera Security
+Trifid,920902928,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Nimtech Consult,928938832,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Veni,999615678,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Solea,934110943,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Epinova,995215748,Digital og design,ja,
+Forte Digital,919321369,Digital og design,ja,
+Noa Ignite,995743566,Digital og design,ja,
+Netlife Design,916898908,Digital og design,ja,
+Blank,915433073,Digital og design,ja,
+Halogen,985041954,Digital og design,ja,
+Dekode,894928662,Digital og design,ja,
+Coretrek,984587406,Digital og design,nei,Sjekk at det er rent konsulentselskap
+Frend Digital,927611902,Digital og design,nei,Sjekk at det er rent konsulentselskap
+Evidi,927119781,Data og analyse,ja,
+EY Skye,995655144,Microsoft og ERP,ja,
+Cepheo,930970719,Microsoft og ERP,ja,
+Inspirit365,926112708,Microsoft og ERP,ja,
+Prosesspilotene,897658372,Microsoft og ERP,ja,
+Antire,932436787,Microsoft og ERP,ja,
+Omega 365,917915202,Microsoft og ERP,ja,Omega 365 Consulting
+Omega 365,917518238,Microsoft og ERP,ja,Omega 365 Norway
+Exsitec,984489234,Microsoft og ERP,ja,Exsitec
+Exsitec,980607259,Microsoft og ERP,ja,Exsitec Solutions
+Columbus,883561872,Microsoft og ERP,ja,
+Devoteam,980172015,Microsoft og ERP,nei,Bredere enn Microsoft; vurder kategori
+Cognizant,988707031,Global leveranse,ja,Cognizant Technology Solutions Norway
+Cognizant,984755384,Global leveranse,ja,Cognizant Oil and Gas Consulting Services Norway
+HCL Technologies,995672766,Global leveranse,ja,
+Infosys,930520101,Global leveranse,ja,
+Tata Consultancy Services,990130124,Global leveranse,ja,Norsk filial (NUF); kan mangle regnskap i Brreg
+LTIMindtree,921974248,Global leveranse,ja,
+Tieto,933012867,Global leveranse,nei,Tieto Norway; leverer også drift
+DXC Technology,958958455,Global leveranse,nei,Leverer også drift og outsourcing
+Akkodis,980665895,Global leveranse,nei,Akkodis Norway R&D Services; ingeniør- og IT-konsulenter
+Expert Analytics,924651946,Data og analyse,ja,
+Precis Digital,914744504,Data og analyse,ja,
+Northern Beat,998549833,Data og analyse,nei,Sjekk kategori
+Gritera,929502213,Utvikling og rådgivning,ja,Gritera Analytics
+Knowit,919074469,Fullservice,ja,Knowit Insight
+NTT Data Business Solutions,992036079,Microsoft og ERP,ja,SAP-konsulenter
+Redpill Linpro,920208657,Utvikling og rådgivning,nei,Redpill Linpro DevOps; leverer også drift
+Redpill Linpro,920188834,Utvikling og rådgivning,nei,Redpill Linpro CloudOps
+Redpill Linpro,992184531,Utvikling og rådgivning,nei,Redpill Linpro Development Services
+Consid,927302942,Utvikling og rådgivning,ja,
+Darize Consulting,920285716,Utvikling og rådgivning,ja,Tidligere Globeteam
+Bredvid,917573360,Utvikling og rådgivning,ja,
+Liflig,925906093,Utvikling og rådgivning,ja,
+Commit,934427688,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Unicus,921184476,Utvikling og rådgivning,ja,
+99X Increo,982057892,Utvikling og rådgivning,ja,
+Item Consulting,980712567,Utvikling og rådgivning,ja,
+Teleplan Consulting,980396711,Utvikling og rådgivning,ja,
+Konsulentselskapet Enso,915718515,Utvikling og rådgivning,ja,
+Kraftlauget,922835071,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+AboveIT,922105243,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Yttr,991118225,Digital og design,ja,
+Aplia,998850371,Digital og design,ja,
+Vokser,919653477,Digital og design,nei,Sjekk at det er rent konsulentselskap
+Gnist Consulting,922669570,Microsoft og ERP,ja,
+Sariba Consulting,987428511,Microsoft og ERP,ja,
+Applica Consulting,934167112,Microsoft og ERP,ja,
+Noria,968354701,Microsoft og ERP,ja,Noria
+Noria,926112538,Microsoft og ERP,ja,Noria Vest
+Arribatec,918487328,Microsoft og ERP,nei,Arribatec Norge
+Arribatec,983398308,Microsoft og ERP,nei,Arribatec Cloud
+Arribatec,968455265,Microsoft og ERP,nei,Arribatec EA & BPM
+Gapit Nordics,917567204,Microsoft og ERP,nei,CRM-konsulenter; sjekk kategori
+Deloitte,980211282,Rådgivningshus,ja,Revisjon og rådgivning; IT-andelen kan ikke skilles ut
+PwC,987009713,Rådgivningshus,ja,Revisjon og rådgivning; IT-andelen kan ikke skilles ut
+KPMG,935174627,Rådgivningshus,ja,Revisjon og rådgivning; IT-andelen kan ikke skilles ut
+EY,976389387,Rådgivningshus,ja,Ernst & Young AS; revisjon og rådgivning (EY Skye står i Microsoft og ERP)
+BearingPoint,984145047,Rådgivningshus,ja,Ledelses- og teknologirådgivning
+Avo Consulting,918664696,Rådgivningshus,ja,Ledelses- og digitaliseringsrådgivning
+Implement Consulting Group,997336402,Rådgivningshus,ja,
+PA Consulting,920413382,Rådgivningshus,ja,
+Sprint Consulting,988497711,Rådgivningshus,nei,Prosjektledelse; sjekk IT-andel
+Clave Consulting,933567389,Rådgivningshus,nei,IKT og organisasjonsutvikling
+Inventura,983351417,Rådgivningshus,nei,Sjekk IT-andel
+mnemonic,982089549,Sikkerhet,ja,Både konsulenter og overvåkingstjenester
+Defendable,925880140,Sikkerhet,ja,
+Sicra,932538067,Sikkerhet,ja,
+O3 Cyber,929553160,Sikkerhet,ja,Under 20 ansatte; tatt med som kjent aktør
+Kommando,919637226,Sikkerhet,ja,
+Ivolv,927371022,Sikkerhet,ja,
+Orange Cyberdefense,981548280,Sikkerhet,ja,
+Telenor Cyberdefence,932975424,Sikkerhet,nei,Skilt ut fra Telenor; også overvåkingstjenester
+River Security,925178810,Sikkerhet,ja,
+Knowit,913513657,Fullservice,ja,Knowit Cybersecurity & Law
+Variant,928534006,Utvikling og rådgivning,ja,Variant Bergen
+Experis,982683955,Utvikling og rådgivning,nei,IT-bemanning og konsulenter
+Experis,925922374,Utvikling og rådgivning,nei,Experis Services
+Cegal,996221423,Utvikling og rådgivning,nei,Mye drift og datasenter; sjekk kategori
+Align Consulting,998790956,Utvikling og rådgivning,nei,Ikke bekreftet
+Lighthouse Consulting,925732656,Utvikling og rådgivning,nei,Ikke bekreftet
+Gren Utvikling,927211769,Utvikling og rådgivning,nei,Ikke bekreftet
+Bspoke,912817938,Utvikling og rådgivning,nei,Ikke bekreftet
+Intuvio,979153953,Utvikling og rådgivning,nei,Ikke bekreftet
+Vaare,933480968,Utvikling og rådgivning,nei,Ikke bekreftet
+Forse,914951852,Utvikling og rådgivning,nei,Ikke bekreftet
+Alv,822704042,Utvikling og rådgivning,nei,Ikke bekreftet
+Logiq,981012224,Utvikling og rådgivning,nei,Ikke bekreftet
+Scienta,997230078,Utvikling og rådgivning,nei,Også salg av programvare
+Oseberg Solutions,981586581,Utvikling og rådgivning,nei,Også regnskapstjenester
+Decisive,928720691,Utvikling og rådgivning,nei,Ikke bekreftet
+Finexa IT Solutions,929574265,Utvikling og rådgivning,nei,Ikke bekreftet
+Fink,917279934,Digital og design,nei,Ikke bekreftet
+Skråstrek,923161996,Digital og design,nei,Ikke bekreftet
+Inevo,912345793,Digital og design,nei,Ikke bekreftet
+These Ways,922656657,Digital og design,nei,Ikke bekreftet
+S5 Consulting,991774866,Microsoft og ERP,nei,SAP-konsulenter
+ERPkonsult,823130562,Microsoft og ERP,nei,Ikke bekreftet
+Netpower Business Solutions,990648085,Microsoft og ERP,nei,Ikke bekreftet
+ECIT Capstone,957345808,Microsoft og ERP,nei,Også salg av datautstyr
+Diginext IT Solutions,933498336,Global leveranse,nei,Norsk filial (NUF)
