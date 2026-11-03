@@ -343,8 +343,11 @@ function groupTable(id, rows, firstLabel, barKey, barLabel) {
 function hero() {
   const m = D.marked[Y], p = D.marked[PY];
   $('#yr').textContent = Y;
-  const flat = m.vekst_like_mot_like != null && Math.abs(m.vekst_like_mot_like) < 0.01;
-  $('#headline').textContent = flat ? `IT-konsulentene stod stille i ${Y}` : `IT-konsulentene i ${Y}`;
+  const v = m.vekst_like_mot_like, pv = p ? p.vekst_like_mot_like : null;
+  $('#headline').textContent =
+    v != null && Math.abs(v) < 0.01 ? `IT-konsulentene stod stille i ${Y}` :
+    v != null && pv != null && v < pv - 0.03 ? `Veksten bremset kraftig for IT-konsulentene i ${Y}` :
+    v != null && v < 0 ? `IT-konsulentene krympet i ${Y}` : `IT-konsulentene i ${Y}`;
   let lede = `De ${m.antall_selskaper} IT-konsulentselskapene i utvalget hadde ${mrd(m.inntekt)} milliarder kroner i driftsinntekt i ${Y}. `;
   if (p && p.vekst_like_mot_like != null && m.vekst_like_mot_like != null)
     lede += `Veksten for de samme selskapene var ${pct(m.vekst_like_mot_like, true)}, mot ${pct(p.vekst_like_mot_like, true)} året før. `;
@@ -455,7 +458,7 @@ function scatter() {
       const right = X(p.x) < W - 140;
       el('text', { x: X(p.x) + (right ? 10 : -10), y: Yp(p.y) + 4, 'text-anchor': right ? 'start' : 'end', class: 'lbl' }, g, p.s.navn);
     }
-    const html = `<b>${esc(p.s.navn)}</b><br>${esc(p.s.kategori)}<br>Driftsinntekt: ${mill(p.x)} mill. kr<br>Driftsmargin: ${pct(p.y)}<br>Ansatte: ${nf.format(p.s.ansatte)}${p.s.verifisert ? '' : '<br>Uverifisert'}`;
+    const html = `<b>${esc(p.s.navn)}</b><br>${esc(p.s.kategori)}<br>Driftsinntekt: ${mill(p.x)} mill. kr<br>Driftsmargin: ${pct(p.y)}<br>Ansatte: ${nf.format(p.s.ansatte)}`;
     g.addEventListener('mousemove', ev => showTip(html, ev));
     g.addEventListener('mouseleave', hideTip);
     g.addEventListener('focus', () => { const r = g.getBoundingClientRect(); showTip(html, { clientX: r.right, clientY: r.top }); });
@@ -494,7 +497,7 @@ function losses() {
   const L = D.analyser.underskudd;
   const sum = L.reduce((a, x) => a + x.driftsresultat, 0);
   $('#f-loss').textContent = `${L.length} av ${D.marked[Y].antall_selskaper} selskaper gikk med driftsunderskudd i ${Y}, til sammen ${mill(Math.abs(sum))} mill. kr i driftsunderskudd.`;
-  $('#l-loss').innerHTML = L.map(x => `<li><span>${esc(x.navn)}${x.verifisert ? '' : '<span class="flag">uverifisert</span>'}</span><span class="num neg">${mill1(x.driftsresultat)} <span class="muted">(${pct(x.margin)})</span></span></li>`).join('');
+  $('#l-loss').innerHTML = L.map(x => `<li><span>${esc(x.navn)}</span><span class="num neg">${mill1(x.driftsresultat)} <span class="muted">(${pct(x.margin)})</span></span></li>`).join('');
   const s = D.analyser.soliditet;
   const neg = s.negativ_egenkapital;
   $('#f-solid').textContent = `Medianselskapet har en egenkapitalandel på ${pct(s.median_ek_andel)}. ` +
@@ -534,7 +537,7 @@ function tops() {
     tabs.appendChild(b);
   });
   const o = TOPS.find(x => x.k === topK);
-  $('#top-note').textContent = o.note + ' Bare bekreftede konsulentselskaper med minst 20 mill. kr i inntekt er med.';
+  $('#top-note').textContent = o.note + ' Bare IT-konsulentselskaper med minst 20 mill. kr i inntekt er med.';
   const rows = D.topplister[o.k] || [];
   const max = Math.max(...rows.map(r => r.verdi));
   $('#top-list').innerHTML = rows.map((r, i) => `
@@ -584,8 +587,8 @@ function detail(s) {
   if (s.vekst_ikke_sammenlignbar) notes.push('Vekst vises ikke fordi ikke alle juridiske enheter har regnskap begge år.');
   if (s.ansatttall_usikkert) notes.push('Ansatttallet i Brreg passer ikke med lønnskostnaden, så tall per ansatt vises ikke.');
   if (s.avvikende_regnskapsaar) notes.push('Regnskapsåret følger ikke kalenderåret. Året regnskapet slutter i brukes.');
-  if (!s.i_bransjetall) notes.push('Driver også med annet enn IT og er holdt utenfor bransjetallene.');
-  if (!s.verifisert) notes.push('Ikke bekreftet som rent konsulentselskap.');
+  if (!s.i_bransjetall) notes.push(`Kategorien «${s.kategori}» er holdt utenfor bransjetallene.`);
+  if (s.merknad) notes.push(s.merknad + '.');
   return hist + ents + (notes.length ? `<p class="note">${notes.map(esc).join(' ')}</p>` : '');
 }
 
@@ -609,8 +612,7 @@ function table() {
     if (s.ansatttall_usikkert) flags.push('<span class="flag" title="Ansatttallet i Brreg ser feil ut">usikkert ansatttall</span>');
     if (s.avvikende_regnskapsaar) flags.push('<span class="flag" title="Regnskapsåret følger ikke kalenderåret">avvikende år</span>');
     if (!s.aar[Y]) flags.push(`<span class="flag" title="Brreg har ikke et helt regnskapsår for ${Y}">mangler ${Y}</span>`);
-    if (!s.i_bransjetall) flags.push('<span class="flag" title="Driver også med annet enn IT, og er holdt utenfor bransjetallene">utenfor bransjetall</span>');
-    if (!s.verifisert) flags.push('<span class="flag" title="Ikke bekreftet som rent konsulentselskap">uverifisert</span>');
+    if (!s.i_bransjetall) flags.push('<span class="flag" title="Ikke et rent IT-konsulentselskap, eller virksomheten er uavklart. Holdt utenfor bransjetallene.">utenfor bransjetall</span>');
     const isOpen = open.has(s.navn);
     const main = `<tr class="main" data-n="${esc(s.navn)}" aria-expanded="${isOpen}">${COLS.map((c, i) => {
       const v = c.get(s);
@@ -627,8 +629,7 @@ function table() {
 
 function footer() {
   $('#notes').innerHTML = D.merknader.map(n => `<li>${esc(n)}</li>`).join('') +
-    '<li>Utvalget er håndplukket: selskaper som hovedsakelig selger IT-konsulenttimer, også innen data, sikkerhet og global leveranse. Rene programvare-, drifts- og lisensselskaper er ikke med.</li>' +
-    '<li>Selskaper merket «uverifisert» er ikke bekreftet som rene konsulentselskaper. De telles med i bransjetallene, men ikke i topplistene.</li>' +
+    '<li>Utvalget er håndplukket: selskaper som hovedsakelig selger IT-konsulenttimer, også innen data, sikkerhet og global leveranse.</li>' +
     '<li>Alle tall kontrolleres automatisk mot rådataene fra Brreg før siden publiseres.</li>';
   const d = new Date(D.oppdatert).toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' });
   $('#source').innerHTML = `Kilde: ${esc(D.kilde)}. Sist oppdatert ${esc(d)}.`;

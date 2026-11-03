@@ -10,45 +10,46 @@
   "Selskaper i samme konsern er slått sammen. Vekst for ett selskap vises bare når de samme juridiske enhetene har regnskap begge år.",
   "Vekst like mot like for bransjen regnes bare på selskaper som har regnskap begge år.",
   "Noen selskaper har avvikende regnskapsår; året regnskapet slutter i brukes.",
-  "Rådgivningshus som Deloitte, PwC, KPMG og EY driver også med revisjon og skatt. De vises i tabellen, men er holdt utenfor bransjetallene og topplistene.",
-  "Topplistene tar bare med bekreftede konsulentselskaper med minst 20 mill. kr i inntekt."
+  "Rådgivningshus (som Deloitte, PwC, KPMG og EY), drifts- og outsourcingselskaper, IT-bemanning, programvare- og lisensselskaper og selskaper med uavklart virksomhet vises i tabellen, men er holdt utenfor bransjetallene, analysene og topplistene.",
+  "Et selskap regnes som IT-konsulentselskap når formålet det har oppgitt i Brreg er konsulentvirksomhet, og over halvparten av inntekten går til lønn. Kjente konsulenthus er plassert direkte.",
+  "Topplistene tar bare med selskaper med minst 20 mill. kr i inntekt."
  ],
  "marked": {
   "2023": {
-   "antall_selskaper": 114,
-   "inntekt": 43894046,
-   "lonn": 24371823,
-   "driftsresultat": 2584806,
-   "margin": 0.0589,
-   "lonnsandel": 0.5552,
-   "med_overskudd": 90,
-   "median_margin": 0.0596,
+   "antall_selskaper": 97,
+   "inntekt": 35364117,
+   "lonn": 20952554,
+   "driftsresultat": 2053006,
+   "margin": 0.0581,
+   "lonnsandel": 0.5925,
+   "med_overskudd": 76,
+   "median_margin": 0.0545,
    "vekst_like_mot_like": null,
    "antall_i_vekst": 0
   },
   "2024": {
-   "antall_selskaper": 123,
-   "inntekt": 47797542,
-   "lonn": 27234061,
-   "driftsresultat": 2944097,
-   "margin": 0.0616,
-   "lonnsandel": 0.5698,
-   "med_overskudd": 99,
-   "median_margin": 0.0524,
-   "vekst_like_mot_like": 0.0314,
-   "antall_i_vekst": 136
+   "antall_selskaper": 104,
+   "inntekt": 39942915,
+   "lonn": 23621205,
+   "driftsresultat": 2547391,
+   "margin": 0.0638,
+   "lonnsandel": 0.5914,
+   "med_overskudd": 83,
+   "median_margin": 0.0493,
+   "vekst_like_mot_like": 0.0805,
+   "antall_i_vekst": 114
   },
   "2025": {
-   "antall_selskaper": 123,
-   "inntekt": 47370372,
-   "lonn": 27527068,
-   "driftsresultat": 2956669,
-   "margin": 0.0624,
-   "lonnsandel": 0.5811,
-   "med_overskudd": 100,
-   "median_margin": 0.0541,
-   "vekst_like_mot_like": 0.0031,
-   "antall_i_vekst": 145
+   "antall_selskaper": 104,
+   "inntekt": 39794374,
+   "lonn": 24062390,
+   "driftsresultat": 2507536,
+   "margin": 0.063,
+   "lonnsandel": 0.6047,
+   "med_overskudd": 84,
+   "median_margin": 0.0518,
+   "vekst_like_mot_like": 0.0108,
+   "antall_i_vekst": 121
   }
  },
  "analyser": {
@@ -65,49 +66,35 @@
     "vekst_like_mot_like": 0.0073,
     "antall_i_vekst": 18,
     "navn": "Fullservice",
-    "andel_av_inntekt": 0.4458
+    "andel_av_inntekt": 0.5306
    },
    {
-    "antall_selskaper": 58,
-    "inntekt": 11629004,
-    "lonn": 7440541,
-    "driftsresultat": 736280,
-    "margin": 0.0633,
-    "lonnsandel": 0.6398,
-    "med_overskudd": 49,
-    "median_margin": 0.0601,
-    "vekst_like_mot_like": -0.0088,
-    "antall_i_vekst": 66,
+    "antall_selskaper": 46,
+    "inntekt": 7737632,
+    "lonn": 5530036,
+    "driftsresultat": 514465,
+    "margin": 0.0665,
+    "lonnsandel": 0.7147,
+    "med_overskudd": 39,
+    "median_margin": 0.0546,
+    "vekst_like_mot_like": 0.005,
+    "antall_i_vekst": 51,
     "navn": "Utvikling og rådgivning",
-    "andel_av_inntekt": 0.2455
+    "andel_av_inntekt": 0.1944
    },
    {
-    "antall_selskaper": 20,
-    "inntekt": 6090298,
-    "lonn": 3335282,
-    "driftsresultat": 257212,
-    "margin": 0.0422,
-    "lonnsandel": 0.5476,
-    "med_overskudd": 15,
-    "median_margin": 0.0776,
-    "vekst_like_mot_like": 0.0092,
-    "antall_i_vekst": 24,
+    "antall_selskaper": 16,
+    "inntekt": 5263845,
+    "lonn": 2911745,
+    "driftsresultat": 195521,
+    "margin": 0.0371,
+    "lonnsandel": 0.5532,
+    "med_overskudd": 11,
+    "median_margin": 0.0808,
+    "vekst_like_mot_like": 0.0084,
+    "antall_i_vekst": 18,
     "navn": "Microsoft og ERP",
-    "andel_av_inntekt": 0.1286
-   },
-   {
-    "antall_selskaper": 7,
-    "inntekt": 4177486,
-    "lonn": 1729304,
-    "driftsresultat": 260892,
-    "margin": 0.0625,
-    "lonnsandel": 0.414,
-    "med_overskudd": 5,
-    "median_margin": 0.047,
-    "vekst_like_mot_like": -0.0654,
-    "antall_i_vekst": 8,
-    "navn": "Global leveranse",
-    "andel_av_inntekt": 0.0882
+    "andel_av_inntekt": 0.1323
    },
    {
     "antall_selskaper": 9,
@@ -121,21 +108,35 @@
     "vekst_like_mot_like": 0.0916,
     "antall_i_vekst": 9,
     "navn": "Sikkerhet",
-    "andel_av_inntekt": 0.0369
+    "andel_av_inntekt": 0.0439
    },
    {
-    "antall_selskaper": 16,
-    "inntekt": 1576509,
-    "lonn": 952856,
-    "driftsresultat": 65202,
-    "margin": 0.0414,
-    "lonnsandel": 0.6044,
-    "med_overskudd": 14,
-    "median_margin": 0.033,
-    "vekst_like_mot_like": 0.0238,
-    "antall_i_vekst": 16,
+    "antall_selskaper": 15,
+    "inntekt": 1523037,
+    "lonn": 924835,
+    "driftsresultat": 62549,
+    "margin": 0.0411,
+    "lonnsandel": 0.6072,
+    "med_overskudd": 13,
+    "median_margin": 0.032,
+    "vekst_like_mot_like": 0.0228,
+    "antall_i_vekst": 15,
     "navn": "Digital og design",
-    "andel_av_inntekt": 0.0333
+    "andel_av_inntekt": 0.0383
+   },
+   {
+    "antall_selskaper": 5,
+    "inntekt": 1372785,
+    "lonn": 626689,
+    "driftsresultat": 97918,
+    "margin": 0.0713,
+    "lonnsandel": 0.4565,
+    "med_overskudd": 4,
+    "median_margin": 0.047,
+    "vekst_like_mot_like": -0.0937,
+    "antall_i_vekst": 6,
+    "navn": "Global leveranse",
+    "andel_av_inntekt": 0.0345
    },
    {
     "antall_selskaper": 4,
@@ -149,51 +150,51 @@
     "vekst_like_mot_like": 0.171,
     "antall_i_vekst": 4,
     "navn": "Data og analyse",
-    "andel_av_inntekt": 0.0218
+    "andel_av_inntekt": 0.026
    }
   ],
   "storrelse": [
    {
-    "antall_selskaper": 50,
-    "inntekt": 3245124,
-    "lonn": 2042477,
-    "driftsresultat": 256213,
-    "margin": 0.079,
-    "lonnsandel": 0.6294,
-    "med_overskudd": 41,
-    "median_margin": 0.0626,
-    "vekst_like_mot_like": 0.0625,
-    "antall_i_vekst": 50,
+    "antall_selskaper": 45,
+    "inntekt": 2868326,
+    "lonn": 1852907,
+    "driftsresultat": 204511,
+    "margin": 0.0713,
+    "lonnsandel": 0.646,
+    "med_overskudd": 37,
+    "median_margin": 0.0593,
+    "vekst_like_mot_like": 0.0726,
+    "antall_i_vekst": 45,
     "navn": "Under 50 ansatte",
-    "andel_av_inntekt": 0.0685
+    "andel_av_inntekt": 0.0721
    },
    {
-    "antall_selskaper": 53,
-    "inntekt": 10313664,
-    "lonn": 5977289,
-    "driftsresultat": 453656,
-    "margin": 0.044,
-    "lonnsandel": 0.5796,
-    "med_overskudd": 42,
-    "median_margin": 0.0496,
-    "vekst_like_mot_like": 0.0192,
-    "antall_i_vekst": 64,
+    "antall_selskaper": 42,
+    "inntekt": 8084946,
+    "lonn": 4939234,
+    "driftsresultat": 271045,
+    "margin": 0.0335,
+    "lonnsandel": 0.6109,
+    "med_overskudd": 32,
+    "median_margin": 0.0394,
+    "vekst_like_mot_like": 0.0211,
+    "antall_i_vekst": 49,
     "navn": "50–199 ansatte",
-    "andel_av_inntekt": 0.2177
+    "andel_av_inntekt": 0.2032
    },
    {
-    "antall_selskaper": 16,
-    "inntekt": 20588736,
-    "lonn": 10840599,
-    "driftsresultat": 1212777,
-    "margin": 0.0589,
-    "lonnsandel": 0.5265,
-    "med_overskudd": 14,
-    "median_margin": 0.0519,
-    "vekst_like_mot_like": -0.0136,
-    "antall_i_vekst": 27,
+    "antall_selskaper": 13,
+    "inntekt": 15618254,
+    "lonn": 8603546,
+    "driftsresultat": 997957,
+    "margin": 0.0639,
+    "lonnsandel": 0.5509,
+    "med_overskudd": 12,
+    "median_margin": 0.0442,
+    "vekst_like_mot_like": 0.0011,
+    "antall_i_vekst": 23,
     "navn": "200–999 ansatte",
-    "andel_av_inntekt": 0.4346
+    "andel_av_inntekt": 0.3925
    },
    {
     "antall_selskaper": 3,
@@ -207,194 +208,160 @@
     "vekst_like_mot_like": 0.0149,
     "antall_i_vekst": 3,
     "navn": "1000 ansatte eller flere",
-    "andel_av_inntekt": 0.2758
+    "andel_av_inntekt": 0.3283
    }
   ],
   "lonn_mot_margin": [
    {
-    "antall_selskaper": 7,
-    "inntekt": 491983,
-    "lonn": 312337,
-    "driftsresultat": -30386,
-    "margin": -0.0618,
-    "lonnsandel": 0.6349,
-    "med_overskudd": 4,
-    "median_margin": 0.0234,
-    "vekst_like_mot_like": 0.2097,
-    "antall_i_vekst": 7,
+    "antall_selskaper": 10,
+    "inntekt": 603024,
+    "lonn": 385561,
+    "driftsresultat": -19452,
+    "margin": -0.0323,
+    "lonnsandel": 0.6394,
+    "med_overskudd": 7,
+    "median_margin": 0.0287,
+    "vekst_like_mot_like": 0.2939,
+    "antall_i_vekst": 10,
     "navn": "Under 1,0 mill. kr",
-    "andel_av_inntekt": 0.0104
+    "andel_av_inntekt": 0.0152
    },
    {
-    "antall_selskaper": 22,
-    "inntekt": 13035294,
-    "lonn": 8627255,
-    "driftsresultat": 1154347,
-    "margin": 0.0886,
-    "lonnsandel": 0.6618,
-    "med_overskudd": 20,
-    "median_margin": 0.0779,
-    "vekst_like_mot_like": 0.0091,
-    "antall_i_vekst": 24,
+    "antall_selskaper": 29,
+    "inntekt": 13698560,
+    "lonn": 9144118,
+    "driftsresultat": 1125331,
+    "margin": 0.0821,
+    "lonnsandel": 0.6675,
+    "med_overskudd": 26,
+    "median_margin": 0.0659,
+    "vekst_like_mot_like": 0.0137,
+    "antall_i_vekst": 31,
     "navn": "1,0–1,2 mill. kr",
-    "andel_av_inntekt": 0.2752
+    "andel_av_inntekt": 0.3442
    },
    {
-    "antall_selskaper": 25,
-    "inntekt": 13939436,
-    "lonn": 8001974,
-    "driftsresultat": 701311,
-    "margin": 0.0503,
-    "lonnsandel": 0.5741,
-    "med_overskudd": 21,
-    "median_margin": 0.0596,
-    "vekst_like_mot_like": 0.019,
-    "antall_i_vekst": 38,
+    "antall_selskaper": 30,
+    "inntekt": 14223107,
+    "lonn": 8207543,
+    "driftsresultat": 729017,
+    "margin": 0.0513,
+    "lonnsandel": 0.5771,
+    "med_overskudd": 26,
+    "median_margin": 0.0602,
+    "vekst_like_mot_like": 0.0215,
+    "antall_i_vekst": 43,
     "navn": "1,2–1,4 mill. kr",
-    "andel_av_inntekt": 0.2943
+    "andel_av_inntekt": 0.3574
    },
    {
-    "antall_selskaper": 27,
-    "inntekt": 10392694,
-    "lonn": 5720608,
-    "driftsresultat": 648080,
-    "margin": 0.0624,
-    "lonnsandel": 0.5504,
-    "med_overskudd": 19,
-    "median_margin": 0.0346,
-    "vekst_like_mot_like": -0.0129,
-    "antall_i_vekst": 29,
+    "antall_selskaper": 34,
+    "inntekt": 11110734,
+    "lonn": 6210024,
+    "driftsresultat": 697641,
+    "margin": 0.0628,
+    "lonnsandel": 0.5589,
+    "med_overskudd": 25,
+    "median_margin": 0.037,
+    "vekst_like_mot_like": -0.0045,
+    "antall_i_vekst": 36,
     "navn": "1,4 mill. kr eller mer",
-    "andel_av_inntekt": 0.2194
+    "andel_av_inntekt": 0.2792
    }
   ],
   "geografi": [
    {
-    "antall_selskaper": 83,
-    "inntekt": 36706479,
-    "lonn": 22047450,
-    "driftsresultat": 2357503,
-    "margin": 0.0642,
-    "lonnsandel": 0.6006,
-    "med_overskudd": 68,
-    "median_margin": 0.0596,
-    "vekst_like_mot_like": 0.0009,
-    "antall_i_vekst": 102,
+    "antall_selskaper": 75,
+    "inntekt": 34264746,
+    "lonn": 20779542,
+    "driftsresultat": 2332260,
+    "margin": 0.0681,
+    "lonnsandel": 0.6064,
+    "med_overskudd": 61,
+    "median_margin": 0.0593,
+    "vekst_like_mot_like": 0.0059,
+    "antall_i_vekst": 89,
     "navn": "Oslo",
-    "andel_av_inntekt": 0.7749
+    "andel_av_inntekt": 0.861
    },
    {
     "antall_selskaper": 14,
-    "inntekt": 3841724,
-    "lonn": 2109043,
-    "driftsresultat": 256229,
-    "margin": 0.0667,
-    "lonnsandel": 0.549,
-    "med_overskudd": 14,
+    "inntekt": 3633010,
+    "lonn": 2108095,
+    "driftsresultat": 170318,
+    "margin": 0.0469,
+    "lonnsandel": 0.5803,
+    "med_overskudd": 13,
     "median_margin": 0.0549,
-    "vekst_like_mot_like": 0.0322,
+    "vekst_like_mot_like": 0.039,
     "antall_i_vekst": 15,
     "navn": "Andre kommuner",
-    "andel_av_inntekt": 0.0811
+    "andel_av_inntekt": 0.0913
    },
    {
-    "antall_selskaper": 10,
-    "inntekt": 3470650,
-    "lonn": 1612464,
-    "driftsresultat": 174317,
-    "margin": 0.0502,
-    "lonnsandel": 0.4646,
-    "med_overskudd": 6,
-    "median_margin": 0.0334,
-    "vekst_like_mot_like": -0.0295,
-    "antall_i_vekst": 11,
+    "antall_selskaper": 8,
+    "inntekt": 1197730,
+    "lonn": 678689,
+    "driftsresultat": -22221,
+    "margin": -0.0186,
+    "lonnsandel": 0.5666,
+    "med_overskudd": 4,
+    "median_margin": -0.0041,
+    "vekst_like_mot_like": -0.004,
+    "antall_i_vekst": 9,
     "navn": "Bærum",
-    "andel_av_inntekt": 0.0733
-   },
-   {
-    "antall_selskaper": 3,
-    "inntekt": 1536839,
-    "lonn": 715030,
-    "driftsresultat": 143913,
-    "margin": 0.0936,
-    "lonnsandel": 0.4653,
-    "med_overskudd": 3,
-    "median_margin": 0.0929,
-    "vekst_like_mot_like": 0.0382,
-    "antall_i_vekst": 3,
-    "navn": "Sandnes",
-    "andel_av_inntekt": 0.0324
-   },
-   {
-    "antall_selskaper": 6,
-    "inntekt": 1160146,
-    "lonn": 609906,
-    "driftsresultat": 7718,
-    "margin": 0.0067,
-    "lonnsandel": 0.5257,
-    "med_overskudd": 5,
-    "median_margin": 0.0314,
-    "vekst_like_mot_like": 0.0063,
-    "antall_i_vekst": 7,
-    "navn": "Bergen",
-    "andel_av_inntekt": 0.0245
+    "andel_av_inntekt": 0.0301
    },
    {
     "antall_selskaper": 4,
-    "inntekt": 367443,
-    "lonn": 236862,
-    "driftsresultat": -5609,
-    "margin": -0.0153,
-    "lonnsandel": 0.6446,
-    "med_overskudd": 2,
-    "median_margin": -0.032,
-    "vekst_like_mot_like": 0.0457,
-    "antall_i_vekst": 4,
-    "navn": "Stavanger",
-    "andel_av_inntekt": 0.0078
+    "inntekt": 415606,
+    "lonn": 308865,
+    "driftsresultat": 22833,
+    "margin": 0.0549,
+    "lonnsandel": 0.7432,
+    "med_overskudd": 4,
+    "median_margin": 0.0569,
+    "vekst_like_mot_like": 0.1596,
+    "antall_i_vekst": 5,
+    "navn": "Bergen",
+    "andel_av_inntekt": 0.0104
    },
    {
     "antall_selskaper": 3,
-    "inntekt": 287091,
-    "lonn": 196313,
-    "driftsresultat": 22598,
-    "margin": 0.0787,
-    "lonnsandel": 0.6838,
+    "inntekt": 283282,
+    "lonn": 187199,
+    "driftsresultat": 4346,
+    "margin": 0.0153,
+    "lonnsandel": 0.6608,
     "med_overskudd": 2,
-    "median_margin": 0.1352,
-    "vekst_like_mot_like": 0.0706,
+    "median_margin": 0.0075,
+    "vekst_like_mot_like": 0.1401,
     "antall_i_vekst": 3,
-    "navn": "Asker",
-    "andel_av_inntekt": 0.0061
+    "navn": "Stavanger",
+    "andel_av_inntekt": 0.0071
    }
   ],
   "konsentrasjon": {
-   "topp1": 0.1263,
-   "topp3": 0.2758,
-   "topp5": 0.3971,
-   "topp10": 0.5663
+   "topp1": 0.1503,
+   "topp3": 0.3283,
+   "topp5": 0.4727,
+   "topp10": 0.6227
   },
   "soliditet": {
-   "median_ek_andel": 0.2777,
+   "median_ek_andel": 0.2722,
    "negativ_egenkapital": [
     "Columbus",
     "Darize Consulting",
     "Orange Cyberdefense"
    ],
-   "antall": 123
+   "antall": 104
   },
   "underskudd": [
-   {
-    "navn": "Experis",
-    "driftsresultat": -95990,
-    "margin": -0.069,
-    "verifisert": false
-   },
    {
     "navn": "Telenor Cyberdefence",
     "driftsresultat": -62385,
     "margin": -0.9367,
-    "verifisert": false
+    "verifisert": true
    },
    {
     "navn": "Columbus",
@@ -439,22 +406,10 @@
     "verifisert": true
    },
    {
-    "navn": "DXC Technology",
-    "driftsresultat": -15665,
-    "margin": -0.0242,
-    "verifisert": false
-   },
-   {
     "navn": "Cepheo",
     "driftsresultat": -11787,
     "margin": -0.0384,
     "verifisert": true
-   },
-   {
-    "navn": "Veni",
-    "driftsresultat": -9955,
-    "margin": -0.1183,
-    "verifisert": false
    },
    {
     "navn": "Munu",
@@ -520,12 +475,20 @@
     "navn": "Bspoke",
     "driftsresultat": -155,
     "margin": -0.0026,
-    "verifisert": false
+    "verifisert": true
    }
   ]
  },
  "topplister": {
   "margin": [
+   {
+    "navn": "ERPkonsult",
+    "verdi": 0.2428
+   },
+   {
+    "navn": "Lighthouse Consulting",
+    "verdi": 0.2185
+   },
    {
     "navn": "Kodemaker",
     "verdi": 0.2005
@@ -533,6 +496,10 @@
    {
     "navn": "O3 Cyber",
     "verdi": 0.1895
+   },
+   {
+    "navn": "Forse",
+    "verdi": 0.1871
    },
    {
     "navn": "Kommando",
@@ -543,34 +510,34 @@
     "verdi": 0.1694
    },
    {
+    "navn": "Vaare",
+    "verdi": 0.1625
+   },
+   {
     "navn": "Novanet",
     "verdi": 0.1486
    },
    {
     "navn": "Scelto",
     "verdi": 0.1454
-   },
-   {
-    "navn": "Gnist Consulting",
-    "verdi": 0.1435
-   },
-   {
-    "navn": "Bekk",
-    "verdi": 0.1396
-   },
-   {
-    "navn": "Emlogic",
-    "verdi": 0.1352
-   },
-   {
-    "navn": "Systek",
-    "verdi": 0.1342
    }
   ],
   "vekst": [
    {
+    "navn": "Lighthouse Consulting",
+    "verdi": 0.6963
+   },
+   {
+    "navn": "Kraftlauget",
+    "verdi": 0.6084
+   },
+   {
     "navn": "Consid",
     "verdi": 0.5715
+   },
+   {
+    "navn": "ERPkonsult",
+    "verdi": 0.402
    },
    {
     "navn": "Gritera",
@@ -595,24 +562,16 @@
    {
     "navn": "River Security",
     "verdi": 0.2492
-   },
-   {
-    "navn": "Kommando",
-    "verdi": 0.246
-   },
-   {
-    "navn": "Precis Digital",
-    "verdi": 0.2308
-   },
-   {
-    "navn": "Sicra",
-    "verdi": 0.2296
    }
   ],
   "lonnskost_per_ansatt": [
    {
     "navn": "Teleplan Consulting",
     "verdi": 2125
+   },
+   {
+    "navn": "S5 Consulting",
+    "verdi": 2012
    },
    {
     "navn": "Konsulentselskapet Enso",
@@ -645,10 +604,6 @@
    {
     "navn": "Systek",
     "verdi": 1683
-   },
-   {
-    "navn": "Jprofessionals",
-    "verdi": 1650
    }
   ],
   "inntekt_per_ansatt": [
@@ -677,6 +632,10 @@
     "verdi": 3687
    },
    {
+    "navn": "S5 Consulting",
+    "verdi": 3621
+   },
+   {
     "navn": "Accenture",
     "verdi": 3543
    },
@@ -687,10 +646,6 @@
    {
     "navn": "LTIMindtree",
     "verdi": 3239
-   },
-   {
-    "navn": "Cognizant",
-    "verdi": 3228
    }
   ],
   "resultat_per_ansatt": [
@@ -703,8 +658,24 @@
     "verdi": 571
    },
    {
+    "navn": "Lighthouse Consulting",
+    "verdi": 536
+   },
+   {
     "navn": "Kodemaker",
     "verdi": 530
+   },
+   {
+    "navn": "Forse",
+    "verdi": 471
+   },
+   {
+    "navn": "ERPkonsult",
+    "verdi": 408
+   },
+   {
+    "navn": "S5 Consulting",
+    "verdi": 382
    },
    {
     "navn": "Precis Digital",
@@ -717,25 +688,13 @@
    {
     "navn": "Novanet",
     "verdi": 342
-   },
-   {
-    "navn": "Accenture",
-    "verdi": 335
-   },
-   {
-    "navn": "Epinova",
-    "verdi": 328
-   },
-   {
-    "navn": "Systek",
-    "verdi": 328
-   },
-   {
-    "navn": "Inspirit365",
-    "verdi": 309
    }
   ],
   "lonnsandel": [
+   {
+    "navn": "Telenor Cyberdefence",
+    "verdi": 1.4531
+   },
    {
     "navn": "Infosys",
     "verdi": 0.9645
@@ -753,6 +712,14 @@
     "verdi": 0.896
    },
    {
+    "navn": "These Ways",
+    "verdi": 0.8697
+   },
+   {
+    "navn": "Gren Utvikling",
+    "verdi": 0.8678
+   },
+   {
     "navn": "Boitano",
     "verdi": 0.8604
    },
@@ -763,24 +730,24 @@
    {
     "navn": "Ulriken Consulting",
     "verdi": 0.8328
-   },
-   {
-    "navn": "Item Consulting",
-    "verdi": 0.8242
-   },
-   {
-    "navn": "Miles",
-    "verdi": 0.8228
-   },
-   {
-    "navn": "Halogen",
-    "verdi": 0.8224
    }
   ],
   "ek_andel": [
    {
     "navn": "HCL Technologies",
     "verdi": 0.7707
+   },
+   {
+    "navn": "S5 Consulting",
+    "verdi": 0.6892
+   },
+   {
+    "navn": "Telenor Cyberdefence",
+    "verdi": 0.6529
+   },
+   {
+    "navn": "Coretrek",
+    "verdi": 0.6527
    },
    {
     "navn": "Agens",
@@ -795,28 +762,16 @@
     "verdi": 0.5372
    },
    {
+    "navn": "Fink",
+    "verdi": 0.5365
+   },
+   {
     "navn": "Cognizant",
     "verdi": 0.5362
    },
    {
     "navn": "Itverket",
     "verdi": 0.5357
-   },
-   {
-    "navn": "Bredvid",
-    "verdi": 0.507
-   },
-   {
-    "navn": "Ivolv",
-    "verdi": 0.5012
-   },
-   {
-    "navn": "Item Consulting",
-    "verdi": 0.4777
-   },
-   {
-    "navn": "Webstep",
-    "verdi": 0.466
    }
   ],
   "inntekt": [
@@ -867,6 +822,7 @@
    "navn": "Sopra Steria",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 3674,
    "kommune": "OSLO",
@@ -938,12 +894,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.1263
+   "markedsandel": 0.1503
   },
   {
    "navn": "PwC",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "Revisjon og rådgivning; IT-andelen kan ikke skilles ut",
    "i_bransjetall": false,
    "ansatte": 1898,
    "kommune": "OSLO",
@@ -1021,6 +978,7 @@
    "navn": "EY",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "Ernst & Young AS; revisjon og rådgivning (EY Skye står i Microsoft og ERP)",
    "i_bransjetall": false,
    "ansatte": 1589,
    "kommune": "OSLO",
@@ -1098,6 +1056,7 @@
    "navn": "Bouvet",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 2271,
    "kommune": "OSLO",
@@ -1169,12 +1128,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.081
+   "markedsandel": 0.0964
   },
   {
    "navn": "Deloitte",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "Revisjon og rådgivning; IT-andelen kan ikke skilles ut",
    "i_bransjetall": false,
    "ansatte": 1216,
    "kommune": "OSLO",
@@ -1252,6 +1212,7 @@
    "navn": "Capgemini",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 1464,
    "kommune": "OSLO",
@@ -1323,12 +1284,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0685
+   "markedsandel": 0.0815
   },
   {
    "navn": "KPMG",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "Revisjon og rådgivning; IT-andelen kan ikke skilles ut",
    "i_bransjetall": false,
    "ansatte": 1453,
    "kommune": "OSLO",
@@ -1406,6 +1368,7 @@
    "navn": "Accenture",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 869,
    "kommune": "OSLO",
@@ -1477,12 +1440,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.065
+   "markedsandel": 0.0774
   },
   {
    "navn": "Omega 365",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 884,
    "kommune": "VINDAFJORD",
@@ -1570,13 +1534,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0563
+   "markedsandel": 0.067
   },
   {
    "navn": "Tieto",
-   "kategori": "Global leveranse",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Drift og outsourcing",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: konsulent- og databehandlingstjenester og salg av datautstyr",
+   "i_bransjetall": false,
    "ansatte": 611,
    "kommune": "BÆRUM",
    "enheter": [
@@ -1647,12 +1612,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0455
+   "markedsandel": null
   },
   {
    "navn": "Knowit",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 828,
    "kommune": "OSLO",
@@ -1868,13 +1834,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0406
+   "markedsandel": 0.0484
   },
   {
    "navn": "Cegal",
-   "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Drift og outsourcing",
+   "verifisert": true,
+   "merknad": "Drift, skytjenester og programvare for energibransjen",
+   "i_bransjetall": false,
    "ansatte": 544,
    "kommune": "SANDNES",
    "enheter": [
@@ -1945,13 +1912,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.03
+   "markedsandel": null
   },
   {
    "navn": "Experis",
-   "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "IT-bemanning",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: IT-konsulenter og utleie av personell (ManpowerGroup)",
+   "i_bransjetall": false,
    "ansatte": 535,
    "kommune": "OSLO",
    "enheter": [
@@ -2038,12 +2006,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0294
+   "markedsandel": null
   },
   {
    "navn": "mnemonic",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "Både konsulenter og overvåkingstjenester",
    "i_bransjetall": true,
    "ansatte": 394,
    "kommune": "OSLO",
@@ -2115,12 +2084,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0237
+   "markedsandel": 0.0282
   },
   {
    "navn": "Bekk",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 624,
    "kommune": "OSLO",
@@ -2192,12 +2162,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0224
+   "markedsandel": 0.0267
   },
   {
    "navn": "CGI",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 345,
    "kommune": "OSLO",
@@ -2269,12 +2240,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0197
+   "markedsandel": 0.0235
   },
   {
    "navn": "Twoday",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 412,
    "kommune": "OSLO",
@@ -2346,12 +2318,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0196
+   "markedsandel": 0.0233
   },
   {
    "navn": "Webstep",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 360,
    "kommune": "OSLO",
@@ -2423,12 +2396,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0176
+   "markedsandel": 0.021
   },
   {
    "navn": "Evidi",
    "kategori": "Data og analyse",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 306,
    "kommune": "OSLO",
@@ -2500,12 +2474,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0162
+   "markedsandel": 0.0193
   },
   {
    "navn": "Computas",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 295,
    "kommune": "OSLO",
@@ -2577,13 +2552,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0146
+   "markedsandel": 0.0174
   },
   {
    "navn": "DXC Technology",
-   "kategori": "Global leveranse",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Drift og outsourcing",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: datatjenester; 35 % av inntekten går til lønn",
+   "i_bransjetall": false,
    "ansatte": 129,
    "kommune": "BERGEN",
    "enheter": [
@@ -2639,12 +2615,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0137
+   "markedsandel": null
   },
   {
    "navn": "Itera",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 225,
    "kommune": "OSLO",
@@ -2716,12 +2693,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.013
+   "markedsandel": 0.0155
   },
   {
    "navn": "Cognizant",
    "kategori": "Global leveranse",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 180,
    "kommune": "BÆRUM",
@@ -2809,12 +2787,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0123
+   "markedsandel": 0.0146
   },
   {
    "navn": "Netcompany",
    "kategori": "Fullservice",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 381,
    "kommune": "OSLO",
@@ -2886,12 +2865,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.012
+   "markedsandel": 0.0143
   },
   {
    "navn": "HCL Technologies",
    "kategori": "Global leveranse",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 160,
    "kommune": "OSLO",
@@ -2947,12 +2927,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0112
+   "markedsandel": 0.0134
   },
   {
    "navn": "Miles",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 248,
    "kommune": "OSLO",
@@ -3024,13 +3005,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0089
+   "markedsandel": 0.0106
   },
   {
    "navn": "Arribatec",
-   "kategori": "Microsoft og ERP",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Programvare og lisens",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: salg og utvikling av egen ERP-programvare med konsulenttjenester",
+   "i_bransjetall": false,
    "ansatte": 163,
    "kommune": "OSLO",
    "enheter": [
@@ -3133,12 +3115,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0088
+   "markedsandel": null
   },
   {
    "navn": "Columbus",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 162,
    "kommune": "OSLO",
@@ -3210,12 +3193,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0079
+   "markedsandel": 0.0095
   },
   {
    "navn": "Systek",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 130,
    "kommune": "OSLO",
@@ -3287,12 +3271,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0067
+   "markedsandel": 0.008
   },
   {
    "navn": "Cepheo",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 75,
    "kommune": "OSLO",
@@ -3364,12 +3349,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0065
+   "markedsandel": 0.0077
   },
   {
    "navn": "EY Skye",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 128,
    "kommune": "OSLO",
@@ -3441,12 +3427,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0064
+   "markedsandel": 0.0076
   },
   {
    "navn": "Exsitec",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 155,
    "kommune": "OSLO",
@@ -3534,12 +3521,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0061
+   "markedsandel": 0.0073
   },
   {
    "navn": "Inspirit365",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 123,
    "kommune": "OSLO",
@@ -3611,12 +3599,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.006
+   "markedsandel": 0.0072
   },
   {
    "navn": "Kantega",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 193,
    "kommune": "OSLO",
@@ -3688,12 +3677,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0059
+   "markedsandel": 0.007
   },
   {
    "navn": "NTT Data Business Solutions",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "SAP-konsulenter",
    "i_bransjetall": true,
    "ansatte": 70,
    "kommune": "OSLO",
@@ -3750,12 +3740,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0057
+   "markedsandel": 0.0068
   },
   {
    "navn": "Gritera",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 131,
    "kommune": "OSLO",
@@ -3857,12 +3848,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0055
+   "markedsandel": 0.0065
   },
   {
    "navn": "Forte Digital",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 81,
    "kommune": "OSLO",
@@ -3934,12 +3926,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0054
+   "markedsandel": 0.0064
   },
   {
    "navn": "Noa Ignite",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 116,
    "kommune": "OSLO",
@@ -4011,12 +4004,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0053
+   "markedsandel": 0.0063
   },
   {
    "navn": "Epinova",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 92,
    "kommune": "OSLO",
@@ -4088,13 +4082,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0051
+   "markedsandel": 0.006
   },
   {
    "navn": "Scienta",
-   "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Programvare og lisens",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: IT-konsulenttjenester og salg/distribusjon av programvare; 41 % av inntekten går til lønn",
+   "i_bransjetall": false,
    "ansatte": 55,
    "kommune": "OSLO",
    "enheter": [
@@ -4165,12 +4160,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0048
+   "markedsandel": null
   },
   {
    "navn": "Avo Consulting",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "Ledelses- og digitaliseringsrådgivning",
    "i_bransjetall": false,
    "ansatte": 109,
    "kommune": "BERGEN",
@@ -4246,8 +4242,9 @@
   },
   {
    "navn": "Inventura",
-   "kategori": "Rådgivningshus",
-   "verifisert": false,
+   "kategori": "IT-bemanning",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: bedriftsrådgivning og utleie av personell",
    "i_bransjetall": false,
    "ansatte": 129,
    "kommune": "BERGEN",
@@ -4325,6 +4322,7 @@
    "navn": "Noria",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 88,
    "kommune": "OSLO",
@@ -4412,12 +4410,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0042
+   "markedsandel": 0.005
   },
   {
    "navn": "Capra",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 92,
    "kommune": "OSLO",
@@ -4489,12 +4488,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0042
+   "markedsandel": 0.005
   },
   {
    "navn": "Devoteam",
-   "kategori": "Microsoft og ERP",
-   "verifisert": false,
+   "kategori": "Utvikling og rådgivning",
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 73,
    "kommune": "OSLO",
@@ -4566,12 +4566,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0041
+   "markedsandel": 0.0048
   },
   {
    "navn": "AboveIT",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 130,
    "kommune": "OSLO",
@@ -4643,12 +4644,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0037
+   "markedsandel": 0.0045
   },
   {
    "navn": "Orange Cyberdefense",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 44,
    "kommune": "BÆRUM",
@@ -4720,12 +4722,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0036
+   "markedsandel": 0.0042
   },
   {
    "navn": "Sonat",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 86,
    "kommune": "BERGEN",
@@ -4813,13 +4816,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0036
+   "markedsandel": 0.0042
   },
   {
    "navn": "Oseberg Solutions",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: konsulentvirksomhet og regnskap og bokføring",
+   "i_bransjetall": false,
    "ansatte": 77,
    "kommune": "TØNSBERG",
    "enheter": [
@@ -4890,13 +4894,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0035
+   "markedsandel": null
   },
   {
    "navn": "Logiq",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: konsulent, agentur og produktsalg; 42 % av inntekten går til lønn",
+   "i_bransjetall": false,
    "ansatte": 67,
    "kommune": "HALDEN",
    "enheter": [
@@ -4967,12 +4972,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0035
+   "markedsandel": null
   },
   {
    "navn": "Netlight",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 121,
    "kommune": "OSLO",
@@ -5044,13 +5050,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0034
+   "markedsandel": 0.0041
   },
   {
    "navn": "Redpill Linpro",
-   "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Drift og outsourcing",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: konsulent- og driftstjenester og salg av tredjepartsprodukter",
+   "i_bransjetall": false,
    "ansatte": 93,
    "kommune": "OSLO",
    "enheter": [
@@ -5153,12 +5160,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0034
+   "markedsandel": null
   },
   {
    "navn": "Jprofessionals",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 65,
    "kommune": "OSLO",
@@ -5230,12 +5238,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0034
+   "markedsandel": 0.004
   },
   {
    "navn": "Itverket",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "Ansatttallet i Brreg ser for lavt ut",
    "i_bransjetall": true,
    "ansatte": 38,
    "kommune": "OSLO",
@@ -5307,12 +5316,13 @@
    "ansatttall_usikkert": true,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0034
+   "markedsandel": 0.004
   },
   {
    "navn": "Variant",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 86,
    "kommune": "OSLO",
@@ -5416,12 +5426,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0033
+   "markedsandel": 0.0039
   },
   {
    "navn": "Sprint Consulting",
    "kategori": "Rådgivningshus",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Ledelsesrådgivning, IT-rådgivning og programmering",
    "i_bransjetall": false,
    "ansatte": 91,
    "kommune": "OSLO",
@@ -5499,6 +5510,7 @@
    "navn": "Point Taken",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 80,
    "kommune": "OSLO",
@@ -5570,12 +5582,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0031
+   "markedsandel": 0.0037
   },
   {
    "navn": "Munu",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 93,
    "kommune": "STAVANGER",
@@ -5647,12 +5660,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0029
+   "markedsandel": 0.0034
   },
   {
    "navn": "Prosesspilotene",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 70,
    "kommune": "ASKER",
@@ -5724,12 +5738,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0029
+   "markedsandel": 0.0034
   },
   {
    "navn": "Kraftlauget",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 71,
    "kommune": "BERGEN",
@@ -5801,12 +5816,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0028
+   "markedsandel": 0.0034
   },
   {
    "navn": "Precis Digital",
    "kategori": "Data og analyse",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 31,
    "kommune": "OSLO",
@@ -5878,12 +5894,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0027
+   "markedsandel": 0.0033
   },
   {
    "navn": "Egde",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 78,
    "kommune": "GRIMSTAD",
@@ -5955,12 +5972,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0027
+   "markedsandel": 0.0033
   },
   {
    "navn": "Akkodis",
    "kategori": "Global leveranse",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg: programmeringstjenester; 70 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 77,
    "kommune": "BÆRUM",
@@ -6032,12 +6050,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0027
+   "markedsandel": 0.0032
   },
   {
    "navn": "Coretrek",
    "kategori": "Digital og design",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Digitalbyrå; 65 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 73,
    "kommune": "SANDEFJORD",
@@ -6109,13 +6128,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0025
+   "markedsandel": 0.003
   },
   {
    "navn": "ECIT Capstone",
-   "kategori": "Microsoft og ERP",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: salg av datautstyr og konsulentvirksomhet",
+   "i_bransjetall": false,
    "ansatte": 61,
    "kommune": "BÆRUM",
    "enheter": [
@@ -6186,12 +6206,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0024
+   "markedsandel": null
   },
   {
    "navn": "Blank",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 58,
    "kommune": "OSLO",
@@ -6263,13 +6284,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0024
+   "markedsandel": 0.0028
   },
   {
    "navn": "Finexa IT Solutions",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: salg av IT-tjenester; 22 % av inntekten går til lønn",
+   "i_bransjetall": false,
    "ansatte": 34,
    "kommune": "ØVRE EIKER",
    "enheter": [
@@ -6340,12 +6362,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": null
   },
   {
    "navn": "Defendable",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 96,
    "kommune": "OSLO",
@@ -6417,12 +6440,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": 0.0027
   },
   {
    "navn": "Olavstoppen",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 81,
    "kommune": "STAVANGER",
@@ -6494,12 +6518,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": 0.0027
   },
   {
    "navn": "Forse",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 43,
    "kommune": "OSLO",
@@ -6571,12 +6596,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": 0.0027
   },
   {
    "navn": "Antire",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 71,
    "kommune": "OSLO",
@@ -6616,13 +6642,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0022
+   "markedsandel": 0.0027
   },
   {
    "navn": "Gapit Nordics",
-   "kategori": "Microsoft og ERP",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Programvare og lisens",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: produkt for tilstandsovervåkning",
+   "i_bransjetall": false,
    "ansatte": 61,
    "kommune": "DRAMMEN",
    "enheter": [
@@ -6693,12 +6720,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0022
+   "markedsandel": null
   },
   {
    "navn": "Trifid",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 53,
    "kommune": "OSLO",
@@ -6770,12 +6798,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0021
+   "markedsandel": 0.0025
   },
   {
    "navn": "Scelto",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 40,
    "kommune": "OSLO",
@@ -6847,12 +6876,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0021
+   "markedsandel": 0.0025
   },
   {
    "navn": "Kommando",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 27,
    "kommune": "OSLO",
@@ -6924,13 +6954,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0021
+   "markedsandel": 0.0025
   },
   {
    "navn": "Solea",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: holdingselskap, men har 64 ansatte",
+   "i_bransjetall": false,
    "ansatte": 64,
    "kommune": "BERGEN",
    "enheter": [
@@ -6985,12 +7016,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.002
+   "markedsandel": null
   },
   {
    "navn": "Netlife Design",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 57,
    "kommune": "OSLO",
@@ -7062,12 +7094,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.002
+   "markedsandel": 0.0023
   },
   {
    "navn": "Boitano",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 53,
    "kommune": "OSLO",
@@ -7139,12 +7172,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.002
+   "markedsandel": 0.0023
   },
   {
    "navn": "Teleplan Consulting",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 21,
    "kommune": "BÆRUM",
@@ -7216,12 +7250,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0019
+   "markedsandel": 0.0023
   },
   {
    "navn": "Novanet",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 39,
    "kommune": "OSLO",
@@ -7293,12 +7328,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0019
+   "markedsandel": 0.0023
   },
   {
    "navn": "Halogen",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 45,
    "kommune": "OSLO",
@@ -7370,12 +7406,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0019
+   "markedsandel": 0.0022
   },
   {
    "navn": "Intuvio",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 43,
    "kommune": "SARPSBORG",
@@ -7447,12 +7484,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0019
+   "markedsandel": 0.0022
   },
   {
    "navn": "Agens",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 49,
    "kommune": "OSLO",
@@ -7524,12 +7562,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0019
+   "markedsandel": 0.0022
   },
   {
    "navn": "Techfolk",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 49,
    "kommune": "OSLO",
@@ -7601,12 +7640,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0022
   },
   {
    "navn": "Implement Consulting Group",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": false,
    "ansatte": 44,
    "kommune": "OSLO",
@@ -7684,6 +7724,7 @@
    "navn": "Sicra",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 54,
    "kommune": "OSLO",
@@ -7739,12 +7780,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0021
   },
   {
    "navn": "LTIMindtree",
    "kategori": "Global leveranse",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 26,
    "kommune": "BÆRUM",
@@ -7801,13 +7843,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0021
   },
   {
    "navn": "Veni",
-   "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "Drift og outsourcing",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: konsulenttjenester, maskinvare, programvare, infrastruktur, support og drift",
+   "i_bransjetall": false,
    "ansatte": 45,
    "kommune": "STAVANGER",
    "enheter": [
@@ -7878,12 +7921,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": null
   },
   {
    "navn": "PA Consulting",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": false,
    "ansatte": 44,
    "kommune": "OSLO",
@@ -7961,6 +8005,7 @@
    "navn": "Emlogic",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 57,
    "kommune": "ASKER",
@@ -8032,12 +8077,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0021
   },
   {
    "navn": "Fraktal",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 55,
    "kommune": "SANDNES",
@@ -8109,12 +8155,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0021
   },
   {
    "navn": "Clave Consulting",
    "kategori": "Rådgivningshus",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "IKT, organisasjonsutvikling og ledelse",
    "i_bransjetall": false,
    "ansatte": 42,
    "kommune": "OSLO",
@@ -8175,7 +8222,8 @@
   {
    "navn": "Fink",
    "kategori": "Digital og design",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 51,
    "kommune": "OSLO",
@@ -8247,12 +8295,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0017
+   "markedsandel": 0.002
   },
   {
    "navn": "S5 Consulting",
    "kategori": "Microsoft og ERP",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn (SAP-konsulenter)",
    "i_bransjetall": true,
    "ansatte": 22,
    "kommune": "OSLO",
@@ -8324,12 +8373,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0017
+   "markedsandel": 0.002
   },
   {
    "navn": "Consid",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 47,
    "kommune": "OSLO",
@@ -8401,13 +8451,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0017
+   "markedsandel": 0.002
   },
   {
    "navn": "Nimtech Consult",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: salg av programvare, konsulenttjenester og opplæring",
+   "i_bransjetall": false,
    "ansatte": 50,
    "kommune": "OSLO",
    "enheter": [
@@ -8478,12 +8529,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0016
+   "markedsandel": null
   },
   {
    "navn": "Ulriken Consulting",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 49,
    "kommune": "BERGEN",
@@ -8555,12 +8607,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0015
+   "markedsandel": 0.0018
   },
   {
    "navn": "Kodemaker",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 27,
    "kommune": "OSLO",
@@ -8632,12 +8685,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0015
+   "markedsandel": 0.0018
   },
   {
    "navn": "Brilliant",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 53,
    "kommune": "TRONDHEIM",
@@ -8709,12 +8763,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0015
+   "markedsandel": 0.0018
   },
   {
    "navn": "Northern Beat",
    "kategori": "Data og analyse",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 37,
    "kommune": "OSLO",
@@ -8786,13 +8841,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0014
+   "markedsandel": 0.0017
   },
   {
    "navn": "Align Consulting",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Konsulentvirksomhet, men under 50 % av inntekten går til lønn",
+   "i_bransjetall": false,
    "ansatte": 27,
    "kommune": "ASKER",
    "enheter": [
@@ -8863,12 +8919,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0014
+   "markedsandel": null
   },
   {
    "navn": "Telenor Cyberdefence",
    "kategori": "Sikkerhet",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg: tjenester innen IT-sikkerhet; skilt ut fra Telenor i 2024",
    "i_bransjetall": true,
    "ansatte": 91,
    "kommune": "BÆRUM",
@@ -8924,12 +8981,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0014
+   "markedsandel": 0.0017
   },
   {
    "navn": "Expert Analytics",
    "kategori": "Data og analyse",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 40,
    "kommune": "OSLO",
@@ -9001,13 +9059,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0014
+   "markedsandel": 0.0017
   },
   {
    "navn": "Decisive",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: utvikling, innføring og salg av IT-løsninger",
+   "i_bransjetall": false,
    "ansatte": 29,
    "kommune": "OSLO",
    "enheter": [
@@ -9078,12 +9137,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0014
+   "markedsandel": null
   },
   {
    "navn": "Lighthouse Consulting",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 26,
    "kommune": "OSLO",
@@ -9155,12 +9215,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0013
+   "markedsandel": 0.0016
   },
   {
    "navn": "Sariba Consulting",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 39,
    "kommune": "OSLO",
@@ -9232,12 +9293,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0013
+   "markedsandel": 0.0016
   },
   {
    "navn": "Konsulentselskapet Enso",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 26,
    "kommune": "OSLO",
@@ -9309,12 +9371,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0013
+   "markedsandel": 0.0015
   },
   {
    "navn": "Gnist Consulting",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 30,
    "kommune": "OSLO",
@@ -9386,12 +9449,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0013
+   "markedsandel": 0.0015
   },
   {
    "navn": "Bspoke",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 26,
    "kommune": "OSLO",
@@ -9463,12 +9527,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0012
+   "markedsandel": 0.0015
   },
   {
    "navn": "Dekode",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 29,
    "kommune": "OSLO",
@@ -9540,12 +9605,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0012
+   "markedsandel": 0.0015
   },
   {
    "navn": "Yttr",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 22,
    "kommune": "OSLO",
@@ -9617,12 +9683,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0012
+   "markedsandel": 0.0014
   },
   {
    "navn": "Applica Consulting",
    "kategori": "Microsoft og ERP",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 32,
    "kommune": "LINDESNES",
@@ -9694,13 +9761,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": 0.0014
   },
   {
    "navn": "Frend Digital",
-   "kategori": "Digital og design",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: IT-konsulent og salg av maskinvare",
+   "i_bransjetall": false,
    "ansatte": 50,
    "kommune": "OSLO",
    "enheter": [
@@ -9771,12 +9839,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": null
   },
   {
    "navn": "Vaare",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 41,
    "kommune": "NORDRE FOLLO",
@@ -9832,13 +9901,14 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": 0.0013
   },
   {
    "navn": "Alv",
-   "kategori": "Utvikling og rådgivning",
+   "kategori": "Uavklart",
    "verifisert": false,
-   "i_bransjetall": true,
+   "merknad": "Formål i Brreg: varer og tjenester innen IT og investeringer",
+   "i_bransjetall": false,
    "ansatte": 31,
    "kommune": "OSLO",
    "enheter": [
@@ -9909,12 +9979,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": null
   },
   {
    "navn": "Liflig",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 24,
    "kommune": "OSLO",
@@ -9986,12 +10057,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": 0.0013
   },
   {
    "navn": "Vokser",
    "kategori": "Digital og design",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg: digitale kommunikasjonsløsninger for web; 79 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 34,
    "kommune": "KONGSBERG",
@@ -10063,12 +10135,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": 0.0013
   },
   {
    "navn": "Infosys",
    "kategori": "Global leveranse",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 37,
    "kommune": "BÆRUM",
@@ -10140,12 +10213,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.001
+   "markedsandel": 0.0012
   },
   {
    "navn": "99X Increo",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 29,
    "kommune": "TRONDHEIM",
@@ -10217,12 +10291,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.001
+   "markedsandel": 0.0012
   },
   {
    "navn": "Bredvid",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 28,
    "kommune": "OSLO",
@@ -10294,12 +10369,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0009
+   "markedsandel": 0.0011
   },
   {
    "navn": "Gren Utvikling",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 27,
    "kommune": "OSLO",
@@ -10371,12 +10447,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0009
+   "markedsandel": 0.0011
   },
   {
    "navn": "Item Consulting",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 25,
    "kommune": "OSLO",
@@ -10448,12 +10525,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0009
+   "markedsandel": 0.0011
   },
   {
    "navn": "These Ways",
    "kategori": "Digital og design",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 29,
    "kommune": "BERGEN",
@@ -10525,12 +10603,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0008
+   "markedsandel": 0.001
   },
   {
    "navn": "Darize Consulting",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "Tidligere Globeteam",
    "i_bransjetall": true,
    "ansatte": 21,
    "kommune": "OSLO",
@@ -10602,12 +10681,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0008
+   "markedsandel": 0.001
   },
   {
    "navn": "Ivolv",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 24,
    "kommune": "STAVANGER",
@@ -10679,12 +10759,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0008
+   "markedsandel": 0.001
   },
   {
    "navn": "O3 Cyber",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "Under 20 ansatte; tatt med som kjent aktør",
    "i_bransjetall": true,
    "ansatte": 12,
    "kommune": "OSLO",
@@ -10756,12 +10837,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0008
+   "markedsandel": 0.0009
   },
   {
    "navn": "ERPkonsult",
    "kategori": "Microsoft og ERP",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 20,
    "kommune": "OSLO",
@@ -10833,12 +10915,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0007
+   "markedsandel": 0.0008
   },
   {
    "navn": "Netpower Business Solutions",
    "kategori": "Microsoft og ERP",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg: programmering; 55 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 24,
    "kommune": "SANDNES",
@@ -10910,12 +10993,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0007
+   "markedsandel": 0.0008
   },
   {
    "navn": "Skråstrek",
    "kategori": "Digital og design",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 20,
    "kommune": "OSLO",
@@ -10987,12 +11071,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0006
+   "markedsandel": 0.0008
   },
   {
    "navn": "Unicus",
    "kategori": "Utvikling og rådgivning",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 36,
    "kommune": "BÆRUM",
@@ -11064,12 +11149,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0006
+   "markedsandel": 0.0007
   },
   {
    "navn": "Inevo",
    "kategori": "Digital og design",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
    "ansatte": 20,
    "kommune": "OSLO",
@@ -11141,12 +11227,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0006
+   "markedsandel": 0.0007
   },
   {
    "navn": "River Security",
    "kategori": "Sikkerhet",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 17,
    "kommune": "OSLO",
@@ -11218,12 +11305,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0005
+   "markedsandel": 0.0006
   },
   {
    "navn": "Aplia",
    "kategori": "Digital og design",
    "verifisert": true,
+   "merknad": "",
    "i_bransjetall": true,
    "ansatte": 23,
    "kommune": "SKIEN",
@@ -11295,12 +11383,13 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0004
+   "markedsandel": 0.0005
   },
   {
    "navn": "Tata Consultancy Services",
    "kategori": "Global leveranse",
    "verifisert": true,
+   "merknad": "Norsk filial (NUF); kan mangle regnskap i Brreg",
    "i_bransjetall": true,
    "ansatte": 64,
    "kommune": "OSLO",
@@ -11345,7 +11434,8 @@
   {
    "navn": "Commit",
    "kategori": "Utvikling og rådgivning",
-   "verifisert": false,
+   "verifisert": true,
+   "merknad": "Formål i Brreg: konsulenttjenester innen IT; har ikke levert et helt regnskapsår ennå",
    "i_bransjetall": true,
    "ansatte": 27,
    "kommune": "OSLO",
@@ -11373,6 +11463,7 @@
    "navn": "BearingPoint",
    "kategori": "Rådgivningshus",
    "verifisert": true,
+   "merknad": "Ledelses- og teknologirådgivning",
    "i_bransjetall": false,
    "ansatte": 143,
    "kommune": "OSLO",
@@ -11433,9 +11524,10 @@
   },
   {
    "navn": "Diginext IT Solutions",
-   "kategori": "Global leveranse",
-   "verifisert": false,
-   "i_bransjetall": true,
+   "kategori": "IT-bemanning",
+   "verifisert": true,
+   "merknad": "Formål i Brreg: IT-løsninger og ressurser til IT-prosjekter; norsk filial",
+   "i_bransjetall": false,
    "ansatte": 34,
    "kommune": null,
    "enheter": [

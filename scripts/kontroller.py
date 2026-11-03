@@ -18,6 +18,10 @@ from pathlib import Path
 ROT = Path(__file__).resolve().parent.parent
 feil = []
 
+# Kategorier som skal holdes utenfor bransjetallene (skrevet inn her med vilje,
+# så en endring i hent_data.py må gjøres bevisst begge steder)
+UTENFOR = {"Rådgivningshus", "Drift og outsourcing", "IT-bemanning", "Programvare og lisens", "Uavklart"}
+
 
 def sjekk(betingelse, melding):
     if not betingelse:
@@ -85,7 +89,7 @@ for navn, orgnr in grupper.items():
         continue
     sjekk(s["kategori"] == kategori[navn], f"{navn}: feil kategori")
     sjekk(s["verifisert"] == verifisert[navn], f"{navn}: feil verifisert-merke")
-    sjekk(s["i_bransjetall"] == (kategori[navn] != "Rådgivningshus"), f"{navn}: feil i_bransjetall")
+    sjekk(s["i_bransjetall"] == (kategori[navn] not in UTENFOR), f"{navn}: feil i_bransjetall")
     for y_str, v in s["aar"].items():
         y = int(y_str)
         med = [o for o in orgnr if y in per_enhet[o]]
@@ -113,7 +117,7 @@ for navn, orgnr in grupper.items():
 
 
 # --- Bransjetall -----------------------------------------------------------------
-bransje = [n for n in grupper if kategori[n] != "Rådgivningshus"]
+bransje = [n for n in grupper if kategori[n] not in UTENFOR]
 for y_str, m in data["marked"].items():
     y = int(y_str)
     med = [n for n in bransje if y_str in selskaper[n]["aar"]]

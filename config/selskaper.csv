@@ -45,10 +45,10 @@ Brilliant,912272389,Utvikling og rådgivning,ja,
 Munu,925095435,Utvikling og rådgivning,ja,
 Gritera,925024430,Utvikling og rådgivning,ja,Gritera Advisory
 Gritera,832332402,Utvikling og rådgivning,ja,Gritera Security
-Trifid,920902928,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
-Nimtech Consult,928938832,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
-Veni,999615678,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
-Solea,934110943,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Trifid,920902928,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Nimtech Consult,928938832,Uavklart,nei,"Formål i Brreg: salg av programvare, konsulenttjenester og opplæring"
+Veni,999615678,Drift og outsourcing,ja,"Formål i Brreg: konsulenttjenester, maskinvare, programvare, infrastruktur, support og drift"
+Solea,934110943,Uavklart,nei,"Formål i Brreg: holdingselskap, men har 64 ansatte"
 Epinova,995215748,Digital og design,ja,
 Forte Digital,919321369,Digital og design,ja,
 Noa Ignite,995743566,Digital og design,ja,
@@ -56,8 +56,8 @@ Netlife Design,916898908,Digital og design,ja,
 Blank,915433073,Digital og design,ja,
 Halogen,985041954,Digital og design,ja,
 Dekode,894928662,Digital og design,ja,
-Coretrek,984587406,Digital og design,nei,Sjekk at det er rent konsulentselskap
-Frend Digital,927611902,Digital og design,nei,Sjekk at det er rent konsulentselskap
+Coretrek,984587406,Digital og design,ja,Digitalbyrå; 65 % av inntekten går til lønn
+Frend Digital,927611902,Uavklart,nei,Formål i Brreg: IT-konsulent og salg av maskinvare
 Evidi,927119781,Data og analyse,ja,
 EY Skye,995655144,Microsoft og ERP,ja,
 Cepheo,930970719,Microsoft og ERP,ja,
@@ -69,49 +69,49 @@ Omega 365,917518238,Microsoft og ERP,ja,Omega 365 Norway
 Exsitec,984489234,Microsoft og ERP,ja,Exsitec
 Exsitec,980607259,Microsoft og ERP,ja,Exsitec Solutions
 Columbus,883561872,Microsoft og ERP,ja,
-Devoteam,980172015,Microsoft og ERP,nei,Bredere enn Microsoft; vurder kategori
+Devoteam,980172015,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
 Cognizant,988707031,Global leveranse,ja,Cognizant Technology Solutions Norway
 Cognizant,984755384,Global leveranse,ja,Cognizant Oil and Gas Consulting Services Norway
 HCL Technologies,995672766,Global leveranse,ja,
 Infosys,930520101,Global leveranse,ja,
 Tata Consultancy Services,990130124,Global leveranse,ja,Norsk filial (NUF); kan mangle regnskap i Brreg
 LTIMindtree,921974248,Global leveranse,ja,
-Tieto,933012867,Global leveranse,nei,Tieto Norway; leverer også drift
-DXC Technology,958958455,Global leveranse,nei,Leverer også drift og outsourcing
-Akkodis,980665895,Global leveranse,nei,Akkodis Norway R&D Services; ingeniør- og IT-konsulenter
+Tieto,933012867,Drift og outsourcing,ja,Formål i Brreg: konsulent- og databehandlingstjenester og salg av datautstyr
+DXC Technology,958958455,Drift og outsourcing,ja,Formål i Brreg: datatjenester; 35 % av inntekten går til lønn
+Akkodis,980665895,Global leveranse,ja,Formål i Brreg: programmeringstjenester; 70 % av inntekten går til lønn
 Expert Analytics,924651946,Data og analyse,ja,
 Precis Digital,914744504,Data og analyse,ja,
-Northern Beat,998549833,Data og analyse,nei,Sjekk kategori
+Northern Beat,998549833,Data og analyse,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
 Gritera,929502213,Utvikling og rådgivning,ja,Gritera Analytics
 Knowit,919074469,Fullservice,ja,Knowit Insight
 NTT Data Business Solutions,992036079,Microsoft og ERP,ja,SAP-konsulenter
-Redpill Linpro,920208657,Utvikling og rådgivning,nei,Redpill Linpro DevOps; leverer også drift
-Redpill Linpro,920188834,Utvikling og rådgivning,nei,Redpill Linpro CloudOps
-Redpill Linpro,992184531,Utvikling og rådgivning,nei,Redpill Linpro Development Services
+Redpill Linpro,920208657,Drift og outsourcing,ja,Redpill Linpro DevOps. Formål i Brreg: konsulent- og driftstjenester og salg av tredjepartsprodukter
+Redpill Linpro,920188834,Drift og outsourcing,ja,Redpill Linpro CloudOps. Formål i Brreg: konsulent- og driftstjenester og salg av tredjepartsprodukter
+Redpill Linpro,992184531,Drift og outsourcing,ja,Redpill Linpro Development Services. Formål i Brreg: konsulent- og driftstjenester og salg av tredjepartsprodukter
 Consid,927302942,Utvikling og rådgivning,ja,
 Darize Consulting,920285716,Utvikling og rådgivning,ja,Tidligere Globeteam
 Bredvid,917573360,Utvikling og rådgivning,ja,
 Liflig,925906093,Utvikling og rådgivning,ja,
-Commit,934427688,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Commit,934427688,Utvikling og rådgivning,ja,Formål i Brreg: konsulenttjenester innen IT; har ikke levert et helt regnskapsår ennå
 Unicus,921184476,Utvikling og rådgivning,ja,
 99X Increo,982057892,Utvikling og rådgivning,ja,
 Item Consulting,980712567,Utvikling og rådgivning,ja,
 Teleplan Consulting,980396711,Utvikling og rådgivning,ja,
 Konsulentselskapet Enso,915718515,Utvikling og rådgivning,ja,
-Kraftlauget,922835071,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
-AboveIT,922105243,Utvikling og rådgivning,nei,Sjekk at det er rent konsulentselskap
+Kraftlauget,922835071,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+AboveIT,922105243,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
 Yttr,991118225,Digital og design,ja,
 Aplia,998850371,Digital og design,ja,
-Vokser,919653477,Digital og design,nei,Sjekk at det er rent konsulentselskap
+Vokser,919653477,Digital og design,ja,Formål i Brreg: digitale kommunikasjonsløsninger for web; 79 % av inntekten går til lønn
 Gnist Consulting,922669570,Microsoft og ERP,ja,
 Sariba Consulting,987428511,Microsoft og ERP,ja,
 Applica Consulting,934167112,Microsoft og ERP,ja,
 Noria,968354701,Microsoft og ERP,ja,Noria
 Noria,926112538,Microsoft og ERP,ja,Noria Vest
-Arribatec,918487328,Microsoft og ERP,nei,Arribatec Norge
-Arribatec,983398308,Microsoft og ERP,nei,Arribatec Cloud
-Arribatec,968455265,Microsoft og ERP,nei,Arribatec EA & BPM
-Gapit Nordics,917567204,Microsoft og ERP,nei,CRM-konsulenter; sjekk kategori
+Arribatec,918487328,Programvare og lisens,ja,Arribatec Norge. Formål i Brreg: salg og utvikling av egen ERP-programvare med konsulenttjenester
+Arribatec,983398308,Programvare og lisens,ja,Arribatec Cloud. Formål i Brreg: salg og utvikling av egen ERP-programvare med konsulenttjenester
+Arribatec,968455265,Programvare og lisens,ja,Arribatec EA & BPM. Formål i Brreg: salg og utvikling av egen ERP-programvare med konsulenttjenester
+Gapit Nordics,917567204,Programvare og lisens,ja,Formål i Brreg: produkt for tilstandsovervåkning
 Deloitte,980211282,Rådgivningshus,ja,Revisjon og rådgivning; IT-andelen kan ikke skilles ut
 PwC,987009713,Rådgivningshus,ja,Revisjon og rådgivning; IT-andelen kan ikke skilles ut
 KPMG,935174627,Rådgivningshus,ja,Revisjon og rådgivning; IT-andelen kan ikke skilles ut
@@ -120,9 +120,9 @@ BearingPoint,984145047,Rådgivningshus,ja,Ledelses- og teknologirådgivning
 Avo Consulting,918664696,Rådgivningshus,ja,Ledelses- og digitaliseringsrådgivning
 Implement Consulting Group,997336402,Rådgivningshus,ja,
 PA Consulting,920413382,Rådgivningshus,ja,
-Sprint Consulting,988497711,Rådgivningshus,nei,Prosjektledelse; sjekk IT-andel
-Clave Consulting,933567389,Rådgivningshus,nei,IKT og organisasjonsutvikling
-Inventura,983351417,Rådgivningshus,nei,Sjekk IT-andel
+Sprint Consulting,988497711,Rådgivningshus,ja,"Ledelsesrådgivning, IT-rådgivning og programmering"
+Clave Consulting,933567389,Rådgivningshus,ja,"IKT, organisasjonsutvikling og ledelse"
+Inventura,983351417,IT-bemanning,ja,Formål i Brreg: bedriftsrådgivning og utleie av personell
 mnemonic,982089549,Sikkerhet,ja,Både konsulenter og overvåkingstjenester
 Defendable,925880140,Sikkerhet,ja,
 Sicra,932538067,Sikkerhet,ja,
@@ -130,32 +130,32 @@ O3 Cyber,929553160,Sikkerhet,ja,Under 20 ansatte; tatt med som kjent aktør
 Kommando,919637226,Sikkerhet,ja,
 Ivolv,927371022,Sikkerhet,ja,
 Orange Cyberdefense,981548280,Sikkerhet,ja,
-Telenor Cyberdefence,932975424,Sikkerhet,nei,Skilt ut fra Telenor; også overvåkingstjenester
+Telenor Cyberdefence,932975424,Sikkerhet,ja,Formål i Brreg: tjenester innen IT-sikkerhet; skilt ut fra Telenor i 2024
 River Security,925178810,Sikkerhet,ja,
 Knowit,913513657,Fullservice,ja,Knowit Cybersecurity & Law
 Variant,928534006,Utvikling og rådgivning,ja,Variant Bergen
-Experis,982683955,Utvikling og rådgivning,nei,IT-bemanning og konsulenter
-Experis,925922374,Utvikling og rådgivning,nei,Experis Services
-Cegal,996221423,Utvikling og rådgivning,nei,Mye drift og datasenter; sjekk kategori
-Align Consulting,998790956,Utvikling og rådgivning,nei,Ikke bekreftet
-Lighthouse Consulting,925732656,Utvikling og rådgivning,nei,Ikke bekreftet
-Gren Utvikling,927211769,Utvikling og rådgivning,nei,Ikke bekreftet
-Bspoke,912817938,Utvikling og rådgivning,nei,Ikke bekreftet
-Intuvio,979153953,Utvikling og rådgivning,nei,Ikke bekreftet
-Vaare,933480968,Utvikling og rådgivning,nei,Ikke bekreftet
-Forse,914951852,Utvikling og rådgivning,nei,Ikke bekreftet
-Alv,822704042,Utvikling og rådgivning,nei,Ikke bekreftet
-Logiq,981012224,Utvikling og rådgivning,nei,Ikke bekreftet
-Scienta,997230078,Utvikling og rådgivning,nei,Også salg av programvare
-Oseberg Solutions,981586581,Utvikling og rådgivning,nei,Også regnskapstjenester
-Decisive,928720691,Utvikling og rådgivning,nei,Ikke bekreftet
-Finexa IT Solutions,929574265,Utvikling og rådgivning,nei,Ikke bekreftet
-Fink,917279934,Digital og design,nei,Ikke bekreftet
-Skråstrek,923161996,Digital og design,nei,Ikke bekreftet
-Inevo,912345793,Digital og design,nei,Ikke bekreftet
-These Ways,922656657,Digital og design,nei,Ikke bekreftet
-S5 Consulting,991774866,Microsoft og ERP,nei,SAP-konsulenter
-ERPkonsult,823130562,Microsoft og ERP,nei,Ikke bekreftet
-Netpower Business Solutions,990648085,Microsoft og ERP,nei,Ikke bekreftet
-ECIT Capstone,957345808,Microsoft og ERP,nei,Også salg av datautstyr
-Diginext IT Solutions,933498336,Global leveranse,nei,Norsk filial (NUF)
+Experis,982683955,IT-bemanning,ja,Formål i Brreg: IT-konsulenter og utleie av personell (ManpowerGroup)
+Experis,925922374,IT-bemanning,ja,Formål i Brreg: IT-konsulenter og utleie av personell (ManpowerGroup)
+Cegal,996221423,Drift og outsourcing,ja,"Drift, skytjenester og programvare for energibransjen"
+Align Consulting,998790956,Uavklart,nei,"Konsulentvirksomhet, men under 50 % av inntekten går til lønn"
+Lighthouse Consulting,925732656,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Gren Utvikling,927211769,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Bspoke,912817938,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Intuvio,979153953,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Vaare,933480968,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Forse,914951852,Utvikling og rådgivning,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Alv,822704042,Uavklart,nei,Formål i Brreg: varer og tjenester innen IT og investeringer
+Logiq,981012224,Uavklart,nei,"Formål i Brreg: konsulent, agentur og produktsalg; 42 % av inntekten går til lønn"
+Scienta,997230078,Programvare og lisens,ja,Formål i Brreg: IT-konsulenttjenester og salg/distribusjon av programvare; 41 % av inntekten går til lønn
+Oseberg Solutions,981586581,Uavklart,nei,Formål i Brreg: konsulentvirksomhet og regnskap og bokføring
+Decisive,928720691,Uavklart,nei,"Formål i Brreg: utvikling, innføring og salg av IT-løsninger"
+Finexa IT Solutions,929574265,Uavklart,nei,Formål i Brreg: salg av IT-tjenester; 22 % av inntekten går til lønn
+Fink,917279934,Digital og design,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Skråstrek,923161996,Digital og design,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Inevo,912345793,Digital og design,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+These Ways,922656657,Digital og design,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+S5 Consulting,991774866,Microsoft og ERP,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn (SAP-konsulenter)
+ERPkonsult,823130562,Microsoft og ERP,ja,Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn
+Netpower Business Solutions,990648085,Microsoft og ERP,ja,Formål i Brreg: programmering; 55 % av inntekten går til lønn
+ECIT Capstone,957345808,Uavklart,nei,Formål i Brreg: salg av datautstyr og konsulentvirksomhet
+Diginext IT Solutions,933498336,IT-bemanning,ja,Formål i Brreg: IT-løsninger og ressurser til IT-prosjekter; norsk filial

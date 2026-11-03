@@ -35,7 +35,8 @@ LONN_PER_ANSATT_MAKS = 2500
 
 # Kategorier som vises på siden, men holdes utenfor bransjetall og topplister
 # fordi IT-delen av regnskapet ikke kan skilles ut (f.eks. revisjonshusene).
-UTENFOR_BRANSJETALL = {"Rådgivningshus"}
+UTENFOR_BRANSJETALL = {"Rådgivningshus", "Drift og outsourcing", "IT-bemanning",
+                       "Programvare og lisens", "Uavklart"}
 
 # Vekst rangeres bare når fjorårets inntekt var minst 20 mill. kr (tusen kr),
 # ellers dominerer nystartede og utskilte selskaper med flere hundre prosent vekst.
@@ -193,6 +194,17 @@ def bygg_data(konfig):
                                                "sikker": True, "orgnr": []})
         g["sikker"] = g["sikker"] and rad["sikker"] == "ja"
         g["orgnr"].append(rad["orgnr"])
+        # Merknaden kan starte med navnet på den juridiske enheten (f.eks.
+        # «Knowit Insight»); det tas bort, resten vises som forklaring.
+        tekst = (rad.get("merknad") or "").strip()
+        forste = rad["gruppe"].split()[0].lower()
+        for skille in (". ", "; "):
+            if tekst.lower().startswith(forste) and skille in tekst:
+                tekst = tekst.split(skille, 1)[1]
+        if tekst.lower().startswith(forste):
+            tekst = ""
+        if tekst and tekst not in g.setdefault("merknader", []):
+            g["merknader"].append(tekst)
     for g in grupper.values():
         g["i_bransjetall"] = g["kategori"] not in UTENFOR_BRANSJETALL
 
@@ -256,6 +268,7 @@ def bygg_data(konfig):
             "navn": g["navn"],
             "kategori": g["kategori"],
             "verifisert": g["sikker"],
+            "merknad": "; ".join(g.get("merknader", [])),
             "i_bransjetall": g["i_bransjetall"],
             "ansatte": ansatte if ansatte is not None else sum(e["ansatte"] or 0 for e in info),
             "kommune": storste["kommune"],
@@ -421,8 +434,9 @@ def bygg_data(konfig):
             "Selskaper i samme konsern er slått sammen. Vekst for ett selskap vises bare når de samme juridiske enhetene har regnskap begge år.",
             "Vekst like mot like for bransjen regnes bare på selskaper som har regnskap begge år.",
             "Noen selskaper har avvikende regnskapsår; året regnskapet slutter i brukes.",
-            "Rådgivningshus som Deloitte, PwC, KPMG og EY driver også med revisjon og skatt. De vises i tabellen, men er holdt utenfor bransjetallene og topplistene.",
-            "Topplistene tar bare med bekreftede konsulentselskaper med minst 20 mill. kr i inntekt.",
+            "Rådgivningshus (som Deloitte, PwC, KPMG og EY), drifts- og outsourcingselskaper, IT-bemanning, programvare- og lisensselskaper og selskaper med uavklart virksomhet vises i tabellen, men er holdt utenfor bransjetallene, analysene og topplistene.",
+            "Et selskap regnes som IT-konsulentselskap når formålet det har oppgitt i Brreg er konsulentvirksomhet, og over halvparten av inntekten går til lønn. Kjente konsulenthus er plassert direkte.",
+            "Topplistene tar bare med selskaper med minst 20 mill. kr i inntekt.",
         ],
         "marked": marked,
         "analyser": analyser,
