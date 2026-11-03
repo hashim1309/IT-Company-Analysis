@@ -128,11 +128,37 @@ footer { border-top: 1px solid var(--rule); padding-top: 20px; display: grid; ga
 footer ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 4px; max-width: 70ch; }
 .error { color: var(--neg); }
 @media (prefers-reduced-motion: no-preference) { .rrow .bar { transition: width 0.35s ease; } }
+/* Data tables in sections */
+.dt { min-width: 560px; }
+.dt td:nth-child(2), .dt th:nth-child(2) { text-align: right; }
+.dt td:first-child { min-width: 11rem; }
+.dt .barcell { width: 22%; min-width: 120px; }
+.mini { position: relative; height: 10px; background: transparent; }
+.mini .zero-line { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--ink-3); }
+.mini .b { position: absolute; top: 0; height: 10px; background: var(--dot); }
+.mini .b.neg { background: var(--neg); }
+.mini .b.r { border-radius: 0 3px 3px 0; } .mini .b.l { border-radius: 3px 0 0 3px; }
+.finding { font-size: 1.02rem; color: var(--ink); max-width: 70ch; }
+.note { font-size: 0.85rem; color: var(--ink-3); max-width: 75ch; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.kpis .stat .v { font-size: clamp(1.3rem, 2.6vw, 1.8rem); }
+@media (max-width: 720px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .kpis .stat:nth-child(3) { border-left: 0; padding-left: 0; } }
+.cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+@media (max-width: 820px) { .cols { grid-template-columns: minmax(0, 1fr); } }
+ul.plain { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+ul.plain li { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--rule); padding: 6px 0; font-size: 0.93rem; }
+ul.plain li:last-child { border-bottom: 0; }
+tr.main { cursor: pointer; }
+tr.detail > td { background: var(--bg); padding: 16px; white-space: normal; text-align: left; }
+tr.detail table { min-width: 0; width: auto; font-size: 0.85rem; margin-bottom: 12px; }
+tr.detail td:first-child { min-width: 0; }
+tr.detail h4 { margin: 4px 0 8px; font: 600 0.8rem var(--font-body); letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-3); }
+.expander { font-family: var(--font-mono); color: var(--ink-3); margin-right: 6px; display: inline-block; width: 0.8em; }
 </style>
 
 <div class="wrap">
   <header class="hero">
-    <span class="eyebrow">Norske IT-konsulentselskaper · regnskapsåret <span id="yr">2025</span></span>
+    <span class="eyebrow">Norske IT-konsulentselskaper · regnskapsåret <span id="yr"></span></span>
     <h1 id="headline">IT-konsulentene i tall</h1>
     <p class="lede" id="lede">Inntekt, lønnsomhet og vekst for norske IT-konsulentselskaper, hentet fra årsregnskapene i Brønnøysundregistrene.</p>
     <div class="stats" id="stats" aria-live="polite"></div>
@@ -140,23 +166,86 @@ footer ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 4px; max-width:
 
   <section aria-labelledby="h-marked">
     <div class="head">
-      <h2 id="h-marked">Veksten stoppet opp</h2>
-      <p class="muted">Samlet driftsinntekt for selskapene i utvalget. Veksten er regnet like mot like, altså bare for selskaper med regnskap begge år.</p>
+      <h2 id="h-marked">Bransjen år for år</h2>
+      <p class="finding" id="f-marked"></p>
     </div>
     <div class="two">
       <div class="panel"><div class="eyebrow">Samlet driftsinntekt, mrd. kr</div><svg id="c-market" role="img" aria-label="Samlet driftsinntekt per år"></svg></div>
       <div class="panel"><div class="eyebrow">Samlet driftsmargin</div><svg id="c-margin" role="img" aria-label="Samlet driftsmargin per år"></svg></div>
     </div>
+    <div class="tablebox"><table class="dt" id="t-marked"></table></div>
+    <p class="note">Antall selskaper varierer fordi ikke alle har levert regnskap for alle år. Vekst like mot like regnes bare på selskaper som har regnskap begge år, så nye selskaper i utvalget ikke gir falsk vekst.</p>
   </section>
 
-  <section aria-labelledby="h-scatter">
+  <section aria-labelledby="h-seg">
     <div class="head">
-      <h2 id="h-scatter">Størst er ikke mest lønnsomt</h2>
-      <p class="muted">Hvert punkt er ett selskap. Liggende akse er driftsinntekt (logaritmisk), stående er driftsmargin. Hule punkter ligger utenfor aksen. Hold over et punkt for detaljer.</p>
+      <h2 id="h-seg">Segmentene</h2>
+      <p class="finding" id="f-seg"></p>
     </div>
+    <div class="tablebox"><table class="dt" id="t-seg"></table></div>
+    <p class="note">Segment med få selskaper (se antall) kan svinge mye fra år til år. Medianmargin er marginen til selskapet i midten, og påvirkes mindre av enkeltselskaper enn samlet margin.</p>
+  </section>
+
+  <section aria-labelledby="h-size">
+    <div class="head">
+      <h2 id="h-size">Størrelse og lønnsomhet</h2>
+      <p class="finding" id="f-size"></p>
+    </div>
+    <div class="tablebox"><table class="dt" id="t-size"></table></div>
     <div class="panel" style="display:grid;gap:14px">
+      <div class="eyebrow">Hvert punkt er ett selskap</div>
       <div class="chips" id="cat-chips" role="group" aria-label="Fremhev kategori"></div>
       <svg id="c-scatter" role="img" aria-label="Driftsinntekt mot driftsmargin per selskap"></svg>
+      <p class="note">Liggende akse er driftsinntekt (logaritmisk), stående er driftsmargin. Aksen stopper ved −30 % og +40 %; hule punkter ligger utenfor. Hold over et punkt for detaljer. Selskaper med usikkert ansatttall er utelatt fra størrelsesgruppene i tabellen, men vises i punktdiagrammet.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-pay">
+    <div class="head">
+      <h2 id="h-pay">Lønn og lønnsomhet</h2>
+      <p class="finding" id="f-pay"></p>
+    </div>
+    <div class="tablebox"><table class="dt" id="t-pay"></table></div>
+    <div>
+      <div class="panel" style="display:grid;gap:10px;align-content:start">
+        <div class="eyebrow">Andel av inntekten som går til lønn</div>
+        <p class="finding" id="f-share"></p>
+        <p class="note">Lønnskostnad delt på driftsinntekt for hele bransjen. Resten dekker andre kostnader og overskudd.</p>
+      </div>
+    </div>
+    <p class="note">Lønnskostnad per ansatt inkluderer arbeidsgiveravgift og pensjon. Bare bekreftede konsulentselskaper med pålitelig ansatttall er med. Ansatttallet er dagens tall fra Enhetsregisteret, så tallene er omtrentlige.</p>
+  </section>
+
+  <section aria-labelledby="h-conc">
+    <div class="head">
+      <h2 id="h-conc">Hvor samlet er markedet?</h2>
+      <p class="finding" id="f-conc"></p>
+    </div>
+    <div class="kpis" id="k-conc"></div>
+    <p class="note">Andel av samlet driftsinntekt for selskapene i utvalget, ikke hele det norske markedet.</p>
+  </section>
+
+  <section aria-labelledby="h-geo">
+    <div class="head">
+      <h2 id="h-geo">Hvor de holder til</h2>
+      <p class="finding" id="f-geo"></p>
+    </div>
+    <div class="tablebox"><table class="dt" id="t-geo"></table></div>
+    <p class="note">Kommunen er forretningsadressen til den største juridiske enheten i hvert selskap. Mange har kontorer flere steder. Kommuner med færre enn tre selskaper er slått sammen.</p>
+  </section>
+
+  <section aria-labelledby="h-loss">
+    <div class="head">
+      <h2 id="h-loss">Hvem tapte penger?</h2>
+      <p class="finding" id="f-loss"></p>
+    </div>
+    <div class="cols">
+      <div class="panel"><div class="eyebrow">Driftsunderskudd, mill. kr</div><ul class="plain" id="l-loss"></ul></div>
+      <div class="panel" style="display:grid;gap:10px;align-content:start">
+        <div class="eyebrow">Soliditet</div>
+        <p class="finding" id="f-solid"></p>
+        <p class="note">Egenkapitalandel er egenkapital delt på sum eiendeler. Negativ egenkapital betyr at gjelden er større enn eiendelene.</p>
+      </div>
     </div>
   </section>
 
@@ -174,11 +263,11 @@ footer ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 4px; max-width:
   <section aria-labelledby="h-all">
     <div class="head">
       <h2 id="h-all">Alle selskaper</h2>
-      <p class="muted">Klikk på en kolonne for å sortere. Beløp i millioner kroner.</p>
+      <p class="muted">Klikk på et selskap for å se alle år og hvilke juridiske enheter det består av. Klikk på en kolonne for å sortere. Beløp i millioner kroner.</p>
     </div>
     <div class="toolbar">
       <div class="chips" id="tbl-chips" role="group" aria-label="Filtrer på kategori"></div>
-      <label><span class="eyebrow" style="display:block;margin-bottom:4px">Søk</span><input type="search" id="q" placeholder="Selskapsnavn"></label>
+      <label><span class="eyebrow" style="display:block;margin-bottom:4px">Søk</span><input type="search" id="q" placeholder="Selskap eller org.nr."></label>
     </div>
     <div class="tablebox">
       <table>
@@ -201,11 +290,12 @@ const $ = s => document.querySelector(s);
 const nf = new Intl.NumberFormat('nb-NO');
 const nf1 = new Intl.NumberFormat('nb-NO', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const nf2 = new Intl.NumberFormat('nb-NO', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const mrd = k => nf1.format(k / 1e6);                 // tusen kr -> mrd
-const mill = k => nf.format(Math.round(k / 1000));    // tusen kr -> mill
-const pct = (x, sign) => x == null ? '–' : (sign && x > 0 ? '+' : '') + nf1.format(x * 100).replace('-', '−') + ' %';
-const kr = k => k == null ? '–' : nf.format(Math.round(k)) + ' 000 kr';
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const minus = s => s.replace('-', '−');
+const mrd = k => minus(nf1.format(k / 1e6));                 // tusen kr -> mrd
+const mill = k => k == null ? '–' : minus(nf.format(Math.round(k / 1000)));   // tusen kr -> mill
+const mill1 = k => k == null ? '–' : minus(nf1.format(k / 1000));
+const pct = (x, sign) => x == null ? '–' : (sign && x > 0 ? '+' : '') + minus(nf1.format(x * 100)) + ' %';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const NS = 'http://www.w3.org/2000/svg';
 function el(tag, attrs, parent, text) {
   const e = document.createElementNS(NS, tag);
@@ -224,22 +314,45 @@ function showTip(html, ev) {
   tip.style.left = x + 'px'; tip.style.top = y + 'px';
 }
 const hideTip = () => { tip.hidden = true; };
+const maxBy = (a, f) => a.reduce((b, x) => (f(x) > f(b) ? x : b));
+const minBy = (a, f) => a.reduce((b, x) => (f(x) < f(b) ? x : b));
 
-let D, Y;
+let D, Y, PY;
+const inBransje = s => s.i_bransjetall !== false;
+
+/* Liten stolpe for tabeller: håndterer negative verdier rundt en nullinje */
+function miniBar(v, lo, hi) {
+  if (v == null) return '';
+  lo = Math.min(lo, 0); hi = Math.max(hi, 0);
+  const span = hi - lo || 1, z = (0 - lo) / span * 100, p = (v - lo) / span * 100;
+  const left = Math.min(z, p), w = Math.abs(p - z);
+  return `<div class="mini"><div class="b ${v < 0 ? 'neg l' : 'r'}" style="left:${left}%;width:${Math.max(w, 0.5)}%"></div>${lo < 0 ? `<div class="zero-line" style="left:${z}%"></div>` : ''}</div>`;
+}
+
+/* Tabell for grupperte nøkkeltall (segmenter, størrelse, lønn, geografi) */
+function groupTable(id, rows, firstLabel, barKey, barLabel) {
+  const vals = rows.map(r => r[barKey]).filter(v => v != null);
+  const lo = Math.min(...vals), hi = Math.max(...vals);
+  $(id).innerHTML = `<thead><tr><th>${firstLabel}</th><th>Selskaper</th><th>Inntekt, mill.</th><th>Andel</th><th>Vekst, like mot like</th><th>Samlet margin</th><th>Medianmargin</th><th class="barcell" style="text-align:left">${barLabel}</th></tr></thead><tbody>` +
+    rows.map(r => `<tr><td>${esc(r.navn)}</td><td class="n">${r.antall_selskaper}</td><td class="n">${mill(r.inntekt)}</td><td class="n">${pct(r.andel_av_inntekt)}</td>` +
+      `<td class="n ${r.vekst_like_mot_like > 0 ? 'pos' : r.vekst_like_mot_like < 0 ? 'neg' : ''}">${pct(r.vekst_like_mot_like, true)}</td>` +
+      `<td class="n ${r.margin < 0 ? 'neg' : ''}">${pct(r.margin)}</td><td class="n ${r.median_margin < 0 ? 'neg' : ''}">${pct(r.median_margin)}</td>` +
+      `<td class="barcell">${miniBar(r[barKey], lo, hi)}</td></tr>`).join('') + '</tbody>';
+}
 
 function hero() {
-  const m = D.marked[Y], p = D.marked[String(Y - 1)];
-  const n = m.antall_selskaper;
+  const m = D.marked[Y], p = D.marked[PY];
   $('#yr').textContent = Y;
-  const flat = m.vekst_like_mot_like != null && m.vekst_like_mot_like < 0.03;
+  const flat = m.vekst_like_mot_like != null && Math.abs(m.vekst_like_mot_like) < 0.01;
   $('#headline').textContent = flat ? `IT-konsulentene stod stille i ${Y}` : `IT-konsulentene i ${Y}`;
-  $('#lede').textContent = `${n} norske IT-konsulentselskaper omsatte for ${mrd(m.inntekt)} milliarder kroner i ${Y}. ` +
-    (p && p.vekst_like_mot_like != null
-      ? `Veksten falt fra ${pct(p.vekst_like_mot_like)} året før til ${pct(m.vekst_like_mot_like)}, mens de fleste fortsatt tjente penger.`
-      : '');
+  let lede = `De ${m.antall_selskaper} IT-konsulentselskapene i utvalget hadde ${mrd(m.inntekt)} milliarder kroner i driftsinntekt i ${Y}. `;
+  if (p && p.vekst_like_mot_like != null && m.vekst_like_mot_like != null)
+    lede += `Veksten for de samme selskapene var ${pct(m.vekst_like_mot_like, true)}, mot ${pct(p.vekst_like_mot_like, true)} året før. `;
+  lede += `${m.med_overskudd} av ${m.antall_selskaper} gikk med driftsoverskudd.`;
+  $('#lede').textContent = lede;
   const stats = [
     [mrd(m.inntekt) + ' mrd', `samlet driftsinntekt ${Y}`],
-    [pct(m.vekst_like_mot_like, true), 'vekst like mot like' + (p ? ` (${pct(p.vekst_like_mot_like, true)} i ${Y - 1})` : '')],
+    [pct(m.vekst_like_mot_like, true), 'vekst like mot like' + (p && p.vekst_like_mot_like != null ? ` (${pct(p.vekst_like_mot_like, true)} i ${PY})` : '')],
     [pct(m.margin), 'samlet driftsmargin'],
     [`${m.med_overskudd} av ${m.antall_selskaper}`, 'gikk med driftsoverskudd'],
   ];
@@ -255,7 +368,7 @@ function barChart(svg, rows, fmt, label) {
   const y = v => T + (H - T - B) * (1 - v / max);
   el('line', { x1: L, x2: W - R, y1: y(0), y2: y(0), class: 'zero' }, svg);
   rows.forEach((r, i) => {
-    const x = L + i * bw + bw * 0.22, w = bw * 0.56, top = y(r.v), h = y(0) - top;
+    const x = L + i * bw + bw * 0.22, w = bw * 0.56, top = y(r.v);
     const last = i === rows.length - 1;
     const g = el('g', {}, svg);
     el('path', { d: `M${x},${y(0)} V${top + 4} q0,-4 4,-4 H${x + w - 4} q4,0 4,4 V${y(0)} Z`, fill: last ? 'var(--dot)' : 'var(--dot-muted)' }, g);
@@ -269,11 +382,36 @@ function barChart(svg, rows, fmt, label) {
 
 function market() {
   const yrs = Object.keys(D.marked).sort();
-  barChart($('#c-market'), yrs.map(k => ({ k, v: D.marked[k].inntekt,
-    extra: `${D.marked[k].antall_selskaper} selskaper` + (D.marked[k].vekst_like_mot_like != null ? `<br>Vekst like mot like: ${pct(D.marked[k].vekst_like_mot_like, true)}` : '') })),
-    v => mrd(v), 'Driftsinntekt (mrd. kr)');
-  barChart($('#c-margin'), yrs.map(k => ({ k, v: D.marked[k].margin,
-    extra: `Driftsresultat: ${mrd(D.marked[k].driftsresultat)} mrd. kr` })), v => pct(v), 'Driftsmargin');
+  barChart($('#c-market'), yrs.map(k => ({ k, v: D.marked[k].inntekt, extra: `${D.marked[k].antall_selskaper} selskaper` })), v => mrd(v), 'Driftsinntekt (mrd. kr)');
+  barChart($('#c-margin'), yrs.map(k => ({ k, v: D.marked[k].margin, extra: `Driftsresultat: ${mrd(D.marked[k].driftsresultat)} mrd. kr` })), v => pct(v), 'Driftsmargin');
+  $('#t-marked').innerHTML = '<thead><tr><th>År</th><th>Selskaper</th><th>Inntekt, mill.</th><th>Vekst like mot like</th><th>Driftsresultat, mill.</th><th>Samlet margin</th><th>Medianmargin</th><th>Lønnsandel</th><th>Med overskudd</th></tr></thead><tbody>' +
+    yrs.map(k => { const m = D.marked[k]; return `<tr><td>${k}</td><td class="n">${m.antall_selskaper}</td><td class="n">${mill(m.inntekt)}</td><td class="n">${pct(m.vekst_like_mot_like, true)}</td><td class="n">${mill(m.driftsresultat)}</td><td class="n">${pct(m.margin)}</td><td class="n">${pct(m.median_margin)}</td><td class="n">${pct(m.lonnsandel)}</td><td class="n">${m.med_overskudd} av ${m.antall_selskaper}</td></tr>`; }).join('') + '</tbody>';
+  const m = D.marked[Y], p = D.marked[PY];
+  if (p && m.vekst_like_mot_like != null && p.vekst_like_mot_like != null) {
+    const dir = m.vekst_like_mot_like < p.vekst_like_mot_like ? 'falt' : 'steg';
+    $('#f-marked').textContent = `Veksten ${dir} fra ${pct(p.vekst_like_mot_like, true)} i ${PY} til ${pct(m.vekst_like_mot_like, true)} i ${Y}, mens samlet driftsmargin ${pct(p.margin) === pct(m.margin) ? `holdt seg på ${pct(m.margin)}` : `gikk fra ${pct(p.margin)} til ${pct(m.margin)}`}.`;
+  }
+}
+
+function segments() {
+  const rows = D.analyser.segmenter;
+  groupTable('#t-seg', rows, 'Segment', 'vekst_like_mot_like', 'Vekst');
+  const v = rows.filter(r => r.vekst_like_mot_like != null);
+  const best = maxBy(v, r => r.vekst_like_mot_like), worst = minBy(v, r => r.vekst_like_mot_like);
+  const hiM = maxBy(rows, r => r.margin), loM = minBy(rows, r => r.margin);
+  $('#f-seg').textContent = `${best.navn} vokste mest (${pct(best.vekst_like_mot_like, true)}, ${best.antall_selskaper} selskaper), og ${worst.navn.toLowerCase()} gikk mest tilbake (${pct(worst.vekst_like_mot_like, true)}). ` +
+    `${hiM.navn} hadde høyest samlet margin (${pct(hiM.margin)}), ${loM.navn.toLowerCase()} lavest (${pct(loM.margin)}).`;
+}
+
+function sizes() {
+  const rows = D.analyser.storrelse;
+  groupTable('#t-size', rows, 'Størrelse', 'margin', 'Samlet margin');
+  const loM = minBy(rows, r => r.margin), hiM = maxBy(rows, r => r.margin);
+  const loMed = minBy(rows, r => r.median_margin);
+  const lbl = n => n.charAt(0).toLowerCase() + n.slice(1);
+  let t = `Selskapene med ${lbl(hiM.navn)} hadde høyest samlet margin (${pct(hiM.margin)}), mens de med ${lbl(loM.navn)} lå lavest (${pct(loM.margin)}).`;
+  if (loMed.navn === loM.navn) t += ` Også medianmarginen er lavest i denne gruppen (${pct(loM.median_margin)}).`;
+  $('#f-size').textContent = t;
 }
 
 let hiCat = null;
@@ -282,10 +420,9 @@ function scatter() {
   const W = 960, H = 420, L = 52, R = 16, T = 16, B = 40;
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
   svg.innerHTML = '';
-  const pts = D.selskaper.filter(s => s.i_bransjetall !== false && s.aar[Y] && s.aar[Y].inntekt > 0 && s.aar[Y].margin != null)
+  const pts = D.selskaper.filter(s => inBransje(s) && s.aar[Y] && s.aar[Y].inntekt > 0 && s.aar[Y].margin != null)
     .map(s => ({ s, x: s.aar[Y].inntekt, y: s.aar[Y].margin }));
-  const lx0 = Math.log10(20000), lx1 = Math.log10(Math.max(...pts.map(p => p.x)) * 1.4);
-  // Aksen kuttes ved −30 % og +40 %; selskaper utenfor tegnes som hule punkter på kanten.
+  const lx0 = Math.log10(Math.min(20000, Math.min(...pts.map(p => p.x)) * 0.8)), lx1 = Math.log10(Math.max(...pts.map(p => p.x)) * 1.4);
   const ymin = Math.max(-0.3, Math.floor(Math.min(...pts.map(p => p.y)) * 10) / 10), ymax = Math.min(0.4, Math.ceil(Math.max(...pts.map(p => p.y)) * 10) / 10);
   const clampY = v => Math.min(ymax, Math.max(ymin, v));
   const X = v => L + (W - L - R) * (Math.log10(v) - lx0) / (lx1 - lx0);
@@ -295,23 +432,22 @@ function scatter() {
     el('line', { x1: L, x2: W - R, y1: Yp(v), y2: Yp(v), class: v === 0 ? 'zero' : 'grid' }, svg);
     el('text', { x: L - 8, y: Yp(v) + 4, 'text-anchor': 'end' }, svg, pct(v).replace(',0', ''));
   }
-  [[25000, '25 mill.'], [50000, '50 mill.'], [100000, '100 mill.'], [250000, '250 mill.'], [500000, '500 mill.'], [1000000, '1 mrd.'], [2500000, '2,5 mrd.'], [5000000, '5 mrd.']]
-    .filter(([v]) => Math.log10(v) <= lx1)
+  [[10000, '10 mill.'], [25000, '25 mill.'], [50000, '50 mill.'], [100000, '100 mill.'], [250000, '250 mill.'], [500000, '500 mill.'], [1000000, '1 mrd.'], [2500000, '2,5 mrd.'], [5000000, '5 mrd.']]
+    .filter(([v]) => Math.log10(v) >= lx0 && Math.log10(v) <= lx1)
     .forEach(([v, t]) => {
       el('line', { x1: X(v), x2: X(v), y1: T, y2: H - B, class: 'grid' }, svg);
       el('text', { x: X(v), y: H - B + 18, 'text-anchor': 'middle' }, svg, t);
     });
   el('text', { x: W - R, y: H - 4, 'text-anchor': 'end' }, svg, 'Driftsinntekt →');
-  // label: largest five + top three margin
   const byInc = [...pts].sort((a, b) => b.x - a.x).slice(0, 4);
-  const byMar = pts.filter(p => p.s.verifisert).sort((a, b) => b.y - a.y).slice(0, 3);
+  const byMar = pts.filter(p => p.s.verifisert && p.x >= 20000).sort((a, b) => b.y - a.y).slice(0, 3);
   const labelled = new Set([...byInc, ...byMar].map(p => p.s.navn));
   const placed = [];
   const order = [...pts].sort((a, b) => (a.s.kategori === hiCat) - (b.s.kategori === hiCat));
   order.forEach(p => {
     const on = !hiCat || p.s.kategori === hiCat;
-    const g = el('g', { tabindex: 0, role: 'img', 'aria-label': `${p.s.navn}: ${mrd(p.x)} mrd. kr, margin ${pct(p.y)}` }, svg);
     const out = p.y !== clampY(p.y);
+    const g = el('g', { tabindex: 0, role: 'img', 'aria-label': `${p.s.navn}: ${mill(p.x)} mill. kr, margin ${pct(p.y)}` }, svg);
     el('circle', { cx: X(p.x), cy: Yp(p.y), r: on ? 6 : 4.5, fill: out ? 'var(--surface)' : on ? 'var(--dot)' : 'var(--dot-muted)', stroke: out ? (on ? 'var(--dot)' : 'var(--dot-muted)') : 'var(--surface)', 'stroke-width': 2 }, g);
     el('circle', { cx: X(p.x), cy: Yp(p.y), r: 14, fill: 'transparent' }, g);
     if (labelled.has(p.s.navn) && on && !placed.some(q => Math.abs(q.y - Yp(p.y)) < 15 && Math.abs(q.x - X(p.x)) < 150)) {
@@ -319,7 +455,7 @@ function scatter() {
       const right = X(p.x) < W - 140;
       el('text', { x: X(p.x) + (right ? 10 : -10), y: Yp(p.y) + 4, 'text-anchor': right ? 'start' : 'end', class: 'lbl' }, g, p.s.navn);
     }
-    const html = `<b>${esc(p.s.navn)}</b><br>${esc(p.s.kategori)}<br>Driftsinntekt: ${mill(p.x)} mill. kr<br>Driftsmargin: ${pct(p.y)}<br>Ansatte: ${nf.format(p.s.ansatte)}`;
+    const html = `<b>${esc(p.s.navn)}</b><br>${esc(p.s.kategori)}<br>Driftsinntekt: ${mill(p.x)} mill. kr<br>Driftsmargin: ${pct(p.y)}<br>Ansatte: ${nf.format(p.s.ansatte)}${p.s.verifisert ? '' : '<br>Uverifisert'}`;
     g.addEventListener('mousemove', ev => showTip(html, ev));
     g.addEventListener('mouseleave', hideTip);
     g.addEventListener('focus', () => { const r = g.getBoundingClientRect(); showTip(html, { clientX: r.right, clientY: r.top }); });
@@ -327,8 +463,46 @@ function scatter() {
   });
 }
 
+function pay() {
+  const rows = D.analyser.lonn_mot_margin;
+  groupTable('#t-pay', rows, 'Lønnskostnad per ansatt', 'median_margin', 'Medianmargin');
+  const big = rows.filter(r => r.antall_selskaper >= 5 && r.median_margin != null);
+  if (big.length >= 2) {
+    const hi = maxBy(big, r => r.median_margin), lo = minBy(big, r => r.median_margin);
+    $('#f-pay').textContent = `Medianmarginen er høyest blant selskapene med lønnskostnad ${hi.navn.charAt(0).toLowerCase() + hi.navn.slice(1)} per ansatt (${pct(hi.median_margin)}, ${hi.antall_selskaper} selskaper) og lavest blant dem med ${lo.navn.charAt(0).toLowerCase() + lo.navn.slice(1)} (${pct(lo.median_margin)}, ${lo.antall_selskaper} selskaper).`;
+  }
+  const m = D.marked[Y];
+  $('#f-share').textContent = `${pct(m.lonnsandel)} av driftsinntekten gikk til lønnskostnader i ${Y}` + (D.marked[PY] ? `, mot ${pct(D.marked[PY].lonnsandel)} året før.` : '.');
+}
+
+function concentration() {
+  const k = D.analyser.konsentrasjon;
+  $('#k-conc').innerHTML = [['topp1', 'Største selskap'], ['topp3', 'Tre største'], ['topp5', 'Fem største'], ['topp10', 'Ti største']]
+    .map(([key, l]) => `<div class="stat"><span class="v num">${pct(k[key])}</span><span class="l">${l}</span></div>`).join('');
+  const big = D.selskaper.filter(inBransje).filter(s => s.aar[Y]).sort((a, b) => b.aar[Y].inntekt - a.aar[Y].inntekt).slice(0, 5).map(s => s.navn);
+  $('#f-conc').textContent = `De fem største (${big.join(', ')}) står for ${pct(k.topp5)} av inntektene i utvalget.`;
+}
+
+function geo() {
+  const rows = D.analyser.geografi;
+  groupTable('#t-geo', rows, 'Kommune', 'margin', 'Samlet margin');
+  const top = maxBy(rows.filter(r => r.navn !== 'Andre kommuner'), r => r.antall_selskaper);
+  $('#f-geo').textContent = `${top.antall_selskaper} av ${D.marked[Y].antall_selskaper} selskaper er registrert i ${top.navn}, og de står for ${pct(top.andel_av_inntekt)} av inntektene.`;
+}
+
+function losses() {
+  const L = D.analyser.underskudd;
+  const sum = L.reduce((a, x) => a + x.driftsresultat, 0);
+  $('#f-loss').textContent = `${L.length} av ${D.marked[Y].antall_selskaper} selskaper gikk med driftsunderskudd i ${Y}, til sammen ${mill(Math.abs(sum))} mill. kr i driftsunderskudd.`;
+  $('#l-loss').innerHTML = L.map(x => `<li><span>${esc(x.navn)}${x.verifisert ? '' : '<span class="flag">uverifisert</span>'}</span><span class="num neg">${mill1(x.driftsresultat)} <span class="muted">(${pct(x.margin)})</span></span></li>`).join('');
+  const s = D.analyser.soliditet;
+  const neg = s.negativ_egenkapital;
+  $('#f-solid').textContent = `Medianselskapet har en egenkapitalandel på ${pct(s.median_ek_andel)}. ` +
+    (neg.length ? `${neg.length} ${neg.length === 1 ? 'selskap' : 'selskaper'} hadde negativ egenkapital ved utgangen av ${Y}: ${neg.join(', ')}.` : `Ingen hadde negativ egenkapital ved utgangen av ${Y}.`);
+}
+
 function catChips(container, getter, setter, allLabel, onlyBransje) {
-  const cats = [...new Set(D.selskaper.filter(s => !onlyBransje || s.i_bransjetall !== false).map(s => s.kategori))];
+  const cats = [...new Set(D.selskaper.filter(s => !onlyBransje || inBransje(s)).map(s => s.kategori))];
   container.innerHTML = '';
   [null, ...cats].forEach(c => {
     const b = document.createElement('button');
@@ -340,11 +514,14 @@ function catChips(container, getter, setter, allLabel, onlyBransje) {
 }
 
 const TOPS = [
-  { k: 'margin', t: 'Driftsmargin', get: s => s.aar[Y]?.margin, fmt: v => pct(v), note: 'Driftsresultat delt på driftsinntekt.' },
-  { k: 'vekst', t: 'Vekst', get: s => s.aar[Y]?.vekst, fmt: v => pct(v, true), note: 'Endring i driftsinntekt fra året før, for selskaper med minst 20 mill. kr i inntekt året før. Kan påvirkes av oppkjøp og omorganiseringer.' },
-  { k: 'lonn', t: 'Lønnskostnad per ansatt', get: s => s.lonnskost_per_ansatt, fmt: v => nf2.format(v / 1000) + ' mill.', note: 'Inkluderer arbeidsgiveravgift og pensjon, så faktisk lønn er lavere. Selskaper med usikkert ansatttall er utelatt.' },
-  { k: 'ipa', t: 'Inntekt per ansatt', get: s => s.inntekt_per_ansatt, fmt: v => nf1.format(v / 1000) + ' mill.', note: 'Driftsinntekt delt på antall ansatte. Selskaper med usikkert ansatttall er utelatt.' },
-  { k: 'inntekt', t: 'Størst', get: s => s.aar[Y]?.inntekt, fmt: v => mrd(v) + ' mrd.', note: 'Driftsinntekt, med selskaper i samme konsern slått sammen.' },
+  { k: 'margin', t: 'Driftsmargin', fmt: v => pct(v), note: 'Driftsresultat delt på driftsinntekt.' },
+  { k: 'vekst', t: 'Vekst', fmt: v => pct(v, true), note: 'Endring i driftsinntekt fra året før, for selskaper med minst 20 mill. kr i inntekt begge år. Kan påvirkes av oppkjøp.' },
+  { k: 'resultat_per_ansatt', t: 'Resultat per ansatt', fmt: v => mill1(v) + ' mill.', note: 'Driftsresultat delt på antall ansatte.' },
+  { k: 'lonnskost_per_ansatt', t: 'Lønnskostnad per ansatt', fmt: v => nf2.format(v / 1000) + ' mill.', note: 'Inkluderer arbeidsgiveravgift og pensjon, så faktisk lønn er lavere.' },
+  { k: 'inntekt_per_ansatt', t: 'Inntekt per ansatt', fmt: v => nf1.format(v / 1000) + ' mill.', note: 'Driftsinntekt delt på antall ansatte. Kan være høy for selskaper som også videreselger lisenser eller annonser.' },
+  { k: 'lonnsandel', t: 'Lønnsandel', fmt: v => pct(v), note: 'Hvor stor del av inntekten som går til lønnskostnader.' },
+  { k: 'ek_andel', t: 'Egenkapitalandel', fmt: v => pct(v), note: 'Egenkapital delt på sum eiendeler.' },
+  { k: 'inntekt', t: 'Størst', fmt: v => mrd(v) + ' mrd.', note: 'Driftsinntekt, med selskaper i samme konsern slått sammen.' },
 ];
 let topK = 'margin';
 function tops() {
@@ -357,19 +534,15 @@ function tops() {
     tabs.appendChild(b);
   });
   const o = TOPS.find(x => x.k === topK);
-  $('#top-note').textContent = o.note + ' Bare bekreftede konsulentselskaper er med.';
-  const prev = String(Y - 1);
-  const rows = D.selskaper
-    .filter(s => s.i_bransjetall !== false && s.verifisert)
-    .filter(s => o.k !== 'vekst' || (s.aar[prev]?.inntekt || 0) >= 20000)
-    .map(s => ({ s, v: o.get(s) })).filter(r => r.v != null).sort((a, b) => b.v - a.v).slice(0, 10);
-  const max = Math.max(...rows.map(r => r.v));
+  $('#top-note').textContent = o.note + ' Bare bekreftede konsulentselskaper med minst 20 mill. kr i inntekt er med.';
+  const rows = D.topplister[o.k] || [];
+  const max = Math.max(...rows.map(r => r.verdi));
   $('#top-list').innerHTML = rows.map((r, i) => `
     <div class="rrow">
       <span class="pos-n">${i + 1}</span>
-      <span class="name" title="${esc(r.s.navn)}">${esc(r.s.navn)}</span>
-      <span class="barcell"><div class="bar" style="width:${Math.max(0, r.v / max * 100)}%"></div></span>
-      <span class="val">${esc(o.fmt(r.v))}</span>
+      <span class="name" title="${esc(r.navn)}">${esc(r.navn)}</span>
+      <span class="barcell"><div class="bar" style="width:${Math.max(0, r.verdi / max * 100)}%"></div></span>
+      <span class="val">${esc(o.fmt(r.verdi))}</span>
     </div>`).join('');
 }
 
@@ -382,8 +555,40 @@ const COLS = [
   { k: 'drift', t: 'Driftsres.', get: s => s.aar[Y]?.driftsresultat, fmt: v => mill(v), cls: v => v < 0 ? 'neg' : '' },
   { k: 'margin', t: 'Margin', get: s => s.aar[Y]?.margin, fmt: v => pct(v), cls: v => v < 0 ? 'neg' : '' },
   { k: 'lpa', t: 'Lønnskost/ansatt', get: s => s.lonnskost_per_ansatt, fmt: v => nf.format(v) + ' k' },
+  { k: 'lshare', t: 'Lønnsandel', get: s => s.aar[Y]?.lonnsandel, fmt: v => pct(v) },
+  { k: 'ek', t: 'EK-andel', get: s => s.aar[Y]?.ek_andel, fmt: v => pct(v), cls: v => v < 0 ? 'neg' : '' },
+  { k: 'share', t: 'Andel', get: s => s.markedsandel, fmt: v => pct(v) },
 ];
 let sortK = 'inntekt', sortAsc = false, tblCat = null;
+const open = new Set();
+
+function detail(s) {
+  const yrs = Object.keys(s.aar).sort();
+  const rowsDef = [
+    ['Driftsinntekt, mill.', y => mill1(s.aar[y].inntekt)],
+    ['Vekst', y => pct(s.aar[y].vekst, true)],
+    ['Lønnskostnad, mill.', y => mill1(s.aar[y].lonn)],
+    ['Lønnsandel', y => pct(s.aar[y].lonnsandel)],
+    ['Driftsresultat, mill.', y => mill1(s.aar[y].driftsresultat)],
+    ['Driftsmargin', y => pct(s.aar[y].margin)],
+    ['Årsresultat, mill.', y => mill1(s.aar[y].aarsresultat)],
+    ['Egenkapital, mill.', y => mill1(s.aar[y].egenkapital)],
+    ['Sum eiendeler, mill.', y => mill1(s.aar[y].eiendeler)],
+    ['Egenkapitalandel', y => pct(s.aar[y].ek_andel)],
+  ];
+  const hist = yrs.length ? `<h4>Regnskap</h4><div style="overflow-x:auto"><table><thead><tr><th></th>${yrs.map(y => `<th>${y}</th>`).join('')}</tr></thead><tbody>` +
+    rowsDef.map(([l, f]) => `<tr><td>${l}</td>${yrs.map(y => `<td class="n">${f(y)}</td>`).join('')}</tr>`).join('') + '</tbody></table></div>' : '<p class="note">Ingen regnskap i Brreg for årene på siden.</p>';
+  const ents = `<h4>Juridiske enheter</h4><div style="overflow-x:auto"><table><thead><tr><th>Navn</th><th>Org.nr.</th><th>Kommune</th><th>Ansatte</th><th>Stiftet</th><th>Næringskode</th><th>Regnskapsår</th></tr></thead><tbody>` +
+    s.enheter.map(e => `<tr><td>${esc(e.navn)}</td><td class="n">${esc(e.orgnr)}</td><td style="text-align:left">${esc(e.kommune)}</td><td class="n">${e.ansatte == null ? '–' : nf.format(e.ansatte)}</td><td class="n">${esc((e.stiftet || '').slice(0, 10))}</td><td class="n">${esc(e.naeringskode)}</td><td class="n">${esc(e.regnskapsaar.join(', '))}</td></tr>`).join('') + '</tbody></table></div>';
+  const notes = [];
+  if (s.vekst_ikke_sammenlignbar) notes.push('Vekst vises ikke fordi ikke alle juridiske enheter har regnskap begge år.');
+  if (s.ansatttall_usikkert) notes.push('Ansatttallet i Brreg passer ikke med lønnskostnaden, så tall per ansatt vises ikke.');
+  if (s.avvikende_regnskapsaar) notes.push('Regnskapsåret følger ikke kalenderåret. Året regnskapet slutter i brukes.');
+  if (!s.i_bransjetall) notes.push('Driver også med annet enn IT og er holdt utenfor bransjetallene.');
+  if (!s.verifisert) notes.push('Ikke bekreftet som rent konsulentselskap.');
+  return hist + ents + (notes.length ? `<p class="note">${notes.map(esc).join(' ')}</p>` : '');
+}
+
 function table() {
   $('#thead').innerHTML = COLS.map(c => `<th scope="col"${c.k === sortK ? ` aria-sort="${sortAsc ? 'ascending' : 'descending'}"` : ''}><button type="button" data-k="${c.k}">${c.t}</button></th>`).join('');
   $('#thead').querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
@@ -392,10 +597,10 @@ function table() {
   }));
   const q = $('#q').value.trim().toLowerCase();
   const col = COLS.find(c => c.k === sortK);
-  const rows = D.selskaper.filter(s => (!tblCat || s.kategori === tblCat) && (!q || s.navn.toLowerCase().includes(q) || s.enheter.some(e => (e.navn || '').toLowerCase().includes(q))))
+  const rows = D.selskaper.filter(s => (!tblCat || s.kategori === tblCat) && (!q || s.navn.toLowerCase().includes(q) || s.enheter.some(e => (e.navn || '').toLowerCase().includes(q) || e.orgnr.includes(q))))
     .sort((a, b) => {
       const va = col.get(a), vb = col.get(b);
-      if (va == null) return 1; if (vb == null) return -1;
+      if (va == null && vb == null) return 0; if (va == null) return 1; if (vb == null) return -1;
       const r = typeof va === 'string' ? va.localeCompare(vb, 'nb') : va - vb;
       return sortAsc ? r : -r;
     });
@@ -404,33 +609,41 @@ function table() {
     if (s.ansatttall_usikkert) flags.push('<span class="flag" title="Ansatttallet i Brreg ser feil ut">usikkert ansatttall</span>');
     if (s.avvikende_regnskapsaar) flags.push('<span class="flag" title="Regnskapsåret følger ikke kalenderåret">avvikende år</span>');
     if (!s.aar[Y]) flags.push(`<span class="flag" title="Brreg har ikke et helt regnskapsår for ${Y}">mangler ${Y}</span>`);
-    if (s.i_bransjetall === false) flags.push('<span class="flag" title="Driver også med annet enn IT, og er holdt utenfor bransjetallene">utenfor bransjetall</span>');
+    if (!s.i_bransjetall) flags.push('<span class="flag" title="Driver også med annet enn IT, og er holdt utenfor bransjetallene">utenfor bransjetall</span>');
     if (!s.verifisert) flags.push('<span class="flag" title="Ikke bekreftet som rent konsulentselskap">uverifisert</span>');
-    const orgs = s.enheter.map(e => e.orgnr).join(', ');
-    return `<tr>${COLS.map((c, i) => {
+    const isOpen = open.has(s.navn);
+    const main = `<tr class="main" data-n="${esc(s.navn)}" aria-expanded="${isOpen}">${COLS.map((c, i) => {
       const v = c.get(s);
-      if (i === 0) return `<td><span>${esc(v)}</span>${flags.join('')}<div class="org">org.nr. ${esc(orgs)}</div></td>`;
+      if (i === 0) return `<td><span class="expander">${isOpen ? '−' : '+'}</span><span>${esc(v)}</span>${flags.join('')}</td>`;
       if (!c.fmt) return `<td>${esc(v)}</td>`;
       return `<td class="n ${v != null && c.cls ? c.cls(v) : ''}">${v == null ? '–' : esc(c.fmt(v))}</td>`;
     }).join('')}</tr>`;
+    return main + (isOpen ? `<tr class="detail"><td colspan="${COLS.length}">${detail(s)}</td></tr>` : '');
   }).join('') : `<tr><td colspan="${COLS.length}" style="text-align:left">Ingen selskaper passer søket.</td></tr>`;
+  $('#tbody').querySelectorAll('tr.main').forEach(tr => tr.addEventListener('click', () => {
+    const n = tr.dataset.n; open.has(n) ? open.delete(n) : open.add(n); table();
+  }));
 }
 
 function footer() {
   $('#notes').innerHTML = D.merknader.map(n => `<li>${esc(n)}</li>`).join('') +
-    '<li>Utvalget er håndplukket: selskaper som hovedsakelig selger IT-konsulenttimer, også innen data, sikkerhet og global leveranse. Rene programvare-, drifts- og lisensselskaper er ikke med.</li><li>Selskaper merket «uverifisert» er ikke bekreftet som rene konsulentselskaper. De telles med i bransjetallene, men ikke i topplistene.</li>';
+    '<li>Utvalget er håndplukket: selskaper som hovedsakelig selger IT-konsulenttimer, også innen data, sikkerhet og global leveranse. Rene programvare-, drifts- og lisensselskaper er ikke med.</li>' +
+    '<li>Selskaper merket «uverifisert» er ikke bekreftet som rene konsulentselskaper. De telles med i bransjetallene, men ikke i topplistene.</li>' +
+    '<li>Alle tall kontrolleres automatisk mot rådataene fra Brreg før siden publiseres.</li>';
   const d = new Date(D.oppdatert).toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' });
   $('#source').innerHTML = `Kilde: ${esc(D.kilde)}. Sist oppdatert ${esc(d)}.`;
 }
 
+function safe(fn) { try { fn(); } catch (e) { console.error(e); } }
+
 fetch('data.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
-  D = d; Y = String(d.siste_aar);
-  hero(); market();
+  D = d; Y = String(d.siste_aar); PY = String(d.siste_aar - 1);
+  [hero, market, segments, sizes, pay, concentration, geo, losses].forEach(safe);
   catChips($('#cat-chips'), () => hiCat, c => { hiCat = c; scatter(); }, 'Alle', true);
-  scatter(); tops();
+  safe(scatter); safe(tops);
   catChips($('#tbl-chips'), () => tblCat, c => { tblCat = c; table(); }, 'Alle kategorier');
   $('#q').addEventListener('input', table);
-  table(); footer();
+  safe(table); safe(footer);
 }).catch(err => {
   $('#lede').innerHTML = `<span class="error">Klarte ikke å laste data.json (${esc(err.message)}). Sjekk at filen ligger ved siden av index.html.</span>`;
 });

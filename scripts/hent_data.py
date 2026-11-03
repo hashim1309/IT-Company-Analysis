@@ -41,6 +41,15 @@ UTENFOR_BRANSJETALL = {"Rådgivningshus"}
 # ellers dominerer nystartede og utskilte selskaper med flere hundre prosent vekst.
 MIN_INNTEKT_VEKST = 20000
 
+# Topplister tar bare med selskaper med minst 20 mill. kr i inntekt siste år,
+# så svært små selskaper ikke havner øverst på grunn av tilfeldigheter.
+MIN_INNTEKT_TOPP = 20000
+
+STORRELSER = [(0, 50, "Under 50 ansatte"), (50, 200, "50–199 ansatte"),
+              (200, 1000, "200–999 ansatte"), (1000, 10**9, "1000 ansatte eller flere")]
+LONNSGRUPPER = [(0, 1000, "Under 1,0 mill. kr"), (1000, 1200, "1,0–1,2 mill. kr"),
+                (1200, 1400, "1,2–1,4 mill. kr"), (1400, 10**9, "1,4 mill. kr eller mer")]
+
 
 def hent_json(url, forsok=3):
     req = urllib.request.Request(
@@ -105,13 +114,18 @@ def les_raa(orgnr):
             continue
         res = r.get("resultatregnskapResultat", {})
         drift = res.get("driftsresultat", {})
-        aar[int(tildato[:4])] = {
+        y = int(tildato[:4])
+        if y in aar and aar[y]["_id"] > (r.get("id") or 0):
+            continue  # behold nyeste innsending hvis et år er levert flere ganger
+        aar[y] = {
+            "_id": r.get("id") or 0,
             "inntekt": tall(drift.get("driftsinntekter", {}).get("sumDriftsinntekter")),
             "lonn": tall(drift.get("driftskostnad", {}).get("loennskostnad")),
             "driftskost": tall(drift.get("driftskostnad", {}).get("sumDriftskostnad")),
             "driftsresultat": tall(drift.get("driftsresultat")),
             "aarsresultat": tall(res.get("aarsresultat")),
             "egenkapital": tall(r.get("egenkapitalGjeld", {}).get("egenkapital", {}).get("sumEgenkapital")),
+            "eiendeler": tall(r.get("eiendeler", {}).get("sumEiendeler")),
             "slutt_maaned": int(tildato[5:7]),
         }
     return d.get("enhet"), aar
@@ -141,113 +155,259 @@ def oppdater_ansatthistorikk(enheter):
 
 
 def andel(a, b):
-    return None if a is None or not b else round(a / b, 4)
+    """a / b avrundet, eller None hvis det ikke kan regnes ut."""
+    if a is None or b is None or b == 0:
+        return None
+    return round(a / b, 4)
+
+
+def median(verdier):
+    v = sorted(x for x in verdier if x is not None)
+    if not v:
+        return None
+    m = len(v) // 2
+    return round(v[m] if len(v) % 2 else (v[m - 1] + v[m]) / 2, 4)
+
+
+FELT = ["inntekt", "lonn", "driftskost", "driftsresultat", "aarsresultat", "egenkapital", "eiendeler"]
+
+
+def summer(poster, felt):
+    """Summerer et felt; None hvis ingen av postene har verdien."""
+    v = [p[felt] for p in poster if p.get(felt) is not None]
+    return sum(v) if v else None
 
 
 def bygg_data(konfig):
-    grupper = defaultdict(lambda: {"enheter": [], "aar": defaultdict(dict), "ansatte": 0})
-    enheter = {}
+    # 1. Les hver juridisk enhet
+    enheter, enhet_aar = {}, {}
     for rad in konfig:
         enhet, aar = les_raa(rad["orgnr"])
         enheter[rad["orgnr"]] = enhet
-        g = grupper[rad["gruppe"]]
-        g["kategori"] = rad["kategori"]
-        g["sikker"] = g.get("sikker", True) and rad["sikker"] == "ja"
-        g["enheter"].append({
-            "orgnr": rad["orgnr"],
-            "navn": (enhet or {}).get("navn"),
-            "kommune": ((enhet or {}).get("forretningsadresse") or {}).get("kommune"),
-            "ansatte": (enhet or {}).get("antallAnsatte"),
-        })
-        g["ansatte"] += (enhet or {}).get("antallAnsatte") or 0
-        for y, verdier in aar.items():
-            if verdier.get("slutt_maaned") != 12:
-                g["avvikende_aar"] = True
-            for k, v in verdier.items():
-                if v is None or k == "slutt_maaned":
-                    continue
-                g["aar"][y][k] = g["aar"][y].get(k, 0) + v
-            g["aar"][y].setdefault("antall_enheter", 0)
-            g["aar"][y]["antall_enheter"] += 1
+        enhet_aar[rad["orgnr"]] = aar
 
-    bransje = {n: g for n, g in grupper.items() if g["kategori"] not in UTENFOR_BRANSJETALL}
-    alle_aar = sorted({y for g in bransje.values() for y in g["aar"]})
-    # siste år der de fleste selskapene har levert
-    dekning = {y: sum(1 for g in bransje.values() if y in g["aar"]) for y in alle_aar}
-    siste_aar = max(y for y in alle_aar if dekning[y] >= 0.8 * len(bransje))
+    # 2. Grupper (konsern slås sammen)
+    grupper = {}
+    for rad in konfig:
+        g = grupper.setdefault(rad["gruppe"], {"navn": rad["gruppe"], "kategori": rad["kategori"],
+                                               "sikker": True, "orgnr": []})
+        g["sikker"] = g["sikker"] and rad["sikker"] == "ja"
+        g["orgnr"].append(rad["orgnr"])
+    for g in grupper.values():
+        g["i_bransjetall"] = g["kategori"] not in UTENFOR_BRANSJETALL
 
+    bransje = [g for g in grupper.values() if g["i_bransjetall"]]
+
+    # 3. Siste regnskapsår: siste år der minst 80 % av bransjeselskapene har levert
+    def har_aar(g, y):
+        return any(y in enhet_aar[o] for o in g["orgnr"])
+
+    alle_aar = sorted({y for g in bransje for o in g["orgnr"] for y in enhet_aar[o]})
+    siste_aar = max(y for y in alle_aar if sum(har_aar(g, y) for g in bransje) >= 0.8 * len(bransje))
+    aarene = [y for y in alle_aar if sum(har_aar(g, y) for g in bransje) >= 0.8 * len(bransje)]
+
+    # 4. Tall per gruppe og år
     selskaper = []
-    for navn, g in grupper.items():
+    for g in grupper.values():
         aar = {}
-        for y in sorted(g["aar"]):
-            v = g["aar"][y]
-            forrige = g["aar"].get(y - 1, {})
+        for y in aarene:
+            poster = [enhet_aar[o][y] for o in g["orgnr"] if y in enhet_aar[o]]
+            if not poster:
+                continue
+            sett = sorted(o for o in g["orgnr"] if y in enhet_aar[o])
+            v = {f: summer(poster, f) for f in FELT}
+            forrige_sett = sorted(o for o in g["orgnr"] if (y - 1) in enhet_aar[o])
+            forrige_inntekt = summer([enhet_aar[o][y - 1] for o in forrige_sett], "inntekt") if forrige_sett else None
+            # Vekst regnes bare når de samme juridiske enhetene har regnskap begge år
+            sammenlignbar = forrige_sett == sett and forrige_inntekt
             aar[str(y)] = {
-                "inntekt": round(v.get("inntekt", 0)),
-                "lonn": round(v.get("lonn", 0)),
-                "driftsresultat": round(v.get("driftsresultat", 0)),
-                "aarsresultat": round(v.get("aarsresultat", 0)),
-                "margin": andel(v.get("driftsresultat"), v.get("inntekt")),
-                "vekst": round(v["inntekt"] / forrige["inntekt"] - 1, 4)
-                if forrige.get("inntekt") and v.get("inntekt") is not None else None,
+                **{f: (round(v[f]) if v[f] is not None else None) for f in FELT if f != "driftskost"},
+                "margin": andel(v["driftsresultat"], v["inntekt"]),
+                "vekst": round(v["inntekt"] / forrige_inntekt - 1, 4) if sammenlignbar and v["inntekt"] is not None else None,
+                "lonnsandel": andel(v["lonn"], v["inntekt"]),
+                "ek_andel": andel(v["egenkapital"], v["eiendeler"]),
+                "orgnr": sett,
             }
-        s = g["aar"].get(siste_aar, {})
-        lonn_per = s.get("lonn") / g["ansatte"] if g["ansatte"] and s.get("lonn") else None
+
+        siste = aar.get(str(siste_aar))
+        # Ansatte telles bare for enhetene som har regnskap for siste år
+        sett = siste["orgnr"] if siste else []
+        ansatt_liste = [(enheter[o] or {}).get("antallAnsatte") for o in sett]
+        ansatte = sum(ansatt_liste) if sett and all(a is not None for a in ansatt_liste) else None
+        lonn_per = siste["lonn"] / ansatte if siste and ansatte and siste["lonn"] else None
         ansatt_ok = lonn_per is not None and LONN_PER_ANSATT_MIN <= lonn_per <= LONN_PER_ANSATT_MAKS
+
+        info = []
+        for o in g["orgnr"]:
+            e = enheter[o] or {}
+            info.append({
+                "orgnr": o,
+                "navn": e.get("navn"),
+                "kommune": (e.get("forretningsadresse") or {}).get("kommune"),
+                "ansatte": e.get("antallAnsatte"),
+                "stiftet": e.get("stiftelsesdato") or e.get("registreringsdatoEnhetsregisteret"),
+                "naeringskode": (e.get("naeringskode1") or {}).get("kode"),
+                "regnskapsaar": sorted(str(y) for y in enhet_aar[o]),
+            })
+        storste = max(info, key=lambda e: e["ansatte"] or 0)
+        avvikende = any(p.get("slutt_maaned") != 12 for o in g["orgnr"] for p in enhet_aar[o].values())
+
         selskaper.append({
-            "navn": navn,
+            "navn": g["navn"],
             "kategori": g["kategori"],
             "verifisert": g["sikker"],
-            "ansatte": g["ansatte"],
-            "enheter": g["enheter"],
+            "i_bransjetall": g["i_bransjetall"],
+            "ansatte": ansatte if ansatte is not None else sum(e["ansatte"] or 0 for e in info),
+            "kommune": storste["kommune"],
+            "enheter": info,
             "aar": aar,
             "lonnskost_per_ansatt": round(lonn_per) if ansatt_ok else None,
-            "inntekt_per_ansatt": round(s["inntekt"] / g["ansatte"]) if ansatt_ok and s.get("inntekt") else None,
+            "inntekt_per_ansatt": round(siste["inntekt"] / ansatte) if ansatt_ok and siste["inntekt"] else None,
+            "resultat_per_ansatt": round(siste["driftsresultat"] / ansatte)
+            if ansatt_ok and siste["driftsresultat"] is not None else None,
             "ansatttall_usikkert": not ansatt_ok,
-            "avvikende_regnskapsaar": g.get("avvikende_aar", False),
-            "i_bransjetall": navn in bransje,
+            "avvikende_regnskapsaar": avvikende,
+            "vekst_ikke_sammenlignbar": bool(siste) and siste["vekst"] is None
+            and str(siste_aar - 1) in aar,
         })
 
-    marked = {}
-    for y in alle_aar:
-        med = [g["aar"][y] for g in bransje.values() if y in g["aar"]]
-        if len(med) < 0.8 * len(bransje):
-            continue
-        inntekt = sum(v.get("inntekt", 0) for v in med)
-        drift = sum(v.get("driftsresultat", 0) for v in med)
-        marked[str(y)] = {
-            "antall_selskaper": len(med),
-            "inntekt": round(inntekt),
-            "lonn": round(sum(v.get("lonn", 0) for v in med)),
-            "driftsresultat": round(drift),
-            "margin": andel(drift, inntekt),
-            "med_overskudd": sum(1 for v in med if v.get("driftsresultat", 0) > 0),
-        }
-    # vekst for selskaper som finnes begge år (like mot like)
-    for y in list(marked):
-        f = int(y) - 1
-        felles = [g for g in bransje.values() if int(y) in g["aar"] and f in g["aar"]]
-        a = sum(g["aar"][int(y)].get("inntekt", 0) for g in felles)
-        b = sum(g["aar"][f].get("inntekt", 0) for g in felles)
-        marked[y]["vekst_like_mot_like"] = round(a / b - 1, 4) if b else None
-
     sy = str(siste_aar)
+    i_bransje = [s for s in selskaper if s["i_bransjetall"]]
+
+    # 5. Bransjetall per år. Vekst like mot like regnes på juridiske enheter som
+    #    har regnskap begge år, så nye eller nedlagte selskaper ikke gir falsk vekst.
+    bransje_orgnr = [o for g in bransje for o in g["orgnr"]]
+
+    def like_mot_like(orgnr, y):
+        felles = [o for o in orgnr if y in enhet_aar[o] and (y - 1) in enhet_aar[o]
+                  and enhet_aar[o][y]["inntekt"] is not None and enhet_aar[o][y - 1]["inntekt"] is not None]
+        a = sum(enhet_aar[o][y]["inntekt"] for o in felles)
+        b = sum(enhet_aar[o][y - 1]["inntekt"] for o in felles)
+        return (round(a / b - 1, 4) if b else None), len(felles)
+
+    def nokkeltall(rader, y=sy):
+        poster = [s["aar"][y] for s in rader if y in s["aar"]]
+        inntekt = sum(p["inntekt"] or 0 for p in poster)
+        drift = sum(p["driftsresultat"] or 0 for p in poster)
+        lonn = sum(p["lonn"] or 0 for p in poster)
+        orgnr = [o for s in rader for o in (s["aar"][y]["orgnr"] if y in s["aar"] else [])]
+        vekst, n_vekst = like_mot_like(orgnr, int(y))
+        return {
+            "antall_selskaper": len(poster),
+            "inntekt": inntekt,
+            "lonn": lonn,
+            "driftsresultat": drift,
+            "margin": andel(drift, inntekt),
+            "lonnsandel": andel(lonn, inntekt),
+            "med_overskudd": sum(1 for p in poster if (p["driftsresultat"] or 0) > 0),
+            "median_margin": median(p["margin"] for p in poster),
+            "vekst_like_mot_like": vekst,
+            "antall_i_vekst": n_vekst,
+        }
+
+    marked = {}
+    for y in aarene:
+        m = nokkeltall(i_bransje, str(y))
+        if str(y - 1) not in [str(a) for a in aarene]:
+            m["vekst_like_mot_like"] = None
+            m["antall_i_vekst"] = 0
+        marked[str(y)] = m
+
     totalt = marked[sy]["inntekt"]
     for s in selskaper:
         inn = s["aar"].get(sy, {}).get("inntekt")
         s["markedsandel"] = round(inn / totalt, 4) if inn and s["i_bransjetall"] else None
 
-    def topp(nokkel, n=10, kilde=None):
+    # 6. Analyser for siste år
+    med_siste = [s for s in i_bransje if sy in s["aar"]]
+
+    def grupper_etter(nokkel_fn, rekkefolge=None):
+        bøtter = defaultdict(list)
+        for s in med_siste:
+            k = nokkel_fn(s)
+            if k is not None:
+                bøtter[k].append(s)
+        navn = rekkefolge or sorted(bøtter, key=lambda k: -sum(x["aar"][sy]["inntekt"] or 0 for x in bøtter[k]))
+        ut = []
+        for k in navn:
+            if k not in bøtter:
+                continue
+            m = nokkeltall(bøtter[k])
+            m["navn"] = k
+            m["andel_av_inntekt"] = andel(m["inntekt"], totalt)
+            ut.append(m)
+        return ut
+
+    def storrelse(s):
+        if s["ansatttall_usikkert"]:
+            return None
+        for lo, hi, n in STORRELSER:
+            if lo <= s["ansatte"] < hi:
+                return n
+
+    def lonnsgruppe(s):
+        if not s["verifisert"] or s["lonnskost_per_ansatt"] is None:
+            return None
+        for lo, hi, n in LONNSGRUPPER:
+            if lo <= s["lonnskost_per_ansatt"] < hi:
+                return n
+
+    # Kommuner med færre enn tre selskaper slås sammen, så ett selskap ikke
+    # avgjør tallet for en hel kommune.
+    teller = defaultdict(int)
+    for s in med_siste:
+        teller[(s["kommune"] or "Ukjent").title()] += 1
+    kommune_gruppe = {s["navn"]: ((s["kommune"] or "Ukjent").title()
+                                  if teller[(s["kommune"] or "Ukjent").title()] >= 3 else "Andre kommuner")
+                      for s in med_siste}
+
+    inntekter = sorted((s["aar"][sy]["inntekt"] or 0 for s in med_siste), reverse=True)
+    ek = [s["aar"][sy]["ek_andel"] for s in med_siste]
+
+    analyser = {
+        "segmenter": grupper_etter(lambda s: s["kategori"]),
+        "storrelse": grupper_etter(storrelse, [n for _, _, n in STORRELSER]),
+        "lonn_mot_margin": grupper_etter(lonnsgruppe, [n for _, _, n in LONNSGRUPPER]),
+        "geografi": grupper_etter(lambda s: kommune_gruppe[s["navn"]]),
+        "konsentrasjon": {f"topp{n}": andel(sum(inntekter[:n]), totalt) for n in (1, 3, 5, 10)},
+        "soliditet": {
+            "median_ek_andel": median(ek),
+            "negativ_egenkapital": sorted(s["navn"] for s in med_siste
+                                          if (s["aar"][sy]["egenkapital"] or 0) < 0),
+            "antall": sum(1 for x in ek if x is not None),
+        },
+        "underskudd": sorted(
+            ({"navn": s["navn"], "driftsresultat": s["aar"][sy]["driftsresultat"],
+              "margin": s["aar"][sy]["margin"], "verifisert": s["verifisert"]}
+             for s in med_siste if (s["aar"][sy]["driftsresultat"] or 0) < 0),
+            key=lambda x: x["driftsresultat"]),
+    }
+
+    # 7. Topplister: bare bekreftede selskaper i bransjetallene, med minst
+    #    20 mill. kr i inntekt (og året før for vekst).
+    def topp(verdi_fn, n=10, minst_forrige=False):
         kandidater = []
-        for s in selskaper:
-            if not s["i_bransjetall"] or not s["verifisert"]:
+        for s in med_siste:
+            if not s["verifisert"] or (s["aar"][sy]["inntekt"] or 0) < MIN_INNTEKT_TOPP:
                 continue
-            if nokkel == "vekst" and (s["aar"].get(str(siste_aar - 1), {}).get("inntekt") or 0) < MIN_INNTEKT_VEKST:
+            if minst_forrige and (s["aar"].get(str(siste_aar - 1), {}).get("inntekt") or 0) < MIN_INNTEKT_VEKST:
                 continue
-            v = s["aar"].get(sy, {}).get(nokkel) if kilde == "aar" else s.get(nokkel)
+            v = verdi_fn(s)
             if v is not None:
                 kandidater.append((v, s["navn"]))
-        return [{"navn": n_, "verdi": v} for v, n_ in sorted(kandidater, reverse=True)[:n]]
+        kandidater.sort(key=lambda x: (-x[0], x[1]))
+        return [{"navn": n_, "verdi": v} for v, n_ in kandidater[:n]]
+
+    topplister = {
+        "margin": topp(lambda s: s["aar"][sy]["margin"]),
+        "vekst": topp(lambda s: s["aar"][sy]["vekst"], minst_forrige=True),
+        "lonnskost_per_ansatt": topp(lambda s: s["lonnskost_per_ansatt"]),
+        "inntekt_per_ansatt": topp(lambda s: s["inntekt_per_ansatt"]),
+        "resultat_per_ansatt": topp(lambda s: s["resultat_per_ansatt"]),
+        "lonnsandel": topp(lambda s: s["aar"][sy]["lonnsandel"]),
+        "ek_andel": topp(lambda s: s["aar"][sy]["ek_andel"]),
+        "inntekt": topp(lambda s: s["aar"][sy]["inntekt"]),
+    }
 
     return {
         "oppdatert": date.today().isoformat(),
@@ -255,20 +415,18 @@ def bygg_data(konfig):
         "kilde": "Brønnøysundregistrene (Enhetsregisteret og Regnskapsregisteret)",
         "merknader": [
             "Beløp er i tusen kroner.",
+            "Driftsinntekt, lønnskostnad og driftsresultat er hentet direkte fra selskapenes årsregnskap. Margin er driftsresultat delt på driftsinntekt.",
             "Lønnskostnad inkluderer arbeidsgiveravgift og pensjon, og er derfor høyere enn utbetalt lønn.",
-            "Ansatttall er dagens tall fra Enhetsregisteret og brukes bare for siste regnskapsår.",
-            "Selskaper i samme konsern er slått sammen.",
+            "Ansatttall er dagens tall fra Enhetsregisteret, ikke tallet ved årsslutt. Tall per ansatt er derfor omtrentlige.",
+            "Selskaper i samme konsern er slått sammen. Vekst for ett selskap vises bare når de samme juridiske enhetene har regnskap begge år.",
+            "Vekst like mot like for bransjen regnes bare på selskaper som har regnskap begge år.",
             "Noen selskaper har avvikende regnskapsår; året regnskapet slutter i brukes.",
             "Rådgivningshus som Deloitte, PwC, KPMG og EY driver også med revisjon og skatt. De vises i tabellen, men er holdt utenfor bransjetallene og topplistene.",
+            "Topplistene tar bare med bekreftede konsulentselskaper med minst 20 mill. kr i inntekt.",
         ],
         "marked": marked,
-        "topplister": {
-            "inntekt": topp("inntekt", kilde="aar"),
-            "margin": topp("margin", kilde="aar"),
-            "vekst": topp("vekst", kilde="aar"),
-            "lonnskost_per_ansatt": topp("lonnskost_per_ansatt"),
-            "inntekt_per_ansatt": topp("inntekt_per_ansatt"),
-        },
+        "analyser": analyser,
+        "topplister": topplister,
         "selskaper": sorted(selskaper, key=lambda s: -(s["aar"].get(sy, {}).get("inntekt") or 0)),
     }, enheter
 
