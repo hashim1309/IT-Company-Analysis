@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-11-01",
+ "oppdatert": "2026-11-03",
  "siste_aar": 2025,
  "kilde": "Brønnøysundregistrene (Enhetsregisteret og Regnskapsregisteret)",
  "merknader": [
@@ -12,12 +12,12 @@
  ],
  "marked": {
   "2023": {
-   "antall_selskaper": 116,
-   "inntekt": 44253921,
-   "lonn": 24521662,
-   "driftsresultat": 2615936,
-   "margin": 0.0591,
-   "med_overskudd": 92,
+   "antall_selskaper": 114,
+   "inntekt": 43894046,
+   "lonn": 24371825,
+   "driftsresultat": 2584815,
+   "margin": 0.0589,
+   "med_overskudd": 90,
    "vekst_like_mot_like": null
   },
   "2024": {
@@ -27,7 +27,7 @@
    "driftsresultat": 2944095,
    "margin": 0.0616,
    "med_overskudd": 99,
-   "vekst_like_mot_like": 0.031
+   "vekst_like_mot_like": 0.0316
   },
   "2025": {
    "antall_selskaper": 123,
@@ -1912,21 +1912,13 @@
     }
    ],
    "aar": {
-    "2023": {
-     "inntekt": 229923,
-     "lonn": 102131,
-     "driftsresultat": 27990,
-     "aarsresultat": 23779,
-     "margin": 0.1217,
-     "vekst": null
-    },
     "2024": {
      "inntekt": 244259,
      "lonn": 109211,
      "driftsresultat": 12058,
      "aarsresultat": 12265,
      "margin": 0.0494,
-     "vekst": 0.0624
+     "vekst": null
     },
     "2025": {
      "inntekt": 269298,
@@ -1935,6 +1927,14 @@
      "aarsresultat": 16345,
      "margin": 0.0683,
      "vekst": 0.1025
+    },
+    "2026": {
+     "inntekt": 315543,
+     "lonn": 103057,
+     "driftsresultat": 36167,
+     "aarsresultat": 31107,
+     "margin": 0.1146,
+     "vekst": 0.1717
     }
    },
    "lonnskost_per_ansatt": 1606,
@@ -4320,21 +4320,13 @@
     }
    ],
    "aar": {
-    "2023": {
-     "inntekt": 129952,
-     "lonn": 47706,
-     "driftsresultat": 3131,
-     "aarsresultat": 4299,
-     "margin": 0.0241,
-     "vekst": null
-    },
     "2024": {
      "inntekt": 100285,
      "lonn": 50321,
      "driftsresultat": 3271,
      "aarsresultat": 3276,
      "margin": 0.0326,
-     "vekst": -0.2283
+     "vekst": null
     },
     "2025": {
      "inntekt": 84202,
@@ -4343,6 +4335,14 @@
      "aarsresultat": 2911,
      "margin": 0.047,
      "vekst": -0.1604
+    },
+    "2026": {
+     "inntekt": 59217,
+     "lonn": 21357,
+     "driftsresultat": 2155,
+     "aarsresultat": 1329,
+     "margin": 0.0364,
+     "vekst": -0.2967
     }
    },
    "lonnskost_per_ansatt": 1887,
