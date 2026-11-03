@@ -612,7 +612,7 @@ function table() {
     if (s.ansatttall_usikkert) flags.push('<span class="flag" title="Ansatttallet i Brreg ser feil ut">usikkert ansatttall</span>');
     if (s.avvikende_regnskapsaar) flags.push('<span class="flag" title="Regnskapsåret følger ikke kalenderåret">avvikende år</span>');
     if (!s.aar[Y]) flags.push(`<span class="flag" title="Brreg har ikke et helt regnskapsår for ${Y}">mangler ${Y}</span>`);
-    if (!s.i_bransjetall) flags.push('<span class="flag" title="Ikke et rent IT-konsulentselskap, eller virksomheten er uavklart. Holdt utenfor bransjetallene.">utenfor bransjetall</span>');
+    if (!s.i_bransjetall) flags.push('<span class="flag" title="Ikke et rent IT-konsulentselskap. Holdt utenfor bransjetallene.">utenfor bransjetall</span>');
     const isOpen = open.has(s.navn);
     const main = `<tr class="main" data-n="${esc(s.navn)}" aria-expanded="${isOpen}">${COLS.map((c, i) => {
       const v = c.get(s);

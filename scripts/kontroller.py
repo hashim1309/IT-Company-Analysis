@@ -20,7 +20,7 @@ feil = []
 
 # Kategorier som skal holdes utenfor bransjetallene (skrevet inn her med vilje,
 # så en endring i hent_data.py må gjøres bevisst begge steder)
-UTENFOR = {"Rådgivningshus", "Drift og outsourcing", "IT-bemanning", "Programvare og lisens", "Uavklart"}
+UTENFOR = {"Rådgivningshus", "Drift og outsourcing", "IT-bemanning", "Programvare og lisens"}
 
 
 def sjekk(betingelse, melding):

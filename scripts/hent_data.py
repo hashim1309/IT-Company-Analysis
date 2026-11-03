@@ -36,7 +36,7 @@ LONN_PER_ANSATT_MAKS = 2500
 # Kategorier som vises på siden, men holdes utenfor bransjetall og topplister
 # fordi IT-delen av regnskapet ikke kan skilles ut (f.eks. revisjonshusene).
 UTENFOR_BRANSJETALL = {"Rådgivningshus", "Drift og outsourcing", "IT-bemanning",
-                       "Programvare og lisens", "Uavklart"}
+                       "Programvare og lisens"}
 
 # Vekst rangeres bare når fjorårets inntekt var minst 20 mill. kr (tusen kr),
 # ellers dominerer nystartede og utskilte selskaper med flere hundre prosent vekst.
@@ -434,7 +434,7 @@ def bygg_data(konfig):
             "Selskaper i samme konsern er slått sammen. Vekst for ett selskap vises bare når de samme juridiske enhetene har regnskap begge år.",
             "Vekst like mot like for bransjen regnes bare på selskaper som har regnskap begge år.",
             "Noen selskaper har avvikende regnskapsår; året regnskapet slutter i brukes.",
-            "Rådgivningshus (som Deloitte, PwC, KPMG og EY), drifts- og outsourcingselskaper, IT-bemanning, programvare- og lisensselskaper og selskaper med uavklart virksomhet vises i tabellen, men er holdt utenfor bransjetallene, analysene og topplistene.",
+            "Rådgivningshus (som Deloitte, PwC, KPMG og EY), drifts- og outsourcingselskaper, IT-bemanning, programvare- og lisensselskaper vises i tabellen, men er holdt utenfor bransjetallene, analysene og topplistene.",
             "Et selskap regnes som IT-konsulentselskap når formålet det har oppgitt i Brreg er konsulentvirksomhet, og over halvparten av inntekten går til lønn. Kjente konsulenthus er plassert direkte.",
             "Topplistene tar bare med selskaper med minst 20 mill. kr i inntekt.",
         ],
