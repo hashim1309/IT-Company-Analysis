@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-11-09",
+ "oppdatert": "2026-11-16",
  "siste_aar": 2025,
  "kilde": "Brønnøysundregistrene (Enhetsregisteret og Regnskapsregisteret)",
  "merknader": [
@@ -17,11 +17,11 @@
  "marked": {
   "2023": {
    "antall_selskaper": 97,
-   "inntekt": 35364117,
-   "lonn": 20952554,
-   "driftsresultat": 2053006,
-   "margin": 0.0581,
-   "lonnsandel": 0.5925,
+   "inntekt": 1991890437,
+   "lonn": 982970400,
+   "driftsresultat": 525885282,
+   "margin": 0.264,
+   "lonnsandel": 0.4935,
    "med_overskudd": 76,
    "median_margin": 0.0545,
    "vekst_like_mot_like": null,
@@ -36,7 +36,7 @@
    "lonnsandel": 0.5914,
    "med_overskudd": 83,
    "median_margin": 0.0493,
-   "vekst_like_mot_like": 0.0805,
+   "vekst_like_mot_like": -0.9806,
    "antall_i_vekst": 114
   },
   "2025": {
@@ -155,32 +155,32 @@
   ],
   "storrelse": [
    {
-    "antall_selskaper": 45,
-    "inntekt": 2868326,
-    "lonn": 1852907,
-    "driftsresultat": 204511,
-    "margin": 0.0713,
-    "lonnsandel": 0.646,
-    "med_overskudd": 37,
-    "median_margin": 0.0593,
-    "vekst_like_mot_like": 0.0726,
-    "antall_i_vekst": 45,
+    "antall_selskaper": 46,
+    "inntekt": 2948959,
+    "lonn": 1919273,
+    "driftsresultat": 206509,
+    "margin": 0.07,
+    "lonnsandel": 0.6508,
+    "med_overskudd": 38,
+    "median_margin": 0.0567,
+    "vekst_like_mot_like": 0.0734,
+    "antall_i_vekst": 46,
     "navn": "Under 50 ansatte",
-    "andel_av_inntekt": 0.0721
+    "andel_av_inntekt": 0.0741
    },
    {
-    "antall_selskaper": 42,
-    "inntekt": 8084946,
-    "lonn": 4939234,
-    "driftsresultat": 271045,
-    "margin": 0.0335,
-    "lonnsandel": 0.6109,
-    "med_overskudd": 32,
-    "median_margin": 0.0394,
-    "vekst_like_mot_like": 0.0211,
-    "antall_i_vekst": 49,
+    "antall_selskaper": 41,
+    "inntekt": 8004313,
+    "lonn": 4872868,
+    "driftsresultat": 269047,
+    "margin": 0.0336,
+    "lonnsandel": 0.6088,
+    "med_overskudd": 31,
+    "median_margin": 0.0434,
+    "vekst_like_mot_like": 0.0204,
+    "antall_i_vekst": 48,
     "navn": "50–199 ansatte",
-    "andel_av_inntekt": 0.2032
+    "andel_av_inntekt": 0.2011
    },
    {
     "antall_selskaper": 13,
@@ -213,60 +213,60 @@
   ],
   "lonn_mot_margin": [
    {
-    "antall_selskaper": 10,
-    "inntekt": 603024,
-    "lonn": 385561,
-    "driftsresultat": -19452,
-    "margin": -0.0323,
-    "lonnsandel": 0.6394,
-    "med_overskudd": 7,
-    "median_margin": 0.0287,
-    "vekst_like_mot_like": 0.2939,
-    "antall_i_vekst": 10,
+    "antall_selskaper": 13,
+    "inntekt": 910028,
+    "lonn": 601984,
+    "driftsresultat": 11655,
+    "margin": 0.0128,
+    "lonnsandel": 0.6615,
+    "med_overskudd": 10,
+    "median_margin": 0.049,
+    "vekst_like_mot_like": 0.1805,
+    "antall_i_vekst": 13,
     "navn": "Under 1,0 mill. kr",
-    "andel_av_inntekt": 0.0152
+    "andel_av_inntekt": 0.0229
+   },
+   {
+    "antall_selskaper": 26,
+    "inntekt": 13330489,
+    "lonn": 8880041,
+    "driftsresultat": 1094681,
+    "margin": 0.0821,
+    "lonnsandel": 0.6661,
+    "med_overskudd": 23,
+    "median_margin": 0.0608,
+    "vekst_like_mot_like": 0.0152,
+    "antall_i_vekst": 28,
+    "navn": "1,0–1,2 mill. kr",
+    "andel_av_inntekt": 0.335
    },
    {
     "antall_selskaper": 29,
-    "inntekt": 13698560,
-    "lonn": 9144118,
-    "driftsresultat": 1125331,
-    "margin": 0.0821,
-    "lonnsandel": 0.6675,
-    "med_overskudd": 26,
-    "median_margin": 0.0659,
-    "vekst_like_mot_like": 0.0137,
-    "antall_i_vekst": 31,
-    "navn": "1,0–1,2 mill. kr",
-    "andel_av_inntekt": 0.3442
-   },
-   {
-    "antall_selskaper": 30,
-    "inntekt": 14223107,
-    "lonn": 8207543,
-    "driftsresultat": 729017,
-    "margin": 0.0513,
+    "inntekt": 13592786,
+    "lonn": 7844248,
+    "driftsresultat": 723737,
+    "margin": 0.0532,
     "lonnsandel": 0.5771,
-    "med_overskudd": 26,
-    "median_margin": 0.0602,
-    "vekst_like_mot_like": 0.0215,
-    "antall_i_vekst": 43,
+    "med_overskudd": 25,
+    "median_margin": 0.0609,
+    "vekst_like_mot_like": 0.0346,
+    "antall_i_vekst": 42,
     "navn": "1,2–1,4 mill. kr",
-    "andel_av_inntekt": 0.3574
+    "andel_av_inntekt": 0.3416
    },
    {
-    "antall_selskaper": 34,
-    "inntekt": 11110734,
-    "lonn": 6210024,
-    "driftsresultat": 697641,
-    "margin": 0.0628,
-    "lonnsandel": 0.5589,
-    "med_overskudd": 25,
-    "median_margin": 0.037,
-    "vekst_like_mot_like": -0.0045,
-    "antall_i_vekst": 36,
+    "antall_selskaper": 35,
+    "inntekt": 11802122,
+    "lonn": 6620973,
+    "driftsresultat": 702464,
+    "margin": 0.0595,
+    "lonnsandel": 0.561,
+    "med_overskudd": 26,
+    "median_margin": 0.0348,
+    "vekst_like_mot_like": -0.0184,
+    "antall_i_vekst": 37,
     "navn": "1,4 mill. kr eller mer",
-    "andel_av_inntekt": 0.2792
+    "andel_av_inntekt": 0.2966
    }
   ],
   "geografi": [
@@ -567,7 +567,7 @@
   "lonnskost_per_ansatt": [
    {
     "navn": "Teleplan Consulting",
-    "verdi": 2125
+    "verdi": 2029
    },
    {
     "navn": "S5 Consulting",
@@ -578,6 +578,14 @@
     "verdi": 1985
    },
    {
+    "navn": "Cepheo",
+    "verdi": 1972
+   },
+   {
+    "navn": "LTIMindtree",
+    "verdi": 1963
+   },
+   {
     "navn": "Kodemaker",
     "verdi": 1941
    },
@@ -586,16 +594,8 @@
     "verdi": 1910
    },
    {
-    "navn": "LTIMindtree",
-    "verdi": 1887
-   },
-   {
     "navn": "Webstep",
     "verdi": 1761
-   },
-   {
-    "navn": "Cepheo",
-    "verdi": 1735
    },
    {
     "navn": "Yttr",
@@ -608,24 +608,24 @@
   ],
   "inntekt_per_ansatt": [
    {
-    "navn": "Teleplan Consulting",
-    "verdi": 4382
-   },
-   {
-    "navn": "Precis Digital",
-    "verdi": 4199
-   },
-   {
     "navn": "Cepheo",
-    "verdi": 4090
+    "verdi": 4647
    },
    {
-    "navn": "NTT Data Business Solutions",
-    "verdi": 3847
+    "navn": "Teleplan Consulting",
+    "verdi": 4183
    },
    {
     "navn": "Orange Cyberdefense",
-    "verdi": 3833
+    "verdi": 4016
+   },
+   {
+    "navn": "Precis Digital",
+    "verdi": 3944
+   },
+   {
+    "navn": "NTT Data Business Solutions",
+    "verdi": 3793
    },
    {
     "navn": "Kommando",
@@ -637,15 +637,15 @@
    },
    {
     "navn": "Accenture",
-    "verdi": 3543
+    "verdi": 3531
+   },
+   {
+    "navn": "LTIMindtree",
+    "verdi": 3368
    },
    {
     "navn": "HCL Technologies",
     "verdi": 3321
-   },
-   {
-    "navn": "LTIMindtree",
-    "verdi": 3239
    }
   ],
   "resultat_per_ansatt": [
@@ -654,16 +654,16 @@
     "verdi": 680
    },
    {
-    "navn": "O3 Cyber",
-    "verdi": 571
-   },
-   {
     "navn": "Lighthouse Consulting",
     "verdi": 536
    },
    {
     "navn": "Kodemaker",
     "verdi": 530
+   },
+   {
+    "navn": "O3 Cyber",
+    "verdi": 527
    },
    {
     "navn": "Forse",
@@ -678,16 +678,16 @@
     "verdi": 382
    },
    {
-    "navn": "Precis Digital",
-    "verdi": 376
-   },
-   {
     "navn": "Scelto",
     "verdi": 365
    },
    {
+    "navn": "Precis Digital",
+    "verdi": 353
+   },
+   {
     "navn": "Novanet",
-    "verdi": 342
+    "verdi": 351
    }
   ],
   "lonnsandel": [
@@ -824,14 +824,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 3674,
+   "ansatte": 3684,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "910909088",
      "navn": "SOPRA STERIA AS",
      "kommune": "OSLO",
-     "ansatte": 3674,
+     "ansatte": 3684,
      "stiftet": "1958-02-20",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -888,8 +888,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1118,
-   "inntekt_per_ansatt": 1628,
+   "lonnskost_per_ansatt": 1115,
+   "inntekt_per_ansatt": 1624,
    "resultat_per_ansatt": 145,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -902,39 +902,24 @@
    "verifisert": true,
    "merknad": "Revisjon og rådgivning; IT-andelen kan ikke skilles ut",
    "i_bransjetall": false,
-   "ansatte": 1898,
+   "ansatte": 1674,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "987009713",
      "navn": "PRICEWATERHOUSECOOPERS AS",
      "kommune": "OSLO",
-     "ansatte": 1898,
+     "ansatte": 1674,
      "stiftet": "2004-06-24",
      "naeringskode": "69.201",
      "regnskapsaar": [
-      "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
      ]
     }
    ],
    "aar": {
-    "2023": {
-     "inntekt": 3996580,
-     "lonn": 2264087,
-     "driftsresultat": 900147,
-     "aarsresultat": 148120,
-     "egenkapital": 540557,
-     "eiendeler": 2599396,
-     "margin": 0.2252,
-     "vekst": null,
-     "lonnsandel": 0.5665,
-     "ek_andel": 0.208,
-     "orgnr": [
-      "987009713"
-     ]
-    },
     "2024": {
      "inntekt": 4259896,
      "lonn": 2518800,
@@ -943,7 +928,7 @@
      "egenkapital": 533875,
      "eiendeler": 2702426,
      "margin": 0.2113,
-     "vekst": 0.0659,
+     "vekst": null,
      "lonnsandel": 0.5913,
      "ek_andel": 0.1976,
      "orgnr": [
@@ -966,9 +951,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1368,
-   "inntekt_per_ansatt": 2232,
-   "resultat_per_ansatt": 542,
+   "lonnskost_per_ansatt": 1551,
+   "inntekt_per_ansatt": 2530,
+   "resultat_per_ansatt": 615,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -980,14 +965,14 @@
    "verifisert": true,
    "merknad": "Ernst & Young AS; revisjon og rådgivning (EY Skye står i Microsoft og ERP)",
    "i_bransjetall": false,
-   "ansatte": 1589,
+   "ansatte": 1571,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "976389387",
      "navn": "ERNST & YOUNG AS",
      "kommune": "OSLO",
-     "ansatte": 1589,
+     "ansatte": 1571,
      "stiftet": "1996-03-28",
      "naeringskode": "69.201",
      "regnskapsaar": [
@@ -1044,9 +1029,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1162,
-   "inntekt_per_ansatt": 2605,
-   "resultat_per_ansatt": 59,
+   "lonnskost_per_ansatt": 1175,
+   "inntekt_per_ansatt": 2635,
+   "resultat_per_ansatt": 60,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -1058,14 +1043,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 2271,
+   "ansatte": 2282,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "996756246",
      "navn": "BOUVET NORGE AS",
      "kommune": "OSLO",
-     "ansatte": 2271,
+     "ansatte": 2282,
      "stiftet": "2011-02-10",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -1122,9 +1107,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1138,
-   "inntekt_per_ansatt": 1690,
-   "resultat_per_ansatt": 209,
+   "lonnskost_per_ansatt": 1133,
+   "inntekt_per_ansatt": 1681,
+   "resultat_per_ansatt": 208,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -1136,14 +1121,14 @@
    "verifisert": true,
    "merknad": "Revisjon og rådgivning; IT-andelen kan ikke skilles ut",
    "i_bransjetall": false,
-   "ansatte": 1216,
+   "ansatte": 1209,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "980211282",
      "navn": "DELOITTE AS",
      "kommune": "OSLO",
-     "ansatte": 1216,
+     "ansatte": 1209,
      "stiftet": "1998-10-01",
      "naeringskode": "69.201",
      "regnskapsaar": [
@@ -1200,9 +1185,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1689,
-   "inntekt_per_ansatt": 2775,
-   "resultat_per_ansatt": 177,
+   "lonnskost_per_ansatt": 1699,
+   "inntekt_per_ansatt": 2791,
+   "resultat_per_ansatt": 178,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -1214,14 +1199,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 1464,
+   "ansatte": 1455,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "943574537",
      "navn": "CAPGEMINI NORGE AS",
      "kommune": "OSLO",
-     "ansatte": 1464,
+     "ansatte": 1455,
      "stiftet": "1986-12-11",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1278,8 +1263,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1271,
-   "inntekt_per_ansatt": 2216,
+   "lonnskost_per_ansatt": 1279,
+   "inntekt_per_ansatt": 2230,
    "resultat_per_ansatt": 35,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -1292,14 +1277,14 @@
    "verifisert": true,
    "merknad": "Revisjon og rådgivning; IT-andelen kan ikke skilles ut",
    "i_bransjetall": false,
-   "ansatte": 1453,
+   "ansatte": 1464,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "935174627",
      "navn": "KPMG AS",
      "kommune": "OSLO",
-     "ansatte": 1453,
+     "ansatte": 1464,
      "stiftet": "1984-09-01",
      "naeringskode": "69.201",
      "regnskapsaar": [
@@ -1356,9 +1341,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1190,
-   "inntekt_per_ansatt": 2205,
-   "resultat_per_ansatt": 306,
+   "lonnskost_per_ansatt": 1181,
+   "inntekt_per_ansatt": 2188,
+   "resultat_per_ansatt": 304,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -1370,14 +1355,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 869,
+   "ansatte": 872,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "992037601",
      "navn": "ACCENTURE AS",
      "kommune": "OSLO",
-     "ansatte": 869,
+     "ansatte": 872,
      "stiftet": "2007-11-26",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1434,9 +1419,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1525,
-   "inntekt_per_ansatt": 3543,
-   "resultat_per_ansatt": 335,
+   "lonnskost_per_ansatt": 1520,
+   "inntekt_per_ansatt": 3531,
+   "resultat_per_ansatt": 334,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -1448,14 +1433,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 884,
+   "ansatte": 887,
    "kommune": "VINDAFJORD",
    "enheter": [
     {
      "orgnr": "917915202",
      "navn": "OMEGA 365 CONSULTING AS",
      "kommune": "VINDAFJORD",
-     "ansatte": 569,
+     "ansatte": 575,
      "stiftet": "2016-09-30",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1468,7 +1453,7 @@
      "orgnr": "917518238",
      "navn": "OMEGA 365 NORWAY AS",
      "kommune": "VINDAFJORD",
-     "ansatte": 315,
+     "ansatte": 312,
      "stiftet": "2016-06-27",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -1528,8 +1513,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1611,
-   "inntekt_per_ansatt": 3016,
+   "lonnskost_per_ansatt": 1606,
+   "inntekt_per_ansatt": 3006,
    "resultat_per_ansatt": 118,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -1542,14 +1527,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: konsulent- og databehandlingstjenester og salg av datautstyr",
    "i_bransjetall": false,
-   "ansatte": 611,
+   "ansatte": 606,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "933012867",
      "navn": "TIETO NORWAY AS",
      "kommune": "BÆRUM",
-     "ansatte": 611,
+     "ansatte": 606,
      "stiftet": "1982-09-10",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1606,9 +1591,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1435,
-   "inntekt_per_ansatt": 3530,
-   "resultat_per_ansatt": 292,
+   "lonnskost_per_ansatt": 1447,
+   "inntekt_per_ansatt": 3560,
+   "resultat_per_ansatt": 295,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -1620,14 +1605,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 828,
+   "ansatte": 830,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "914727170",
      "navn": "KNOWIT EXPERIENCE BERGEN AS",
      "kommune": "BERGEN",
-     "ansatte": 118,
+     "ansatte": 117,
      "stiftet": "2014-12-05",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1640,7 +1625,7 @@
      "orgnr": "914727340",
      "navn": "KNOWIT EXPERIENCE OSLO AS",
      "kommune": "OSLO",
-     "ansatte": 124,
+     "ansatte": 121,
      "stiftet": "2014-12-05",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1666,7 +1651,7 @@
      "orgnr": "929034902",
      "navn": "KNOWIT INSIGHT BUSINESS SOLUTION AS",
      "kommune": "OSLO",
-     "ansatte": 69,
+     "ansatte": 71,
      "stiftet": "2022-02-23",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1692,7 +1677,7 @@
      "orgnr": "980713520",
      "navn": "KNOWIT SOLUTIONS DATA & TECH AS",
      "kommune": "OSLO",
-     "ansatte": 224,
+     "ansatte": 228,
      "stiftet": "1999-03-28",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -1828,9 +1813,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1354,
-   "inntekt_per_ansatt": 2325,
-   "resultat_per_ansatt": 189,
+   "lonnskost_per_ansatt": 1351,
+   "inntekt_per_ansatt": 2319,
+   "resultat_per_ansatt": 188,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -1842,14 +1827,14 @@
    "verifisert": true,
    "merknad": "Drift, skytjenester og programvare for energibransjen",
    "i_bransjetall": false,
-   "ansatte": 544,
+   "ansatte": 531,
    "kommune": "SANDNES",
    "enheter": [
     {
      "orgnr": "996221423",
      "navn": "CEGAL AS",
      "kommune": "SANDNES",
-     "ansatte": 544,
+     "ansatte": 531,
      "stiftet": "2010-11-15",
      "naeringskode": "63.100",
      "regnskapsaar": [
@@ -1906,9 +1891,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1165,
-   "inntekt_per_ansatt": 2614,
-   "resultat_per_ansatt": 243,
+   "lonnskost_per_ansatt": 1194,
+   "inntekt_per_ansatt": 2678,
+   "resultat_per_ansatt": 249,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -1920,14 +1905,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: IT-konsulenter og utleie av personell (ManpowerGroup)",
    "i_bransjetall": false,
-   "ansatte": 535,
+   "ansatte": 530,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "982683955",
      "navn": "EXPERIS AS",
      "kommune": "OSLO",
-     "ansatte": 397,
+     "ansatte": 392,
      "stiftet": "2000-11-02",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2000,9 +1985,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1358,
-   "inntekt_per_ansatt": 2600,
-   "resultat_per_ansatt": -179,
+   "lonnskost_per_ansatt": 1371,
+   "inntekt_per_ansatt": 2625,
+   "resultat_per_ansatt": -181,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -2014,14 +1999,14 @@
    "verifisert": true,
    "merknad": "Både konsulenter og overvåkingstjenester",
    "i_bransjetall": true,
-   "ansatte": 394,
+   "ansatte": 391,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "982089549",
      "navn": "MNEMONIC AS",
      "kommune": "OSLO",
-     "ansatte": 394,
+     "ansatte": 391,
      "stiftet": "2000-05-05",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2078,8 +2063,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1231,
-   "inntekt_per_ansatt": 2844,
+   "lonnskost_per_ansatt": 1240,
+   "inntekt_per_ansatt": 2865,
    "resultat_per_ansatt": 31,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -2092,14 +2077,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 624,
+   "ansatte": 625,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "981566378",
      "navn": "BEKK CONSULTING AS",
      "kommune": "OSLO",
-     "ansatte": 624,
+     "ansatte": 625,
      "stiftet": "2000-01-19",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2156,8 +2141,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1272,
-   "inntekt_per_ansatt": 1700,
+   "lonnskost_per_ansatt": 1270,
+   "inntekt_per_ansatt": 1697,
    "resultat_per_ansatt": 237,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -2170,14 +2155,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 345,
+   "ansatte": 347,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "919562390",
      "navn": "CGI NORGE AS",
      "kommune": "OSLO",
-     "ansatte": 345,
+     "ansatte": 347,
      "stiftet": "1977-01-22",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2234,9 +2219,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1367,
-   "inntekt_per_ansatt": 2707,
-   "resultat_per_ansatt": 116,
+   "lonnskost_per_ansatt": 1359,
+   "inntekt_per_ansatt": 2692,
+   "resultat_per_ansatt": 115,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -2248,14 +2233,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 412,
+   "ansatte": 411,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "990432368",
      "navn": "TWODAY AS",
      "kommune": "OSLO",
-     "ansatte": 412,
+     "ansatte": 411,
      "stiftet": "2006-10-20",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -2312,9 +2297,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1223,
-   "inntekt_per_ansatt": 2255,
-   "resultat_per_ansatt": 261,
+   "lonnskost_per_ansatt": 1226,
+   "inntekt_per_ansatt": 2260,
+   "resultat_per_ansatt": 262,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -2404,14 +2389,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 306,
+   "ansatte": 304,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "927119781",
      "navn": "EVIDI AS",
      "kommune": "OSLO",
-     "ansatte": 306,
+     "ansatte": 304,
      "stiftet": "2021-04-01",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2468,9 +2453,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1304,
-   "inntekt_per_ansatt": 2510,
-   "resultat_per_ansatt": 150,
+   "lonnskost_per_ansatt": 1313,
+   "inntekt_per_ansatt": 2527,
+   "resultat_per_ansatt": 151,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -2482,14 +2467,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 295,
+   "ansatte": 290,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "986352325",
      "navn": "COMPUTAS AS",
      "kommune": "OSLO",
-     "ansatte": 295,
+     "ansatte": 290,
      "stiftet": "2003-11-25",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -2546,9 +2531,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1393,
-   "inntekt_per_ansatt": 2344,
-   "resultat_per_ansatt": 16,
+   "lonnskost_per_ansatt": 1417,
+   "inntekt_per_ansatt": 2384,
+   "resultat_per_ansatt": 17,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -2623,14 +2608,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 225,
+   "ansatte": 228,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "967948748",
      "navn": "ITERA NORGE AS",
      "kommune": "OSLO",
-     "ansatte": 225,
+     "ansatte": 228,
      "stiftet": "1993-11-16",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2687,9 +2672,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1304,
-   "inntekt_per_ansatt": 2737,
-   "resultat_per_ansatt": 121,
+   "lonnskost_per_ansatt": 1287,
+   "inntekt_per_ansatt": 2701,
+   "resultat_per_ansatt": 119,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -2701,14 +2686,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 180,
+   "ansatte": 182,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "988707031",
      "navn": "COGNIZANT TECHNOLOGY SOLUTIONS NORWAY AS",
      "kommune": "BÆRUM",
-     "ansatte": 125,
+     "ansatte": 127,
      "stiftet": "2005-09-22",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -2781,9 +2766,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1470,
-   "inntekt_per_ansatt": 3228,
-   "resultat_per_ansatt": 305,
+   "lonnskost_per_ansatt": 1454,
+   "inntekt_per_ansatt": 3193,
+   "resultat_per_ansatt": 302,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -2795,14 +2780,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 381,
+   "ansatte": 373,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "881886472",
      "navn": "NETCOMPANY NORWAY AS",
      "kommune": "OSLO",
-     "ansatte": 381,
+     "ansatte": 373,
      "stiftet": "2000-03-23",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2859,9 +2844,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1031,
-   "inntekt_per_ansatt": 1495,
-   "resultat_per_ansatt": -81,
+   "lonnskost_per_ansatt": 1053,
+   "inntekt_per_ansatt": 1527,
+   "resultat_per_ansatt": -83,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -2935,14 +2920,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 248,
+   "ansatte": 240,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "988340316",
      "navn": "MILES AS",
      "kommune": "OSLO",
-     "ansatte": 248,
+     "ansatte": 240,
      "stiftet": "2005-05-02",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -2999,9 +2984,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1406,
-   "inntekt_per_ansatt": 1708,
-   "resultat_per_ansatt": 55,
+   "lonnskost_per_ansatt": 1452,
+   "inntekt_per_ansatt": 1765,
+   "resultat_per_ansatt": 57,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3013,7 +2998,7 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: salg og utvikling av egen ERP-programvare med konsulenttjenester",
    "i_bransjetall": false,
-   "ansatte": 163,
+   "ansatte": 161,
    "kommune": "OSLO",
    "enheter": [
     {
@@ -3033,7 +3018,7 @@
      "orgnr": "983398308",
      "navn": "ARRIBATEC CLOUD AS",
      "kommune": "HAMAR",
-     "ansatte": 45,
+     "ansatte": 44,
      "stiftet": "2001-05-14",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3046,7 +3031,7 @@
      "orgnr": "968455265",
      "navn": "ARRIBATEC EA & BPM AS",
      "kommune": "SANDNES",
-     "ansatte": 41,
+     "ansatte": 40,
      "stiftet": "1994-01-01",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3109,9 +3094,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1149,
-   "inntekt_per_ansatt": 2550,
-   "resultat_per_ansatt": 222,
+   "lonnskost_per_ansatt": 1163,
+   "inntekt_per_ansatt": 2581,
+   "resultat_per_ansatt": 224,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3123,14 +3108,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 162,
+   "ansatte": 160,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "883561872",
      "navn": "COLUMBUS NORWAY AS",
      "kommune": "OSLO",
-     "ansatte": 162,
+     "ansatte": 160,
      "stiftet": "2001-06-28",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3187,9 +3172,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1358,
-   "inntekt_per_ansatt": 2324,
-   "resultat_per_ansatt": -253,
+   "lonnskost_per_ansatt": 1375,
+   "inntekt_per_ansatt": 2353,
+   "resultat_per_ansatt": -256,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3279,14 +3264,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 75,
+   "ansatte": 66,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "930970719",
      "navn": "CEPHEO NORGE AS",
      "kommune": "OSLO",
-     "ansatte": 75,
+     "ansatte": 66,
      "stiftet": "2023-01-27",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3343,9 +3328,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1735,
-   "inntekt_per_ansatt": 4090,
-   "resultat_per_ansatt": -157,
+   "lonnskost_per_ansatt": 1972,
+   "inntekt_per_ansatt": 4647,
+   "resultat_per_ansatt": -179,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3357,39 +3342,24 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 128,
+   "ansatte": 129,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "995655144",
      "navn": "EY SKYE CONSULTING AS",
      "kommune": "OSLO",
-     "ansatte": 128,
+     "ansatte": 129,
      "stiftet": "2010-05-28",
      "naeringskode": "62.200",
      "regnskapsaar": [
-      "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
      ]
     }
    ],
    "aar": {
-    "2023": {
-     "inntekt": 293680,
-     "lonn": 162154,
-     "driftsresultat": 17724,
-     "aarsresultat": 14145,
-     "egenkapital": 15513,
-     "eiendeler": 94485,
-     "margin": 0.0604,
-     "vekst": null,
-     "lonnsandel": 0.5521,
-     "ek_andel": 0.1642,
-     "orgnr": [
-      "995655144"
-     ]
-    },
     "2024": {
      "inntekt": 302939,
      "lonn": 160146,
@@ -3398,7 +3368,7 @@
      "egenkapital": 15513,
      "eiendeler": 90632,
      "margin": 0.0661,
-     "vekst": 0.0315,
+     "vekst": null,
      "lonnsandel": 0.5286,
      "ek_andel": 0.1712,
      "orgnr": [
@@ -3421,9 +3391,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1275,
-   "inntekt_per_ansatt": 2373,
-   "resultat_per_ansatt": 262,
+   "lonnskost_per_ansatt": 1266,
+   "inntekt_per_ansatt": 2355,
+   "resultat_per_ansatt": 260,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -3529,14 +3499,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 123,
+   "ansatte": 124,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "926112708",
      "navn": "INSPIRIT365 AS",
      "kommune": "OSLO",
-     "ansatte": 123,
+     "ansatte": 124,
      "stiftet": "2020-10-26",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3593,9 +3563,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1296,
-   "inntekt_per_ansatt": 2329,
-   "resultat_per_ansatt": 309,
+   "lonnskost_per_ansatt": 1285,
+   "inntekt_per_ansatt": 2311,
+   "resultat_per_ansatt": 307,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3607,14 +3577,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 193,
+   "ansatte": 189,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "985815534",
      "navn": "KANTEGA AS",
      "kommune": "OSLO",
-     "ansatte": 193,
+     "ansatte": 189,
      "stiftet": "2003-06-20",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3671,9 +3641,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1089,
-   "inntekt_per_ansatt": 1448,
-   "resultat_per_ansatt": 29,
+   "lonnskost_per_ansatt": 1112,
+   "inntekt_per_ansatt": 1478,
+   "resultat_per_ansatt": 30,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3685,14 +3655,14 @@
    "verifisert": true,
    "merknad": "SAP-konsulenter",
    "i_bransjetall": true,
-   "ansatte": 70,
+   "ansatte": 71,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "992036079",
      "navn": "NTT DATA BUSINESS SOLUTIONS AS",
      "kommune": "OSLO",
-     "ansatte": 70,
+     "ansatte": 71,
      "stiftet": "2007-11-27",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -3734,9 +3704,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1606,
-   "inntekt_per_ansatt": 3847,
-   "resultat_per_ansatt": 263,
+   "lonnskost_per_ansatt": 1584,
+   "inntekt_per_ansatt": 3793,
+   "resultat_per_ansatt": 259,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -3748,14 +3718,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 131,
+   "ansatte": 140,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "925024430",
      "navn": "GRITERA ADVISORY AS",
      "kommune": "OSLO",
-     "ansatte": 69,
+     "ansatte": 72,
      "stiftet": "2020-04-25",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3768,7 +3738,7 @@
      "orgnr": "832332402",
      "navn": "GRITERA SECURITY AS",
      "kommune": "OSLO",
-     "ansatte": 31,
+     "ansatte": 35,
      "stiftet": "2023-10-04",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3780,7 +3750,7 @@
      "orgnr": "929502213",
      "navn": "GRITERA ANALYTICS AS",
      "kommune": "OSLO",
-     "ansatte": 31,
+     "ansatte": 33,
      "stiftet": "2022-06-13",
      "naeringskode": "70.200",
      "regnskapsaar": [
@@ -3842,9 +3812,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1366,
-   "inntekt_per_ansatt": 1979,
-   "resultat_per_ansatt": 70,
+   "lonnskost_per_ansatt": 1278,
+   "inntekt_per_ansatt": 1852,
+   "resultat_per_ansatt": 66,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3856,14 +3826,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 81,
+   "ansatte": 82,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "919321369",
      "navn": "FORTE DIGITAL AS",
      "kommune": "OSLO",
-     "ansatte": 81,
+     "ansatte": 82,
      "stiftet": "2017-06-23",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -3920,9 +3890,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1481,
-   "inntekt_per_ansatt": 3151,
-   "resultat_per_ansatt": 95,
+   "lonnskost_per_ansatt": 1462,
+   "inntekt_per_ansatt": 3112,
+   "resultat_per_ansatt": 94,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -3934,14 +3904,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 116,
+   "ansatte": 113,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "995743566",
      "navn": "NOA IGNITE AS",
      "kommune": "OSLO",
-     "ansatte": 116,
+     "ansatte": 113,
      "stiftet": "2010-07-14",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -3998,9 +3968,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1201,
-   "inntekt_per_ansatt": 2171,
-   "resultat_per_ansatt": 77,
+   "lonnskost_per_ansatt": 1233,
+   "inntekt_per_ansatt": 2229,
+   "resultat_per_ansatt": 79,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4012,14 +3982,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 92,
+   "ansatte": 93,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "995215748",
      "navn": "EPINOVA AS",
      "kommune": "OSLO",
-     "ansatte": 92,
+     "ansatte": 93,
      "stiftet": "2010-02-02",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -4076,9 +4046,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1359,
-   "inntekt_per_ansatt": 2604,
-   "resultat_per_ansatt": 328,
+   "lonnskost_per_ansatt": 1344,
+   "inntekt_per_ansatt": 2576,
+   "resultat_per_ansatt": 324,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4168,14 +4138,14 @@
    "verifisert": true,
    "merknad": "Ledelses- og digitaliseringsrådgivning",
    "i_bransjetall": false,
-   "ansatte": 109,
+   "ansatte": 108,
    "kommune": "BERGEN",
    "enheter": [
     {
      "orgnr": "918664696",
      "navn": "AVO CONSULTING AS",
      "kommune": "BERGEN",
-     "ansatte": 109,
+     "ansatte": 108,
      "stiftet": "2017-02-12",
      "naeringskode": "70.200",
      "regnskapsaar": [
@@ -4232,9 +4202,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1399,
-   "inntekt_per_ansatt": 2053,
-   "resultat_per_ansatt": 124,
+   "lonnskost_per_ansatt": 1412,
+   "inntekt_per_ansatt": 2072,
+   "resultat_per_ansatt": 125,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4246,14 +4216,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: bedriftsrådgivning og utleie av personell",
    "i_bransjetall": false,
-   "ansatte": 129,
+   "ansatte": 127,
    "kommune": "BERGEN",
    "enheter": [
     {
      "orgnr": "983351417",
      "navn": "INVENTURA AS",
      "kommune": "BERGEN",
-     "ansatte": 129,
+     "ansatte": 127,
      "stiftet": "2001-05-01",
      "naeringskode": "70.200",
      "regnskapsaar": [
@@ -4310,9 +4280,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1043,
-   "inntekt_per_ansatt": 1591,
-   "resultat_per_ansatt": 202,
+   "lonnskost_per_ansatt": 1059,
+   "inntekt_per_ansatt": 1616,
+   "resultat_per_ansatt": 206,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4324,7 +4294,7 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 88,
+   "ansatte": 89,
    "kommune": "OSLO",
    "enheter": [
     {
@@ -4344,7 +4314,7 @@
      "orgnr": "926112538",
      "navn": "NORIA VEST AS",
      "kommune": "BERGEN",
-     "ansatte": 30,
+     "ansatte": 31,
      "stiftet": "2020-10-29",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -4404,9 +4374,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1135,
-   "inntekt_per_ansatt": 2262,
-   "resultat_per_ansatt": 273,
+   "lonnskost_per_ansatt": 1122,
+   "inntekt_per_ansatt": 2237,
+   "resultat_per_ansatt": 270,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4496,14 +4466,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 73,
+   "ansatte": 72,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "980172015",
      "navn": "DEVOTEAM AS",
      "kommune": "OSLO",
-     "ansatte": 73,
+     "ansatte": 72,
      "stiftet": "1998-07-01",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -4560,9 +4530,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1603,
-   "inntekt_per_ansatt": 2633,
-   "resultat_per_ansatt": 79,
+   "lonnskost_per_ansatt": 1625,
+   "inntekt_per_ansatt": 2670,
+   "resultat_per_ansatt": 81,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4652,14 +4622,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 44,
+   "ansatte": 42,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "981548280",
      "navn": "ORANGE CYBERDEFENSE NORWAY AS",
      "kommune": "BÆRUM",
-     "ansatte": 44,
+     "ansatte": 42,
      "stiftet": "2000-02-01",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -4716,9 +4686,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1451,
-   "inntekt_per_ansatt": 3833,
-   "resultat_per_ansatt": -407,
+   "lonnskost_per_ansatt": 1520,
+   "inntekt_per_ansatt": 4016,
+   "resultat_per_ansatt": -426,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4730,7 +4700,7 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 86,
+   "ansatte": 83,
    "kommune": "BERGEN",
    "enheter": [
     {
@@ -4750,7 +4720,7 @@
      "orgnr": "919664088",
      "navn": "SONAT CONSULTING OSLO AS",
      "kommune": "OSLO",
-     "ansatte": 26,
+     "ansatte": 23,
      "stiftet": "2017-08-31",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -4810,9 +4780,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1297,
-   "inntekt_per_ansatt": 1960,
-   "resultat_per_ansatt": 119,
+   "lonnskost_per_ansatt": 1344,
+   "inntekt_per_ansatt": 2030,
+   "resultat_per_ansatt": 124,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4824,14 +4794,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 121,
+   "ansatte": 125,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "991952802",
      "navn": "NETLIGHT AS",
      "kommune": "OSLO",
-     "ansatte": 121,
+     "ansatte": 125,
      "stiftet": "2007-09-28",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -4888,9 +4858,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1019,
-   "inntekt_per_ansatt": 1343,
-   "resultat_per_ansatt": 86,
+   "lonnskost_per_ansatt": 986,
+   "inntekt_per_ansatt": 1300,
+   "resultat_per_ansatt": 83,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -4902,7 +4872,7 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: konsulent- og driftstjenester og salg av tredjepartsprodukter",
    "i_bransjetall": false,
-   "ansatte": 93,
+   "ansatte": 91,
    "kommune": "OSLO",
    "enheter": [
     {
@@ -4922,7 +4892,7 @@
      "orgnr": "920188834",
      "navn": "REDPILL LINPRO CLOUDOPS AS",
      "kommune": "OSLO",
-     "ansatte": 33,
+     "ansatte": 31,
      "stiftet": "2017-11-30",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -4998,9 +4968,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1137,
-   "inntekt_per_ansatt": 1725,
-   "resultat_per_ansatt": 300,
+   "lonnskost_per_ansatt": 1162,
+   "inntekt_per_ansatt": 1763,
+   "resultat_per_ansatt": 306,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5012,14 +4982,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 65,
+   "ansatte": 68,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "927889927",
      "navn": "JPROFESSIONALS AS",
      "kommune": "OSLO",
-     "ansatte": 65,
+     "ansatte": 68,
      "stiftet": "2021-08-03",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -5076,9 +5046,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1650,
-   "inntekt_per_ansatt": 2452,
-   "resultat_per_ansatt": 232,
+   "lonnskost_per_ansatt": 1577,
+   "inntekt_per_ansatt": 2344,
+   "resultat_per_ansatt": 222,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5090,14 +5060,14 @@
    "verifisert": true,
    "merknad": "Ansatttallet i Brreg ser for lavt ut",
    "i_bransjetall": true,
-   "ansatte": 38,
+   "ansatte": 37,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "981874714",
      "navn": "ITVERKET AS",
      "kommune": "OSLO",
-     "ansatte": 38,
+     "ansatte": 37,
      "stiftet": "2000-03-15",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -5168,7 +5138,7 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 86,
+   "ansatte": 87,
    "kommune": "OSLO",
    "enheter": [
     {
@@ -5188,7 +5158,7 @@
      "orgnr": "920933408",
      "navn": "VARIANT TRONDHEIM AS",
      "kommune": "TRONDHEIM",
-     "ansatte": 28,
+     "ansatte": 29,
      "stiftet": "2018-05-15",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -5264,9 +5234,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1396,
-   "inntekt_per_ansatt": 1820,
-   "resultat_per_ansatt": -24,
+   "lonnskost_per_ansatt": 1380,
+   "inntekt_per_ansatt": 1799,
+   "resultat_per_ansatt": -23,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5356,14 +5326,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 80,
+   "ansatte": 78,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "912721825",
      "navn": "POINT TAKEN AS",
      "kommune": "OSLO",
-     "ansatte": 80,
+     "ansatte": 78,
      "stiftet": "2013-10-29",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -5420,9 +5390,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1149,
-   "inntekt_per_ansatt": 1831,
-   "resultat_per_ansatt": 174,
+   "lonnskost_per_ansatt": 1179,
+   "inntekt_per_ansatt": 1878,
+   "resultat_per_ansatt": 179,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5434,14 +5404,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 93,
+   "ansatte": 92,
    "kommune": "STAVANGER",
    "enheter": [
     {
      "orgnr": "925095435",
      "navn": "MUNU AS",
      "kommune": "STAVANGER",
-     "ansatte": 93,
+     "ansatte": 92,
      "stiftet": "2020-04-24",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -5498,9 +5468,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 850,
-   "inntekt_per_ansatt": 1473,
-   "resultat_per_ansatt": -105,
+   "lonnskost_per_ansatt": 859,
+   "inntekt_per_ansatt": 1489,
+   "resultat_per_ansatt": -106,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5512,14 +5482,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 70,
+   "ansatte": 69,
    "kommune": "ASKER",
    "enheter": [
     {
      "orgnr": "897658372",
      "navn": "PROSESSPILOTENE AS",
      "kommune": "ASKER",
-     "ansatte": 70,
+     "ansatte": 69,
      "stiftet": "2011-11-18",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -5576,9 +5546,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1438,
-   "inntekt_per_ansatt": 1948,
-   "resultat_per_ansatt": -64,
+   "lonnskost_per_ansatt": 1459,
+   "inntekt_per_ansatt": 1977,
+   "resultat_per_ansatt": -65,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5668,14 +5638,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 31,
+   "ansatte": 33,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "914744504",
      "navn": "PRECIS DIGITAL AS",
      "kommune": "OSLO",
-     "ansatte": 31,
+     "ansatte": 33,
      "stiftet": "2014-11-28",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -5732,9 +5702,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1070,
-   "inntekt_per_ansatt": 4199,
-   "resultat_per_ansatt": 376,
+   "lonnskost_per_ansatt": 1005,
+   "inntekt_per_ansatt": 3944,
+   "resultat_per_ansatt": 353,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5746,14 +5716,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 78,
+   "ansatte": 75,
    "kommune": "GRIMSTAD",
    "enheter": [
     {
      "orgnr": "917081859",
      "navn": "EGDE CONSULTING AS",
      "kommune": "GRIMSTAD",
-     "ansatte": 78,
+     "ansatte": 75,
      "stiftet": "2016-04-14",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -5810,9 +5780,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1185,
-   "inntekt_per_ansatt": 1663,
-   "resultat_per_ansatt": 111,
+   "lonnskost_per_ansatt": 1233,
+   "inntekt_per_ansatt": 1729,
+   "resultat_per_ansatt": 115,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5824,14 +5794,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: programmeringstjenester; 70 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 77,
+   "ansatte": 76,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "980665895",
      "navn": "AKKODIS NORWAY R&D SERVICES AS",
      "kommune": "BÆRUM",
-     "ansatte": 77,
+     "ansatte": 76,
      "stiftet": "1998-11-07",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -5888,9 +5858,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1161,
-   "inntekt_per_ansatt": 1648,
-   "resultat_per_ansatt": 71,
+   "lonnskost_per_ansatt": 1176,
+   "inntekt_per_ansatt": 1669,
+   "resultat_per_ansatt": 72,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5902,14 +5872,14 @@
    "verifisert": true,
    "merknad": "Digitalbyrå; 65 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 73,
+   "ansatte": 71,
    "kommune": "SANDEFJORD",
    "enheter": [
     {
      "orgnr": "984587406",
      "navn": "CORETREK AS",
      "kommune": "SANDEFJORD",
-     "ansatte": 73,
+     "ansatte": 71,
      "stiftet": "2002-02-08",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -5966,9 +5936,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1071,
-   "inntekt_per_ansatt": 1647,
-   "resultat_per_ansatt": 92,
+   "lonnskost_per_ansatt": 1101,
+   "inntekt_per_ansatt": 1693,
+   "resultat_per_ansatt": 94,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -5980,14 +5950,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 58,
+   "ansatte": 57,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "915433073",
      "navn": "BLANK AS",
      "kommune": "OSLO",
-     "ansatte": 58,
+     "ansatte": 57,
      "stiftet": "2015-05-02",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -6044,8 +6014,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1146,
-   "inntekt_per_ansatt": 1935,
+   "lonnskost_per_ansatt": 1166,
+   "inntekt_per_ansatt": 1969,
    "resultat_per_ansatt": 8,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -6058,14 +6028,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 96,
+   "ansatte": 98,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "925880140",
      "navn": "DEFENDABLE AS",
      "kommune": "OSLO",
-     "ansatte": 96,
+     "ansatte": 98,
      "stiftet": "2020-09-29",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -6122,9 +6092,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 914,
-   "inntekt_per_ansatt": 1132,
-   "resultat_per_ansatt": -276,
+   "lonnskost_per_ansatt": 895,
+   "inntekt_per_ansatt": 1109,
+   "resultat_per_ansatt": -270,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -6136,14 +6106,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 81,
+   "ansatte": 83,
    "kommune": "STAVANGER",
    "enheter": [
     {
      "orgnr": "995359448",
      "navn": "OLAVSTOPPEN AS",
      "kommune": "STAVANGER",
-     "ansatte": 81,
+     "ansatte": 83,
      "stiftet": "2010-03-16",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -6200,9 +6170,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1001,
-   "inntekt_per_ansatt": 1337,
-   "resultat_per_ansatt": 171,
+   "lonnskost_per_ansatt": 977,
+   "inntekt_per_ansatt": 1305,
+   "resultat_per_ansatt": 167,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -6292,14 +6262,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 71,
+   "ansatte": 70,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "932436787",
      "navn": "ANTIRE AS",
      "kommune": "OSLO",
-     "ansatte": 71,
+     "ansatte": 70,
      "stiftet": "2023-10-01",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -6324,9 +6294,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1344,
-   "inntekt_per_ansatt": 1500,
-   "resultat_per_ansatt": -393,
+   "lonnskost_per_ansatt": 1363,
+   "inntekt_per_ansatt": 1521,
+   "resultat_per_ansatt": -399,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -6650,14 +6620,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 57,
+   "ansatte": 58,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "916898908",
      "navn": "NETLIFE DESIGN AS",
      "kommune": "OSLO",
-     "ansatte": 57,
+     "ansatte": 58,
      "stiftet": "2016-03-09",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -6714,8 +6684,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 970,
-   "inntekt_per_ansatt": 1635,
+   "lonnskost_per_ansatt": 953,
+   "inntekt_per_ansatt": 1606,
    "resultat_per_ansatt": -30,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -6728,14 +6698,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 53,
+   "ansatte": 54,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "931549383",
      "navn": "BOITANO OSLO AS",
      "kommune": "OSLO",
-     "ansatte": 53,
+     "ansatte": 54,
      "stiftet": "2023-05-23",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -6792,9 +6762,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1510,
-   "inntekt_per_ansatt": 1755,
-   "resultat_per_ansatt": 50,
+   "lonnskost_per_ansatt": 1482,
+   "inntekt_per_ansatt": 1722,
+   "resultat_per_ansatt": 49,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -6806,14 +6776,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 21,
+   "ansatte": 22,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "980396711",
      "navn": "TELEPLAN CONSULTING AS",
      "kommune": "BÆRUM",
-     "ansatte": 21,
+     "ansatte": 22,
      "stiftet": "1998-07-11",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -6870,9 +6840,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 2125,
-   "inntekt_per_ansatt": 4382,
-   "resultat_per_ansatt": -263,
+   "lonnskost_per_ansatt": 2029,
+   "inntekt_per_ansatt": 4183,
+   "resultat_per_ansatt": -251,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -6884,14 +6854,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 39,
+   "ansatte": 38,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "995272776",
      "navn": "NOVANET AS",
      "kommune": "OSLO",
-     "ansatte": 39,
+     "ansatte": 38,
      "stiftet": "2010-02-02",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -6948,9 +6918,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1480,
-   "inntekt_per_ansatt": 2299,
-   "resultat_per_ansatt": 342,
+   "lonnskost_per_ansatt": 1519,
+   "inntekt_per_ansatt": 2360,
+   "resultat_per_ansatt": 351,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -6962,14 +6932,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 45,
+   "ansatte": 44,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "985041954",
      "navn": "HALOGEN AS",
      "kommune": "OSLO",
-     "ansatte": 45,
+     "ansatte": 44,
      "stiftet": "2002-10-02",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -7026,9 +6996,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1611,
-   "inntekt_per_ansatt": 1958,
-   "resultat_per_ansatt": -59,
+   "lonnskost_per_ansatt": 1647,
+   "inntekt_per_ansatt": 2003,
+   "resultat_per_ansatt": -60,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -7118,14 +7088,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 49,
+   "ansatte": 47,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "988669695",
      "navn": "AGENS AS",
      "kommune": "OSLO",
-     "ansatte": 49,
+     "ansatte": 47,
      "stiftet": "2005-09-06",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -7182,9 +7152,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1261,
-   "inntekt_per_ansatt": 1794,
-   "resultat_per_ansatt": 201,
+   "lonnskost_per_ansatt": 1315,
+   "inntekt_per_ansatt": 1870,
+   "resultat_per_ansatt": 210,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -7352,14 +7322,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 54,
+   "ansatte": 56,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "932538067",
      "navn": "SICRA AS",
      "kommune": "OSLO",
-     "ansatte": 54,
+     "ansatte": 56,
      "stiftet": "2023-11-07",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -7400,9 +7370,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1079,
-   "inntekt_per_ansatt": 1565,
-   "resultat_per_ansatt": -335,
+   "lonnskost_per_ansatt": 1040,
+   "inntekt_per_ansatt": 1509,
+   "resultat_per_ansatt": -323,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -7414,14 +7384,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 26,
+   "ansatte": 25,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "921974248",
      "navn": "LTIMINDTREE NORGE AS",
      "kommune": "BÆRUM",
-     "ansatte": 26,
+     "ansatte": 25,
      "stiftet": "2018-11-20",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -7463,9 +7433,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1887,
-   "inntekt_per_ansatt": 3239,
-   "resultat_per_ansatt": 152,
+   "lonnskost_per_ansatt": 1963,
+   "inntekt_per_ansatt": 3368,
+   "resultat_per_ansatt": 158,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
@@ -7633,14 +7603,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 57,
+   "ansatte": 56,
    "kommune": "ASKER",
    "enheter": [
     {
      "orgnr": "926408739",
      "navn": "EMLOGIC AS",
      "kommune": "ASKER",
-     "ansatte": 57,
+     "ansatte": 56,
      "stiftet": "2021-01-02",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -7697,9 +7667,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1117,
-   "inntekt_per_ansatt": 1466,
-   "resultat_per_ansatt": 198,
+   "lonnskost_per_ansatt": 1137,
+   "inntekt_per_ansatt": 1493,
+   "resultat_per_ansatt": 202,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -7789,14 +7759,14 @@
    "verifisert": true,
    "merknad": "IKT, organisasjonsutvikling og ledelse",
    "i_bransjetall": false,
-   "ansatte": 42,
+   "ansatte": 43,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "933567389",
      "navn": "CLAVE CONSULTING AS",
      "kommune": "OSLO",
-     "ansatte": 42,
+     "ansatte": 43,
      "stiftet": "2024-05-23",
      "naeringskode": "70.200",
      "regnskapsaar": [
@@ -7837,9 +7807,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1538,
-   "inntekt_per_ansatt": 1944,
-   "resultat_per_ansatt": 200,
+   "lonnskost_per_ansatt": 1503,
+   "inntekt_per_ansatt": 1898,
+   "resultat_per_ansatt": 195,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -7851,14 +7821,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 51,
+   "ansatte": 48,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "917279934",
      "navn": "FINK AS",
      "kommune": "OSLO",
-     "ansatte": 51,
+     "ansatte": 48,
      "stiftet": "2016-05-19",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -7915,9 +7885,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1301,
-   "inntekt_per_ansatt": 1581,
-   "resultat_per_ansatt": 39,
+   "lonnskost_per_ansatt": 1383,
+   "inntekt_per_ansatt": 1680,
+   "resultat_per_ansatt": 42,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -8007,14 +7977,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 47,
+   "ansatte": 48,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "927302942",
      "navn": "CONSID AS",
      "kommune": "OSLO",
-     "ansatte": 47,
+     "ansatte": 48,
      "stiftet": "2021-05-26",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -8071,9 +8041,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 795,
-   "inntekt_per_ansatt": 1694,
-   "resultat_per_ansatt": 83,
+   "lonnskost_per_ansatt": 779,
+   "inntekt_per_ansatt": 1659,
+   "resultat_per_ansatt": 81,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -8319,14 +8289,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 37,
+   "ansatte": 38,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "998549833",
      "navn": "NORTHERN BEAT AS",
      "kommune": "OSLO",
-     "ansatte": 37,
+     "ansatte": 38,
      "stiftet": "2012-06-15",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -8383,9 +8353,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1211,
-   "inntekt_per_ansatt": 1854,
-   "resultat_per_ansatt": 246,
+   "lonnskost_per_ansatt": 1179,
+   "inntekt_per_ansatt": 1806,
+   "resultat_per_ansatt": 239,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -8397,14 +8367,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: tjenester innen IT-sikkerhet; skilt ut fra Telenor i 2024",
    "i_bransjetall": true,
-   "ansatte": 91,
+   "ansatte": 90,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "932975424",
      "navn": "TELENOR CYBERDEFENCE AS",
      "kommune": "BÆRUM",
-     "ansatte": 91,
+     "ansatte": 90,
      "stiftet": "2024-01-01",
      "naeringskode": "62.900",
      "regnskapsaar": [
@@ -8445,9 +8415,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1064,
-   "inntekt_per_ansatt": 732,
-   "resultat_per_ansatt": -686,
+   "lonnskost_per_ansatt": 1075,
+   "inntekt_per_ansatt": 740,
+   "resultat_per_ansatt": -693,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -9161,14 +9131,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 41,
+   "ansatte": 42,
    "kommune": "NORDRE FOLLO",
    "enheter": [
     {
      "orgnr": "933480968",
      "navn": "VAARE AS",
      "kommune": "NORDRE FOLLO",
-     "ansatte": 41,
+     "ansatte": 42,
      "stiftet": "2024-05-06",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -9209,9 +9179,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 951,
-   "inntekt_per_ansatt": 1258,
-   "resultat_per_ansatt": 204,
+   "lonnskost_per_ansatt": 929,
+   "inntekt_per_ansatt": 1228,
+   "resultat_per_ansatt": 200,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -9457,14 +9427,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 29,
+   "ansatte": 30,
    "kommune": "TRONDHEIM",
    "enheter": [
     {
      "orgnr": "982057892",
      "navn": "99X INCREO AS",
      "kommune": "TRONDHEIM",
-     "ansatte": 29,
+     "ansatte": 30,
      "stiftet": "2000-05-05",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -9521,9 +9491,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1162,
-   "inntekt_per_ansatt": 1653,
-   "resultat_per_ansatt": 89,
+   "lonnskost_per_ansatt": 1123,
+   "inntekt_per_ansatt": 1598,
+   "resultat_per_ansatt": 86,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -9535,14 +9505,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 28,
+   "ansatte": 29,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "917573360",
      "navn": "BREDVID AS",
      "kommune": "OSLO",
-     "ansatte": 28,
+     "ansatte": 29,
      "stiftet": "2016-07-28",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -9599,9 +9569,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1454,
-   "inntekt_per_ansatt": 1567,
-   "resultat_per_ansatt": -66,
+   "lonnskost_per_ansatt": 1404,
+   "inntekt_per_ansatt": 1513,
+   "resultat_per_ansatt": -64,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -9769,14 +9739,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 29,
+   "ansatte": 27,
    "kommune": "BERGEN",
    "enheter": [
     {
      "orgnr": "922656657",
      "navn": "THESE WAYS AS",
      "kommune": "BERGEN",
-     "ansatte": 29,
+     "ansatte": 27,
      "stiftet": "2019-03-29",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -9833,9 +9803,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1200,
-   "inntekt_per_ansatt": 1380,
-   "resultat_per_ansatt": 14,
+   "lonnskost_per_ansatt": 1289,
+   "inntekt_per_ansatt": 1482,
+   "resultat_per_ansatt": 15,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -10003,14 +9973,14 @@
    "verifisert": true,
    "merknad": "Under 20 ansatte; tatt med som kjent aktør",
    "i_bransjetall": true,
-   "ansatte": 12,
+   "ansatte": 13,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "929553160",
      "navn": "O3 CYBER AS",
      "kommune": "OSLO",
-     "ansatte": 12,
+     "ansatte": 13,
      "stiftet": "2022-06-30",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -10067,9 +10037,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 1001,
-   "inntekt_per_ansatt": 3013,
-   "resultat_per_ansatt": 571,
+   "lonnskost_per_ansatt": 924,
+   "inntekt_per_ansatt": 2781,
+   "resultat_per_ansatt": 527,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -10315,14 +10285,14 @@
    "verifisert": true,
    "merknad": "",
    "i_bransjetall": true,
-   "ansatte": 36,
+   "ansatte": 35,
    "kommune": "BÆRUM",
    "enheter": [
     {
      "orgnr": "921184476",
      "navn": "UNICUS AS",
      "kommune": "BÆRUM",
-     "ansatte": 36,
+     "ansatte": 35,
      "stiftet": "2018-04-19",
      "naeringskode": "62.100",
      "regnskapsaar": [
@@ -10379,8 +10349,8 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 633,
-   "inntekt_per_ansatt": 805,
+   "lonnskost_per_ansatt": 651,
+   "inntekt_per_ansatt": 828,
    "resultat_per_ansatt": 19,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
@@ -10393,14 +10363,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg er konsulentvirksomhet og over 50 % av inntekten går til lønn",
    "i_bransjetall": true,
-   "ansatte": 20,
+   "ansatte": 21,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "912345793",
      "navn": "INEVO AS",
      "kommune": "OSLO",
-     "ansatte": 20,
+     "ansatte": 21,
      "stiftet": "2013-08-07",
      "naeringskode": "62.200",
      "regnskapsaar": [
@@ -10457,9 +10427,9 @@
      ]
     }
    },
-   "lonnskost_per_ansatt": 841,
-   "inntekt_per_ansatt": 1390,
-   "resultat_per_ansatt": 92,
+   "lonnskost_per_ansatt": 801,
+   "inntekt_per_ansatt": 1324,
+   "resultat_per_ansatt": 87,
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
@@ -10627,22 +10597,38 @@
    "verifisert": true,
    "merknad": "Norsk filial (NUF); kan mangle regnskap i Brreg",
    "i_bransjetall": true,
-   "ansatte": 64,
+   "ansatte": 66,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "990130124",
      "navn": "TATA CONSULTANCY SERVICES LIMITED",
      "kommune": "OSLO",
-     "ansatte": 64,
+     "ansatte": 66,
      "stiftet": "2006-08-15",
      "naeringskode": "62.200",
      "regnskapsaar": [
+      "2023",
       "2024"
      ]
     }
    ],
    "aar": {
+    "2023": {
+     "inntekt": 1956820000,
+     "lonn": 962180000,
+     "driftsresultat": 523850000,
+     "aarsresultat": 391060000,
+     "egenkapital": 745380000,
+     "eiendeler": 1198270000,
+     "margin": 0.2677,
+     "vekst": null,
+     "lonnsandel": 0.4917,
+     "ek_andel": 0.622,
+     "orgnr": [
+      "990130124"
+     ]
+    },
     "2024": {
      "inntekt": 679285,
      "lonn": 481776,
@@ -10651,7 +10637,7 @@
      "egenkapital": 121539,
      "eiendeler": 204137,
      "margin": 0.0411,
-     "vekst": null,
+     "vekst": -0.9997,
      "lonnsandel": 0.7092,
      "ek_andel": 0.5954,
      "orgnr": [
@@ -10701,14 +10687,14 @@
    "verifisert": true,
    "merknad": "Ledelses- og teknologirådgivning",
    "i_bransjetall": false,
-   "ansatte": 143,
+   "ansatte": 145,
    "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "984145047",
      "navn": "BEARINGPOINT NORWAY AS",
      "kommune": "OSLO",
-     "ansatte": 143,
+     "ansatte": 145,
      "stiftet": "2002-01-08",
      "naeringskode": "70.200",
      "regnskapsaar": [
@@ -10764,14 +10750,14 @@
    "verifisert": true,
    "merknad": "Formål i Brreg: IT-løsninger og ressurser til IT-prosjekter; norsk filial",
    "i_bransjetall": false,
-   "ansatte": 34,
+   "ansatte": 35,
    "kommune": null,
    "enheter": [
     {
      "orgnr": "933498336",
      "navn": "DIGINEXT IT SOLUTIONS NORWAY NUF",
      "kommune": null,
-     "ansatte": 34,
+     "ansatte": 35,
      "stiftet": "2024-06-20",
      "naeringskode": "62.100",
      "regnskapsaar": []
