@@ -1,5 +1,5 @@
 {
- "oppdatert": "2026-11-16",
+ "oppdatert": "2026-11-23",
  "siste_aar": 2025,
  "kilde": "Brønnøysundregistrene (Enhetsregisteret og Regnskapsregisteret)",
  "merknader": [
@@ -40,20 +40,34 @@
    "antall_i_vekst": 114
   },
   "2025": {
-   "antall_selskaper": 104,
-   "inntekt": 39794374,
-   "lonn": 24062390,
-   "driftsresultat": 2507536,
-   "margin": 0.063,
-   "lonnsandel": 0.6047,
-   "med_overskudd": 84,
-   "median_margin": 0.0518,
-   "vekst_like_mot_like": 0.0108,
-   "antall_i_vekst": 121
+   "antall_selskaper": 105,
+   "inntekt": 2284744374,
+   "lonn": 1097062390,
+   "driftsresultat": 636017536,
+   "margin": 0.2784,
+   "lonnsandel": 0.4802,
+   "med_overskudd": 85,
+   "median_margin": 0.0529,
+   "vekst_like_mot_like": 56.1976,
+   "antall_i_vekst": 122
   }
  },
  "analyser": {
   "segmenter": [
+   {
+    "antall_selskaper": 6,
+    "inntekt": 2246322785,
+    "lonn": 1073626689,
+    "driftsresultat": 633607918,
+    "margin": 0.2821,
+    "lonnsandel": 0.4779,
+    "med_overskudd": 5,
+    "median_margin": 0.0565,
+    "vekst_like_mot_like": 1022.8286,
+    "antall_i_vekst": 7,
+    "navn": "Global leveranse",
+    "andel_av_inntekt": 0.9832
+   },
    {
     "antall_selskaper": 9,
     "inntekt": 21116496,
@@ -66,7 +80,7 @@
     "vekst_like_mot_like": 0.0073,
     "antall_i_vekst": 18,
     "navn": "Fullservice",
-    "andel_av_inntekt": 0.5306
+    "andel_av_inntekt": 0.0092
    },
    {
     "antall_selskaper": 46,
@@ -80,7 +94,7 @@
     "vekst_like_mot_like": 0.005,
     "antall_i_vekst": 51,
     "navn": "Utvikling og rådgivning",
-    "andel_av_inntekt": 0.1944
+    "andel_av_inntekt": 0.0034
    },
    {
     "antall_selskaper": 16,
@@ -94,7 +108,7 @@
     "vekst_like_mot_like": 0.0084,
     "antall_i_vekst": 18,
     "navn": "Microsoft og ERP",
-    "andel_av_inntekt": 0.1323
+    "andel_av_inntekt": 0.0023
    },
    {
     "antall_selskaper": 9,
@@ -108,7 +122,7 @@
     "vekst_like_mot_like": 0.0916,
     "antall_i_vekst": 9,
     "navn": "Sikkerhet",
-    "andel_av_inntekt": 0.0439
+    "andel_av_inntekt": 0.0008
    },
    {
     "antall_selskaper": 15,
@@ -122,21 +136,7 @@
     "vekst_like_mot_like": 0.0228,
     "antall_i_vekst": 15,
     "navn": "Digital og design",
-    "andel_av_inntekt": 0.0383
-   },
-   {
-    "antall_selskaper": 5,
-    "inntekt": 1372785,
-    "lonn": 626689,
-    "driftsresultat": 97918,
-    "margin": 0.0713,
-    "lonnsandel": 0.4565,
-    "med_overskudd": 4,
-    "median_margin": 0.047,
-    "vekst_like_mot_like": -0.0937,
-    "antall_i_vekst": 6,
-    "navn": "Global leveranse",
-    "andel_av_inntekt": 0.0345
+    "andel_av_inntekt": 0.0007
    },
    {
     "antall_selskaper": 4,
@@ -150,7 +150,7 @@
     "vekst_like_mot_like": 0.171,
     "antall_i_vekst": 4,
     "navn": "Data og analyse",
-    "andel_av_inntekt": 0.026
+    "andel_av_inntekt": 0.0005
    }
   ],
   "storrelse": [
@@ -166,7 +166,7 @@
     "vekst_like_mot_like": 0.0734,
     "antall_i_vekst": 46,
     "navn": "Under 50 ansatte",
-    "andel_av_inntekt": 0.0741
+    "andel_av_inntekt": 0.0013
    },
    {
     "antall_selskaper": 41,
@@ -180,7 +180,7 @@
     "vekst_like_mot_like": 0.0204,
     "antall_i_vekst": 48,
     "navn": "50–199 ansatte",
-    "andel_av_inntekt": 0.2011
+    "andel_av_inntekt": 0.0035
    },
    {
     "antall_selskaper": 13,
@@ -194,7 +194,7 @@
     "vekst_like_mot_like": 0.0011,
     "antall_i_vekst": 23,
     "navn": "200–999 ansatte",
-    "andel_av_inntekt": 0.3925
+    "andel_av_inntekt": 0.0068
    },
    {
     "antall_selskaper": 3,
@@ -208,7 +208,7 @@
     "vekst_like_mot_like": 0.0149,
     "antall_i_vekst": 3,
     "navn": "1000 ansatte eller flere",
-    "andel_av_inntekt": 0.3283
+    "andel_av_inntekt": 0.0057
    }
   ],
   "lonn_mot_margin": [
@@ -224,7 +224,7 @@
     "vekst_like_mot_like": 0.1805,
     "antall_i_vekst": 13,
     "navn": "Under 1,0 mill. kr",
-    "andel_av_inntekt": 0.0229
+    "andel_av_inntekt": 0.0004
    },
    {
     "antall_selskaper": 26,
@@ -238,7 +238,7 @@
     "vekst_like_mot_like": 0.0152,
     "antall_i_vekst": 28,
     "navn": "1,0–1,2 mill. kr",
-    "andel_av_inntekt": 0.335
+    "andel_av_inntekt": 0.0058
    },
    {
     "antall_selskaper": 29,
@@ -252,7 +252,7 @@
     "vekst_like_mot_like": 0.0346,
     "antall_i_vekst": 42,
     "navn": "1,2–1,4 mill. kr",
-    "andel_av_inntekt": 0.3416
+    "andel_av_inntekt": 0.0059
    },
    {
     "antall_selskaper": 35,
@@ -266,23 +266,23 @@
     "vekst_like_mot_like": -0.0184,
     "antall_i_vekst": 37,
     "navn": "1,4 mill. kr eller mer",
-    "andel_av_inntekt": 0.2966
+    "andel_av_inntekt": 0.0052
    }
   ],
   "geografi": [
    {
-    "antall_selskaper": 75,
-    "inntekt": 34264746,
-    "lonn": 20779542,
-    "driftsresultat": 2332260,
-    "margin": 0.0681,
-    "lonnsandel": 0.6064,
-    "med_overskudd": 61,
+    "antall_selskaper": 77,
+    "inntekt": 2279383403,
+    "lonn": 1093843394,
+    "driftsresultat": 635824373,
+    "margin": 0.2789,
+    "lonnsandel": 0.4799,
+    "med_overskudd": 62,
     "median_margin": 0.0593,
-    "vekst_like_mot_like": 0.0059,
-    "antall_i_vekst": 89,
+    "vekst_like_mot_like": 64.4622,
+    "antall_i_vekst": 91,
     "navn": "Oslo",
-    "andel_av_inntekt": 0.861
+    "andel_av_inntekt": 0.9977
    },
    {
     "antall_selskaper": 14,
@@ -296,21 +296,21 @@
     "vekst_like_mot_like": 0.039,
     "antall_i_vekst": 15,
     "navn": "Andre kommuner",
-    "andel_av_inntekt": 0.0913
+    "andel_av_inntekt": 0.0016
    },
    {
-    "antall_selskaper": 8,
-    "inntekt": 1197730,
-    "lonn": 678689,
-    "driftsresultat": -22221,
-    "margin": -0.0186,
-    "lonnsandel": 0.5666,
+    "antall_selskaper": 7,
+    "inntekt": 1029073,
+    "lonn": 614837,
+    "driftsresultat": -4334,
+    "margin": -0.0042,
+    "lonnsandel": 0.5975,
     "med_overskudd": 4,
-    "median_margin": -0.0041,
-    "vekst_like_mot_like": -0.004,
-    "antall_i_vekst": 9,
+    "median_margin": 0.0234,
+    "vekst_like_mot_like": 0.0076,
+    "antall_i_vekst": 8,
     "navn": "Bærum",
-    "andel_av_inntekt": 0.0301
+    "andel_av_inntekt": 0.0005
    },
    {
     "antall_selskaper": 4,
@@ -324,7 +324,7 @@
     "vekst_like_mot_like": 0.1596,
     "antall_i_vekst": 5,
     "navn": "Bergen",
-    "andel_av_inntekt": 0.0104
+    "andel_av_inntekt": 0.0002
    },
    {
     "antall_selskaper": 3,
@@ -338,23 +338,23 @@
     "vekst_like_mot_like": 0.1401,
     "antall_i_vekst": 3,
     "navn": "Stavanger",
-    "andel_av_inntekt": 0.0071
+    "andel_av_inntekt": 0.0001
    }
   ],
   "konsentrasjon": {
-   "topp1": 0.1503,
-   "topp3": 0.3283,
-   "topp5": 0.4727,
-   "topp10": 0.6227
+   "topp1": 0.9826,
+   "topp3": 0.9869,
+   "topp5": 0.9896,
+   "topp10": 0.993
   },
   "soliditet": {
-   "median_ek_andel": 0.2722,
+   "median_ek_andel": 0.2741,
    "negativ_egenkapital": [
     "Columbus",
     "Darize Consulting",
     "Orange Cyberdefense"
    ],
-   "antall": 104
+   "antall": 105
   },
   "underskudd": [
    {
@@ -482,6 +482,10 @@
  "topplister": {
   "margin": [
    {
+    "navn": "Tata Consultancy Services",
+    "verdi": 0.2822
+   },
+   {
     "navn": "ERPkonsult",
     "verdi": 0.2428
    },
@@ -516,13 +520,13 @@
    {
     "navn": "Novanet",
     "verdi": 0.1486
-   },
-   {
-    "navn": "Scelto",
-    "verdi": 0.1454
    }
   ],
   "vekst": [
+   {
+    "navn": "Tata Consultancy Services",
+    "verdi": 3303.8709
+   },
    {
     "navn": "Lighthouse Consulting",
     "verdi": 0.6963
@@ -558,10 +562,6 @@
    {
     "navn": "Emlogic",
     "verdi": 0.2525
-   },
-   {
-    "navn": "River Security",
-    "verdi": 0.2492
    }
   ],
   "lonnskost_per_ansatt": [
@@ -750,6 +750,10 @@
     "verdi": 0.6527
    },
    {
+    "navn": "Tata Consultancy Services",
+    "verdi": 0.5695
+   },
+   {
     "navn": "Agens",
     "verdi": 0.5527
    },
@@ -768,13 +772,13 @@
    {
     "navn": "Cognizant",
     "verdi": 0.5362
-   },
-   {
-    "navn": "Itverket",
-    "verdi": 0.5357
    }
   ],
   "inntekt": [
+   {
+    "navn": "Tata Consultancy Services",
+    "verdi": 2244950000
+   },
    {
     "navn": "Sopra Steria",
     "verdi": 5982751
@@ -810,14 +814,88 @@
    {
     "navn": "CGI",
     "verdi": 933983
-   },
-   {
-    "navn": "Twoday",
-    "verdi": 928929
    }
   ]
  },
  "selskaper": [
+  {
+   "navn": "Tata Consultancy Services",
+   "kategori": "Global leveranse",
+   "verifisert": true,
+   "merknad": "Norsk filial (NUF); kan mangle regnskap i Brreg",
+   "i_bransjetall": true,
+   "ansatte": 66,
+   "kommune": "OSLO",
+   "enheter": [
+    {
+     "orgnr": "990130124",
+     "navn": "TATA CONSULTANCY SERVICES LIMITED",
+     "kommune": "OSLO",
+     "ansatte": 66,
+     "stiftet": "2006-08-15",
+     "naeringskode": "62.200",
+     "regnskapsaar": [
+      "2023",
+      "2024",
+      "2025"
+     ]
+    }
+   ],
+   "aar": {
+    "2023": {
+     "inntekt": 1956820000,
+     "lonn": 962180000,
+     "driftsresultat": 523850000,
+     "aarsresultat": 391060000,
+     "egenkapital": 745380000,
+     "eiendeler": 1198270000,
+     "margin": 0.2677,
+     "vekst": null,
+     "lonnsandel": 0.4917,
+     "ek_andel": 0.622,
+     "orgnr": [
+      "990130124"
+     ]
+    },
+    "2024": {
+     "inntekt": 679285,
+     "lonn": 481776,
+     "driftsresultat": 27909,
+     "aarsresultat": 21469,
+     "egenkapital": 121539,
+     "eiendeler": 204137,
+     "margin": 0.0411,
+     "vekst": -0.9997,
+     "lonnsandel": 0.7092,
+     "ek_andel": 0.5954,
+     "orgnr": [
+      "990130124"
+     ]
+    },
+    "2025": {
+     "inntekt": 2244950000,
+     "lonn": 1073000000,
+     "driftsresultat": 633510000,
+     "aarsresultat": 480570000,
+     "egenkapital": 756170000,
+     "eiendeler": 1327880000,
+     "margin": 0.2822,
+     "vekst": 3303.8709,
+     "lonnsandel": 0.478,
+     "ek_andel": 0.5695,
+     "orgnr": [
+      "990130124"
+     ]
+    }
+   },
+   "lonnskost_per_ansatt": null,
+   "inntekt_per_ansatt": null,
+   "resultat_per_ansatt": null,
+   "ansatttall_usikkert": true,
+   "avvikende_regnskapsaar": true,
+   "vekst_ikke_sammenlignbar": false,
+   "markedsandel": 0.9826
+  },
   {
    "navn": "Sopra Steria",
    "kategori": "Fullservice",
@@ -894,7 +972,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.1503
+   "markedsandel": 0.0026
   },
   {
    "navn": "PwC",
@@ -1113,7 +1191,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0964
+   "markedsandel": 0.0017
   },
   {
    "navn": "Deloitte",
@@ -1269,7 +1347,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0815
+   "markedsandel": 0.0014
   },
   {
    "navn": "KPMG",
@@ -1425,7 +1503,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0774
+   "markedsandel": 0.0013
   },
   {
    "navn": "Omega 365",
@@ -1519,7 +1597,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.067
+   "markedsandel": 0.0012
   },
   {
    "navn": "Tieto",
@@ -1819,7 +1897,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0484
+   "markedsandel": 0.0008
   },
   {
    "navn": "Cegal",
@@ -2069,7 +2147,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0282
+   "markedsandel": 0.0005
   },
   {
    "navn": "Bekk",
@@ -2147,7 +2225,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0267
+   "markedsandel": 0.0005
   },
   {
    "navn": "CGI",
@@ -2225,7 +2303,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0235
+   "markedsandel": 0.0004
   },
   {
    "navn": "Twoday",
@@ -2303,7 +2381,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0233
+   "markedsandel": 0.0004
   },
   {
    "navn": "Webstep",
@@ -2381,7 +2459,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.021
+   "markedsandel": 0.0004
   },
   {
    "navn": "Evidi",
@@ -2459,7 +2537,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0193
+   "markedsandel": 0.0003
   },
   {
    "navn": "Computas",
@@ -2537,7 +2615,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0174
+   "markedsandel": 0.0003
   },
   {
    "navn": "DXC Technology",
@@ -2678,7 +2756,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0155
+   "markedsandel": 0.0003
   },
   {
    "navn": "Cognizant",
@@ -2772,7 +2850,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0146
+   "markedsandel": 0.0003
   },
   {
    "navn": "Netcompany",
@@ -2850,7 +2928,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0143
+   "markedsandel": 0.0002
   },
   {
    "navn": "HCL Technologies",
@@ -2912,7 +2990,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0134
+   "markedsandel": 0.0002
   },
   {
    "navn": "Miles",
@@ -2990,7 +3068,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0106
+   "markedsandel": 0.0002
   },
   {
    "navn": "Arribatec",
@@ -3178,7 +3256,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0095
+   "markedsandel": 0.0002
   },
   {
    "navn": "Systek",
@@ -3256,7 +3334,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.008
+   "markedsandel": 0.0001
   },
   {
    "navn": "Cepheo",
@@ -3334,7 +3412,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0077
+   "markedsandel": 0.0001
   },
   {
    "navn": "EY Skye",
@@ -3397,7 +3475,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0076
+   "markedsandel": 0.0001
   },
   {
    "navn": "Exsitec",
@@ -3491,7 +3569,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0073
+   "markedsandel": 0.0001
   },
   {
    "navn": "Inspirit365",
@@ -3569,7 +3647,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0072
+   "markedsandel": 0.0001
   },
   {
    "navn": "Kantega",
@@ -3647,7 +3725,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.007
+   "markedsandel": 0.0001
   },
   {
    "navn": "NTT Data Business Solutions",
@@ -3710,7 +3788,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0068
+   "markedsandel": 0.0001
   },
   {
    "navn": "Gritera",
@@ -3818,7 +3896,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0065
+   "markedsandel": 0.0001
   },
   {
    "navn": "Forte Digital",
@@ -3896,7 +3974,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0064
+   "markedsandel": 0.0001
   },
   {
    "navn": "Noa Ignite",
@@ -3974,7 +4052,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0063
+   "markedsandel": 0.0001
   },
   {
    "navn": "Epinova",
@@ -4052,7 +4130,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.006
+   "markedsandel": 0.0001
   },
   {
    "navn": "Scienta",
@@ -4380,7 +4458,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.005
+   "markedsandel": 0.0001
   },
   {
    "navn": "Capra",
@@ -4458,7 +4536,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.005
+   "markedsandel": 0.0001
   },
   {
    "navn": "Devoteam",
@@ -4536,7 +4614,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0048
+   "markedsandel": 0.0001
   },
   {
    "navn": "AboveIT",
@@ -4614,7 +4692,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0045
+   "markedsandel": 0.0001
   },
   {
    "navn": "Orange Cyberdefense",
@@ -4623,12 +4701,12 @@
    "merknad": "",
    "i_bransjetall": true,
    "ansatte": 42,
-   "kommune": "BÆRUM",
+   "kommune": "OSLO",
    "enheter": [
     {
      "orgnr": "981548280",
      "navn": "ORANGE CYBERDEFENSE NORWAY AS",
-     "kommune": "BÆRUM",
+     "kommune": "OSLO",
      "ansatte": 42,
      "stiftet": "2000-02-01",
      "naeringskode": "62.200",
@@ -4692,7 +4770,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0042
+   "markedsandel": 0.0001
   },
   {
    "navn": "Sonat",
@@ -4786,7 +4864,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0042
+   "markedsandel": 0.0001
   },
   {
    "navn": "Netlight",
@@ -4864,7 +4942,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0041
+   "markedsandel": 0.0001
   },
   {
    "navn": "Redpill Linpro",
@@ -5052,7 +5130,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.004
+   "markedsandel": 0.0001
   },
   {
    "navn": "Itverket",
@@ -5130,7 +5208,7 @@
    "ansatttall_usikkert": true,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.004
+   "markedsandel": 0.0001
   },
   {
    "navn": "Variant",
@@ -5240,7 +5318,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0039
+   "markedsandel": 0.0001
   },
   {
    "navn": "Sprint Consulting",
@@ -5396,7 +5474,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0037
+   "markedsandel": 0.0001
   },
   {
    "navn": "Munu",
@@ -5474,7 +5552,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0034
+   "markedsandel": 0.0001
   },
   {
    "navn": "Prosesspilotene",
@@ -5552,7 +5630,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0034
+   "markedsandel": 0.0001
   },
   {
    "navn": "Kraftlauget",
@@ -5630,7 +5708,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0034
+   "markedsandel": 0.0001
   },
   {
    "navn": "Precis Digital",
@@ -5708,7 +5786,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0033
+   "markedsandel": 0.0001
   },
   {
    "navn": "Egde",
@@ -5786,7 +5864,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0033
+   "markedsandel": 0.0001
   },
   {
    "navn": "Akkodis",
@@ -5864,7 +5942,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0032
+   "markedsandel": 0.0001
   },
   {
    "navn": "Coretrek",
@@ -5942,7 +6020,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.003
+   "markedsandel": 0.0001
   },
   {
    "navn": "Blank",
@@ -6020,7 +6098,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0028
+   "markedsandel": 0.0
   },
   {
    "navn": "Defendable",
@@ -6098,7 +6176,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0027
+   "markedsandel": 0.0
   },
   {
    "navn": "Olavstoppen",
@@ -6176,7 +6254,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0027
+   "markedsandel": 0.0
   },
   {
    "navn": "Forse",
@@ -6254,7 +6332,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0027
+   "markedsandel": 0.0
   },
   {
    "navn": "Antire",
@@ -6300,7 +6378,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0027
+   "markedsandel": 0.0
   },
   {
    "navn": "Gapit Nordics",
@@ -6456,7 +6534,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0025
+   "markedsandel": 0.0
   },
   {
    "navn": "Scelto",
@@ -6534,7 +6612,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0025
+   "markedsandel": 0.0
   },
   {
    "navn": "Kommando",
@@ -6612,7 +6690,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0025
+   "markedsandel": 0.0
   },
   {
    "navn": "Netlife Design",
@@ -6690,7 +6768,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": 0.0
   },
   {
    "navn": "Boitano",
@@ -6768,7 +6846,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": 0.0
   },
   {
    "navn": "Teleplan Consulting",
@@ -6846,7 +6924,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": 0.0
   },
   {
    "navn": "Novanet",
@@ -6924,7 +7002,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0023
+   "markedsandel": 0.0
   },
   {
    "navn": "Halogen",
@@ -7002,7 +7080,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0022
+   "markedsandel": 0.0
   },
   {
    "navn": "Intuvio",
@@ -7080,7 +7158,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0022
+   "markedsandel": 0.0
   },
   {
    "navn": "Agens",
@@ -7158,7 +7236,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0022
+   "markedsandel": 0.0
   },
   {
    "navn": "Techfolk",
@@ -7236,7 +7314,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0022
+   "markedsandel": 0.0
   },
   {
    "navn": "Implement Consulting Group",
@@ -7376,7 +7454,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0021
+   "markedsandel": 0.0
   },
   {
    "navn": "LTIMindtree",
@@ -7439,7 +7517,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0021
+   "markedsandel": 0.0
   },
   {
    "navn": "Veni",
@@ -7673,7 +7751,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0021
+   "markedsandel": 0.0
   },
   {
    "navn": "Fraktal",
@@ -7751,7 +7829,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0021
+   "markedsandel": 0.0
   },
   {
    "navn": "Clave Consulting",
@@ -7891,7 +7969,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.002
+   "markedsandel": 0.0
   },
   {
    "navn": "S5 Consulting",
@@ -7969,7 +8047,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.002
+   "markedsandel": 0.0
   },
   {
    "navn": "Consid",
@@ -8047,7 +8125,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.002
+   "markedsandel": 0.0
   },
   {
    "navn": "Ulriken Consulting",
@@ -8125,7 +8203,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0
   },
   {
    "navn": "Kodemaker",
@@ -8203,7 +8281,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0
   },
   {
    "navn": "Brilliant",
@@ -8281,7 +8359,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0018
+   "markedsandel": 0.0
   },
   {
    "navn": "Northern Beat",
@@ -8359,7 +8437,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0017
+   "markedsandel": 0.0
   },
   {
    "navn": "Telenor Cyberdefence",
@@ -8421,7 +8499,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0017
+   "markedsandel": 0.0
   },
   {
    "navn": "Expert Analytics",
@@ -8499,7 +8577,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0017
+   "markedsandel": 0.0
   },
   {
    "navn": "Lighthouse Consulting",
@@ -8577,7 +8655,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0016
+   "markedsandel": 0.0
   },
   {
    "navn": "Sariba Consulting",
@@ -8655,7 +8733,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0016
+   "markedsandel": 0.0
   },
   {
    "navn": "Konsulentselskapet Enso",
@@ -8733,7 +8811,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0015
+   "markedsandel": 0.0
   },
   {
    "navn": "Gnist Consulting",
@@ -8811,7 +8889,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0015
+   "markedsandel": 0.0
   },
   {
    "navn": "Bspoke",
@@ -8889,7 +8967,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0015
+   "markedsandel": 0.0
   },
   {
    "navn": "Dekode",
@@ -8967,7 +9045,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0015
+   "markedsandel": 0.0
   },
   {
    "navn": "Yttr",
@@ -9045,7 +9123,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0014
+   "markedsandel": 0.0
   },
   {
    "navn": "Applica Consulting",
@@ -9123,7 +9201,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0014
+   "markedsandel": 0.0
   },
   {
    "navn": "Vaare",
@@ -9185,7 +9263,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0013
+   "markedsandel": 0.0
   },
   {
    "navn": "Liflig",
@@ -9263,7 +9341,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0013
+   "markedsandel": 0.0
   },
   {
    "navn": "Vokser",
@@ -9341,7 +9419,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0013
+   "markedsandel": 0.0
   },
   {
    "navn": "Infosys",
@@ -9419,7 +9497,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0012
+   "markedsandel": 0.0
   },
   {
    "navn": "99X Increo",
@@ -9497,7 +9575,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0012
+   "markedsandel": 0.0
   },
   {
    "navn": "Bredvid",
@@ -9575,7 +9653,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": 0.0
   },
   {
    "navn": "Gren Utvikling",
@@ -9653,7 +9731,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": true,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": 0.0
   },
   {
    "navn": "Item Consulting",
@@ -9731,7 +9809,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0011
+   "markedsandel": 0.0
   },
   {
    "navn": "These Ways",
@@ -9809,7 +9887,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.001
+   "markedsandel": 0.0
   },
   {
    "navn": "Darize Consulting",
@@ -9887,7 +9965,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.001
+   "markedsandel": 0.0
   },
   {
    "navn": "Ivolv",
@@ -9965,7 +10043,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.001
+   "markedsandel": 0.0
   },
   {
    "navn": "O3 Cyber",
@@ -10043,7 +10121,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0009
+   "markedsandel": 0.0
   },
   {
    "navn": "ERPkonsult",
@@ -10121,7 +10199,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0008
+   "markedsandel": 0.0
   },
   {
    "navn": "Netpower Business Solutions",
@@ -10199,7 +10277,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0008
+   "markedsandel": 0.0
   },
   {
    "navn": "Skråstrek",
@@ -10277,7 +10355,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0008
+   "markedsandel": 0.0
   },
   {
    "navn": "Unicus",
@@ -10355,7 +10433,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0007
+   "markedsandel": 0.0
   },
   {
    "navn": "Inevo",
@@ -10433,7 +10511,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0007
+   "markedsandel": 0.0
   },
   {
    "navn": "River Security",
@@ -10511,7 +10589,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0006
+   "markedsandel": 0.0
   },
   {
    "navn": "Aplia",
@@ -10589,69 +10667,7 @@
    "ansatttall_usikkert": false,
    "avvikende_regnskapsaar": false,
    "vekst_ikke_sammenlignbar": false,
-   "markedsandel": 0.0005
-  },
-  {
-   "navn": "Tata Consultancy Services",
-   "kategori": "Global leveranse",
-   "verifisert": true,
-   "merknad": "Norsk filial (NUF); kan mangle regnskap i Brreg",
-   "i_bransjetall": true,
-   "ansatte": 66,
-   "kommune": "OSLO",
-   "enheter": [
-    {
-     "orgnr": "990130124",
-     "navn": "TATA CONSULTANCY SERVICES LIMITED",
-     "kommune": "OSLO",
-     "ansatte": 66,
-     "stiftet": "2006-08-15",
-     "naeringskode": "62.200",
-     "regnskapsaar": [
-      "2023",
-      "2024"
-     ]
-    }
-   ],
-   "aar": {
-    "2023": {
-     "inntekt": 1956820000,
-     "lonn": 962180000,
-     "driftsresultat": 523850000,
-     "aarsresultat": 391060000,
-     "egenkapital": 745380000,
-     "eiendeler": 1198270000,
-     "margin": 0.2677,
-     "vekst": null,
-     "lonnsandel": 0.4917,
-     "ek_andel": 0.622,
-     "orgnr": [
-      "990130124"
-     ]
-    },
-    "2024": {
-     "inntekt": 679285,
-     "lonn": 481776,
-     "driftsresultat": 27909,
-     "aarsresultat": 21469,
-     "egenkapital": 121539,
-     "eiendeler": 204137,
-     "margin": 0.0411,
-     "vekst": -0.9997,
-     "lonnsandel": 0.7092,
-     "ek_andel": 0.5954,
-     "orgnr": [
-      "990130124"
-     ]
-    }
-   },
-   "lonnskost_per_ansatt": null,
-   "inntekt_per_ansatt": null,
-   "resultat_per_ansatt": null,
-   "ansatttall_usikkert": true,
-   "avvikende_regnskapsaar": true,
-   "vekst_ikke_sammenlignbar": false,
-   "markedsandel": null
+   "markedsandel": 0.0
   },
   {
    "navn": "Commit",
